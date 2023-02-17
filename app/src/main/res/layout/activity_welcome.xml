@@ -26,10 +26,8 @@
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:text= "@string/sign_in"
-        android:textSize="40sp"
-        android:background="@color/colorButtonDark"
-        android:textColor="@color/colorTextOnDark"
-        android:fontFamily="@font/font_kabouter"
+        android:theme="@style/DarkButton"
+        android:background="@color/colorButtonBackgroundDark"
         android:layout_marginTop="160dp"
         android:layout_marginRight="70dp"
         android:layout_marginLeft="70dp"
@@ -40,13 +38,10 @@
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:text= "@string/play_offline"
-        android:textSize="40sp"
-        android:background="@color/colorButtonDark"
-        android:textColor="@color/colorTextOnDark"
-        android:fontFamily="@font/font_kabouter"
+        android:theme="@style/DarkButton"
+        android:background="@color/colorButtonBackgroundDark"
         android:layout_marginTop="50dp"
         android:layout_marginRight="70dp"
         android:layout_marginLeft="70dp"
         />
-
 </LinearLayout>

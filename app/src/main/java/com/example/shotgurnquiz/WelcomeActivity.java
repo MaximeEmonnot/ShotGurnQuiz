@@ -2,6 +2,8 @@ package com.example.shotgurnquiz;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
@@ -29,6 +31,13 @@ public class WelcomeActivity extends AppCompatActivity {
         Button signInButton = findViewById(R.id.btn_sign_in);
         Animation slideInFromLeftAnimation = AnimationUtils.loadAnimation(this, R.anim.slidein_from_left);
         signInButton.startAnimation(slideInFromLeftAnimation);
+
+        signInButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(WelcomeActivity.this, SignInActivity.class));
+            }
+        });
 
         Button playOfflineButton = findViewById(R.id.btn_play_offline);
         Animation slideInFromRightAnimation = AnimationUtils.loadAnimation(this, R.anim.slidein_from_right);

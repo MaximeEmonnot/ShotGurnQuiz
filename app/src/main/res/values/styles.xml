@@ -7,4 +7,16 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="InputField">
+        <item name="android:textColorHint">@color/colorGrayTextOnLight</item>
+        <item name="android:drawablePadding">10dp</item>
+    </style>
+
+    <style name="DarkButton">
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">@color/colorTextOnDark</item>
+        <item name="android:fontFamily">@font/font_kabouter</item>
+        <item name="android:foreground">?attr/selectableItemBackgroundBorderless</item>
+    </style>
+
 </resources>
