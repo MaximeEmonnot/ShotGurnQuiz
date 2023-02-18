@@ -1,10 +1,20 @@
 package com.example.shotgurnquiz.Database;
 
+import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
+
+import com.example.shotgurnquiz.Database.Tables.Question;
+import com.example.shotgurnquiz.Database.Tables.Quiz;
+import com.example.shotgurnquiz.Database.Tables.Score;
+import com.example.shotgurnquiz.Database.Tables.User;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
@@ -21,19 +31,50 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL(UserTable.CREATION_QUERY);
-        db.execSQL(QuizTable.CREATION_QUERY);
-        db.execSQL(QuestionTable.CREATION_QUERY);
-        db.execSQL(ScoreTable.CREATION_QUERY);
+        db.execSQL(User.CREATION_QUERY);
+        db.execSQL(Quiz.CREATION_QUERY);
+        db.execSQL(Question.CREATION_QUERY);
+        db.execSQL(Score.CREATION_QUERY);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL(ScoreTable.DELETE_QUERY);
-        db.execSQL(QuestionTable.DELETE_QUERY);
-        db.execSQL(QuizTable.DELETE_QUERY);
-        db.execSQL(UserTable.DELETE_QUERY);
+        db.execSQL(Score.DELETE_QUERY);
+        db.execSQL(Question.DELETE_QUERY);
+        db.execSQL(Quiz.DELETE_QUERY);
+        db.execSQL(User.DELETE_QUERY);
         onCreate(db);
+    }
+
+    public User FindUserByUsername(String username){
+        Cursor c = database.query(User.TABLE,
+                new String[] { User.COLUMN_ID, User.COLUMN_USERNAME, User.COLUMN_PASSWORD},
+                User.COLUMN_USERNAME + " = ?", new String[]{username}, null, null, null);
+
+        if (c.getCount() > 0){
+            c.moveToNext();
+            return new User(c);
+        }
+        return null;
+    }
+
+    public void CreateNewUser(String username, String password){
+        ContentValues values = new ContentValues();
+        values.put(User.COLUMN_USERNAME, username);
+        values.put(User.COLUMN_PASSWORD, password);
+        database.insert(User.TABLE, null, values);
+    }
+
+    public List<User> GetAllUser() {
+        Cursor c = database.query(User.TABLE,
+                new String[] {User.COLUMN_ID, User.COLUMN_USERNAME, User.COLUMN_PASSWORD},
+                null, null, null, null, null);
+        ArrayList<User> output = new ArrayList<User>();
+
+        while (c.moveToNext()){
+            output.add(new User(c));
+        }
+        return output;
     }
 
     private static DatabaseHelper instance = null;

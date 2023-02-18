@@ -1,6 +1,6 @@
-package com.example.shotgurnquiz.Database;
+package com.example.shotgurnquiz.Database.Tables;
 
-public class ScoreTable {
+public class Score {
     public static final String TABLE = "score";
 
     public static final String COLUMN_ID = "id";
@@ -13,7 +13,7 @@ public class ScoreTable {
             + COLUMN_QUIZ_ID + " INTEGER NOT NULL,"
             + COLUMN_USER_ID + " INTEGER NOT NULL,"
             + COLUMN_SCORE + " INTEGER NOT NULL,"
-            + "FOREIGN KEY (" + COLUMN_QUIZ_ID + ") REFERENCES " + QuizTable.TABLE + "(" + QuizTable.COLUMN_ID + "),"
-            + "FOREIGN KEY (" + COLUMN_USER_ID + ") REFERENCES " + UserTable.TABLE + "(" + UserTable.COLUMN_ID + ");";
+            + "FOREIGN KEY (" + COLUMN_QUIZ_ID + ") REFERENCES " + Quiz.TABLE + "(" + Quiz.COLUMN_ID + "),"
+            + "FOREIGN KEY (" + COLUMN_USER_ID + ") REFERENCES " + User.TABLE + "(" + User.COLUMN_ID + "));";
     public static final String DELETE_QUERY = "DROP TABLE " + TABLE + ";";
 }

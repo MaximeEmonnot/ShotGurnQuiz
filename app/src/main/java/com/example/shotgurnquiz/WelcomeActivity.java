@@ -17,7 +17,6 @@ public class WelcomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
-
     }
 
     @Override
@@ -43,5 +42,11 @@ public class WelcomeActivity extends AppCompatActivity {
         Animation slideInFromRightAnimation = AnimationUtils.loadAnimation(this, R.anim.slidein_from_right);
         playOfflineButton.startAnimation(slideInFromRightAnimation);
 
+        playOfflineButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(WelcomeActivity.this, QuizListActivity.class));
+            }
+        });
     }
 }

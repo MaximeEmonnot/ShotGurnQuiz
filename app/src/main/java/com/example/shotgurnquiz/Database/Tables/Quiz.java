@@ -1,6 +1,6 @@
-package com.example.shotgurnquiz.Database;
+package com.example.shotgurnquiz.Database.Tables;
 
-public class QuizTable {
+public class Quiz {
     public static final String TABLE = "quiz";
 
     public static final String COLUMN_ID = "id";
