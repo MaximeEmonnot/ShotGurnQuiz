@@ -17,11 +17,6 @@ public class WelcomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
-    }
-
-    @Override
-    protected  void onStart() {
-        super.onStart();
 
         TextView titleTextView = findViewById(R.id.textview_title);
         Animation popUpAnimation = AnimationUtils.loadAnimation(this, R.anim.pop_up);
@@ -35,6 +30,7 @@ public class WelcomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(WelcomeActivity.this, SignInActivity.class));
+                overridePendingTransition(R.anim.slidein_from_left, R.anim.slideout_to_right);
             }
         });
 

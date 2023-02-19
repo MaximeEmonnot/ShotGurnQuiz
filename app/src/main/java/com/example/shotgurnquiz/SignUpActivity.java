@@ -75,4 +75,10 @@ public class SignUpActivity extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void finish(){
+        super.finish();
+        overridePendingTransition(R.anim.slidein_from_top, R.anim.slideout_to_bottom);
+    }
 }
