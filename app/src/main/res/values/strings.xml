@@ -1,10 +1,14 @@
 <resources>
     <string name="app_name">ShotGurnQuiz</string>
     <string name="title">Shot, Gurn, Quiz !</string>
-    <string name="play_offline">PLAY OFFLINE</string>
-    <string name="sign_in">SIGN IN</string>
-    <string name="sign_up">SIGN UP</string>
+    <string name="play_offline">Play Offline</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="email">Email</string>
+    <string name="confirm_email">Confirm email</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="create_account">Create account</string>
     <string name="no_account">Don\'t have an account yet ?</string>
 </resources>

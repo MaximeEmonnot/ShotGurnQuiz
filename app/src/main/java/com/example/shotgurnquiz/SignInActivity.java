@@ -36,13 +36,21 @@ public class SignInActivity extends AppCompatActivity {
                             Intent intent = new Intent(SignInActivity.this, QuizListActivity.class);
                             startActivity(intent);
                         }
-                    }
-                    else {
+                    } else {
                         db.CreateNewUser(usernameText, passwordText);
                         Intent intent = new Intent(SignInActivity.this, QuizListActivity.class);
                         startActivity(intent);
                     }
                 }
+            }
+        });
+
+
+        Button signup = (Button) findViewById(R.id.btn_sign_up);
+        signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SignInActivity.this, SignUpActivity.class));
             }
         });
     }
