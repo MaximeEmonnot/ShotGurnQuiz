@@ -4,13 +4,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".QuizListActivity">
+    tools:context=".QuizListActivity"
+    android:orientation="vertical">
 
     <TextView
-        android:id="@+id/quizlist_text"
-        android:layout_width="match_parent"
+        android:id="@+id/themes"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Quiz List Works!"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintBottom_toTopOf="@id/recycle_view_horizontal"
+        app:layout_constraintStart_toStartOf="@id/recycle_view_horizontal"
+        android:text="Themes"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_view_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="30dp" />
+
+    <TextView
+        android:id="@+id/popular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/recycle_view_vertical1"
+        app:layout_constraintStart_toStartOf="@id/recycle_view_vertical1"
+        android:text="Popular"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_view_vertical1"
+        android:layout_height="500dp"
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/recycle_view_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="30dp" />
+
+    <TextView
+        android:id="@+id/most_recent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/recycle_view_vertical2"
+        app:layout_constraintStart_toStartOf="@id/recycle_view_vertical2"
+        android:text="Most Recent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_view_vertical2"
+        android:layout_height="500dp"
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/recycle_view_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constrainedHeight="true"
+        android:layout_margin="30dp" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

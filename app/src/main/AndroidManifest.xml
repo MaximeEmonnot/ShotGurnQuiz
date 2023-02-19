@@ -10,10 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".QuizListActivity"
+            android:exported="false" />
+        <activity
             android:name=".SignUpActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
-        <activity android:name=".QuizListActivity" />
+        <activity android:name=".TestActivity" />
         <activity
             android:name=".SignInActivity"
             android:exported="false"

@@ -1,12 +1,12 @@
 package com.example.shotgurnquiz;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.widget.TextView;
 
-import com.example.shotgurnquiz.Database.DatabaseHelper;
-import com.example.shotgurnquiz.Database.Tables.User;
+import java.util.ArrayList;
 
 public class QuizListActivity extends AppCompatActivity {
 
@@ -15,14 +15,28 @@ public class QuizListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz_list);
 
-        DatabaseHelper db = DatabaseHelper.GetInstance(this);
+        RecyclerView recyclerViewHorizontal = findViewById(R.id.recycle_view_horizontal);
+        RecyclerView recyclerViewVertical1 = findViewById(R.id.recycle_view_vertical1);
+        RecyclerView recyclerViewVertical2 = findViewById(R.id.recycle_view_vertical2);
 
-        TextView textView = (TextView) findViewById(R.id.quizlist_text);
+        ArrayList<QuizCardModel> quizCards = new ArrayList<QuizCardModel>();
 
-        String text = "";
+        quizCards.add(new QuizCardModel("Quiz1"));
+        quizCards.add(new QuizCardModel("Quiz2"));
+        quizCards.add(new QuizCardModel("Quiz3"));
+        quizCards.add(new QuizCardModel("Quiz4"));
+        quizCards.add(new QuizCardModel("Quiz5"));
+        quizCards.add(new QuizCardModel("Quiz6"));
+        quizCards.add(new QuizCardModel("Quiz7"));
+        QuizCard_RecyclerViewAdapter adapter = new QuizCard_RecyclerViewAdapter(this, quizCards);
 
-        for (User user : db.GetAllUser()) text += user.toString() + "\n";
+        recyclerViewHorizontal.setAdapter(adapter);
+        recyclerViewHorizontal.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
 
-        textView.setText(text);
+        recyclerViewVertical1.setAdapter(adapter);
+        recyclerViewVertical1.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
+
+        recyclerViewVertical2.setAdapter(adapter);
+        recyclerViewVertical2.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
     }
 }
