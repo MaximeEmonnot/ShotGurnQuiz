@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="@string/sign_in"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="35dp"
             android:textSize="56sp"
             android:fontFamily="@font/font_kabouter"
             android:textColor="@color/colorTextOnLight" />
@@ -28,28 +28,39 @@
             android:id="@+id/edit_text_sign_in_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginRight="70dp"
-            android:layout_marginLeft="70dp"
+            android:layout_marginRight="55dp"
+            android:layout_marginLeft="55dp"
             android:layout_marginTop="40dp"
             android:hint="@string/username"
             android:drawableLeft="@drawable/user"
             android:theme="@style/InputField"
             app:backgroundTint="@color/colorGrayTextOnLight"
+            android:inputType="text"
             />
 
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/edit_text_sign_in_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginRight="70dp"
-            android:layout_marginLeft="70dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginRight="55dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="20dp"
             android:hint="@string/password"
             android:drawableLeft="@drawable/lock"
             android:inputType="textPassword"
             android:theme="@style/InputField"
             app:backgroundTint="@color/colorGrayTextOnLight"
             />
+
+        <TextView
+            android:id="@+id/sign_in_errorField"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_gravity="center_horizontal"
+            android:text=""
+            android:layout_marginTop="5dp"
+            android:textSize="10sp"
+            android:textColor="@color/colorError" />
 
         <Button
             android:id="@+id/btn_sign_in"
@@ -58,7 +69,7 @@
             android:text= "@string/sign_in"
             android:theme="@style/DarkButton"
             android:background="@color/colorButtonBackgroundDark"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="15dp"
             android:layout_marginRight="65dp"
             android:layout_marginLeft="65dp"
             />

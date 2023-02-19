@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.example.shotgurnquiz.Database.DatabaseHelper;
 import com.example.shotgurnquiz.Database.Tables.User;
@@ -23,16 +24,29 @@ public class SignInActivity extends AppCompatActivity {
         Button signin = (Button) findViewById(R.id.btn_sign_in);
         EditText username = (EditText) findViewById(R.id.edit_text_sign_in_username);
         EditText password = (EditText) findViewById(R.id.edit_text_sign_in_password);
+        TextView errorField = (TextView) findViewById(R.id.sign_in_errorField);
 
         signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String usernameText = username.getText().toString();
                 String passwordText = password.getText().toString();
-                if (!usernameText.isEmpty() && !passwordText.isEmpty()) {
+                if(usernameText.isEmpty()){
+                    username.setError(getResources().getText(R.string.empty_field));
+                    username.requestFocus();
+                }
+                else if(passwordText.isEmpty()){
+                    password.setError(getResources().getText(R.string.empty_field));
+                    password.requestFocus();
+                }
+                else {
                     User user = db.FindUserByUsername(usernameText);
-                    if (user != null) {
-                        if (user.GetPassword().equals(passwordText)) {
+                    if(user == null)
+                        errorField.setText(getResources().getText(R.string.incorrect_username));
+                    else{
+                        if (!user.GetPassword().equals(passwordText))
+                            errorField.setText(getResources().getText(R.string.incorrect_password));
+                        else{
                             Intent intent = new Intent(SignInActivity.this, QuizListActivity.class);
                             startActivity(intent);
                         }
