@@ -20,11 +20,11 @@ public class SignInActivity extends AppCompatActivity {
 
         DatabaseHelper db = DatabaseHelper.GetInstance(this);
 
-        Button signup = (Button) findViewById(R.id.btn_sign_up);
+        Button signin = (Button) findViewById(R.id.btn_sign_in);
         EditText username = (EditText) findViewById(R.id.edit_text_sign_in_username);
         EditText password = (EditText) findViewById(R.id.edit_text_sign_in_password);
 
-        signup.setOnClickListener(new View.OnClickListener() {
+        signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String usernameText = username.getText().toString();

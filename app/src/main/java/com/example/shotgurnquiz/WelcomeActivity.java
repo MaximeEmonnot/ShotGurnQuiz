@@ -27,7 +27,7 @@ public class WelcomeActivity extends AppCompatActivity {
         Animation popUpAnimation = AnimationUtils.loadAnimation(this, R.anim.pop_up);
         titleTextView.startAnimation(popUpAnimation);
 
-        Button signInButton = findViewById(R.id.btn_sign_in);
+        Button signInButton = findViewById(R.id.btn_welcome_sign_in);
         Animation slideInFromLeftAnimation = AnimationUtils.loadAnimation(this, R.anim.slidein_from_left);
         signInButton.startAnimation(slideInFromLeftAnimation);
 
