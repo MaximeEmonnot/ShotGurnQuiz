@@ -48,7 +48,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public User FindUserByUsername(String username){
         Cursor c = database.query(User.TABLE,
-                new String[] { User.COLUMN_ID, User.COLUMN_USERNAME, User.COLUMN_PASSWORD},
+                new String[] { User.COLUMN_ID, User.COLUMN_USERNAME, User.COLUMN_EMAIL, User.COLUMN_PASSWORD},
                 User.COLUMN_USERNAME + " = ?", new String[]{username}, null, null, null);
 
         if (c.getCount() > 0){
@@ -58,16 +58,29 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return null;
     }
 
-    public void CreateNewUser(String username, String password){
+    public User FindUserByEmail(String email){
+        Cursor c = database.query(User.TABLE,
+                new String[] { User.COLUMN_ID, User.COLUMN_USERNAME, User.COLUMN_EMAIL, User.COLUMN_PASSWORD},
+                User.COLUMN_EMAIL + " = ?", new String[]{email}, null, null, null);
+
+        if (c.getCount() > 0){
+            c.moveToNext();
+            return new User(c);
+        }
+        return null;
+    }
+
+    public void CreateNewUser(String username, String email, String password){
         ContentValues values = new ContentValues();
         values.put(User.COLUMN_USERNAME, username);
+        values.put(User.COLUMN_EMAIL, email);
         values.put(User.COLUMN_PASSWORD, password);
         database.insert(User.TABLE, null, values);
     }
 
     public List<User> GetAllUser() {
         Cursor c = database.query(User.TABLE,
-                new String[] {User.COLUMN_ID, User.COLUMN_USERNAME, User.COLUMN_PASSWORD},
+                new String[] {User.COLUMN_ID, User.COLUMN_USERNAME, User.COLUMN_EMAIL, User.COLUMN_PASSWORD},
                 null, null, null, null, null);
         ArrayList<User> output = new ArrayList<User>();
 

@@ -36,10 +36,6 @@ public class SignInActivity extends AppCompatActivity {
                             Intent intent = new Intent(SignInActivity.this, QuizListActivity.class);
                             startActivity(intent);
                         }
-                    } else {
-                        db.CreateNewUser(usernameText, passwordText);
-                        Intent intent = new Intent(SignInActivity.this, QuizListActivity.class);
-                        startActivity(intent);
                     }
                 }
             }
