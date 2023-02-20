@@ -10,19 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".QuizListActivity"
+            android:name=".Activities.QuizListActivity"
             android:exported="false" />
         <activity
-            android:name=".SignUpActivity"
+            android:name=".Activities.SignUpActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
-        <activity android:name=".TestActivity" />
+        <activity android:name=".Activities.TestActivity" />
         <activity
-            android:name=".SignInActivity"
+            android:name=".Activities.SignInActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".WelcomeActivity"
+            android:name=".Activities.WelcomeActivity"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>

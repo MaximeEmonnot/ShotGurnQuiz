@@ -1,4 +1,4 @@
-package com.example.shotgurnquiz;
+package com.example.shotgurnquiz.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.example.shotgurnquiz.Database.DatabaseHelper;
 import com.example.shotgurnquiz.Database.Tables.User;
+import com.example.shotgurnquiz.R;
 
 public class SignInActivity extends AppCompatActivity {
 

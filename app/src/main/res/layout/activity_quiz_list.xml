@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".QuizListActivity"
-    android:orientation="vertical">
+    tools:context=".Activities.QuizListActivity"
+    android:orientation="vertical"
+    android:background="@color/colorBackground">
 
     <TextView
         android:id="@+id/themes"
@@ -20,7 +21,8 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_margin="30dp" />
+        android:layout_margin="30dp"
+        android:background="@color/colorRecyclerViewBackground" />
 
     <TextView
         android:id="@+id/popular"
@@ -36,7 +38,8 @@
         android:layout_width="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/recycle_view_horizontal"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_margin="30dp" />
+        android:layout_margin="30dp"
+        android:background="@color/colorRecyclerViewBackground" />
 
     <TextView
         android:id="@+id/most_recent"
@@ -53,7 +56,8 @@
         app:layout_constraintTop_toBottomOf="@id/recycle_view_horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constrainedHeight="true"
-        android:layout_margin="30dp" />
+        android:layout_margin="30dp"
+        android:background="@color/colorRecyclerViewBackground" />
 
 
 

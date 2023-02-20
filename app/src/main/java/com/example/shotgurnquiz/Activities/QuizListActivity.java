@@ -1,10 +1,15 @@
-package com.example.shotgurnquiz;
+package com.example.shotgurnquiz.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+
+import com.example.shotgurnquiz.Models.QuizCardModel;
+import com.example.shotgurnquiz.R;
+import com.example.shotgurnquiz.RecyclerViewConfigs.QuizCard_RecyclerViewAdapter;
+import com.example.shotgurnquiz.RecyclerViewConfigs.RecyclerView_SpacesItemDecoration;
 
 import java.util.ArrayList;
 
@@ -32,11 +37,14 @@ public class QuizListActivity extends AppCompatActivity {
 
         recyclerViewHorizontal.setAdapter(adapter);
         recyclerViewHorizontal.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+        recyclerViewHorizontal.addItemDecoration(new RecyclerView_SpacesItemDecoration(20, 20, LinearLayoutManager.HORIZONTAL));
 
         recyclerViewVertical1.setAdapter(adapter);
         recyclerViewVertical1.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
+        recyclerViewVertical1.addItemDecoration(new RecyclerView_SpacesItemDecoration(20, 20, LinearLayoutManager.VERTICAL));
 
         recyclerViewVertical2.setAdapter(adapter);
         recyclerViewVertical2.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
+        recyclerViewVertical2.addItemDecoration(new RecyclerView_SpacesItemDecoration(20, 20, LinearLayoutManager.VERTICAL));
     }
 }

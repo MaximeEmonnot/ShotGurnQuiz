@@ -10,4 +10,6 @@
     <color name="colorTextOnLight">#000000</color>
     <color name="colorGrayTextOnLight">#757575</color>
     <color name="colorSecondBackground">#ffffff</color>
+    <color name="colorQuizCardBackground">#f28500</color>
+    <color name="colorRecyclerViewBackground">#ffffff</color>
 </resources>

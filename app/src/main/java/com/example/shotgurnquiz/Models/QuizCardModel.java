@@ -1,4 +1,4 @@
-package com.example.shotgurnquiz;
+package com.example.shotgurnquiz.Models;
 
 public class QuizCardModel {
 
