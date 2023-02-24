@@ -12,4 +12,7 @@
     <color name="colorSecondBackground">#ffffff</color>
     <color name="colorQuizCardBackground">#f28500</color>
     <color name="colorRecyclerViewBackground">#ffffff</color>
+    <color name="colorSearchBarBackground">#ffffff</color>
+    <color name="colorBottomAppBar">#ffffff</color>
+    <color name="colorAddButton">#f28500</color>
 </resources>

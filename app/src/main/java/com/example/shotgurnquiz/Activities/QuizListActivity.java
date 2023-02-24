@@ -1,10 +1,17 @@
 package com.example.shotgurnquiz.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.os.Bundle;
+import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.LinearLayout;
 
 import com.example.shotgurnquiz.Models.QuizCardModel;
 import com.example.shotgurnquiz.R;
@@ -20,31 +27,85 @@ public class QuizListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz_list);
 
-        RecyclerView recyclerViewHorizontal = findViewById(R.id.recycle_view_horizontal);
-        RecyclerView recyclerViewVertical1 = findViewById(R.id.recycle_view_vertical1);
-        RecyclerView recyclerViewVertical2 = findViewById(R.id.recycle_view_vertical2);
+        RecyclerView recyclerViewPopular = findViewById(R.id.recycler_view_popular);
+        RecyclerView recyclerViewMostRecents = findViewById(R.id.recycler_view_most_recents);
+        RecyclerView recyclerViewHard = findViewById(R.id.recycler_view_hard);
+        RecyclerView recyclerViewMedium = findViewById(R.id.recycler_view_medium);
+        RecyclerView recyclerViewEasy = findViewById(R.id.recycler_view_easy);
+
+        RecyclerView recyclerViewSearch = findViewById(R.id.recycler_view_search);
+        SearchView searchBar = (SearchView) findViewById(R.id.search_bar);
 
         ArrayList<QuizCardModel> quizCards = new ArrayList<QuizCardModel>();
 
-        quizCards.add(new QuizCardModel("Quiz1"));
-        quizCards.add(new QuizCardModel("Quiz2"));
-        quizCards.add(new QuizCardModel("Quiz3"));
-        quizCards.add(new QuizCardModel("Quiz4"));
-        quizCards.add(new QuizCardModel("Quiz5"));
-        quizCards.add(new QuizCardModel("Quiz6"));
-        quizCards.add(new QuizCardModel("Quiz7"));
-        QuizCard_RecyclerViewAdapter adapter = new QuizCard_RecyclerViewAdapter(this, quizCards);
+        quizCards.add(new QuizCardModel("quiz1"));
+        quizCards.add(new QuizCardModel("quiz2"));
+        quizCards.add(new QuizCardModel("quiz3"));
+        quizCards.add(new QuizCardModel("quiz4"));
+        quizCards.add(new QuizCardModel("quiz5"));
+        quizCards.add(new QuizCardModel("quiz6"));
+        quizCards.add(new QuizCardModel("quiz7"));
+        quizCards.add(new QuizCardModel("quiz8"));
 
-        recyclerViewHorizontal.setAdapter(adapter);
-        recyclerViewHorizontal.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
-        recyclerViewHorizontal.addItemDecoration(new RecyclerView_SpacesItemDecoration(20, 20, LinearLayoutManager.HORIZONTAL));
+        recyclerViewPopular.setAdapter(new QuizCard_RecyclerViewAdapter(this, quizCards));
+        recyclerViewPopular.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+        recyclerViewPopular.addItemDecoration(new RecyclerView_SpacesItemDecoration(20, 10, LinearLayoutManager.HORIZONTAL));
 
-        recyclerViewVertical1.setAdapter(adapter);
-        recyclerViewVertical1.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
-        recyclerViewVertical1.addItemDecoration(new RecyclerView_SpacesItemDecoration(20, 20, LinearLayoutManager.VERTICAL));
+        recyclerViewMostRecents.setAdapter(new QuizCard_RecyclerViewAdapter(this, quizCards));
+        recyclerViewMostRecents.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+        recyclerViewMostRecents.addItemDecoration(new RecyclerView_SpacesItemDecoration(20, 10, LinearLayoutManager.HORIZONTAL));
 
-        recyclerViewVertical2.setAdapter(adapter);
-        recyclerViewVertical2.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
-        recyclerViewVertical2.addItemDecoration(new RecyclerView_SpacesItemDecoration(20, 20, LinearLayoutManager.VERTICAL));
+        recyclerViewHard.setAdapter(new QuizCard_RecyclerViewAdapter(this, quizCards));
+        recyclerViewHard.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+        recyclerViewHard.addItemDecoration(new RecyclerView_SpacesItemDecoration(20, 10, LinearLayoutManager.HORIZONTAL));
+
+        recyclerViewMedium.setAdapter(new QuizCard_RecyclerViewAdapter(this, quizCards));
+        recyclerViewMedium.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+        recyclerViewMedium.addItemDecoration(new RecyclerView_SpacesItemDecoration(20, 10, LinearLayoutManager.HORIZONTAL));
+
+        recyclerViewEasy.setAdapter(new QuizCard_RecyclerViewAdapter(this, quizCards));
+        recyclerViewEasy.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+        recyclerViewEasy.addItemDecoration(new RecyclerView_SpacesItemDecoration(20, 10, LinearLayoutManager.HORIZONTAL));
+
+        recyclerViewSearch.setAdapter(new QuizCard_RecyclerViewAdapter(this, quizCards));
+        recyclerViewSearch.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+        recyclerViewSearch.addItemDecoration(new RecyclerView_SpacesItemDecoration(20, 10, LinearLayoutManager.HORIZONTAL));
+
+
+        searchBar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                searchBar.setIconified(false);
+            }
+        });
+
+        searchBar.setOnSearchClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                recyclerViewSearch.setVisibility(View.VISIBLE);
+                Animation showAnimation = AnimationUtils.loadAnimation(getBaseContext(), R.anim.recycler_view_search_show);
+                recyclerViewSearch.startAnimation(showAnimation);
+            }
+        });
+
+        searchBar.setOnCloseListener(new SearchView.OnCloseListener(){
+            @Override
+            public boolean onClose() {
+                Animation showAnimation = AnimationUtils.loadAnimation(getBaseContext(), R.anim.recycler_view_search_hide);
+                recyclerViewSearch.startAnimation(showAnimation);
+
+                showAnimation.setAnimationListener(new Animation.AnimationListener() {
+                    @Override
+                    public void onAnimationStart(Animation animation) {}
+                    @Override
+                    public void onAnimationEnd(Animation animation) {
+                        recyclerViewSearch.setVisibility(View.GONE);
+                    }
+                    @Override
+                    public void onAnimationRepeat(Animation animation) {}
+                });
+                return false;
+            }
+        });
     }
 }

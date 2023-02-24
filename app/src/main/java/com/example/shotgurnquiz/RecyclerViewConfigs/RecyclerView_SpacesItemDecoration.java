@@ -7,10 +7,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class RecyclerView_SpacesItemDecoration extends RecyclerView.ItemDecoration {
-    private int horizontalCardSpace;
-    private int verticalCardSpace;
-    private final int linearLayoutOrientation;
-
     public RecyclerView_SpacesItemDecoration(int horizontalCardSpace, int verticalCardSpace, int linearLayoutOrientation) {
         this.horizontalCardSpace = horizontalCardSpace;
         this.verticalCardSpace = verticalCardSpace;
@@ -38,4 +34,7 @@ public class RecyclerView_SpacesItemDecoration extends RecyclerView.ItemDecorati
             }
         }
     }
+    private final int horizontalCardSpace;
+    private final int verticalCardSpace;
+    private final int linearLayoutOrientation;
 }

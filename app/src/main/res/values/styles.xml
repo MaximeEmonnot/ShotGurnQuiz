@@ -1,6 +1,6 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -19,6 +19,12 @@
         <item name="android:fontFamily">@font/font_kabouter</item>
         <item name="android:foreground">?attr/selectableItemBackgroundBorderless</item>
         <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="MediumTextOnLight">
+        <item name="android:textSize">25sp</item>
+        <item name="android:fontFamily">@font/font_kabouter</item>
+        <item name="android:textColor">@color/colorTextOnLight</item>
     </style>
 
 </resources>
