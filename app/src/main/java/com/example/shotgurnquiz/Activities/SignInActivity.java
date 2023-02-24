@@ -48,8 +48,7 @@ public class SignInActivity extends AppCompatActivity {
                         if (!user.GetPassword().equals(passwordText))
                             errorField.setText(getResources().getText(R.string.incorrect_password));
                         else{
-                            Intent intent = new Intent(SignInActivity.this, TestActivity.class);
-                            startActivity(intent);
+                            startActivity(new Intent(SignInActivity.this, TestActivity.class));
                         }
                     }
                 }

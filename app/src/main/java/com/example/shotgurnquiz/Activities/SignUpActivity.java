@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.shotgurnquiz.Database.DatabaseHelper;
 import com.example.shotgurnquiz.Database.Tables.User;
@@ -70,8 +71,11 @@ public class SignUpActivity extends AppCompatActivity {
                         email.setError(getResources().getText(R.string.email_already_exist));
                         email.requestFocus();
                     }
-                    else
+                    else {
                         db.CreateNewUser(usernameText, emailText, passwordText);
+                        Toast.makeText(getBaseContext(),R.string.account_successfully_created,Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(SignUpActivity.this, TestActivity.class));
+                    }
                 }
             }
         });
