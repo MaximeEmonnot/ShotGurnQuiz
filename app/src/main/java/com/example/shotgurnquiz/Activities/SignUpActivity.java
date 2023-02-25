@@ -74,7 +74,9 @@ public class SignUpActivity extends AppCompatActivity {
                     else {
                         db.CreateNewUser(usernameText, emailText, passwordText);
                         Toast.makeText(getBaseContext(),R.string.account_successfully_created,Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(SignUpActivity.this, TestActivity.class));
+                        Intent intent = new Intent(SignUpActivity.this, QuizListActivity.class);
+                        intent.putExtra("bIsConnected", true);
+                        startActivity(intent);
                     }
                 }
             }

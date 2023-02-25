@@ -42,7 +42,9 @@ public class WelcomeActivity extends AppCompatActivity {
         playOfflineButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(WelcomeActivity.this, QuizListActivity.class));
+                Intent intent = new Intent(WelcomeActivity.this, QuizListActivity.class);
+                intent.putExtra("bIsConnected", false);
+                startActivity(intent);
             }
         });
     }

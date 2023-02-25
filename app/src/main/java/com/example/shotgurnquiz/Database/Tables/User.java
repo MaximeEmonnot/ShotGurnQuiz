@@ -43,7 +43,6 @@ public class User {
     public static final String TABLE = "user";
     public static final String COLUMN_ID = "id";
     public static final String COLUMN_USERNAME = "username";
-
     public static final String COLUMN_EMAIL = "email";
     public static final String COLUMN_PASSWORD = "password";
     public static final String CREATION_QUERY = "CREATE TABLE " + TABLE

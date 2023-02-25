@@ -8,15 +8,20 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.LinearLayout;
 
 import com.example.shotgurnquiz.Models.QuizCardModel;
 import com.example.shotgurnquiz.R;
 import com.example.shotgurnquiz.RecyclerViewConfigs.QuizCard_RecyclerViewAdapter;
 import com.example.shotgurnquiz.RecyclerViewConfigs.RecyclerView_SpacesItemDecoration;
+import com.google.android.material.bottomappbar.BottomAppBar;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
@@ -27,6 +32,9 @@ public class QuizListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz_list);
 
+        Bundle bundle = getIntent().getExtras();
+        boolean bIsConnected = bundle.getBoolean("bIsConnected");
+
         RecyclerView recyclerViewPopular = findViewById(R.id.recycler_view_popular);
         RecyclerView recyclerViewMostRecents = findViewById(R.id.recycler_view_most_recents);
         RecyclerView recyclerViewHard = findViewById(R.id.recycler_view_hard);
@@ -35,6 +43,18 @@ public class QuizListActivity extends AppCompatActivity {
 
         RecyclerView recyclerViewSearch = findViewById(R.id.recycler_view_search);
         SearchView searchBar = (SearchView) findViewById(R.id.search_bar);
+
+        BottomAppBar bottomAppBar = (BottomAppBar) findViewById(R.id.bottom_app_bar);
+        Button profileButton = (Button) findViewById(R.id.profile);
+        Button leaderboardButton = (Button) findViewById(R.id.leader_board);
+        FloatingActionButton addQuizButton = (FloatingActionButton) findViewById((R.id.add_quiz));
+
+        if (!bIsConnected) {
+            bottomAppBar.setVisibility(View.GONE);
+            profileButton.setVisibility(View.GONE);
+            addQuizButton.setVisibility(View.GONE);
+            leaderboardButton.setVisibility(View.GONE);
+        }
 
         ArrayList<QuizCardModel> quizCards = new ArrayList<QuizCardModel>();
 

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -48,7 +49,9 @@ public class SignInActivity extends AppCompatActivity {
                         if (!user.GetPassword().equals(passwordText))
                             errorField.setText(getResources().getText(R.string.incorrect_password));
                         else{
-                            startActivity(new Intent(SignInActivity.this, TestActivity.class));
+                            Intent intent = new Intent(SignInActivity.this, QuizListActivity.class);
+                            intent.putExtra("bIsConnected", true);
+                            startActivity(intent);
                         }
                     }
                 }
