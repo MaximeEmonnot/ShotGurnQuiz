@@ -4,13 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.TestActivity">
-
-    <TextView
-        android:id="@+id/quizlist_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Quiz List Works!"
-        tools:ignore="MissingConstraints" />
+    tools:context=".Activities.ProfileActivity">
 
 </androidx.constraintlayout.widget.ConstraintLayout>

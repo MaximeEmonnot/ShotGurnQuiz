@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
@@ -125,6 +126,33 @@ public class QuizListActivity extends AppCompatActivity {
                     public void onAnimationRepeat(Animation animation) {}
                 });
                 return false;
+            }
+        });
+
+        profileButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(QuizListActivity.this, ProfileActivity.class);
+
+                startActivity(intent);
+            }
+        });
+
+        leaderboardButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(QuizListActivity.this, LeaderboardActivity.class);
+
+                startActivity(intent);
+            }
+        });
+
+        addQuizButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(QuizListActivity.this, AddQuizActivity.class);
+
+                startActivity(intent);
             }
         });
     }
