@@ -6,4 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".Activities.ProfileActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/profile_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum"
+        tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

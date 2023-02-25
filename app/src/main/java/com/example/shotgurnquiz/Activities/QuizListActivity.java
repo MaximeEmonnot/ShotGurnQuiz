@@ -56,6 +56,9 @@ public class QuizListActivity extends AppCompatActivity {
             addQuizButton.setVisibility(View.GONE);
             leaderboardButton.setVisibility(View.GONE);
         }
+        else {
+            username = bundle.getString("username");
+        }
 
         ArrayList<QuizCardModel> quizCards = new ArrayList<QuizCardModel>();
 
@@ -133,7 +136,7 @@ public class QuizListActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(QuizListActivity.this, ProfileActivity.class);
-
+                intent.putExtra("username", username);
                 startActivity(intent);
             }
         });
@@ -142,7 +145,7 @@ public class QuizListActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(QuizListActivity.this, LeaderboardActivity.class);
-
+                intent.putExtra("username", username);
                 startActivity(intent);
             }
         });
@@ -151,9 +154,11 @@ public class QuizListActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(QuizListActivity.this, AddQuizActivity.class);
-
+                intent.putExtra("username", username);
                 startActivity(intent);
             }
         });
     }
+
+    private String username;
 }

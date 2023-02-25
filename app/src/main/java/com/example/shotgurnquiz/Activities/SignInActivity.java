@@ -51,6 +51,7 @@ public class SignInActivity extends AppCompatActivity {
                         else{
                             Intent intent = new Intent(SignInActivity.this, QuizListActivity.class);
                             intent.putExtra("bIsConnected", true);
+                            intent.putExtra("username", user.GetUsername());
                             startActivity(intent);
                         }
                     }

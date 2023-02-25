@@ -46,6 +46,18 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
+    public User FindUserByID(int id){
+        Cursor c = database.query(User.TABLE,
+                new String[] { User.COLUMN_ID, User.COLUMN_USERNAME, User.COLUMN_EMAIL, User.COLUMN_PASSWORD},
+                User.COLUMN_ID + " = ?", new String[]{Integer.toString(id)}, null, null, null);
+
+        if (c.getCount() > 0){
+            c.moveToNext();
+            return new User(c);
+        }
+        return null;
+    }
+
     public User FindUserByUsername(String username){
         Cursor c = database.query(User.TABLE,
                 new String[] { User.COLUMN_ID, User.COLUMN_USERNAME, User.COLUMN_EMAIL, User.COLUMN_PASSWORD},
@@ -87,6 +99,25 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         while (c.moveToNext()){
             output.add(new User(c));
         }
+
+        c.close();
+        return output;
+    }
+
+    public List<Score> GetScores() {
+        Cursor c = database.rawQuery("SELECT " + Score.COLUMN_ID +
+                ", " + Quiz.COLUMN_TITLE +
+                ", " + User.COLUMN_USERNAME +
+                ", " + Score.COLUMN_SCORE +
+                " FROM " + Score.TABLE + " NATURAL JOIN " + Quiz.TABLE + " NATURAL JOIN " + User.TABLE, null);
+
+        ArrayList<Score> output = new ArrayList<Score>();
+
+        while (c.moveToNext()){
+            output.add(new Score(c));
+        }
+
+        c.close();
         return output;
     }
 

@@ -76,6 +76,7 @@ public class SignUpActivity extends AppCompatActivity {
                         Toast.makeText(getBaseContext(),R.string.account_successfully_created,Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(SignUpActivity.this, QuizListActivity.class);
                         intent.putExtra("bIsConnected", true);
+                        intent.putExtra("username", usernameText);
                         startActivity(intent);
                     }
                 }
