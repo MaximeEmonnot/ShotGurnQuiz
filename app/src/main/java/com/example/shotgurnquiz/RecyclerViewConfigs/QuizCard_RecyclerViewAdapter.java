@@ -45,7 +45,7 @@ public class QuizCard_RecyclerViewAdapter extends RecyclerView.Adapter<QuizCard_
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            textViewTitle = itemView.findViewById(R.id.quiz_title);
+            textViewTitle = itemView.findViewById(R.id.recycler_view_quiz_title);
         }
     }
     private Context context;

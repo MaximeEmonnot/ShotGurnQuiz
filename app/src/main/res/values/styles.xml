@@ -27,4 +27,10 @@
         <item name="android:textColor">@color/colorTextOnLight</item>
     </style>
 
+    <style name="LargeTextOnLight">
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">@font/font_kabouter</item>
+        <item name="android:textColor">@color/colorTextOnLight</item>
+    </style>
+
 </resources>
