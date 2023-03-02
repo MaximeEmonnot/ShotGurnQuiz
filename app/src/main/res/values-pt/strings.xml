@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShotGurnQuiz</string>
+    <string name="title">Shot, Gurn, Quiz !</string>
+    <string name="play_offline">Jogar offline</string>
+    <string name="sign_in">Entrar</string>
+    <string name="sign_up">Inscrever-se</string>
+    <string name="email">E-mail</string>
+    <string name="confirm_email">Confirmar e-mail</string>
+    <string name="username">Nome de usuário</string>
+    <string name="password">Senha</string>
+    <string name="confirm_password">Confirme sua senha</string>
+    <string name="create_account">Criar uma conta</string>
+    <string name="no_account">Não tem uma conta ainda ?</string>
+    <string name="empty_field">Preencha este campo por favor</string>
+    <string name="incorrect_username">Nome de usuário incorreto</string>
+    <string name="incorrect_password">Senha incorreta</string>
+    <string name="fields_not_match">Os campos não correspondem</string>
+    <string name="username_already_exist">Este nome de usuário já está em uso</string>
+    <string name="email_already_exist">Já existe um usuário com este e-mail</string>
+    <string name="email_not_valid">Use um endereço de email válido por favor</string>
+    <string name="leader_board">Entre os melhores</string>
+    <string name="profile">Perfil</string>
+    <string name="search_here">Procure aqui</string>
+    <string name="popular">Popular</string>
+    <string name="most_recents">Mais recente</string>
+    <string name="easy">Fácil</string>
+    <string name="medium">Intermediário</string>
+    <string name="hard">Difícil</string>
+    <string name="account_successfully_created">Sua conta foi criada com sucesso</string>
+</resources>

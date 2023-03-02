@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShotGurnQuiz</string>
+    <string name="title">Shot, Gurn, Quiz !</string>
+    <string name="play_offline">オフラインでプレイする</string>
+    <string name="sign_in">ログイン</string>
+    <string name="sign_up">サインアップ</string>
+    <string name="email">Eメール</string>
+    <string name="confirm_email">Eメール確認</string>
+    <string name="username">ユーザー名</string>
+    <string name="password">パスワード</string>
+    <string name="confirm_password">パスワードを認証する</string>
+    <string name="create_account">アカウントを作成する</string>
+    <string name="no_account">まだアカウントを持っていませんか?</string>
+    <string name="empty_field">このフィールドを記入してください</string>
+    <string name="incorrect_username">ユーザー名が正しくありません</string>
+    <string name="incorrect_password">パスワードが正しくありません</string>
+    <string name="fields_not_match">フィールドが一致しません</string>
+    <string name="username_already_exist">このユーザー名は既に使われています</string>
+    <string name="email_already_exist">このメールアドレスを持つユーザーは既に存在します</string>
+    <string name="email_not_valid">有効なメールアドレスを使用してください</string>
+    <string name="leader_board">リーダーボード</string>
+    <string name="profile">プロフィール</string>
+    <string name="search_here">検索</string>
+    <string name="popular">人気</string>
+    <string name="most_recents">最新</string>
+    <string name="easy">簡単</string>
+    <string name="medium">中級</string>
+    <string name="hard">難しい</string>
+    <string name="account_successfully_created">アカウントが正常に作成されました</string>
+</resources>

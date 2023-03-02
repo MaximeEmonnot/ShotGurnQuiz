@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShotGurnQuiz</string>
+    <string name="title">Shot, Gurn, Quiz !</string>
+    <string name="play_offline">Cheza Nje ya Mtandao</string>
+    <string name="sign_in">Weka sahihi</string>
+    <string name="sign_up">Jisajili</string>
+    <string name="email">Barua pepe</string>
+    <string name="confirm_email">Thibitisha Barua pepe</string>
+    <string name="username">Jina la mtumiaji</string>
+    <string name="password">Nenosiri</string>
+    <string name="confirm_password">Thibitisha nenosiri</string>
+    <string name="create_account">Tengeneza akaunti</string>
+    <string name="no_account">Je, bado huna akaunti?</string>
+    <string name="empty_field">Tafadhali jaza sehemu hii</string>
+    <string name="incorrect_username">Jina la mtumiaji lisilo sahihi</string>
+    <string name="incorrect_password">Nenosiri si sahihi</string>
+    <string name="fields_not_match">Viwanja havilingani</string>
+    <string name="username_already_exist">Jina hili la mtumiaji tayari limechukuliwa</string>
+    <string name="email_already_exist">Mtumiaji aliye na barua pepe hii tayari yupo</string>
+    <string name="email_not_valid">Tafadhali tumia barua pepe halali</string>
+    <string name="leader_board">Bodi ya viongozi</string>
+    <string name="profile">Wasifu</string>
+    <string name="search_here">Tafuta hapa</string>
+    <string name="popular">Maarufu</string>
+    <string name="most_recents">Karibuni</string>
+    <string name="easy">Rahisi</string>
+    <string name="medium">Kati</string>
+    <string name="hard">Ngumu</string>
+    <string name="account_successfully_created">Akaunti yako imeundwa</string>
+</resources>

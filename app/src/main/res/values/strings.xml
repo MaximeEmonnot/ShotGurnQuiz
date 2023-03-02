@@ -22,9 +22,9 @@
     <string name="profile">Profile</string>
     <string name="search_here">Search here</string>
     <string name="popular">Popular</string>
-    <string name="most_recents">Most recents</string>
+    <string name="most_recents">Latest</string>
     <string name="easy">Easy</string>
-    <string name="medium">Medium</string>
-    <string name="hard">Hard</string>
+    <string name="medium">Intermediate</string>
+    <string name="hard">Difficult</string>
     <string name="account_successfully_created">Your account has been successfully created</string>
 </resources>

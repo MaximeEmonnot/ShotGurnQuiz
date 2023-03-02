@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShotGurnQuiz</string>
+    <string name="title">Shot, Gurn, Quiz !</string>
+    <string name="play_offline">Играть в автономном режиме</string>
+    <string name="sign_in">Войти</string>
+    <string name="sign_up">Зарегистрироваться</string>
+    <string name="email">Электронная почта</string>
+    <string name="confirm_email">Подтвердите адрес электронной почты</string>
+    <string name="username">Имя пользователя</string>
+    <string name="password">Пароль</string>
+    <string name="confirm_password">Подтвердите пароль</string>
+    <string name="create_account">Зарегистрироваться</string>
+    <string name="no_account">У вас еще нет аккаунта?</string>
+    <string name="empty_field">Пожалуйста, заполните это поле</string>
+    <string name="incorrect_username">Неверное имя пользователя</string>
+    <string name="incorrect_password">неверный пароль</string>
+    <string name="fields_not_match">Поля не совпадают</string>
+    <string name="username_already_exist">Это имя пользователя уже занято</string>
+    <string name="email_already_exist">Пользователь с таким адресом электронной почты уже существует</string>
+    <string name="email_not_valid">Пожалуйста, используйте действующий адрес электронной почты</string>
+    <string name="leader_board">Таблица лидеров</string>
+    <string name="profile">Профиль</string>
+    <string name="search_here">Поищи здесь</string>
+    <string name="popular">Популярный</string>
+    <string name="most_recents">Последний</string>
+    <string name="easy">Легкий</string>
+    <string name="medium">Средний</string>
+    <string name="hard">Трудный</string>
+    <string name="account_successfully_created">Ваша учетная запись успешно создана</string>
+</resources>
