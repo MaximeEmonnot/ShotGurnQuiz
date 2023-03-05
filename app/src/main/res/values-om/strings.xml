@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShotGurnQuiz</string>
+    <string name="title">Shot, Gurn, Quiz !</string>
+    <string name="play_offline">Toora Alaa Taphadhu</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Galmaa\'i</string>
+    <string name="email">Imeelii</string>
+    <string name="confirm_email">Imeelii mirkaneessuu</string>
+    <string name="username">Maqaa fayyadamaa</string>
+    <string name="password">Jecha iccitii</string>
+    <string name="confirm_password">Jecha icciitii mirkaneessuu</string>
+    <string name="create_account">Akkaawuntii uumuu</string>
+    <string name="no_account">Ammatti account hin qabduu ?</string>
+    <string name="empty_field">Mee dirree kana guutaa</string>
+    <string name="incorrect_username">Maqaa fayyadamaa sirrii hin taane</string>
+    <string name="incorrect_password">Jecha icciitii sirrii hin taane</string>
+    <string name="fields_not_match">Dirreewwan wal hin simne</string>
+    <string name="username_already_exist">Maqaan fayyadamaa kun duraan fudhatameera</string>
+    <string name="email_already_exist">Fayyadamaan email kana qabu duraan jira</string>
+    <string name="email_not_valid">Maaloo teessoo imeelii sirrii ta\'e fayyadamaa</string>
+    <string name="leader_board">Gabatee Hooggansaa</string>
+    <string name="profile">Ibsama</string>
+    <string name="search_here">As irraa barbaadaa</string>
+    <string name="popular">Beekamaa</string>
+    <string name="most_recents">Kan dhiyeenyaa</string>
+    <string name="easy">Salphaa</string>
+    <string name="medium">Giddugaleessa</string>
+    <string name="hard">Rakkisaa</string>
+    <string name="account_successfully_created">Akkaawuntii keessan milkaa\'inaan uumameera</string>
+</resources>

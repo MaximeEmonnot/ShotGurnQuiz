@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShotGurnQuiz</string>
+    <string name="title">Shot, Gurn, Quiz !</string>
+    <string name="play_offline">שחק במצב לא מקוון</string>
+    <string name="sign_in">להתחבר</string>
+    <string name="sign_up">הירשם</string>
+    <string name="email">אימייל</string>
+    <string name="confirm_email">אשר אימייל</string>
+    <string name="username">שם משתמש</string>
+    <string name="password">סיסמה</string>
+    <string name="confirm_password">אשר סיסמה</string>
+    <string name="create_account">צור חשבון</string>
+    <string name="no_account">אין לך עדיין חשבון?</string>
+    <string name="empty_field">אנא מלא שדה זה</string>
+    <string name="incorrect_username">שם משתמש שגוי</string>
+    <string name="incorrect_password">סיסמא לא נכונה</string>
+    <string name="fields_not_match">השדות אינם תואמים</string>
+    <string name="username_already_exist">שם המשתמש הזה כבר תפוס</string>
+    <string name="email_already_exist">משתמש עם אימייל זה כבר קיים</string>
+    <string name="email_not_valid">אנא השתמש בכתובת דוא"ל חוקית</string>
+    <string name="leader_board">Leaderboard</string>
+    <string name="profile">פּרוֹפִיל</string>
+    <string name="search_here">חפש כאן</string>
+    <string name="popular">פופולרי</string>
+    <string name="most_recents">הכי מאוחר</string>
+    <string name="easy">קַל</string>
+    <string name="medium">ביניים</string>
+    <string name="hard">קָשֶׁה</string>
+    <string name="account_successfully_created">החשבון שלך נוצר בהצלחה</string>
+</resources>

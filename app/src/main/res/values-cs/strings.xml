@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShotGurnQuiz</string>
+    <string name="title">Shot, Gurn, Quiz !</string>
+    <string name="play_offline">Hrát offline</string>
+    <string name="sign_in">Přihlásit se</string>
+    <string name="sign_up">Přihlásit se</string>
+    <string name="email">E-mailem</string>
+    <string name="confirm_email">Potvrdit email</string>
+    <string name="username">Uživatelské jméno</string>
+    <string name="password">Heslo</string>
+    <string name="confirm_password">Potvrďte heslo</string>
+    <string name="create_account">Vytvořit účet</string>
+    <string name="no_account">Ještě nemáte účet?</string>
+    <string name="empty_field">Prosím, vyplňte toto pole</string>
+    <string name="incorrect_username">Nesprávné uživatelské jméno</string>
+    <string name="incorrect_password">Nesprávné heslo</string>
+    <string name="fields_not_match">Pole se neshodují</string>
+    <string name="username_already_exist">Toto uživatelské jméno je již obsazeno</string>
+    <string name="email_already_exist">Uživatel s tímto e-mailem již existuje</string>
+    <string name="email_not_valid">Použijte prosím platnou e-mailovou adresu</string>
+    <string name="leader_board">Žebříček</string>
+    <string name="profile">Profil</string>
+    <string name="search_here">Hledej tady</string>
+    <string name="popular">Oblíbený</string>
+    <string name="most_recents">Nejnovější</string>
+    <string name="easy">Snadný</string>
+    <string name="medium">středně pokročilí</string>
+    <string name="hard">Obtížný</string>
+    <string name="account_successfully_created">Váš účet byl úspěšně založen</string>
+</resources>

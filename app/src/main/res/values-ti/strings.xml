@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShotGurnQuiz</string>
+    <string name="title">Shot, Gurn, Quiz !</string>
+    <string name="play_offline">ካብ መስመር ወጻኢ ተጻወት።</string>
+    <string name="sign_in">ኣብ ውሽጢ ምእታው</string>
+    <string name="sign_up">ተመዝገብ</string>
+    <string name="email">ኢመይል</string>
+    <string name="confirm_email">ኢመይል ኣረጋግጽ</string>
+    <string name="username">ስም ተጠቃሚ</string>
+    <string name="password">መሕለፊ ቓል</string>
+    <string name="confirm_password">ምልክት ቃል ኣረጋግጽ</string>
+    <string name="create_account">ኣካውንት ምፍጣር</string>
+    <string name="no_account">ገና ኣካውንት የብልካን ?</string>
+    <string name="empty_field">በጃኹም ነዚ ቦታ ምልኣዮ</string>
+    <string name="incorrect_username">ጌጋ ስም ተጠቃሚ</string>
+    <string name="incorrect_password">ጌጋ ምልክት ቃል</string>
+    <string name="fields_not_match">ሜዳታት ኣይሰማምዑን እዮም።</string>
+    <string name="username_already_exist">እዚ ናይ ተጠቃሚ ስም ድሮ ተወሰደ</string>
+    <string name="email_already_exist">እዚ ኢመይል ዘለዎ ተጠቃሚ ድሮ ኣሎ።</string>
+    <string name="email_not_valid">በጃኹም ቅኑዕ ኢመይል ኣድራሻ ተጠቐሙ</string>
+    <string name="leader_board">ሊደርቦርድ</string>
+    <string name="profile">መግለፂ</string>
+    <string name="search_here">ኣብዚ ድለዩ።</string>
+    <string name="popular">ህቡብ</string>
+    <string name="most_recents">ናይ ቀረባ እዋን</string>
+    <string name="easy">ቀሊል</string>
+    <string name="medium">ማእኸላይ</string>
+    <string name="hard">ከቢድ</string>
+    <string name="account_successfully_created">ኣካውንትካ ብዓወት ተፈጢሩ ኣሎ።</string>
+</resources>

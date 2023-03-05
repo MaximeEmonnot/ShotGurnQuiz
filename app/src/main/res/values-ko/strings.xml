@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShotGurnQuiz</string>
+    <string name="title">Shot, Gurn, Quiz !</string>
+    <string name="play_offline">오프라인 플레이</string>
+    <string name="sign_in">로그인</string>
+    <string name="sign_up">가입하기</string>
+    <string name="email">이메일</string>
+    <string name="confirm_email">이메일 확인</string>
+    <string name="username">사용자 이름</string>
+    <string name="password">비밀번호</string>
+    <string name="confirm_password">비밀번호 확인</string>
+    <string name="create_account">계정 만들기</string>
+    <string name="no_account">아직 계정이 없습니까?</string>
+    <string name="empty_field">이 필드를 작성하십시오</string>
+    <string name="incorrect_username">잘못된 사용자 이름</string>
+    <string name="incorrect_password">잘못된 비밀번호</string>
+    <string name="fields_not_match">필드가 일치하지 않습니다</string>
+    <string name="username_already_exist">이미 사용 중인 사용자 이름입니다.</string>
+    <string name="email_already_exist">이 이메일을 사용하는 사용자가 이미 존재합니다.</string>
+    <string name="email_not_valid">유효한 이메일 주소를 사용하십시오</string>
+    <string name="leader_board">리더보드</string>
+    <string name="profile">프로필</string>
+    <string name="search_here">여기에서 검색</string>
+    <string name="popular">인기 있는</string>
+    <string name="most_recents">최신</string>
+    <string name="easy">쉬운</string>
+    <string name="medium">중급</string>
+    <string name="hard">어려운</string>
+    <string name="account_successfully_created">당신의 계정이 성공적으로 생성되었습니다</string>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShotGurnQuiz</string>
+    <string name="title">Shot, Gurn, Quiz !</string>
+    <string name="play_offline">Խաղալ անցանց</string>
+    <string name="sign_in">Մուտք գործել</string>
+    <string name="sign_up">Գրանցվել</string>
+    <string name="email">Էլ</string>
+    <string name="confirm_email">Հաստատեք էլ</string>
+    <string name="username">Օգտագործողի անունը</string>
+    <string name="password">Գաղտնաբառ</string>
+    <string name="confirm_password">Հաստատել գաղտնաբառը</string>
+    <string name="create_account">Գրանցվել</string>
+    <string name="no_account">Դեռ չունե՞ք հաշիվ:</string>
+    <string name="empty_field">Խնդրում ենք լրացնել այս դաշտը</string>
+    <string name="incorrect_username">Սխալ օգտվողի անուն</string>
+    <string name="incorrect_password">սխալ գաղտնաբառ</string>
+    <string name="fields_not_match">Դաշտերը չեն համընկնում</string>
+    <string name="username_already_exist">Այս օգտանունն արդեն վերցված է</string>
+    <string name="email_already_exist">Այս էլփոստով օգտվող արդեն գոյություն ունի</string>
+    <string name="email_not_valid">Խնդրում ենք օգտագործել վավեր էլփոստի հասցե</string>
+    <string name="leader_board">Առաջատար աղյուսակ</string>
+    <string name="profile">Անձնագիր</string>
+    <string name="search_here">Որոնել այստեղ</string>
+    <string name="popular">Հանրաճանաչ</string>
+    <string name="most_recents">Վերջին</string>
+    <string name="easy">Հեշտ</string>
+    <string name="medium">Միջանկյալ</string>
+    <string name="hard">Դժվար</string>
+    <string name="account_successfully_created">Ձեր հաշիվը հաջողությամբ ստեղծվել է</string>
+</resources>

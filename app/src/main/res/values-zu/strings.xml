@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShotGurnQuiz</string>
+    <string name="title">Shot, Gurn, Quiz !</string>
+    <string name="play_offline">Dlala ungaxhunyiwe ku-inthanethi</string>
+    <string name="sign_in">Ngena ngemvume</string>
+    <string name="sign_up">bhalisela</string>
+    <string name="email">I-imeyili</string>
+    <string name="confirm_email">Qinisela i-Email</string>
+    <string name="username">Igama lomsebenzisi</string>
+    <string name="password">Iphasiwedi</string>
+    <string name="confirm_password">Qinisekisa Iphasiwedi</string>
+    <string name="create_account">Yenza i-akhawunti</string>
+    <string name="no_account">Awunayo i-akhawunti okwamanje?</string>
+    <string name="empty_field">Sicela ugcwalise le nkambu</string>
+    <string name="incorrect_username">Igama lomsebenzisi elingalungile</string>
+    <string name="incorrect_password">Iphasiwedi engalungile</string>
+    <string name="fields_not_match">Izinkambu azifani</string>
+    <string name="username_already_exist">Leli gama lomsebenzisi selithathiwe</string>
+    <string name="email_already_exist">Umsebenzisi onale imeyili usevele ekhona</string>
+    <string name="email_not_valid">Sicela usebenzise ikheli le-imeyili elivumelekile</string>
+    <string name="leader_board">Ibhodi yabaphambili</string>
+    <string name="profile">Iphrofayela</string>
+    <string name="search_here">Sesha lapha</string>
+    <string name="popular">Okudumile</string>
+    <string name="most_recents">Okwakamuva</string>
+    <string name="easy">Kulula</string>
+    <string name="medium">Ophakathi</string>
+    <string name="hard">Kunzima</string>
+    <string name="account_successfully_created">I-akhawunti yakho idalwe ngempumelelo</string>
+</resources>

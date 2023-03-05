@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShotGurnQuiz</string>
+    <string name="title">Shot, Gurn, Quiz !</string>
+    <string name="play_offline">Spille offline</string>
+    <string name="sign_in">Logg inn</string>
+    <string name="sign_up">Melde deg på</string>
+    <string name="email">E-post</string>
+    <string name="confirm_email">Bekreft epost</string>
+    <string name="username">Brukernavn</string>
+    <string name="password">Passord</string>
+    <string name="confirm_password">Bekreft passord</string>
+    <string name="create_account">Opprett konto</string>
+    <string name="no_account">Har du ikke en konto ennå?</string>
+    <string name="empty_field">Vennligst fyll ut dette feltet</string>
+    <string name="incorrect_username">Feil brukernavn</string>
+    <string name="incorrect_password">feil passord</string>
+    <string name="fields_not_match">Feltene samsvarer ikke</string>
+    <string name="username_already_exist">Dette brukernavnet er allerede tatt</string>
+    <string name="email_already_exist">Det finnes allerede en bruker med denne e-postadressen</string>
+    <string name="email_not_valid">Vennligst bruk en gyldig e-postadresse</string>
+    <string name="leader_board">Leaderboard</string>
+    <string name="profile">Profil</string>
+    <string name="search_here">Søk her</string>
+    <string name="popular">Populær</string>
+    <string name="most_recents">Siste</string>
+    <string name="easy">Lett</string>
+    <string name="medium">Middels</string>
+    <string name="hard">Vanskelig</string>
+    <string name="account_successfully_created">din konto har blitt opprettet</string>
+</resources>

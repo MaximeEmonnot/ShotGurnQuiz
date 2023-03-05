@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShotGurnQuiz</string>
+    <string name="title">Shot, Gurn, Quiz !</string>
+    <string name="play_offline">Play Aisinipo</string>
+    <string name="sign_in">Wọle</string>
+    <string name="sign_up">Forukọsilẹ</string>
+    <string name="email">Imeeli</string>
+    <string name="confirm_email">Jẹrisi imeeli</string>
+    <string name="username">Orukọ olumulo</string>
+    <string name="password">Ọrọigbaniwọle</string>
+    <string name="confirm_password">So ni pato orukoabawole re</string>
+    <string name="create_account">Se akanti fun ra re</string>
+    <string name="no_account">Ṣe o ko ni akọọlẹ kan sibẹsibẹ?</string>
+    <string name="empty_field">Jọwọ fọwọsi aaye yii</string>
+    <string name="incorrect_username">Orukọ olumulo ti ko tọ</string>
+    <string name="incorrect_password">Ọrọigbaniwọle ti ko tọ</string>
+    <string name="fields_not_match">Awọn aaye ko baramu</string>
+    <string name="username_already_exist">Orukọ olumulo yii ti gba tẹlẹ</string>
+    <string name="email_already_exist">Olumulo pẹlu imeeli yii ti wa tẹlẹ</string>
+    <string name="email_not_valid">Jọwọ lo adirẹsi imeeli to wulo</string>
+    <string name="leader_board">Atẹle olori</string>
+    <string name="profile">Profaili</string>
+    <string name="search_here">Wa nibi</string>
+    <string name="popular">Gbajumo</string>
+    <string name="most_recents">Titun</string>
+    <string name="easy">Rọrun</string>
+    <string name="medium">Agbedemeji</string>
+    <string name="hard">O le</string>
+    <string name="account_successfully_created">A ti ṣẹda akọọlẹ rẹ ni aṣeyọri</string>
+</resources>

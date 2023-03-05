@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShotGurnQuiz</string>
+    <string name="title">Shot, Gurn, Quiz !</string>
+    <string name="play_offline">Παίξε εκτός σύνδεσης</string>
+    <string name="sign_in">Συνδεθείτε</string>
+    <string name="sign_up">Εγγραφείτε</string>
+    <string name="email">ΗΛΕΚΤΡΟΝΙΚΗ ΔΙΕΥΘΥΝΣΗ</string>
+    <string name="confirm_email">Επιβεβαίωση διεύθυνσης ηλεκτρονικού ταχυδρομείου</string>
+    <string name="username">Όνομα χρήστη</string>
+    <string name="password">Κωδικός πρόσβασης</string>
+    <string name="confirm_password">Επιβεβαίωση Κωδικού</string>
+    <string name="create_account">Δημιουργήστε λογαριασμό</string>
+    <string name="no_account">Δεν έχετε λογαριασμό ακόμα;</string>
+    <string name="empty_field">Παρακαλώ συμπληρώστε αυτό το πεδίο</string>
+    <string name="incorrect_username">Λανθασμένο όνομα χρήστη</string>
+    <string name="incorrect_password">Λάθος κωδικός</string>
+    <string name="fields_not_match">Τα πεδία δεν ταιριάζουν</string>
+    <string name="username_already_exist">Αυτό το όνομα χρήστη έχει ήδη ληφθεί</string>
+    <string name="email_already_exist">Υπάρχει ήδη χρήστης με αυτό το email</string>
+    <string name="email_not_valid">Χρησιμοποιήστε μια έγκυρη διεύθυνση email</string>
+    <string name="leader_board">Leaderboard</string>
+    <string name="profile">Προφίλ</string>
+    <string name="search_here">Ψάξε εδώ</string>
+    <string name="popular">Δημοφιλής</string>
+    <string name="most_recents">Αργότερο</string>
+    <string name="easy">Ανετα</string>
+    <string name="medium">Ενδιάμεσος</string>
+    <string name="hard">Δύσκολος</string>
+    <string name="account_successfully_created">Ο λογαριασμός σας δημιουργήθηκε επιτυχώς</string>
+</resources>

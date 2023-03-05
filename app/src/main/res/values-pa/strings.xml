@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShotGurnQuiz</string>
+    <string name="title">Shot, Gurn, Quiz !</string>
+    <string name="play_offline">ਔਫਲਾਈਨ ਖੇਡੋ</string>
+    <string name="sign_in">ਸਾਈਨ - ਇਨ</string>
+    <string name="sign_up">ਸਾਇਨ ਅਪ</string>
+    <string name="email">ਈ - ਮੇਲ</string>
+    <string name="confirm_email">ਈਮੇਲ ਦੀ ਪੁਸ਼ਟੀ ਕਰਨਾ</string>
+    <string name="username">ਯੂਜ਼ਰਨੇਮ</string>
+    <string name="password">ਪਾਸਵਰਡ</string>
+    <string name="confirm_password">ਪਾਸਵਰਡ ਪੱਕਾ ਕਰੋ</string>
+    <string name="create_account">ਖਾਤਾ ਬਣਾਉ</string>
+    <string name="no_account">ਅਜੇ ਤੱਕ ਕੋਈ ਖਾਤਾ ਨਹੀਂ ਹੈ?</string>
+    <string name="empty_field">ਕਿਰਪਾ ਕਰਕੇ ਇਸ ਖੇਤਰ ਨੂੰ ਭਰੋ</string>
+    <string name="incorrect_username">ਗਲਤ ਵਰਤੋਂਕਾਰ ਨਾਮ</string>
+    <string name="incorrect_password">ਗਲਤ ਪਾਸਵਰਡ</string>
+    <string name="fields_not_match">ਖੇਤ ਮੇਲ ਨਹੀਂ ਖਾਂਦੇ</string>
+    <string name="username_already_exist">ਇਹ ਉਪ੍ਯੋਗ੍ਕਰਤਾ ਨਾਮ ਪਹਿਲਾਂ ਹੀ ਵਰਤੋਂ ਵਿਚ ਹੈ</string>
+    <string name="email_already_exist">ਇਸ ਈਮੇਲ ਵਾਲਾ ਇੱਕ ਉਪਭੋਗਤਾ ਪਹਿਲਾਂ ਹੀ ਮੌਜੂਦ ਹੈ</string>
+    <string name="email_not_valid">ਕਿਰਪਾ ਕਰਕੇ ਇੱਕ ਵੈਧ ਈਮੇਲ ਪਤਾ ਵਰਤੋ</string>
+    <string name="leader_board">ਲੀਡਰਬੋਰਡ</string>
+    <string name="profile">ਪ੍ਰੋਫਾਈਲ</string>
+    <string name="search_here">ਇੱਥੇ ਖੋਜ ਕਰੋ</string>
+    <string name="popular">ਪ੍ਰਸਿੱਧ</string>
+    <string name="most_recents">ਤਾਜ਼ਾ</string>
+    <string name="easy">ਆਸਾਨ</string>
+    <string name="medium">ਵਿਚਕਾਰਲਾ</string>
+    <string name="hard">ਔਖਾ</string>
+    <string name="account_successfully_created">ਤੁਹਾਡਾ ਖਾਤਾ ਸਫਲਤਾਪੂਰਵਕ ਬਣਾਇਆ ਗਿਆ ਹੈ</string>
+</resources>

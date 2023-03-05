@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShotGurnQuiz</string>
+    <string name="title">Shot, Gurn, Quiz !</string>
+    <string name="play_offline">Play Offline</string>
+    <string name="sign_in">Soo gal</string>
+    <string name="sign_up">Isdiiwaangeli</string>
+    <string name="email">iimaylka</string>
+    <string name="confirm_email">Xaqiiji iimaylka</string>
+    <string name="username">Magaca isticmaale</string>
+    <string name="password">Furaha</string>
+    <string name="confirm_password">Xaqiiji erayga sirta ah</string>
+    <string name="create_account">Akoon samee</string>
+    <string name="no_account">Weli xisaab ma yeelan?</string>
+    <string name="empty_field">Fadlan buuxi goobtan</string>
+    <string name="incorrect_username">Magaca isticmaale ee khaldan</string>
+    <string name="incorrect_password">kalmadda sirta ahi waa khalad</string>
+    <string name="fields_not_match">Garoomadu kuma eka</string>
+    <string name="username_already_exist">Magaca isticmaalaha waa la qaatay</string>
+    <string name="email_already_exist">Isticmaale iimaylkan wata ayaa horay u jiray</string>
+    <string name="email_not_valid">Fadlan isticmaal ciwaan email sax ah</string>
+    <string name="leader_board">Hoggaanka</string>
+    <string name="profile">Profile</string>
+    <string name="search_here">Halkan ka raadi</string>
+    <string name="popular">caanka ah</string>
+    <string name="most_recents">Ugu dambeeyay</string>
+    <string name="easy">Fudud</string>
+    <string name="medium">Dhexdhexaad</string>
+    <string name="hard">Adag</string>
+    <string name="account_successfully_created">Koontadaada si guul leh ayaa loo sameeyay</string>
+</resources>

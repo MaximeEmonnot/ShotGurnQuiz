@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShotGurnQuiz</string>
+    <string name="title">Shot, Gurn, Quiz !</string>
+    <string name="play_offline">ऑफलाईन खेळा</string>
+    <string name="sign_in">साइन इन करा</string>
+    <string name="sign_up">साइन अप करा</string>
+    <string name="email">ईमेल</string>
+    <string name="confirm_email">ईमेलची पुष्टी करा</string>
+    <string name="username">वापरकर्तानाव</string>
+    <string name="password">पासवर्ड</string>
+    <string name="confirm_password">पासवर्डची पुष्टी करा</string>
+    <string name="create_account">खाते तयार करा</string>
+    <string name="no_account">अजून खाते नाही?</string>
+    <string name="empty_field">कृपया हे फील्ड भरा</string>
+    <string name="incorrect_username">चुकीचे वापरकर्तानाव</string>
+    <string name="incorrect_password">चुकीचा पासवर्ड</string>
+    <string name="fields_not_match">फील्ड जुळत नाहीत</string>
+    <string name="username_already_exist">हे युसरनेम आधीच कोणीतरी घेतले आहे</string>
+    <string name="email_already_exist">हा ईमेल असलेला वापरकर्ता आधीपासून अस्तित्वात आहे</string>
+    <string name="email_not_valid">कृपया वैध ईमेल पत्ता वापरा</string>
+    <string name="leader_board">लीडरबोर्ड</string>
+    <string name="profile">प्रोफाइल</string>
+    <string name="search_here">येथे शोधा</string>
+    <string name="popular">लोकप्रिय</string>
+    <string name="most_recents">नवीनतम</string>
+    <string name="easy">सोपे</string>
+    <string name="medium">मध्यवर्ती</string>
+    <string name="hard">अवघड</string>
+    <string name="account_successfully_created">तुमचे खाते यशस्वीरित्या तयार केले गेले आहे</string>
+</resources>

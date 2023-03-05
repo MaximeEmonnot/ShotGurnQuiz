@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShotGurnQuiz</string>
+    <string name="title">Shot, Gurn, Quiz !</string>
+    <string name="play_offline">Kosakana na nzela ya Internet</string>
+    <string name="sign_in">Kota na site</string>
+    <string name="sign_up">Bokomisa nkombo</string>
+    <string name="email">Email na nzela ya email</string>
+    <string name="confirm_email">Confirmer email</string>
+    <string name="username">Nkombo ya mosaleli</string>
+    <string name="password">Mot de passe</string>
+    <string name="confirm_password">Confirmer mot de passe</string>
+    <string name="create_account">Bosala compte</string>
+    <string name="no_account">Ozali nanu na compte te ?</string>
+    <string name="empty_field">Tosɛngi yo otondisa esika oyo</string>
+    <string name="incorrect_username">Nkombo ya mosaleli ya mabe</string>
+    <string name="incorrect_password">Mot de passe ya mabe</string>
+    <string name="fields_not_match">Bitando ekokani te</string>
+    <string name="username_already_exist">Nkombo oyo ya mosaleli esi ezwami</string>
+    <string name="email_already_exist">Mosaleli oyo azali na email oyo azali déjà</string>
+    <string name="email_not_valid">Tosɛngi yo osalela adresi ya email oyo ezali na ntina</string>
+    <string name="leader_board">Tableau ya bakambi</string>
+    <string name="profile">Profil</string>
+    <string name="search_here">Luka awa</string>
+    <string name="popular">Eyebana</string>
+    <string name="most_recents">Ya sika mpenza</string>
+    <string name="easy">Pete</string>
+    <string name="medium">Ya katikati</string>
+    <string name="hard">Mpasi</string>
+    <string name="account_successfully_created">Compte na yo esalemi malamu</string>
+</resources>

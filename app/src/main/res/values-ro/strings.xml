@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShotGurnQuiz</string>
+    <string name="title">Shot, Gurn, Quiz !</string>
+    <string name="play_offline">Joacă offline</string>
+    <string name="sign_in">Conectare</string>
+    <string name="sign_up">Inscrie-te</string>
+    <string name="email">E-mail</string>
+    <string name="confirm_email">Confirmați adresa de e-mail</string>
+    <string name="username">Nume de utilizator</string>
+    <string name="password">Parola</string>
+    <string name="confirm_password">Confirmă parola</string>
+    <string name="create_account">Creează cont</string>
+    <string name="no_account">Nu aveți încă un cont?</string>
+    <string name="empty_field">Te rog sa completezi acest spatiu</string>
+    <string name="incorrect_username">Nume de utilizator incorect</string>
+    <string name="incorrect_password">Parola incorecta</string>
+    <string name="fields_not_match">Câmpurile nu se potrivesc</string>
+    <string name="username_already_exist">Acest nume de utilizator este deja luat</string>
+    <string name="email_already_exist">Un utilizator cu acest e-mail există deja</string>
+    <string name="email_not_valid">Vă rugăm să utilizați o adresă de e-mail validă</string>
+    <string name="leader_board">Clasament</string>
+    <string name="profile">Profil</string>
+    <string name="search_here">Caută aici</string>
+    <string name="popular">Popular</string>
+    <string name="most_recents">Cele mai recente</string>
+    <string name="easy">Uşor</string>
+    <string name="medium">Intermediar</string>
+    <string name="hard">Dificil</string>
+    <string name="account_successfully_created">Contul tau a fost creat cu succes</string>
+</resources>

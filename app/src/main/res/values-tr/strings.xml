@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShotGurnQuiz</string>
+    <string name="title">Shot, Gurn, Quiz !</string>
+    <string name="play_offline">Çevrimdışı oyna</string>
+    <string name="sign_in">Kayıt olmak</string>
+    <string name="sign_up">Üye olmak</string>
+    <string name="email">E-posta</string>
+    <string name="confirm_email">E-posta Onayla</string>
+    <string name="username">Kullanıcı adı</string>
+    <string name="password">Şifre</string>
+    <string name="confirm_password">Şifreyi Onayla</string>
+    <string name="create_account">Hesap oluşturmak</string>
+    <string name="no_account">Henüz bir hesabınız yok mu?</string>
+    <string name="empty_field">Lütfen bu alanı doldurun</string>
+    <string name="incorrect_username">Yanlış kullanıcı adı</string>
+    <string name="incorrect_password">yanlış parola</string>
+    <string name="fields_not_match">alanlar uyuşmuyor</string>
+    <string name="username_already_exist">Bu kullanıcı adı zaten alınmış</string>
+    <string name="email_already_exist">Bu e-postaya sahip bir kullanıcı zaten var</string>
+    <string name="email_not_valid">Lütfen geçerli bir e-posta adresi kullanın</string>
+    <string name="leader_board">Liderler Sıralaması</string>
+    <string name="profile">Profil</string>
+    <string name="search_here">Burada ara</string>
+    <string name="popular">Popüler</string>
+    <string name="most_recents">En sonuncu</string>
+    <string name="easy">Kolay</string>
+    <string name="medium">Orta seviye</string>
+    <string name="hard">Zor</string>
+    <string name="account_successfully_created">Hesabınız başarıyla oluşturuldu</string>
+</resources>

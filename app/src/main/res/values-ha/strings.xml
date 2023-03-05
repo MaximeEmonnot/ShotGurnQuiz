@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShotGurnQuiz</string>
+    <string name="title">Shot, Gurn, Quiz !</string>
+    <string name="play_offline">Play Offline</string>
+    <string name="sign_in">Shiga</string>
+    <string name="sign_up">Yi rajista</string>
+    <string name="email">Imel</string>
+    <string name="confirm_email">Tabbatar da imel</string>
+    <string name="username">Sunan mai amfani</string>
+    <string name="password">Kalmar wucewa</string>
+    <string name="confirm_password">Tabbata kalmar shiga</string>
+    <string name="create_account">Kirkira ajiya</string>
+    <string name="no_account">Ba ku da asusu har yanzu?</string>
+    <string name="empty_field">Da fatan za a cika wannan filin</string>
+    <string name="incorrect_username">Sunan mai amfani mara daidai</string>
+    <string name="incorrect_password">Kalmar sirri mara daidai</string>
+    <string name="fields_not_match">Filaye ba su daidaita ba</string>
+    <string name="username_already_exist">An riga an ɗauki wannan sunan mai amfani</string>
+    <string name="email_already_exist">Akwai mai amfani da wannan imel ɗin</string>
+    <string name="email_not_valid">Da fatan za a yi amfani da ingantaccen adireshin imel</string>
+    <string name="leader_board">Allon jagora</string>
+    <string name="profile">Bayanan martaba</string>
+    <string name="search_here">Bincika anan</string>
+    <string name="popular">Shahararren</string>
+    <string name="most_recents">Bugawa</string>
+    <string name="easy">Sauƙi</string>
+    <string name="medium">Matsakaici</string>
+    <string name="hard">Wahala</string>
+    <string name="account_successfully_created">An yi nasarar ƙirƙirar asusunku</string>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShotGurnQuiz</string>
+    <string name="title">Shot, Gurn, Quiz !</string>
+    <string name="play_offline">Играјте ван мреже</string>
+    <string name="sign_in">Пријавите се</string>
+    <string name="sign_up">Пријави се</string>
+    <string name="email">Емаил</string>
+    <string name="confirm_email">Потврди Е-мејл</string>
+    <string name="username">Корисничко име</string>
+    <string name="password">Лозинка</string>
+    <string name="confirm_password">Потврди лозинку</string>
+    <string name="create_account">Региструј се</string>
+    <string name="no_account">Још увек немате налог?</string>
+    <string name="empty_field">Молим вас попуните ово поље</string>
+    <string name="incorrect_username">Нетачно корисничко име</string>
+    <string name="incorrect_password">Погрешна лозинка</string>
+    <string name="fields_not_match">Поља се не поклапају</string>
+    <string name="username_already_exist">Ово корисничко име је већ заузето</string>
+    <string name="email_already_exist">Корисник са овом е-поштом већ постоји</string>
+    <string name="email_not_valid">Молимо користите важећу адресу е-поште</string>
+    <string name="leader_board">Леадербоард</string>
+    <string name="profile">Профил</string>
+    <string name="search_here">Тражење овде</string>
+    <string name="popular">Популарно</string>
+    <string name="most_recents">Најновије</string>
+    <string name="easy">Лако</string>
+    <string name="medium">Средњи</string>
+    <string name="hard">Тешко</string>
+    <string name="account_successfully_created">Ваш налог је успешно креиран</string>
+</resources>

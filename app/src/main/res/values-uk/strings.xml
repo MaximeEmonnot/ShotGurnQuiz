@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShotGurnQuiz</string>
+    <string name="title">Shot, Gurn, Quiz !</string>
+    <string name="play_offline">Грати офлайн</string>
+    <string name="sign_in">Увійти</string>
+    <string name="sign_up">Зареєструватися</string>
+    <string name="email">Електронна пошта</string>
+    <string name="confirm_email">Підтвердити електронну адресу</string>
+    <string name="username">Ім\'я користувача</string>
+    <string name="password">Пароль</string>
+    <string name="confirm_password">Підтвердьте пароль</string>
+    <string name="create_account">Створити акаунт</string>
+    <string name="no_account">Ще не маєте облікового запису?</string>
+    <string name="empty_field">Будь ласка, заповніть це поле</string>
+    <string name="incorrect_username">Невірне ім\'я користувача</string>
+    <string name="incorrect_password">Невірний пароль</string>
+    <string name="fields_not_match">Поля не збігаються</string>
+    <string name="username_already_exist">Це ім\'я користувача вже зайняте</string>
+    <string name="email_already_exist">Користувач із цією електронною адресою вже існує</string>
+    <string name="email_not_valid">Використовуйте дійсну електронну адресу</string>
+    <string name="leader_board">Таблиця лідерів</string>
+    <string name="profile">Профіль</string>
+    <string name="search_here">Шукайте тут</string>
+    <string name="popular">Популярний</string>
+    <string name="most_recents">Останній</string>
+    <string name="easy">легко</string>
+    <string name="medium">Проміжний</string>
+    <string name="hard">важко</string>
+    <string name="account_successfully_created">Ваш обліковий запис успішно створено</string>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShotGurnQuiz</string>
+    <string name="title">Shot, Gurn, Quiz !</string>
+    <string name="play_offline">تلعب من دون إتصال</string>
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="sign_up">اشتراك</string>
+    <string name="email">بريد إلكتروني</string>
+    <string name="confirm_email">تأكيد عنوان البريد الإلكتروني</string>
+    <string name="username">اسم المستخدم</string>
+    <string name="password">كلمة المرور</string>
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+    <string name="create_account">إنشاء حساب</string>
+    <string name="no_account">لا تملك حسابا حتى الآن ؟</string>
+    <string name="empty_field">الرجاء ملء هذه الخانة</string>
+    <string name="incorrect_username">اسم المستخدم غير صحيح</string>
+    <string name="incorrect_password">كلمة سر خاطئة</string>
+    <string name="fields_not_match">الحقول غير متطابقة</string>
+    <string name="username_already_exist">أسم المستخدم مأخوذ مسبقا</string>
+    <string name="email_already_exist">يوجد بالفعل مستخدم بهذا البريد الإلكتروني</string>
+    <string name="email_not_valid">يرجى استخدام عنوان بريد إلكتروني صالح</string>
+    <string name="leader_board">ليدربورد</string>
+    <string name="profile">حساب تعريفي</string>
+    <string name="search_here">ابحث هنا</string>
+    <string name="popular">شائع</string>
+    <string name="most_recents">أحدث</string>
+    <string name="easy">سهل</string>
+    <string name="medium">متوسط</string>
+    <string name="hard">صعب</string>
+    <string name="account_successfully_created">تم إنشاء حسابك بنجاح</string>
+</resources>

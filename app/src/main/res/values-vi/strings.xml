@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShotGurnQuiz</string>
+    <string name="title">Shot, Gurn, Quiz !</string>
+    <string name="play_offline">Chơi khi không kết nối</string>
+    <string name="sign_in">Đăng nhập</string>
+    <string name="sign_up">Đăng ký</string>
+    <string name="email">E-mail</string>
+    <string name="confirm_email">xác nhận email</string>
+    <string name="username">tên tài khoản</string>
+    <string name="password">Mật khẩu</string>
+    <string name="confirm_password">Xác nhận mật khẩu</string>
+    <string name="create_account">Tạo tài khoản</string>
+    <string name="no_account">Vẫn chưa có tài khoản ?</string>
+    <string name="empty_field">Vui lòng điền vào trường này</string>
+    <string name="incorrect_username">tên người dùng không chính xác</string>
+    <string name="incorrect_password">mật khẩu không đúng</string>
+    <string name="fields_not_match">Lĩnh vực không phù hợp</string>
+    <string name="username_already_exist">Tên người dùng này đã được sử dụng</string>
+    <string name="email_already_exist">Một người dùng với email này đã tồn tại</string>
+    <string name="email_not_valid">Vui lòng sử dụng một địa chỉ email hợp lệ</string>
+    <string name="leader_board">bảng xếp hạng</string>
+    <string name="profile">Hồ sơ</string>
+    <string name="search_here">Tìm kiếm ở đây</string>
+    <string name="popular">Phổ biến</string>
+    <string name="most_recents">Muộn nhất</string>
+    <string name="easy">Dễ</string>
+    <string name="medium">Trung cấp</string>
+    <string name="hard">Khó</string>
+    <string name="account_successfully_created">Tai khoản của bạn đa được tạo thanh công</string>
+</resources>

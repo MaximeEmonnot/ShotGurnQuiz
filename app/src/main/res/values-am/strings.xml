@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShotGurnQuiz</string>
+    <string name="title">Shot, Gurn, Quiz !</string>
+    <string name="play_offline">ከመስመር ውጭ ይጫወቱ</string>
+    <string name="sign_in">ስግን እን</string>
+    <string name="sign_up">ተመዝገቢ</string>
+    <string name="email">ኢሜይል</string>
+    <string name="confirm_email">ኢ-ሜልህን አረጋግጥ</string>
+    <string name="username">የተጠቃሚ ስም</string>
+    <string name="password">የይለፍ ቃል</string>
+    <string name="confirm_password">የይለፍ ቃል አረጋግጥ</string>
+    <string name="create_account">መለያ ይፍጠሩ</string>
+    <string name="no_account">እስካሁን መለያ የለህም?</string>
+    <string name="empty_field">እባክዎ ይህንን መስክ ይሙሉ</string>
+    <string name="incorrect_username">የተሳሳተ የተጠቃሚ ስም</string>
+    <string name="incorrect_password">የተሳሳተ የይለፍ ቃል</string>
+    <string name="fields_not_match">ሜዳዎች አይዛመዱም</string>
+    <string name="username_already_exist">ይህ የተጠቃሚ ስም አስቀድሞ ተይዟል</string>
+    <string name="email_already_exist">ይህ ኢሜይል ያለው ተጠቃሚ አስቀድሞ አለ</string>
+    <string name="email_not_valid">እባክህ የሚሰራ የኢሜይል አድራሻ ተጠቀም</string>
+    <string name="leader_board">የመሪዎች ሰሌዳ</string>
+    <string name="profile">መገለጫ</string>
+    <string name="search_here">እዚህ ይፈልጉ</string>
+    <string name="popular">ታዋቂ</string>
+    <string name="most_recents">የቅርብ ጊዜ</string>
+    <string name="easy">ቀላል</string>
+    <string name="medium">መካከለኛ</string>
+    <string name="hard">አስቸጋሪ</string>
+    <string name="account_successfully_created">መለያዎ በተሳካ ሁኔታ ተፈጥሯል</string>
+</resources>

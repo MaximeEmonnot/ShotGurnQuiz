@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShotGurnQuiz</string>
+    <string name="title">Shot, Gurn, Quiz !</string>
+    <string name="play_offline">Mana tinkisqa pukllay</string>
+    <string name="sign_in">Yaykuy</string>
+    <string name="sign_up">Inscribikuy</string>
+    <string name="email">Correo electrónico nisqa</string>
+    <string name="confirm_email">Correo electrónico nisqa takyachiy</string>
+    <string name="username">Ruraqpa sutin</string>
+    <string name="password">Kichana</string>
+    <string name="confirm_password">Yaykuna rimayta takyachiy</string>
+    <string name="create_account">Cuenta ruway</string>
+    <string name="no_account">Manaraqmi cuentayuqchu kanki ?</string>
+    <string name="empty_field">Ama hina kaspa, kay pampata hunt\'achiy</string>
+    <string name="incorrect_username">Ruraqpa pantasqa sutin</string>
+    <string name="incorrect_password">Mana allin yaykuna rimay</string>
+    <string name="fields_not_match">Chakrakunaqa manam tupanchu</string>
+    <string name="username_already_exist">Kay usernameqa hap\'isqañam</string>
+    <string name="email_already_exist">Kay correo electrónico nisqawan huk llamk\'achiqqa kachkanñam</string>
+    <string name="email_not_valid">Ama hina kaspa, allin correo electrónico nisqa direccionta llamk\'achiy</string>
+    <string name="leader_board">Tabla de liderazgo</string>
+    <string name="profile">Runapa kaynin</string>
+    <string name="search_here">Kaypi maskay</string>
+    <string name="popular">Popular</string>
+    <string name="most_recents">Qipa</string>
+    <string name="easy">Mana sasa</string>
+    <string name="medium">Intermedio</string>
+    <string name="hard">Sasachakuy</string>
+    <string name="account_successfully_created">Yupayniykiqa allin ruwasqañam</string>
+</resources>

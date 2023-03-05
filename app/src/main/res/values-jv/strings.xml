@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShotGurnQuiz</string>
+    <string name="title">Shot, Gurn, Quiz !</string>
+    <string name="play_offline">Play Offline</string>
+    <string name="sign_in">mlebu</string>
+    <string name="sign_up">Ndaftar</string>
+    <string name="email">Email</string>
+    <string name="confirm_email">Konfirmasi email</string>
+    <string name="username">Jeneng panganggo</string>
+    <string name="password">Sandi</string>
+    <string name="confirm_password">Konfirmasi sandhi</string>
+    <string name="create_account">Nggawe akun</string>
+    <string name="no_account">Durung duwe akun?</string>
+    <string name="empty_field">Mangga isi kolom iki</string>
+    <string name="incorrect_username">jeneng panganggo sing salah</string>
+    <string name="incorrect_password">Sandi salah</string>
+    <string name="fields_not_match">Lapangan ora cocog</string>
+    <string name="username_already_exist">Jeneng\'e wis ono seng nganggo</string>
+    <string name="email_already_exist">Pangguna nganggo email iki wis ana</string>
+    <string name="email_not_valid">Mangga gunakake alamat email sing bener</string>
+    <string name="leader_board">Papan pimpinan</string>
+    <string name="profile">Profile</string>
+    <string name="search_here">Telusuri kene</string>
+    <string name="popular">Popular</string>
+    <string name="most_recents">Paling anyar</string>
+    <string name="easy">Gampang</string>
+    <string name="medium">penengah</string>
+    <string name="hard">angel</string>
+    <string name="account_successfully_created">Akun sampeyan wis kasil digawe</string>
+</resources>

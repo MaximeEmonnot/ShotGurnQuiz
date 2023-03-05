@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShotGurnQuiz</string>
+    <string name="title">Shot, Gurn, Quiz !</string>
+    <string name="play_offline">Offline spelen</string>
+    <string name="sign_in">Aanmelden</string>
+    <string name="sign_up">Aanmelden</string>
+    <string name="email">E-mail</string>
+    <string name="confirm_email">Bevestig Email</string>
+    <string name="username">Gebruikersnaam</string>
+    <string name="password">Wachtwoord</string>
+    <string name="confirm_password">Bevestig wachtwoord</string>
+    <string name="create_account">Account aanmaken</string>
+    <string name="no_account">Heb je nog geen account?</string>
+    <string name="empty_field">Vul alstublieft dit veld in</string>
+    <string name="incorrect_username">Foute gebruikersnaam</string>
+    <string name="incorrect_password">Incorrect wachtwoord</string>
+    <string name="fields_not_match">Velden komen niet overeen</string>
+    <string name="username_already_exist">Deze gebruikersnaam is al in gebruik</string>
+    <string name="email_already_exist">Er bestaat al een gebruiker met dit e-mailadres</string>
+    <string name="email_not_valid">Gebruik een geldig e-mailadres</string>
+    <string name="leader_board">Scorebord</string>
+    <string name="profile">Profiel</string>
+    <string name="search_here">Zoek hier</string>
+    <string name="popular">Populair</string>
+    <string name="most_recents">Laatste</string>
+    <string name="easy">Eenvoudig</string>
+    <string name="medium">Tussenliggend</string>
+    <string name="hard">Moeilijk</string>
+    <string name="account_successfully_created">Je account is succesvol aangemaakt</string>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShotGurnQuiz</string>
+    <string name="title">Shot, Gurn, Quiz !</string>
+    <string name="play_offline">Gwuo na-anọghị n\'ịntanetị</string>
+    <string name="sign_in">banye</string>
+    <string name="sign_up">debanye aha</string>
+    <string name="email">Email</string>
+    <string name="confirm_email">Kwenye Ozi Ịntanetị</string>
+    <string name="username">Aha njirimara</string>
+    <string name="password">Okwuntughe</string>
+    <string name="confirm_password">Kwenye Na Okwuntughe</string>
+    <string name="create_account">Mebe akaụntụ</string>
+    <string name="no_account">Ị nwebeghị akaụntụ?</string>
+    <string name="empty_field">Biko dejupụta mpaghara a</string>
+    <string name="incorrect_username">Aha njirimara ezighi ezi</string>
+    <string name="incorrect_password">Okwuntughe na-ezighi ezi</string>
+    <string name="fields_not_match">Ugbo adabaghị</string>
+    <string name="username_already_exist">Ebuola aha njirimara a</string>
+    <string name="email_already_exist">Onye ọrụ nwere email a adịlarị</string>
+    <string name="email_not_valid">Biko jiri adreesị ozi-e bara uru</string>
+    <string name="leader_board">Bọdụ ndu</string>
+    <string name="profile">Profaịlụ</string>
+    <string name="search_here">Chọọ ebe a</string>
+    <string name="popular">ewu ewu</string>
+    <string name="most_recents">Kacha ọhụrụ</string>
+    <string name="easy">Mfe</string>
+    <string name="medium">Ọkara</string>
+    <string name="hard">O siri ike</string>
+    <string name="account_successfully_created">Emepụtala akaụntụ gị nke ọma</string>
+</resources>

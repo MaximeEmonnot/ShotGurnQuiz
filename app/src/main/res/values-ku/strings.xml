@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShotGurnQuiz</string>
+    <string name="title">Shot, Gurn, Quiz !</string>
+    <string name="play_offline">Play Offline</string>
+    <string name="sign_in">Têketin</string>
+    <string name="sign_up">Tomar kirin</string>
+    <string name="email">Email</string>
+    <string name="confirm_email">E-nameyê piştrast bikin</string>
+    <string name="username">Navê bikarhêner</string>
+    <string name="password">Şîfre</string>
+    <string name="confirm_password">Di pêşîyê da em sipas dikin</string>
+    <string name="create_account">Hesab biafirîne</string>
+    <string name="no_account">Hesabê te tune ye?</string>
+    <string name="empty_field">Ji kerema xwe vê qadê dagirin</string>
+    <string name="incorrect_username">Navê bikarhêner çewt e</string>
+    <string name="incorrect_password">Şîfreya çewt</string>
+    <string name="fields_not_match">Zeviyên hev nagirin</string>
+    <string name="username_already_exist">Ev navê bikarhêner berê hatiye girtin</string>
+    <string name="email_already_exist">Bikarhênerek bi vê e-nameyê jixwe heye</string>
+    <string name="email_not_valid">Ji kerema xwe navnîşanek e-nameyek derbasdar bikar bînin</string>
+    <string name="leader_board">Leaderboard</string>
+    <string name="profile">Tengal</string>
+    <string name="search_here">Li vir bigerin</string>
+    <string name="popular">Demane</string>
+    <string name="most_recents">Dawîtirîn</string>
+    <string name="easy">Sivik</string>
+    <string name="medium">Di nav</string>
+    <string name="hard">Asteng</string>
+    <string name="account_successfully_created">Hesabê we bi serkeftî hate afirandin</string>
+</resources>

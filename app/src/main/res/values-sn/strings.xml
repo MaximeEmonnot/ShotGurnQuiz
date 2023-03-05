@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShotGurnQuiz</string>
+    <string name="title">Shot, Gurn, Quiz !</string>
+    <string name="play_offline">Tamba Offline</string>
+    <string name="sign_in">Nyorera mu</string>
+    <string name="sign_up">Nyorera</string>
+    <string name="email">Email</string>
+    <string name="confirm_email">Simbisa email</string>
+    <string name="username">Username</string>
+    <string name="password">Pasiwedhi</string>
+    <string name="confirm_password">Tsigira pasiwedhi</string>
+    <string name="create_account">Gadzira account</string>
+    <string name="no_account">Hausati wava neakaundi here?</string>
+    <string name="empty_field">Ndapota zadza ndima iyi</string>
+    <string name="incorrect_username">Zita rekushandisa risiri iro</string>
+    <string name="incorrect_password">password isiriyo</string>
+    <string name="fields_not_match">Minda haienderane</string>
+    <string name="username_already_exist">Iri zita rekushandisa rakatotorwa</string>
+    <string name="email_already_exist">Mushandisi ane email iyi atovepo</string>
+    <string name="email_not_valid">Ndapota shandisa kero yeemail inoshanda</string>
+    <string name="leader_board">Leaderboard</string>
+    <string name="profile">Profile</string>
+    <string name="search_here">Tsvaga pano</string>
+    <string name="popular">Popular</string>
+    <string name="most_recents">Latest</string>
+    <string name="easy">Easy</string>
+    <string name="medium">Pakati</string>
+    <string name="hard">Zvakaoma</string>
+    <string name="account_successfully_created">Akaunti yako yakagadzirwa zvakanaka</string>
+</resources>

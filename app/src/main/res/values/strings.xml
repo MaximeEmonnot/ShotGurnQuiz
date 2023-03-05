@@ -18,7 +18,7 @@
     <string name="username_already_exist">This username is already taken</string>
     <string name="email_already_exist">A user with this email already exists</string>
     <string name="email_not_valid">Please use a valid email address</string>
-    <string name="leader_board">Leader board</string>
+    <string name="leader_board">Leaderboard</string>
     <string name="profile">Profile</string>
     <string name="search_here">Search here</string>
     <string name="popular">Popular</string>

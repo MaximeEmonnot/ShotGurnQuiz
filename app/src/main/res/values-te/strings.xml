@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShotGurnQuiz</string>
+    <string name="title">Shot, Gurn, Quiz !</string>
+    <string name="play_offline">ఆఫ్లైన్ ప్లే</string>
+    <string name="sign_in">సైన్ ఇన్ చేయండి</string>
+    <string name="sign_up">చేరడం</string>
+    <string name="email">ఇమెయిల్</string>
+    <string name="confirm_email">ఈమెయిలు ధృవీకరించండి</string>
+    <string name="username">వినియోగదారు పేరు</string>
+    <string name="password">పాస్వర్డ్</string>
+    <string name="confirm_password">పాస్వర్డ్ను నిర్ధారించండి</string>
+    <string name="create_account">ఖాతాను సృష్టించండి</string>
+    <string name="no_account">ఇంకా ఖాతా లేదా?</string>
+    <string name="empty_field">దయచేసి ఈ ఫీల్డ్‌ని పూరించండి</string>
+    <string name="incorrect_username">సరికాని వినియోగదారు పేరు</string>
+    <string name="incorrect_password">సరికాని పాస్వర్డ్</string>
+    <string name="fields_not_match">ఫీల్డ్‌లు సరిపోలడం లేదు</string>
+    <string name="username_already_exist">ఈ పేరు ఇదివరకే తీసుకొన బడింది</string>
+    <string name="email_already_exist">ఈ ఇమెయిల్‌తో వినియోగదారు ఇప్పటికే ఉన్నారు</string>
+    <string name="email_not_valid">దయచేసి చెల్లుబాటు అయ్యే ఇమెయిల్ చిరునామాను ఉపయోగించండి</string>
+    <string name="leader_board">లీడర్‌బోర్డ్</string>
+    <string name="profile">ప్రొఫైల్</string>
+    <string name="search_here">ఇక్కడ వెతకండి</string>
+    <string name="popular">జనాదరణ పొందినది</string>
+    <string name="most_recents">తాజా</string>
+    <string name="easy">సులువు</string>
+    <string name="medium">ఇంటర్మీడియట్</string>
+    <string name="hard">కష్టం</string>
+    <string name="account_successfully_created">మీ ఖాతా విజయవంతంగా సృష్టించబడింది</string>
+</resources>
