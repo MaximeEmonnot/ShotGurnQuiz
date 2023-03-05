@@ -15,9 +15,9 @@ package com.example.shotgurnquiz.RecyclerViewConfigs;
         import java.util.ArrayList;
 
 public class Question_RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
-    public Question_RecyclerViewAdapter(Context context, ArrayList<QuestionModel> questions){
+    public Question_RecyclerViewAdapter(Context context){
         this.context = context;
-        this.questions = questions;
+        this.questions = new ArrayList<QuestionModel>();
     }
 
     @NonNull
@@ -48,6 +48,29 @@ public class Question_RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerV
     @Override
     public int getItemViewType(int position) {
         return (position == getItemCount() - 1) ? VIEW_TYPE_LAST : VIEW_TYPE_CELL;
+    }
+
+    public void push(QuestionModel question){
+        questions.add(question);
+        this.notifyDataSetChanged();
+    }
+
+    public void set(int index, QuestionModel question){
+        questions.set(index, question);
+        this.notifyDataSetChanged();
+    }
+
+    public void remove(int index){
+        questions.remove(index);
+        this.notifyDataSetChanged();
+    }
+
+    public ArrayList<QuestionModel> getAllItems(){
+        return questions;
+    }
+
+    public QuestionModel getItem(int index){
+        return questions.get(index);
     }
 
     @Override

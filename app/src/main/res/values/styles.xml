@@ -33,4 +33,9 @@
         <item name="android:textColor">@color/colorTextOnLight</item>
     </style>
 
+    <style name="VeryLargeTextOnLight">
+        <item name="android:textSize">56sp</item>
+        <item name="android:fontFamily">@font/font_kabouter</item>
+        <item name="android:textColor">@color/colorTextOnLight</item>
+    </style>
 </resources>

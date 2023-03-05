@@ -25,6 +25,22 @@ public class QuestionModel {
         return correctAnswer;
     }
 
+    public void setTitle(String title) { this.title = title; }
+
+    public void setAnswerA(String answerA) {
+        this.answerA = answerA;
+    }
+
+    public void setAnswerB(String answerB) {
+        this.answerB = answerB;
+    }
+
+    public void setCorrectAnswer(boolean correctAnswer) {
+        this.correctAnswer = correctAnswer;
+    }
+
+
+
     private String title;
     private String answerA;
     private String answerB;
