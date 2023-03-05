@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">ShotGurnQuiz</string>
-    <string name="title">Shot, Gurn, Quiz !</string>
+    <string name="app_title">Shot, Gurn, Quiz !</string>
     <string name="play_offline">오프라인 플레이</string>
     <string name="sign_in">로그인</string>
     <string name="sign_up">가입하기</string>

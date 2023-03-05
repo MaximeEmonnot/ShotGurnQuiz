@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">ShotGurnQuiz</string>
-    <string name="title">Shot, Gurn, Quiz !</string>
+    <string name="app_title">Shot, Gurn, Quiz !</string>
     <string name="play_offline">Խաղալ անցանց</string>
     <string name="sign_in">Մուտք գործել</string>
     <string name="sign_up">Գրանցվել</string>

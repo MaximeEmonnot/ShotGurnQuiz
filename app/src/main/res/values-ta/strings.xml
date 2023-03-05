@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">ShotGurnQuiz</string>
-    <string name="title">Shot, Gurn, Quiz !</string>
+    <string name="app_title">Shot, Gurn, Quiz !</string>
     <string name="play_offline">ஆஃப்லைனில் விளையாடு</string>
     <string name="sign_in">உள்நுழைக</string>
     <string name="sign_up">பதிவு செய்யவும்</string>
