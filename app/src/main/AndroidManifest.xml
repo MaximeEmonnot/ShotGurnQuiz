@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.AddQuizActivity"></activity>
+        <activity
+            android:name=".Activities.AddQuizActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"></activity>
         <activity android:name=".Activities.LeaderboardActivity" />
         <activity android:name=".Activities.ProfileActivity" />
         <activity

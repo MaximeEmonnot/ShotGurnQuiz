@@ -4,85 +4,100 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
+    android:orientation="vertical"
 tools:context=".Activities.AddQuizActivity"
-android:orientation="vertical"
 android:background="@color/colorBackground">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view_questions"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:theme="@style/VeryLargeTextOnLight"
+            android:text="@string/new_quiz"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="75dp"
-        android:theme="@style/LargeTextOnLight"
-        android:text="Title:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:theme="@style/LargeTextOnLight"
+            android:text="@string/title"/>
 
-    <EditText
-        android:id="@+id/question_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:minWidth="150dp"
-        android:maxWidth="300dp"
-        android:layout_gravity="center_horizontal"
-        android:textAlignment="center"
-        android:maxLength="150"
-        android:theme="@style/MediumTextOnLight"/>
+        <EditText
+            android:id="@+id/quiz_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="150dp"
+            android:maxWidth="300dp"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:maxLength="150"
+            android:textSize="20sp"
+            android:text="@string/my_quiz"
+            android:textColor="@color/colorTextOnLight"
+            android:maxLines="1"
+            android:inputType="text"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:theme="@style/LargeTextOnLight"
+            android:text="@string/theme"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="50dp"
-        android:theme="@style/LargeTextOnLight"
-        android:text="Answer A:"/>
+        <Spinner
+            android:id="@+id/spinner_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="150dp"
+            android:dropDownWidth="150dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/spinner_background"
+            android:spinnerMode="dropdown"/>
 
-    <EditText
-        android:id="@+id/answerA"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:minWidth="100dp"
-        android:maxWidth="200dp"
-        android:layout_gravity="center_horizontal"
-        android:textAlignment="center"
-        android:maxLength="100"
-        android:theme="@style/MediumTextOnLight"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:theme="@style/LargeTextOnLight"
+            android:text="@string/difficulty"/>
 
+        <Spinner
+            android:id="@+id/spinner_difficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="150dp"
+            android:dropDownWidth="150dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/spinner_background"
+            android:spinnerMode="dropdown"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="25dp"
-        android:theme="@style/LargeTextOnLight"
-        android:text="Answer B:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:theme="@style/LargeTextOnLight"
+            android:text="@string/questions"/>
 
-    <EditText
-        android:id="@+id/answerB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:minWidth="100dp"
-        android:maxWidth="200dp"
-        android:layout_gravity="center_horizontal"
-        android:textAlignment="center"
-        android:maxLength="100"
-        android:theme="@style/MediumTextOnLight"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
 
-    <Button
-        android:id="@+id/btn_save"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:width="100dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="25dp"
-        android:text="Save"
-        android:theme="@style/DarkButton"
-        android:background="@color/colorButtonBackgroundDark"/>
-
+        <Button
+            android:id="@+id/btn_create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:text="Create"
+            android:theme="@style/DarkButton"
+            android:background="@color/colorButtonBackgroundDark"/>
 
 </LinearLayout>

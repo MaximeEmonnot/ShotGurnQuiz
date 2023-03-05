@@ -5,19 +5,19 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 
+import com.example.shotgurnquiz.Fragments.AddQuestionDialogFragment;
 import com.example.shotgurnquiz.Models.QuestionModel;
+import com.example.shotgurnquiz.Models.QuizModel;
 import com.example.shotgurnquiz.R;
 import com.example.shotgurnquiz.RecyclerViewConfigs.Question_RecyclerViewAdapter;
 import com.example.shotgurnquiz.RecyclerViewConfigs.RecyclerView_ItemClickListener;
 import com.example.shotgurnquiz.RecyclerViewConfigs.RecyclerView_SpacesItemDecoration;
-
-import java.util.ArrayList;
 
 public class AddQuizActivity extends AppCompatActivity {
 
@@ -26,55 +26,45 @@ public class AddQuizActivity extends AppCompatActivity {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_add_quiz);
 
-            questions = new ArrayList<QuestionModel>();
 
-            questions.add(new QuestionModel("This is my question.","Answer A", "Answer B", true));
+            Spinner spinnerTheme = findViewById(R.id.spinner_theme);
+            // Liste des themes a recuperer dans la bd
+            String[] themes = new String[]{"Country", "Music", "Soccer"};
+            ArrayAdapter<String> adapterTheme = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, themes);
+            spinnerTheme.setAdapter(adapterTheme);
 
-            recyclerViewQuestions = findViewById(R.id.recycler_view_questions);
+            Spinner spinnerDifficulty = findViewById(R.id.spinner_difficulty);
+            String[] difficulties = new String[]{getResources().getString(R.string.easy) , getResources().getString(R.string.medium), getResources().getString(R.string.hard)};
+            ArrayAdapter<String> adapterDifficulty = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, difficulties);
+            spinnerDifficulty.setAdapter(adapterDifficulty);
 
-            recyclerViewQuestions.setAdapter(new Question_RecyclerViewAdapter(this, questions));
-            recyclerViewQuestions.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
-            recyclerViewQuestions.addItemDecoration(new RecyclerView_SpacesItemDecoration(20, 10, LinearLayoutManager.HORIZONTAL));
+            RecyclerView recyclerViewQuestion = findViewById(R.id.recycler_view_question);
+            Question_RecyclerViewAdapter questionAdapter = new Question_RecyclerViewAdapter(this);
+            recyclerViewQuestion.setAdapter(questionAdapter);
+            recyclerViewQuestion.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+            recyclerViewQuestion.addItemDecoration(new RecyclerView_SpacesItemDecoration(20, 10, LinearLayoutManager.HORIZONTAL));
 
-            EditText questionTitle = (EditText) findViewById(R.id.question_title);
-            EditText questionAnswerA = (EditText) findViewById(R.id.answerA);
-            EditText questionAnswerB = (EditText) findViewById(R.id.answerB);
+            recyclerViewQuestion.addOnItemTouchListener(new RecyclerView_ItemClickListener(new RecyclerView_ItemClickListener.OnItemClickListener() {
+                @Override
+                public void onItemClick(View view, int position) {
+                    AddQuestionDialogFragment addQuestionFragment = new AddQuestionDialogFragment(questionAdapter, position);
+                    addQuestionFragment.show(getSupportFragmentManager(), "dialog");
+                }
+            }));
 
-            Button save = (Button) findViewById(R.id.btn_save);
+            EditText editTextTitle = (EditText) findViewById(R.id.quiz_title);
 
-            save.setOnClickListener(new View.OnClickListener() {
+            Button buttonCreate = (Button) findViewById(R.id.btn_create);
+            buttonCreate.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    String title = questionTitle.getText().toString();
-                    String answerA = questionAnswerA.getText().toString();
-                    String answerB = questionAnswerB.getText().toString();
-                    boolean correctAnswer = true;
-                    questions.set(currentIndex, new QuestionModel(title, answerA, answerB, correctAnswer));
-                    updateRecyclerView();
+                    String title = editTextTitle.getText().toString();
+                    String difficulty = spinnerDifficulty.getSelectedItem().toString();
+                    String theme = spinnerTheme.getSelectedItem().toString();
+                    QuizModel quiz = new QuizModel(title, difficulty, theme, questionAdapter.getAllItems());
+                    // ajout du quiz en BD ici
+                    finish();
                 }
             });
-
-            recyclerViewQuestions.addOnItemTouchListener(
-                    new RecyclerView_ItemClickListener(new RecyclerView_ItemClickListener.OnItemClickListener() {
-                        @Override public void onItemClick(View view, int position) {
-                            if(position == questions.size()){
-                                questions.add(new QuestionModel("This is my question.", "Answer A", "Answer B", true));
-                                updateRecyclerView();
-                            }
-                            QuestionModel question = questions.get(position);
-                            questionTitle.setText(question.getTitle());
-                            questionAnswerA.setText(question.getAnswerA());
-                            questionAnswerB.setText(question.getAnswerB());
-                            currentIndex = position;
-                        }
-                    })
-            );
         }
-
-        private void updateRecyclerView(){
-            recyclerViewQuestions.setAdapter(new Question_RecyclerViewAdapter(this, questions));
-        }
-        private RecyclerView recyclerViewQuestions;
-        private ArrayList<QuestionModel> questions;
-        private int currentIndex = 0;
 }
