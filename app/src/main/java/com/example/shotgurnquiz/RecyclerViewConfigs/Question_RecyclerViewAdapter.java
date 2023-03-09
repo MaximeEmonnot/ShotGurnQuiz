@@ -38,10 +38,10 @@ public class Question_RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerV
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         if(getItemViewType(position) == VIEW_TYPE_CELL){
             ((MyViewHolder)holder).textViewIndex.setText((position + 1) + "/" + questions.size());
-            ((MyViewHolder)holder).textViewTitle.setText(questions.get(position).getTitle());
-            ((MyViewHolder)holder).textViewAnswerA.setText(questions.get(position).getAnswerA());
-            ((MyViewHolder)holder).textViewAnswerB.setText(questions.get(position).getAnswerB());
-            ((MyViewHolder)holder).textViewCorrectAnswer.setText(questions.get(position).getCorrectAnswer() ? "A" : "B");
+            ((MyViewHolder)holder).textViewTitle.setText(questions.get(position).title);
+            ((MyViewHolder)holder).textViewAnswerA.setText(questions.get(position).answerA);
+            ((MyViewHolder)holder).textViewAnswerB.setText(questions.get(position).answerB);
+            ((MyViewHolder)holder).textViewCorrectAnswer.setText(questions.get(position).correctAnswer ? "A" : "B");
         }
     }
 

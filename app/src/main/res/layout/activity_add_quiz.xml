@@ -13,7 +13,7 @@ android:background="@color/colorBackground">
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="25dp"
-            android:theme="@style/VeryLargeTextOnLight"
+            android:theme="@style/VeryVeryLargeTextOnLight"
             android:text="@string/new_quiz"/>
 
         <TextView
@@ -93,10 +93,10 @@ android:background="@color/colorBackground">
             android:id="@+id/btn_create"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:width="100dp"
+            android:width="150dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="25dp"
-            android:text="Create"
+            android:text="@string/create"
             android:theme="@style/DarkButton"
             android:background="@color/colorButtonBackgroundDark"/>
 

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.PlayQuizActivity"
+    android:background="@color/colorBackground">
+
+
+    <TextView
+        android:id="@+id/play_quiz_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/score"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/play_quiz_index"
+        android:theme="@style/MediumTextOnLight"/>
+
+    <TextView
+        android:id="@+id/play_quiz_score_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/play_quiz_score"
+        app:layout_constraintTop_toTopOf="@+id/play_quiz_score"
+        android:theme="@style/MediumTextOnLight"/>
+
+    <LinearLayout
+        android:id="@+id/play_quiz_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/play_quiz_question"
+        app:layout_constraintTop_toBottomOf="@+id/play_quiz_score"
+        app:layout_constraintEnd_toEndOf="@+id/play_quiz_question"
+        app:layout_constraintStart_toStartOf="@+id/play_quiz_question">
+        <TextView
+            android:id="@+id/play_quiz_index_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/MediumTextOnLight" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" / "
+            android:theme="@style/MediumTextOnLight"/>
+
+        <TextView
+            android:id="@+id/play_quiz_index_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/MediumTextOnLight"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/play_quiz_question"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:gravity="center"
+        android:theme="@style/LargeTextOnLight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/play_quiz_index"
+        app:layout_constraintBottom_toTopOf="@+id/play_quiz_answer_a"/>
+
+    <ImageView
+        android:id="@+id/play_quiz_answer_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/answer_a_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/play_quiz_question"
+        app:layout_constraintBottom_toTopOf="@+id/play_quiz_answer_b"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_emoji_emotions_100"
+        app:layout_constraintTop_toTopOf="@id/play_quiz_answer_a"
+        app:layout_constraintStart_toStartOf="@id/play_quiz_answer_a"
+        app:layout_constraintBottom_toBottomOf="@id/play_quiz_answer_a"/>
+
+    <TextView
+        android:id="@+id/play_quiz_answer_a_txt"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:theme="@style/MediumTextOnLight"
+        app:layout_constraintTop_toTopOf="@id/play_quiz_answer_a"
+        app:layout_constraintEnd_toEndOf="@id/play_quiz_answer_a"
+        app:layout_constraintBottom_toBottomOf="@id/play_quiz_answer_a"/>
+
+    <ImageView
+        android:id="@+id/play_quiz_answer_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/answer_b_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/play_quiz_answer_a"
+        app:layout_constraintBottom_toTopOf="@+id/play_quiz_time"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_outlet_100"
+        app:layout_constraintTop_toTopOf="@id/play_quiz_answer_b"
+        app:layout_constraintStart_toStartOf="@id/play_quiz_answer_b"
+        app:layout_constraintBottom_toBottomOf="@id/play_quiz_answer_b"/>
+
+    <TextView
+        android:id="@+id/play_quiz_answer_b_txt"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:theme="@style/MediumTextOnLight"
+        app:layout_constraintTop_toTopOf="@id/play_quiz_answer_b"
+        app:layout_constraintEnd_toEndOf="@id/play_quiz_answer_b"
+        app:layout_constraintBottom_toBottomOf="@id/play_quiz_answer_b"/>
+
+    <LinearLayout
+        android:id="@+id/play_quiz_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/play_quiz_answer_b"
+        app:layout_constraintBottom_toTopOf="@+id/play_quiz_camera"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_left"
+            android:theme="@style/MediumTextOnLight" />
+        <TextView
+            android:id="@+id/play_quiz_time_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/MediumTextOnLight" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seconds"
+            android:theme="@style/MediumTextOnLight" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/play_quiz_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/play_quiz_time"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/camera_placeholder" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

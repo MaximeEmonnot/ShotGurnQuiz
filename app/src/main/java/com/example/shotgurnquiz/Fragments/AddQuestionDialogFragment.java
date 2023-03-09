@@ -51,10 +51,10 @@ public class AddQuestionDialogFragment extends DialogFragment {
             question = questionAdapter.getItem(index);
         }
 
-        editTextTitle.setText(question.getTitle());
-        editTextAnswerA.setText(question.getAnswerA());
-        editTextAnswerB.setText(question.getAnswerB());
-        if(question.getCorrectAnswer() == true)
+        editTextTitle.setText(question.title);
+        editTextAnswerA.setText(question.answerA);
+        editTextAnswerB.setText(question.answerB);
+        if(question.correctAnswer == true)
             radioAnswerA.setChecked(true);
         else
             radioAnswerB.setChecked(true);
@@ -62,10 +62,10 @@ public class AddQuestionDialogFragment extends DialogFragment {
         buttonSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                question.setTitle(editTextTitle.getText().toString());
-                question.setAnswerA(editTextAnswerA.getText().toString());
-                question.setAnswerB(editTextAnswerB.getText().toString());
-                question.setCorrectAnswer(radioAnswerA.isChecked());
+                question.title = editTextTitle.getText().toString();
+                question.answerA = editTextAnswerA.getText().toString();
+                question.answerB = editTextAnswerB.getText().toString();
+                question.correctAnswer = radioAnswerA.isChecked();
 
                 questionAdapter.set(index, question);
                 dismiss();

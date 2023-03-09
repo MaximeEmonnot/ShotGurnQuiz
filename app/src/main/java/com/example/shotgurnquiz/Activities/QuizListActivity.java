@@ -17,9 +17,14 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
+import com.example.shotgurnquiz.Fragments.AddQuestionDialogFragment;
+import com.example.shotgurnquiz.Fragments.QuizInfoDialogFragment;
+import com.example.shotgurnquiz.Models.QuestionModel;
 import com.example.shotgurnquiz.Models.QuizCardModel;
+import com.example.shotgurnquiz.Models.QuizModel;
 import com.example.shotgurnquiz.R;
 import com.example.shotgurnquiz.RecyclerViewConfigs.QuizCard_RecyclerViewAdapter;
+import com.example.shotgurnquiz.RecyclerViewConfigs.RecyclerView_ItemClickListener;
 import com.example.shotgurnquiz.RecyclerViewConfigs.RecyclerView_SpacesItemDecoration;
 import com.google.android.material.bottomappbar.BottomAppBar;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -71,9 +76,23 @@ public class QuizListActivity extends AppCompatActivity {
         quizCards.add(new QuizCardModel("quiz7"));
         quizCards.add(new QuizCardModel("quiz8"));
 
+        //Pour le test
+        ArrayList<QuestionModel> questions = new ArrayList<QuestionModel>();
+        questions.add(new QuestionModel("Le plus long trajet de train est parcouru par le Transsibérien. ", "Vrai", "Faux", false));
+        questions.add(new QuestionModel("Le chemin de fer de la mort en Thaïlande n’est en fait pas si mortel.", "Vrai", "Faux", false));
+        questions.add(new QuestionModel("L’assassinat d’Abraham Lincoln a contribué à la popularisation des voyages en train à travers les États-Unis. ", "Vrai", "Faux", true));
+        QuizModel quiz = new QuizModel("les trains", "Transport", "Intermediaire", questions);
+
         recyclerViewPopular.setAdapter(new QuizCard_RecyclerViewAdapter(this, quizCards));
         recyclerViewPopular.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         recyclerViewPopular.addItemDecoration(new RecyclerView_SpacesItemDecoration(20, 10, LinearLayoutManager.HORIZONTAL));
+        recyclerViewPopular.addOnItemTouchListener(new RecyclerView_ItemClickListener(new RecyclerView_ItemClickListener.OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, int position) {
+                QuizInfoDialogFragment quizInfoDialogFragment = new QuizInfoDialogFragment(quiz);
+                quizInfoDialogFragment.show(getSupportFragmentManager(), "dialog");
+            }
+        }));
 
         recyclerViewMostRecents.setAdapter(new QuizCard_RecyclerViewAdapter(this, quizCards));
         recyclerViewMostRecents.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));

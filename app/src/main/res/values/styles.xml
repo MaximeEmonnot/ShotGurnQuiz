@@ -16,26 +16,32 @@
     <style name="DarkButton">
         <item name="android:textSize">40sp</item>
         <item name="android:textColor">@color/colorTextOnDark</item>
-        <item name="android:fontFamily">@font/font_kabouter</item>
+        <item name="android:fontFamily">@font/font_hobgoblin</item>
         <item name="android:foreground">?attr/selectableItemBackgroundBorderless</item>
         <item name="android:textAllCaps">false</item>
     </style>
 
     <style name="MediumTextOnLight">
         <item name="android:textSize">25sp</item>
-        <item name="android:fontFamily">@font/font_kabouter</item>
+        <item name="android:fontFamily">@font/font_hobgoblin</item>
         <item name="android:textColor">@color/colorTextOnLight</item>
     </style>
 
     <style name="LargeTextOnLight">
         <item name="android:textSize">32sp</item>
-        <item name="android:fontFamily">@font/font_kabouter</item>
+        <item name="android:fontFamily">@font/font_hobgoblin</item>
         <item name="android:textColor">@color/colorTextOnLight</item>
     </style>
 
     <style name="VeryLargeTextOnLight">
+        <item name="android:textSize">42sp</item>
+        <item name="android:fontFamily">@font/font_hobgoblin</item>
+        <item name="android:textColor">@color/colorTextOnLight</item>
+    </style>
+
+    <style name="VeryVeryLargeTextOnLight">
         <item name="android:textSize">56sp</item>
-        <item name="android:fontFamily">@font/font_kabouter</item>
+        <item name="android:fontFamily">@font/font_hobgoblin</item>
         <item name="android:textColor">@color/colorTextOnLight</item>
     </style>
 </resources>

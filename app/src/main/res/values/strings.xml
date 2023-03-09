@@ -40,4 +40,15 @@
     <string name="answer_b" translatable="false">Answer B</string>
     <string name="this_is_my_question" translatable="false">This is my question.</string>
     <string name="save" translatable="false">Save</string>
+    <string name="number_of_questions" translatable="false">Number of questions:</string>
+    <string name="play" translatable="false">Play it !</string>
+    <string name="are_you_sure_you_want_to_quit" translatable="false">Are you sure you want to quit ?</string>
+    <string name="progress_will_be_lost" translatable="false">Progress will be lost.</string>
+    <string name="closing_Quiz" translatable="false">Closing Quiz</string>
+    <string name="yes" translatable="false">Yes</string>
+    <string name="no" translatable="false">No</string>
+    <string name="create" translatable="false">Create</string>
+    <string name="time_left" translatable="false">Time left : </string>
+    <string name="seconds" translatable="false">seconds</string>
+    <string name="score" translatable="false">Score: </string>
 </resources>

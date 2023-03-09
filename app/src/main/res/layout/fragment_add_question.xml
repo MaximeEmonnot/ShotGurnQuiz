@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="50dp"
-        android:theme="@style/VeryLargeTextOnLight"
+        android:theme="@style/VeryVeryLargeTextOnLight"
         android:text="@string/question"/>
 
     <TextView

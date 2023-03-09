@@ -1,6 +1,11 @@
 package com.example.shotgurnquiz.Models;
 
-public class QuestionModel {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+import androidx.annotation.NonNull;
+
+public class QuestionModel implements Parcelable {
 
     public QuestionModel(String title, String answerA, String answerB, boolean correctAnswer){
         this.title = title;
@@ -9,41 +14,41 @@ public class QuestionModel {
         this.correctAnswer = correctAnswer;
     }
 
-    public String getTitle() {
-        return title;
+    public QuestionModel (Parcel parcel) {
+        this.title = parcel.readString();
+        this.answerA = parcel.readString();
+        this.answerB = parcel.readString();
+        this.correctAnswer = parcel.readByte() != 0;
     }
 
-    public String getAnswerA() {
-        return answerA;
+    @Override
+    public int describeContents() {
+        return 0;
     }
 
-    public String getAnswerB() {
-        return answerB;
+    @Override
+    public void writeToParcel(@NonNull Parcel parcel, int i) {
+        parcel.writeString(title);
+        parcel.writeString(answerA);
+        parcel.writeString(answerB);
+        parcel.writeByte((byte) (correctAnswer ? 1 : 0));
     }
 
-    public boolean getCorrectAnswer() {
-        return correctAnswer;
-    }
+    public static final Creator<QuestionModel> CREATOR = new Creator<QuestionModel>() {
+        @Override
+        public QuestionModel createFromParcel(Parcel in) {
+            return new QuestionModel(in);
+        }
 
-    public void setTitle(String title) { this.title = title; }
-
-    public void setAnswerA(String answerA) {
-        this.answerA = answerA;
-    }
-
-    public void setAnswerB(String answerB) {
-        this.answerB = answerB;
-    }
-
-    public void setCorrectAnswer(boolean correctAnswer) {
-        this.correctAnswer = correctAnswer;
-    }
+        @Override
+        public QuestionModel[] newArray(int size) {
+            return new QuestionModel[size];
+        }
+    };
 
 
-
-    private String title;
-    private String answerA;
-    private String answerB;
-    private boolean correctAnswer; // True = A, False = B
-
+    public String title;
+    public String answerA;
+    public String answerB;
+    public boolean correctAnswer; // True = A, False = B
 }

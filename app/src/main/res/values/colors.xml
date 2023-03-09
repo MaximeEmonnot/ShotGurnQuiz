@@ -15,4 +15,6 @@
     <color name="colorSearchBarBackground">#ffffff</color>
     <color name="colorBottomAppBar">#ffffff</color>
     <color name="colorAddButton">#f28500</color>
+    <color name="colorAnswerA_background">#1bde62</color>
+    <color name="colorAnswerB_background">#f28500</color>
 </resources>

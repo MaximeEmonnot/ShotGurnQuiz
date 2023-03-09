@@ -12,8 +12,9 @@
         <activity
             android:name=".Activities.AddQuizActivity"
             android:exported="false"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity android:name=".Activities.LeaderboardActivity" />
+        <activity android:name=".Activities.PlayQuizActivity" />
         <activity android:name=".Activities.ProfileActivity" />
         <activity
             android:name=".Activities.QuizListActivity"
@@ -36,8 +37,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="com.google.mlkit.vision.DEPENDENCIES"
-            android:value="face" ></meta-data>
+            android:value="face" />
     </application>
+
 </manifest>
