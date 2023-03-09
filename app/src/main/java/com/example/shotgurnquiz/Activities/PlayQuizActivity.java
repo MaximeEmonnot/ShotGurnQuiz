@@ -52,8 +52,7 @@ public class PlayQuizActivity extends AppCompatActivity {
 
         index = 0;
         score = 0;
-        QuestionModel question = questions.get(index);
-        loadQuestion(question, score, index);
+        loadQuestion(score, index);
 
         new CountDownTimer(10000, 1000) {
             public void onTick(long millisUntilFinished) {
@@ -65,13 +64,12 @@ public class PlayQuizActivity extends AppCompatActivity {
                 });
             }
             public void onFinish() {
-                if (answer == question.correctAnswer) {
+                if (answer == quiz.getQuestions().get(index).correctAnswer) {
                     score++;
                 }
                 index++;
                 if(index < questions.size()) {
-                    QuestionModel question = questions.get(index);
-                    loadQuestion(question, score, index);
+                    loadQuestion(score, index);
                     this.start();
                 }else{
                     //quiz terminé
@@ -80,7 +78,8 @@ public class PlayQuizActivity extends AppCompatActivity {
         }.start();
     }
 
-    private void loadQuestion(QuestionModel question, int score, int index){
+    private void loadQuestion(int score, int index){
+        QuestionModel question = quiz.getQuestions().get(index);
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
