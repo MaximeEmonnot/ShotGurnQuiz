@@ -147,15 +147,27 @@
             android:theme="@style/MediumTextOnLight" />
     </LinearLayout>
 
-    <androidx.camera.view.PreviewView
+    <FrameLayout
         android:id="@+id/play_quiz_camera"
         android:layout_width="200dp"
         android:layout_height="300dp"
-        app:scaleType="fillCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/play_quiz_time"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintBottom_toBottomOf="parent">
+
+            <androidx.camera.view.PreviewView
+                android:id="@+id/play_quiz_camera_stream"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:scaleType="fillCenter"/>
+
+            <com.example.shotgurnquiz.camerax.GraphicOverlay
+                android:id="@+id/play_quiz_camera_graphicOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+    </FrameLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

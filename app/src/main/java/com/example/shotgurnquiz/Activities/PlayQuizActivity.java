@@ -16,6 +16,7 @@ import com.example.shotgurnquiz.Models.QuestionModel;
 import com.example.shotgurnquiz.Models.QuizModel;
 import com.example.shotgurnquiz.R;
 import com.example.shotgurnquiz.camerax.CameraManager;
+import com.example.shotgurnquiz.camerax.GraphicOverlay;
 
 import java.util.ArrayList;
 
@@ -131,7 +132,7 @@ public class PlayQuizActivity extends AppCompatActivity {
     }
 
     private void createCameraManager() {
-        cameraManager = new CameraManager(this, findViewById(R.id.play_quiz_camera), this);
+        cameraManager = new CameraManager(this, findViewById(R.id.play_quiz_camera_stream), this, findViewById(R.id.play_quiz_camera_graphicOverlay));
     }
 
     @Override
