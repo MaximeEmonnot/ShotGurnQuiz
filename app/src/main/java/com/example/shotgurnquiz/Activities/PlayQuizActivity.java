@@ -1,19 +1,21 @@
 package com.example.shotgurnquiz.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.os.Handler;
-import android.os.Looper;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.shotgurnquiz.Models.QuestionModel;
 import com.example.shotgurnquiz.Models.QuizModel;
 import com.example.shotgurnquiz.R;
+import com.example.shotgurnquiz.camerax.CameraManager;
 
 import java.util.ArrayList;
 
@@ -29,6 +31,9 @@ public class PlayQuizActivity extends AppCompatActivity {
     public boolean answer = false;
     private int score;
     private int index;
+    private final static String[] REQUIRED_PERMISSIONS = {android.Manifest.permission.CAMERA};
+    private final static int REQUEST_CODE_PERMISSIONS = 10;
+    private CameraManager cameraManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +58,9 @@ public class PlayQuizActivity extends AppCompatActivity {
         index = 0;
         score = 0;
         loadQuestion(score, index);
+
+        createCameraManager();
+        checkForPermission();
 
         new CountDownTimer(10000, 1000) {
             public void onTick(long millisUntilFinished) {
@@ -84,12 +92,46 @@ public class PlayQuizActivity extends AppCompatActivity {
             @Override
             public void run() {
                 textViewScoreCount.setText(String.valueOf(score));
-                textViewIndexCount.setText(String.valueOf(index));
+                textViewIndexCount.setText(String.valueOf(index + 1));
                 textViewQuestion.setText(question.title);
                 textViewAnswerATxt.setText(question.answerA);
                 textViewAnswerBTxt.setText(question.answerB);
             }
         });
+    }
+
+    private void checkForPermission() {
+        if (allPermissionsGranted()) {
+            cameraManager.startCamera();
+        } else {
+            ActivityCompat.requestPermissions(this, REQUIRED_PERMISSIONS, REQUEST_CODE_PERMISSIONS );
+        }
+    }
+
+    private boolean allPermissionsGranted(){
+        for (String permission : REQUIRED_PERMISSIONS) {
+            if (ContextCompat.checkSelfPermission(this, permission) != PackageManager.PERMISSION_GRANTED) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == REQUEST_CODE_PERMISSIONS) {
+            if (allPermissionsGranted()) {
+                cameraManager.startCamera();
+            } else {
+                Toast.makeText(this, "Permissions not granted by the user.", Toast.LENGTH_SHORT).show();
+                finish();
+            }
+        }
+    }
+
+    private void createCameraManager() {
+        cameraManager = new CameraManager(this, findViewById(R.id.play_quiz_camera), this);
     }
 
     @Override

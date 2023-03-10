@@ -147,15 +147,15 @@
             android:theme="@style/MediumTextOnLight" />
     </LinearLayout>
 
-    <ImageView
+    <androidx.camera.view.PreviewView
         android:id="@+id/play_quiz_camera"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        app:scaleType="fillCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/play_quiz_time"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:src="@drawable/camera_placeholder" />
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
