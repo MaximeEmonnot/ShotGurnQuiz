@@ -14,8 +14,16 @@ import com.example.shotgurnquiz.Database.Tables.Score;
 import com.example.shotgurnquiz.Database.Tables.User;
 import com.example.shotgurnquiz.Models.QuestionModel;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
@@ -121,6 +129,105 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 database.insert(Question.TABLE, null, questionValues);
             }
         }
+    }
+
+    public List<Quiz> GetAllQuizzes() {
+
+        Cursor c = database.query(Quiz.TABLE,
+                new String[]{Quiz.COLUMN_ID, Quiz.COLUMN_TITLE, Quiz.COLUMN_THEME, Quiz.COLUMN_DIFFICULTY},
+                null, null, null, null, null);
+        ArrayList<Quiz> output = new ArrayList<Quiz>();
+
+        while (c.moveToNext()) output.add(new Quiz(c));
+        c.close();
+
+        return output;
+    }
+
+    public List<Quiz> GetAllLatestQuizzes(){
+        Cursor c = database.query(Quiz.TABLE,
+                new String[]{Quiz.COLUMN_ID, Quiz.COLUMN_TITLE, Quiz.COLUMN_THEME, Quiz.COLUMN_DIFFICULTY},
+                null, null, null, null, Quiz.COLUMN_ID + " DESC");
+        ArrayList<Quiz> output = new ArrayList<Quiz>();
+
+        while (c.moveToNext()) output.add(new Quiz(c));
+        c.close();
+
+        return output;
+    }
+
+    public List<Quiz> GetAllQuizzesFromTheme(String theme){
+        Cursor c = database.query(Quiz.TABLE,
+                new String[]{Quiz.COLUMN_ID, Quiz.COLUMN_TITLE, Quiz.COLUMN_THEME, Quiz.COLUMN_DIFFICULTY},
+                Quiz.COLUMN_THEME + " =  ?", new String[]{ theme }, null, null, null);
+        ArrayList<Quiz> output = new ArrayList<Quiz>();
+
+        while (c.moveToNext()) output.add(new Quiz(c));
+        c.close();
+
+        return output;
+    }
+
+    public List<Quiz> GetAllQuizzesFromDifficulty(String difficulty){
+        Cursor c = database.query(Quiz.TABLE,
+                new String[]{Quiz.COLUMN_ID, Quiz.COLUMN_TITLE, Quiz.COLUMN_THEME, Quiz.COLUMN_DIFFICULTY},
+                Quiz.COLUMN_DIFFICULTY + " =  ?", new String[]{ difficulty }, null, null, null);
+        ArrayList<Quiz> output = new ArrayList<Quiz>();
+
+        while (c.moveToNext()) output.add(new Quiz(c));
+        c.close();
+
+        return output;
+    }
+
+    public List<Quiz> GetAllPopularQuizzes(){
+        // On récupère la liste des quiz dans le tableau de score
+        Cursor cScore = database.query(Score.TABLE, new String[]{Score.COLUMN_QUIZ_ID}, null, null, null, null, null);
+
+        Map<Integer, Integer> quizIDs = new HashMap<Integer, Integer>();
+        while(cScore.moveToNext()){
+            int id = cScore.getInt(0);
+            if (!quizIDs.containsKey(id)) quizIDs.put(id, 0);
+            else quizIDs.put(id, quizIDs.get(id) + 1);
+        }
+        cScore.close();
+        // On trie par nombre d'occurrence
+        List<Map.Entry<Integer, Integer>> quizList = new ArrayList<Map.Entry<Integer, Integer>>(quizIDs.entrySet());
+        Collections.sort(quizList, new Comparator<Map.Entry<Integer, Integer>>() {
+            @Override
+            public int compare(Map.Entry<Integer, Integer> o1, Map.Entry<Integer, Integer> o2) {
+                return (o1.getValue()).compareTo(o2.getValue());
+            }
+        });
+        // On récupère à présent les quiz dans l'ordre de la liste précédente
+        ArrayList<Quiz> output = new ArrayList<Quiz>();
+        for (Map.Entry<Integer, Integer> entry : quizList){
+            Cursor cQuiz = database.query(Quiz.TABLE,
+                    new String[]{Quiz.COLUMN_ID, Quiz.COLUMN_TITLE, Quiz.COLUMN_THEME, Quiz.COLUMN_DIFFICULTY},
+                    Quiz.COLUMN_ID + " =  ?", new String[]{ entry.getValue().toString() }, null, null, null);
+            if (cQuiz.moveToNext()) output.add(new Quiz(cQuiz));
+            cQuiz.close();
+        }
+
+        return output;
+    }
+
+    public List<Question> GetAllQuestionsFromQuiz(int quizID){
+        Cursor c = database.query(Question.TABLE,
+                new String[]{Question.COLUMN_ID, Question.COLUMN_TITLE, Question.COLUMN_CHOICE1, Question.COLUMN_CHOICE2, Question.COLUMN_ANSWER},
+                Question.COLUMN_QUIZ_ID + " = ?", new String[]{ Integer.toString(quizID) }, null, null, Question.COLUMN_ID + " ASC");
+
+        ArrayList<Question> output = new ArrayList<Question>();
+        while (c.moveToNext()) output.add(new Question(c));
+        return output;
+    }
+
+    public void AddNewScore(int quizID, int userID, int score){
+        ContentValues values = new ContentValues();
+        values.put(Score.COLUMN_QUIZ_ID, quizID);
+        values.put(Score.COLUMN_USER_ID, userID);
+        values.put(Score.COLUMN_SCORE, score);
+        database.insert(Score.TABLE, null, values);
     }
 
     public List<Score> GetScores() {

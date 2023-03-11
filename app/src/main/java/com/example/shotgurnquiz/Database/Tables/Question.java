@@ -1,8 +1,33 @@
 package com.example.shotgurnquiz.Database.Tables;
 
+import android.database.Cursor;
+
 public class Question {
 
+    public Question(Cursor cursor){
+        id = cursor.getInt(0);
+        quizID = cursor.getInt(1);
+        title = cursor.getString(2);
+        choice1 = cursor.getString(3);
+        choice2 = cursor.getString(4);
+        answer = (cursor.getInt(5) == 1);
+    }
 
+    public Question(int _id, int _quizID, String _title, String _choice1, String _choice2, boolean _answer){
+        id = _id;
+        quizID = _quizID;
+        title = _title;
+        choice1 = _choice1;
+        choice2 = _choice2;
+        answer = _answer;
+    }
+
+    public int GetID() { return id; }
+    public int GetQuizID() { return quizID; }
+    public String GetTitle() { return title; }
+    public String GetChoice1() { return choice1; }
+    public String GetChoice2() { return choice2; }
+    public boolean GetAnswer() { return answer; }
 
     public static final String TABLE = "question";
 
