@@ -12,18 +12,13 @@ import com.example.shotgurnquiz.Database.Tables.Question;
 import com.example.shotgurnquiz.Database.Tables.Quiz;
 import com.example.shotgurnquiz.Database.Tables.Score;
 import com.example.shotgurnquiz.Database.Tables.User;
-import com.example.shotgurnquiz.Models.QuestionModel;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
@@ -113,25 +108,26 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return output;
     }
 
-    public void CreateNewQuiz(String title, String theme, String difficulty, ArrayList<QuestionModel> questions){
+    public void CreateNewQuiz(String title, String theme, String difficulty, ArrayList<Question> questions){
         ContentValues quizValues = new ContentValues();
         quizValues.put(Quiz.COLUMN_TITLE, title);
         quizValues.put(Quiz.COLUMN_THEME, theme);
         quizValues.put(Quiz.COLUMN_DIFFICULTY, difficulty);
         long quizID = database.insert(Quiz.TABLE, null, quizValues);
         if (quizID != -1) {
-            for (QuestionModel question : questions){
+            for (Question question : questions){
                 ContentValues questionValues = new ContentValues();
-                questionValues.put(Question.COLUMN_TITLE, question.title);
-                questionValues.put(Question.COLUMN_CHOICE1, question.answerA);
-                questionValues.put(Question.COLUMN_CHOICE2, question.answerB);
-                questionValues.put(Question.COLUMN_ANSWER, question.correctAnswer ? 1 : 0);
+                questionValues.put(Question.COLUMN_QUIZ_ID, quizID);
+                questionValues.put(Question.COLUMN_TITLE, question.GetTitle());
+                questionValues.put(Question.COLUMN_CHOICE1, question.GetChoice1());
+                questionValues.put(Question.COLUMN_CHOICE2, question.GetChoice2());
+                questionValues.put(Question.COLUMN_ANSWER, question.GetAnswer() ? 1 : 0);
                 database.insert(Question.TABLE, null, questionValues);
             }
         }
     }
 
-    public List<Quiz> GetAllQuizzes() {
+    public ArrayList<Quiz> GetAllQuizzes() {
 
         Cursor c = database.query(Quiz.TABLE,
                 new String[]{Quiz.COLUMN_ID, Quiz.COLUMN_TITLE, Quiz.COLUMN_THEME, Quiz.COLUMN_DIFFICULTY},
@@ -144,7 +140,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return output;
     }
 
-    public List<Quiz> GetAllLatestQuizzes(){
+    public ArrayList<Quiz> GetAllLatestQuizzes(){
         Cursor c = database.query(Quiz.TABLE,
                 new String[]{Quiz.COLUMN_ID, Quiz.COLUMN_TITLE, Quiz.COLUMN_THEME, Quiz.COLUMN_DIFFICULTY},
                 null, null, null, null, Quiz.COLUMN_ID + " DESC");
@@ -156,7 +152,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return output;
     }
 
-    public List<Quiz> GetAllQuizzesFromTheme(String theme){
+    public ArrayList<Quiz> GetAllQuizzesFromTheme(String theme){
         Cursor c = database.query(Quiz.TABLE,
                 new String[]{Quiz.COLUMN_ID, Quiz.COLUMN_TITLE, Quiz.COLUMN_THEME, Quiz.COLUMN_DIFFICULTY},
                 Quiz.COLUMN_THEME + " =  ?", new String[]{ theme }, null, null, null);
@@ -168,7 +164,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return output;
     }
 
-    public List<Quiz> GetAllQuizzesFromDifficulty(String difficulty){
+    public ArrayList<Quiz> GetAllQuizzesFromDifficulty(String difficulty){
         Cursor c = database.query(Quiz.TABLE,
                 new String[]{Quiz.COLUMN_ID, Quiz.COLUMN_TITLE, Quiz.COLUMN_THEME, Quiz.COLUMN_DIFFICULTY},
                 Quiz.COLUMN_DIFFICULTY + " =  ?", new String[]{ difficulty }, null, null, null);
@@ -180,7 +176,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return output;
     }
 
-    public List<Quiz> GetAllPopularQuizzes(){
+    public ArrayList<Quiz> GetAllPopularQuizzes(){
         // On récupère la liste des quiz dans le tableau de score
         Cursor cScore = database.query(Score.TABLE, new String[]{Score.COLUMN_QUIZ_ID}, null, null, null, null, null);
 
@@ -212,9 +208,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return output;
     }
 
-    public List<Question> GetAllQuestionsFromQuiz(int quizID){
+    public ArrayList<Question> GetAllQuestionsFromQuiz(int quizID){
         Cursor c = database.query(Question.TABLE,
-                new String[]{Question.COLUMN_ID, Question.COLUMN_TITLE, Question.COLUMN_CHOICE1, Question.COLUMN_CHOICE2, Question.COLUMN_ANSWER},
+                new String[]{Question.COLUMN_ID, Question.COLUMN_QUIZ_ID, Question.COLUMN_TITLE, Question.COLUMN_CHOICE1, Question.COLUMN_CHOICE2, Question.COLUMN_ANSWER},
                 Question.COLUMN_QUIZ_ID + " = ?", new String[]{ Integer.toString(quizID) }, null, null, Question.COLUMN_ID + " ASC");
 
         ArrayList<Question> output = new ArrayList<Question>();
@@ -230,7 +226,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         database.insert(Score.TABLE, null, values);
     }
 
-    public List<Score> GetScores() {
+    public ArrayList<Score> GetScores() {
         Cursor c = database.rawQuery("SELECT " + Score.COLUMN_ID +
                 ", " + Quiz.COLUMN_TITLE +
                 ", " + User.COLUMN_USERNAME +

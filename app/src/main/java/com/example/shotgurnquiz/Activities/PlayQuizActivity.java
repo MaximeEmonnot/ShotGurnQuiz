@@ -12,17 +12,17 @@ import android.os.CountDownTimer;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.shotgurnquiz.Models.QuestionModel;
-import com.example.shotgurnquiz.Models.QuizModel;
+import com.example.shotgurnquiz.Database.Tables.Question;
+import com.example.shotgurnquiz.Database.Tables.Quiz;
 import com.example.shotgurnquiz.R;
 import com.example.shotgurnquiz.camerax.CameraManager;
-import com.example.shotgurnquiz.camerax.GraphicOverlay;
 
 import java.util.ArrayList;
 
 public class PlayQuizActivity extends AppCompatActivity {
 
-    private QuizModel quiz;
+    private Quiz quiz;
+    private ArrayList<Question> questions;
     private TextView textViewScoreCount;
     private TextView textViewIndexCount;
     private TextView textViewQuestion;
@@ -42,6 +42,7 @@ public class PlayQuizActivity extends AppCompatActivity {
         setContentView(R.layout.activity_play_quiz);
 
         quiz = getIntent().getExtras().getParcelable("quiz");
+        questions = getIntent().getExtras().getParcelableArrayList("questions");
 
         textViewScoreCount = findViewById(R.id.play_quiz_score_count);
         textViewIndexCount = findViewById(R.id.play_quiz_index_count);
@@ -51,8 +52,6 @@ public class PlayQuizActivity extends AppCompatActivity {
         textViewTimeCount = findViewById(R.id.play_quiz_time_count);
 
         TextView textViewIndexMax = findViewById(R.id.play_quiz_index_max);
-
-        ArrayList<QuestionModel> questions = quiz.getQuestions();
 
         textViewIndexMax.setText(Integer.toString(questions.size()));
 
@@ -73,7 +72,7 @@ public class PlayQuizActivity extends AppCompatActivity {
                 });
             }
             public void onFinish() {
-                if (answer == quiz.getQuestions().get(index).correctAnswer) {
+                if (answer == questions.get(index).GetAnswer()) {
                     score++;
                 }
                 index++;
@@ -88,15 +87,15 @@ public class PlayQuizActivity extends AppCompatActivity {
     }
 
     private void loadQuestion(int score, int index){
-        QuestionModel question = quiz.getQuestions().get(index);
+        Question question = questions.get(index);
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
                 textViewScoreCount.setText(String.valueOf(score));
                 textViewIndexCount.setText(String.valueOf(index + 1));
-                textViewQuestion.setText(question.title);
-                textViewAnswerATxt.setText(question.answerA);
-                textViewAnswerBTxt.setText(question.answerB);
+                textViewQuestion.setText(question.GetTitle());
+                textViewAnswerATxt.setText(question.GetChoice1());
+                textViewAnswerBTxt.setText(question.GetChoice2());
             }
         });
     }

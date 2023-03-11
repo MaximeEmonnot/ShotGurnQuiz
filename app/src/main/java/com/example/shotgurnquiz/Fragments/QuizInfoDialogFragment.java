@@ -7,20 +7,24 @@ import android.os.Bundle;
 import android.util.TypedValue;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.fragment.app.DialogFragment;
 
 import com.example.shotgurnquiz.Activities.PlayQuizActivity;
-import com.example.shotgurnquiz.Models.QuizModel;
+import com.example.shotgurnquiz.Database.DatabaseHelper;
+import com.example.shotgurnquiz.Database.Tables.Question;
+import com.example.shotgurnquiz.Database.Tables.Quiz;
 import com.example.shotgurnquiz.R;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class QuizInfoDialogFragment extends DialogFragment {
 
-    private QuizModel quiz;
+    private Quiz quiz;
 
-    public QuizInfoDialogFragment(QuizModel quiz){
+    public QuizInfoDialogFragment(Quiz quiz){
         this.quiz = quiz;
     }
 
@@ -35,10 +39,13 @@ public class QuizInfoDialogFragment extends DialogFragment {
         TextView textViewDifficulty = (TextView) rootView.findViewById(R.id.quiz_info_difficulty);
         TextView textViewNumberOfQuestions = (TextView) rootView.findViewById(R.id.quiz_info_nb_questions);
 
-        textViewTitle.setText(quiz.getTitle());
-        textViewTheme.setText(quiz.getTheme());
-        textViewDifficulty.setText(quiz.getDifficulty());
-        textViewNumberOfQuestions.setText(String.valueOf(quiz.getQuestionsCount()));
+        DatabaseHelper db = DatabaseHelper.GetInstance(getActivity().getBaseContext());
+        ArrayList<Question> questions = db.GetAllQuestionsFromQuiz(quiz.GetID());
+
+        textViewTitle.setText(quiz.GetTitle());
+        textViewTheme.setText(quiz.GetTheme());
+        textViewDifficulty.setText(quiz.GetDifficulty());
+        textViewNumberOfQuestions.setText(String.valueOf(questions.size()));
 
         Button buttonPlay = (Button) rootView.findViewById(R.id.quiz_info_btn_play);
 
@@ -47,6 +54,7 @@ public class QuizInfoDialogFragment extends DialogFragment {
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), PlayQuizActivity.class);
                 intent.putExtra("quiz", quiz);
+                intent.putParcelableArrayListExtra("questions", questions);
                 startActivity(intent);
             }
         });

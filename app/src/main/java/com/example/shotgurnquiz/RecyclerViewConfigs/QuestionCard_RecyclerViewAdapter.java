@@ -9,15 +9,15 @@ package com.example.shotgurnquiz.RecyclerViewConfigs;
         import androidx.annotation.NonNull;
         import androidx.recyclerview.widget.RecyclerView;
 
-        import com.example.shotgurnquiz.Models.QuestionModel;
+        import com.example.shotgurnquiz.Database.Tables.Question;
         import com.example.shotgurnquiz.R;
 
         import java.util.ArrayList;
 
-public class Question_RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
-    public Question_RecyclerViewAdapter(Context context){
+public class QuestionCard_RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+    public QuestionCard_RecyclerViewAdapter(Context context){
         this.context = context;
-        this.questions = new ArrayList<QuestionModel>();
+        this.questions = new ArrayList<Question>();
     }
 
     @NonNull
@@ -25,8 +25,8 @@ public class Question_RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerV
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         if(viewType == VIEW_TYPE_CELL){
             LayoutInflater inflater = LayoutInflater.from(context);
-            View view = inflater.inflate(R.layout.recycler_view_question, parent, false);
-            return new Question_RecyclerViewAdapter.MyViewHolder(view);
+            View view = inflater.inflate(R.layout.recycler_view_question_card, parent, false);
+            return new QuestionCard_RecyclerViewAdapter.MyViewHolder(view);
         }else{
             LayoutInflater inflater = LayoutInflater.from(context);
             View view = inflater.inflate(R.layout.recycler_view_add_button, parent, false);
@@ -38,10 +38,10 @@ public class Question_RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerV
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         if(getItemViewType(position) == VIEW_TYPE_CELL){
             ((MyViewHolder)holder).textViewIndex.setText((position + 1) + "/" + questions.size());
-            ((MyViewHolder)holder).textViewTitle.setText(questions.get(position).title);
-            ((MyViewHolder)holder).textViewAnswerA.setText(questions.get(position).answerA);
-            ((MyViewHolder)holder).textViewAnswerB.setText(questions.get(position).answerB);
-            ((MyViewHolder)holder).textViewCorrectAnswer.setText(questions.get(position).correctAnswer ? "A" : "B");
+            ((MyViewHolder)holder).textViewTitle.setText(questions.get(position).GetTitle());
+            ((MyViewHolder)holder).textViewAnswerA.setText(questions.get(position).GetChoice1());
+            ((MyViewHolder)holder).textViewAnswerB.setText(questions.get(position).GetChoice2());
+            ((MyViewHolder)holder).textViewCorrectAnswer.setText(questions.get(position).GetAnswer() ? "A" : "B");
         }
     }
 
@@ -50,12 +50,12 @@ public class Question_RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerV
         return (position == getItemCount() - 1) ? VIEW_TYPE_LAST : VIEW_TYPE_CELL;
     }
 
-    public void push(QuestionModel question){
+    public void push(Question question){
         questions.add(question);
         this.notifyDataSetChanged();
     }
 
-    public void set(int index, QuestionModel question){
+    public void set(int index, Question question){
         questions.set(index, question);
         this.notifyDataSetChanged();
     }
@@ -65,11 +65,11 @@ public class Question_RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerV
         this.notifyDataSetChanged();
     }
 
-    public ArrayList<QuestionModel> getAllItems(){
+    public ArrayList<Question> getAllItems(){
         return questions;
     }
 
-    public QuestionModel getItem(int index){
+    public Question getItem(int index){
         return questions.get(index);
     }
 
@@ -107,5 +107,5 @@ public class Question_RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerV
     private final static int VIEW_TYPE_LAST = 0;
     private final static int VIEW_TYPE_CELL = 1;
     private Context context;
-    private ArrayList<QuestionModel> questions;
+    private ArrayList<Question> questions;
 }

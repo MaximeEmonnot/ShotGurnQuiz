@@ -1,8 +1,12 @@
 package com.example.shotgurnquiz.Database.Tables;
 
 import android.database.Cursor;
+import android.os.Parcel;
+import android.os.Parcelable;
 
-public class Question {
+import androidx.annotation.NonNull;
+
+public class Question implements Parcelable {
 
     public Question(Cursor cursor){
         id = cursor.getInt(0);
@@ -13,13 +17,20 @@ public class Question {
         answer = (cursor.getInt(5) == 1);
     }
 
-    public Question(int _id, int _quizID, String _title, String _choice1, String _choice2, boolean _answer){
-        id = _id;
-        quizID = _quizID;
+    public Question(String _title, String _choice1, String _choice2, boolean _answer){
         title = _title;
         choice1 = _choice1;
         choice2 = _choice2;
         answer = _answer;
+    }
+
+    public Question (Parcel parcel) {
+        id = parcel.readInt();
+        quizID = parcel.readInt();
+        title = parcel.readString();
+        choice1 = parcel.readString();
+        choice2 = parcel.readString();
+        answer = parcel.readByte() != 0;
     }
 
     public int GetID() { return id; }
@@ -28,6 +39,33 @@ public class Question {
     public String GetChoice1() { return choice1; }
     public String GetChoice2() { return choice2; }
     public boolean GetAnswer() { return answer; }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(@NonNull Parcel parcel, int i) {
+        parcel.writeInt(id);
+        parcel.writeInt(quizID);
+        parcel.writeString(title);
+        parcel.writeString(choice1);
+        parcel.writeString(choice2);
+        parcel.writeByte((byte) (answer ? 1 : 0));
+    }
+
+    public static final Creator<Question> CREATOR = new Creator<Question>() {
+        @Override
+        public Question createFromParcel(Parcel in) {
+            return new Question(in);
+        }
+
+        @Override
+        public Question[] newArray(int size) {
+            return new Question[size];
+        }
+    };
 
     public static final String TABLE = "question";
 

@@ -9,13 +9,13 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.shotgurnquiz.Models.QuizCardModel;
+import com.example.shotgurnquiz.Database.Tables.Quiz;
 import com.example.shotgurnquiz.R;
 
 import java.util.ArrayList;
 
 public class QuizCard_RecyclerViewAdapter extends RecyclerView.Adapter<QuizCard_RecyclerViewAdapter.MyViewHolder> {
-    public QuizCard_RecyclerViewAdapter(Context context, ArrayList<QuizCardModel> quizCards){
+    public QuizCard_RecyclerViewAdapter(Context context, ArrayList<Quiz> quizCards){
         this.context = context;
         this.quizCards = quizCards;
     }
@@ -30,7 +30,7 @@ public class QuizCard_RecyclerViewAdapter extends RecyclerView.Adapter<QuizCard_
 
     @Override
     public void onBindViewHolder(@NonNull QuizCard_RecyclerViewAdapter.MyViewHolder holder, int position) {
-        holder.textViewTitle.setText(quizCards.get(position).getTitle());
+        holder.textViewTitle.setText(quizCards.get(position).GetTitle());
     }
 
     @Override
@@ -49,5 +49,5 @@ public class QuizCard_RecyclerViewAdapter extends RecyclerView.Adapter<QuizCard_
         }
     }
     private Context context;
-    private ArrayList<QuizCardModel> quizCards;
+    private ArrayList<Quiz> quizCards;
 }

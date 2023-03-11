@@ -13,10 +13,8 @@ import android.widget.Spinner;
 
 import com.example.shotgurnquiz.Database.DatabaseHelper;
 import com.example.shotgurnquiz.Fragments.AddQuestionDialogFragment;
-import com.example.shotgurnquiz.Models.QuestionModel;
-import com.example.shotgurnquiz.Models.QuizModel;
 import com.example.shotgurnquiz.R;
-import com.example.shotgurnquiz.RecyclerViewConfigs.Question_RecyclerViewAdapter;
+import com.example.shotgurnquiz.RecyclerViewConfigs.QuestionCard_RecyclerViewAdapter;
 import com.example.shotgurnquiz.RecyclerViewConfigs.RecyclerView_ItemClickListener;
 import com.example.shotgurnquiz.RecyclerViewConfigs.RecyclerView_SpacesItemDecoration;
 
@@ -41,7 +39,7 @@ public class AddQuizActivity extends AppCompatActivity {
             spinnerDifficulty.setAdapter(adapterDifficulty);
 
             RecyclerView recyclerViewQuestion = findViewById(R.id.recycler_view_question);
-            Question_RecyclerViewAdapter questionAdapter = new Question_RecyclerViewAdapter(this);
+            QuestionCard_RecyclerViewAdapter questionAdapter = new QuestionCard_RecyclerViewAdapter(this);
             recyclerViewQuestion.setAdapter(questionAdapter);
             recyclerViewQuestion.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
             recyclerViewQuestion.addItemDecoration(new RecyclerView_SpacesItemDecoration(20, 10, LinearLayoutManager.HORIZONTAL));
@@ -63,9 +61,9 @@ public class AddQuizActivity extends AppCompatActivity {
                     String title = editTextTitle.getText().toString();
                     String difficulty = spinnerDifficulty.getSelectedItem().toString();
                     String theme = spinnerTheme.getSelectedItem().toString();
-                    QuizModel quiz = new QuizModel(title, difficulty, theme, questionAdapter.getAllItems());
-                    // ajout du quiz en BD ici
-                    db.CreateNewQuiz(title, theme, difficulty, quiz.getQuestions());
+
+                    db.CreateNewQuiz(title, theme, difficulty, questionAdapter.getAllItems());
+
                     finish();
                 }
             });

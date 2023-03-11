@@ -10,18 +10,15 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.RadioButton;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
-import androidx.fragment.app.FragmentManager;
 
-import com.example.shotgurnquiz.Models.QuestionModel;
+import com.example.shotgurnquiz.Database.Tables.Question;
 import com.example.shotgurnquiz.R;
-import com.example.shotgurnquiz.RecyclerViewConfigs.Question_RecyclerViewAdapter;
+import com.example.shotgurnquiz.RecyclerViewConfigs.QuestionCard_RecyclerViewAdapter;
 
 public class AddQuestionDialogFragment extends DialogFragment {
 
-    public AddQuestionDialogFragment(Question_RecyclerViewAdapter questionAdapter, int index) {
+    public AddQuestionDialogFragment(QuestionCard_RecyclerViewAdapter questionAdapter, int index) {
 
         this.questionAdapter = questionAdapter;
         this.index = index;
@@ -42,19 +39,20 @@ public class AddQuestionDialogFragment extends DialogFragment {
         RadioButton radioAnswerB = (RadioButton) rootView.findViewById(R.id.radio_answer_b);
         ImageButton buttonDelete = (ImageButton) rootView.findViewById(R.id.button_delete);
 
-        QuestionModel question;
+        Question question;
 
         if(index == questionAdapter.getItemCount() - 1){
-            question = new QuestionModel(getResources().getString(R.string.this_is_my_question), getResources().getString(R.string.answer_a), getResources().getString(R.string.answer_b), true);
+            question = new Question(getResources().getString(R.string.this_is_my_question), getResources().getString(R.string.answer_a), getResources().getString(R.string.answer_b), true);
             questionAdapter.push(question);
         }else{
             question = questionAdapter.getItem(index);
         }
 
-        editTextTitle.setText(question.title);
-        editTextAnswerA.setText(question.answerA);
-        editTextAnswerB.setText(question.answerB);
-        if(question.correctAnswer == true)
+        editTextTitle.setText(question.GetTitle());
+        editTextAnswerA.setText(question.GetChoice1());
+        editTextAnswerB.setText(question.GetChoice2());
+
+        if(question.GetAnswer() == true)
             radioAnswerA.setChecked(true);
         else
             radioAnswerB.setChecked(true);
@@ -62,10 +60,11 @@ public class AddQuestionDialogFragment extends DialogFragment {
         buttonSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                question.title = editTextTitle.getText().toString();
-                question.answerA = editTextAnswerA.getText().toString();
-                question.answerB = editTextAnswerB.getText().toString();
-                question.correctAnswer = radioAnswerA.isChecked();
+                String title = editTextTitle.getText().toString();
+                String choice1 = editTextAnswerA.getText().toString();
+                String choice2 = editTextAnswerB.getText().toString();
+                boolean answer = radioAnswerA.isChecked();
+                Question question = new Question(title, choice1, choice2, answer);
 
                 questionAdapter.set(index, question);
                 dismiss();
@@ -107,7 +106,7 @@ public class AddQuestionDialogFragment extends DialogFragment {
         getDialog().getWindow().setLayout(width,height);
     }
 
-    private Question_RecyclerViewAdapter questionAdapter;
+    private QuestionCard_RecyclerViewAdapter questionAdapter;
     private int index;
 
 }
