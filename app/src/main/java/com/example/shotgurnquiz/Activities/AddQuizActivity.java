@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 
+import com.example.shotgurnquiz.Database.DatabaseHelper;
 import com.example.shotgurnquiz.Fragments.AddQuestionDialogFragment;
 import com.example.shotgurnquiz.Models.QuestionModel;
 import com.example.shotgurnquiz.Models.QuizModel;
@@ -26,6 +27,7 @@ public class AddQuizActivity extends AppCompatActivity {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_add_quiz);
 
+            DatabaseHelper db = DatabaseHelper.GetInstance(this);
 
             Spinner spinnerTheme = findViewById(R.id.spinner_theme);
             // Liste des themes a recuperer dans la bd
@@ -63,6 +65,7 @@ public class AddQuizActivity extends AppCompatActivity {
                     String theme = spinnerTheme.getSelectedItem().toString();
                     QuizModel quiz = new QuizModel(title, difficulty, theme, questionAdapter.getAllItems());
                     // ajout du quiz en BD ici
+                    db.CreateNewQuiz(title, theme, difficulty, quiz.getQuestions());
                     finish();
                 }
             });

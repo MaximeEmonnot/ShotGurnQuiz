@@ -1,6 +1,9 @@
 package com.example.shotgurnquiz.Database.Tables;
 
 public class Question {
+
+
+
     public static final String TABLE = "question";
 
     public static final String COLUMN_ID = "id";
@@ -19,4 +22,11 @@ public class Question {
             + COLUMN_ANSWER + " INTEGER NOT NULL,"
             + "FOREIGN KEY (" + COLUMN_QUIZ_ID + ") REFERENCES " + Quiz.TABLE + "(" + Quiz.COLUMN_ID + "));";
     public static final String DELETE_QUERY = "DROP TABLE " + TABLE + ";";
+
+    private int id;
+    private int quizID;
+    private String title;
+    private String choice1;
+    private String choice2;
+    private boolean answer;
 }

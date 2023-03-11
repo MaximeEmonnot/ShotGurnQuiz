@@ -12,6 +12,7 @@ import com.example.shotgurnquiz.Database.Tables.Question;
 import com.example.shotgurnquiz.Database.Tables.Quiz;
 import com.example.shotgurnquiz.Database.Tables.Score;
 import com.example.shotgurnquiz.Database.Tables.User;
+import com.example.shotgurnquiz.Models.QuestionModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -102,6 +103,24 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         c.close();
         return output;
+    }
+
+    public void CreateNewQuiz(String title, String theme, String difficulty, ArrayList<QuestionModel> questions){
+        ContentValues quizValues = new ContentValues();
+        quizValues.put(Quiz.COLUMN_TITLE, title);
+        quizValues.put(Quiz.COLUMN_THEME, theme);
+        quizValues.put(Quiz.COLUMN_DIFFICULTY, difficulty);
+        long quizID = database.insert(Quiz.TABLE, null, quizValues);
+        if (quizID != -1) {
+            for (QuestionModel question : questions){
+                ContentValues questionValues = new ContentValues();
+                questionValues.put(Question.COLUMN_TITLE, question.title);
+                questionValues.put(Question.COLUMN_CHOICE1, question.answerA);
+                questionValues.put(Question.COLUMN_CHOICE2, question.answerB);
+                questionValues.put(Question.COLUMN_ANSWER, question.correctAnswer ? 1 : 0);
+                database.insert(Question.TABLE, null, questionValues);
+            }
+        }
     }
 
     public List<Score> GetScores() {
