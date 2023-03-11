@@ -28,13 +28,12 @@ public class AddQuizActivity extends AppCompatActivity {
             DatabaseHelper db = DatabaseHelper.GetInstance(this);
 
             Spinner spinnerTheme = findViewById(R.id.spinner_theme);
-            // Liste des themes a recuperer dans la bd
-            String[] themes = new String[]{"Country", "Music", "Soccer"};
+            String[] themes = getResources().getStringArray(R.array.theme_list);
             ArrayAdapter<String> adapterTheme = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, themes);
             spinnerTheme.setAdapter(adapterTheme);
 
             Spinner spinnerDifficulty = findViewById(R.id.spinner_difficulty);
-            String[] difficulties = new String[]{getResources().getString(R.string.easy) , getResources().getString(R.string.medium), getResources().getString(R.string.hard)};
+            String[] difficulties = getResources().getStringArray(R.array.difficulty_list);
             ArrayAdapter<String> adapterDifficulty = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, difficulties);
             spinnerDifficulty.setAdapter(adapterDifficulty);
 
