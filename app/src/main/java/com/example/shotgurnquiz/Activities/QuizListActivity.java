@@ -57,9 +57,9 @@ public class QuizListActivity extends AppCompatActivity {
 
         loadRecyclerView(R.id.recycler_view_popular, db.GetAllPopularQuizzes());
         loadRecyclerView(R.id.recycler_view_most_recents, db.GetAllLatestQuizzes());
-        loadRecyclerView(R.id.recycler_view_hard, db.GetAllQuizzesFromDifficulty("hard"));
-        loadRecyclerView(R.id.recycler_view_medium, db.GetAllQuizzesFromDifficulty("medium"));
-        loadRecyclerView(R.id.recycler_view_easy, db.GetAllQuizzesFromDifficulty("easy"));
+        loadRecyclerView(R.id.recycler_view_hard, db.GetAllQuizzesFromDifficulty(2));
+        loadRecyclerView(R.id.recycler_view_medium, db.GetAllQuizzesFromDifficulty(1));
+        loadRecyclerView(R.id.recycler_view_easy, db.GetAllQuizzesFromDifficulty(0));
 
         recyclerViewSearch.setAdapter(new QuizCard_RecyclerViewAdapter(this, new ArrayList<Quiz>()));
         recyclerViewSearch.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));

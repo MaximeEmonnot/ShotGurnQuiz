@@ -43,8 +43,8 @@ public class QuizInfoDialogFragment extends DialogFragment {
         ArrayList<Question> questions = db.GetAllQuestionsFromQuiz(quiz.GetID());
 
         textViewTitle.setText(quiz.GetTitle());
-        textViewTheme.setText(quiz.GetTheme());
-        textViewDifficulty.setText(quiz.GetDifficulty());
+        textViewTheme.setText(getResources().getStringArray(R.array.theme_list)[quiz.GetTheme()]);
+        textViewDifficulty.setText(getResources().getStringArray(R.array.difficulty_list)[quiz.GetDifficulty()]);
         textViewNumberOfQuestions.setText(String.valueOf(questions.size()));
 
         Button buttonPlay = (Button) rootView.findViewById(R.id.quiz_info_btn_play);

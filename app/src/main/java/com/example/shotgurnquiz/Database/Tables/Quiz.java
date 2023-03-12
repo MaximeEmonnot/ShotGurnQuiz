@@ -11,28 +11,28 @@ public class Quiz implements Parcelable{
     public Quiz(Cursor cursor){
         id = cursor.getInt(0);
         title = cursor.getString(1);
-        theme = cursor.getString(2);
-        difficulty = cursor.getString(3);
+        themeIndex = cursor.getInt(2);
+        difficultyIndex = cursor.getInt(3);
     }
 
-    public Quiz(int _id, String _title, String _theme, String _difficulty){
+    public Quiz(int _id, String _title, int _themeIndex, int _difficultyIndex){
         id = _id;
         title = _title;
-        theme = _theme;
-        difficulty = _difficulty;
+        themeIndex = _themeIndex;
+        difficultyIndex = _difficultyIndex;
     }
 
     public Quiz (Parcel parcel) {
         id = parcel.readInt();
         title = parcel.readString();
-        theme = parcel.readString();
-        difficulty = parcel.readString();
+        themeIndex = parcel.readInt();
+        difficultyIndex = parcel.readInt();
     }
 
     public int GetID() { return id; }
     public String GetTitle() { return title; }
-    public String GetTheme() { return theme; }
-    public String GetDifficulty() { return difficulty; }
+    public int GetTheme() { return themeIndex; }
+    public int GetDifficulty() { return difficultyIndex; }
 
     @Override
     public int describeContents() {
@@ -43,8 +43,8 @@ public class Quiz implements Parcelable{
     public void writeToParcel(@NonNull Parcel parcel, int i) {
         parcel.writeInt(id);
         parcel.writeString(title);
-        parcel.writeString(theme);
-        parcel.writeString(difficulty);
+        parcel.writeInt(themeIndex);
+        parcel.writeInt(difficultyIndex);
     }
 
     public static final Parcelable.Creator<Quiz> CREATOR = new Parcelable.Creator<Quiz>() {
@@ -67,12 +67,12 @@ public class Quiz implements Parcelable{
     public static final String CREATION_QUERY = "CREATE TABLE " + TABLE
             + " (" + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
             + COLUMN_TITLE + " TEXT NOT NULL, "
-            + COLUMN_THEME + " TEXT NOT NULL,"
+            + COLUMN_THEME + " INTEGER NOT NULL,"
             + COLUMN_DIFFICULTY + " INTEGER NOT NULL);";
     public static final String DELETE_QUERY = "DROP TABLE " + TABLE + ";";
 
     private int id;
     private String title;
-    private String theme;
-    private String difficulty;
+    private int themeIndex;
+    private int difficultyIndex;
 }

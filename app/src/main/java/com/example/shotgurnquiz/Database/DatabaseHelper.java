@@ -108,11 +108,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return output;
     }
 
-    public void CreateNewQuiz(String title, String theme, String difficulty, ArrayList<Question> questions){
+    public void CreateNewQuiz(String title, int themeIndex, int difficultyIndex, ArrayList<Question> questions){
         ContentValues quizValues = new ContentValues();
         quizValues.put(Quiz.COLUMN_TITLE, title);
-        quizValues.put(Quiz.COLUMN_THEME, theme);
-        quizValues.put(Quiz.COLUMN_DIFFICULTY, difficulty);
+        quizValues.put(Quiz.COLUMN_THEME, themeIndex);
+        quizValues.put(Quiz.COLUMN_DIFFICULTY, difficultyIndex);
         long quizID = database.insert(Quiz.TABLE, null, quizValues);
         if (quizID != -1) {
             for (Question question : questions){
@@ -152,10 +152,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return output;
     }
 
-    public ArrayList<Quiz> GetAllQuizzesFromTheme(String theme){
+    public ArrayList<Quiz> GetAllQuizzesFromTheme(int themeIndex){
         Cursor c = database.query(Quiz.TABLE,
                 new String[]{Quiz.COLUMN_ID, Quiz.COLUMN_TITLE, Quiz.COLUMN_THEME, Quiz.COLUMN_DIFFICULTY},
-                Quiz.COLUMN_THEME + " =  ?", new String[]{ theme }, null, null, null);
+                Quiz.COLUMN_THEME + " =  ?", new String[]{ Integer.toString(themeIndex) }, null, null, null);
         ArrayList<Quiz> output = new ArrayList<Quiz>();
 
         while (c.moveToNext()) output.add(new Quiz(c));
@@ -164,10 +164,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return output;
     }
 
-    public ArrayList<Quiz> GetAllQuizzesFromDifficulty(String difficulty){
+    public ArrayList<Quiz> GetAllQuizzesFromDifficulty(int difficultyIndex){
         Cursor c = database.query(Quiz.TABLE,
                 new String[]{Quiz.COLUMN_ID, Quiz.COLUMN_TITLE, Quiz.COLUMN_THEME, Quiz.COLUMN_DIFFICULTY},
-                Quiz.COLUMN_DIFFICULTY + " =  ?", new String[]{ difficulty }, null, null, null);
+                Quiz.COLUMN_DIFFICULTY + " =  ?", new String[]{ Integer.toString(difficultyIndex) }, null, null, null);
         ArrayList<Quiz> output = new ArrayList<Quiz>();
 
         while (c.moveToNext()) output.add(new Quiz(c));

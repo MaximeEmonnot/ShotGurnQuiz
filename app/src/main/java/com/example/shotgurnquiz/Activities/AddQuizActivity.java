@@ -58,10 +58,10 @@ public class AddQuizActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     String title = editTextTitle.getText().toString();
-                    String difficulty = spinnerDifficulty.getSelectedItem().toString();
-                    String theme = spinnerTheme.getSelectedItem().toString();
+                    int difficultyIndex = spinnerDifficulty.getSelectedItemPosition();
+                    int themeIndex = spinnerTheme.getSelectedItemPosition();
 
-                    db.CreateNewQuiz(title, theme, difficulty, questionAdapter.getAllItems());
+                    db.CreateNewQuiz(title, themeIndex, difficultyIndex, questionAdapter.getAllItems());
 
                     finish();
                 }
