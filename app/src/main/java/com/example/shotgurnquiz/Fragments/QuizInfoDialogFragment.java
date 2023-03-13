@@ -23,9 +23,11 @@ import java.util.List;
 public class QuizInfoDialogFragment extends DialogFragment {
 
     private Quiz quiz;
+    private int userId;
 
-    public QuizInfoDialogFragment(Quiz quiz){
-        this.quiz = quiz;
+    public QuizInfoDialogFragment(Quiz _quiz, int _userId){
+        this.quiz = _quiz;
+        this.userId = _userId;
     }
 
     @Override
@@ -55,7 +57,9 @@ public class QuizInfoDialogFragment extends DialogFragment {
                 Intent intent = new Intent(getActivity(), PlayQuizActivity.class);
                 intent.putExtra("quiz", quiz);
                 intent.putParcelableArrayListExtra("questions", questions);
+                intent.putExtra("userId", userId);
                 startActivity(intent);
+                dismiss();
             }
         });
 

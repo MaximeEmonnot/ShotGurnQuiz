@@ -86,12 +86,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return null;
     }
 
-    public void CreateNewUser(String username, String email, String password){
+    public int CreateNewUser(String username, String email, String password){
         ContentValues values = new ContentValues();
         values.put(User.COLUMN_USERNAME, username);
         values.put(User.COLUMN_EMAIL, email);
         values.put(User.COLUMN_PASSWORD, password);
-        database.insert(User.TABLE, null, values);
+        return (int) database.insert(User.TABLE, null, values);
     }
 
     public List<User> GetAllUser() {

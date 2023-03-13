@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.QuizSummaryActivity"
+    android:background="@color/colorBackground">
+
+    <TextView
+        android:id="@+id/quiz_summary_thanks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thanks for playing"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/quiz_summary_title"
+        android:theme="@style/VeryLargeTextOnLight"/>
+
+    <TextView
+        android:id="@+id/quiz_summary_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/quiz_summary_thanks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/quiz_summary_score"
+        android:theme="@style/LargeTextOnLight"/>
+
+    <LinearLayout
+        android:id="@+id/quiz_summary_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/quiz_summary_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/quiz_summary_points">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your score is: "
+            android:theme="@style/MediumTextOnLight"/>
+        <TextView
+            android:id="@+id/quiz_summary_score_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/MediumTextOnLight"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" / "
+            android:theme="@style/MediumTextOnLight"/>
+        <TextView
+            android:id="@+id/quiz_summary_score_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/MediumTextOnLight"/>
+
+    </LinearLayout>
+
+
+
+   <TextView
+       android:id="@+id/quiz_summary_points_count"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:theme="@style/MediumTextOnLight"
+       app:layout_constraintTop_toBottomOf="@+id/quiz_summary_score"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintBottom_toTopOf="@+id/quiz_summary_btn_quiz_list"
+       android:gravity="center"/>
+
+
+
+    <Button
+        android:id="@+id/quiz_summary_btn_quiz_list"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/DarkButton"
+        android:background="@color/colorButtonBackgroundDark"
+        app:layout_constraintTop_toBottomOf="@+id/quiz_summary_points"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Return to main page"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

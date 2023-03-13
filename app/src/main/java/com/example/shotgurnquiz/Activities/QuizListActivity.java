@@ -49,7 +49,7 @@ public class QuizListActivity extends AppCompatActivity {
             leaderboardButton.setVisibility(View.GONE);
         }
         else {
-            username = bundle.getString("username");
+            userId = bundle.getInt("userId");
         }
 
         DatabaseHelper db = DatabaseHelper.GetInstance(this);
@@ -106,7 +106,7 @@ public class QuizListActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(QuizListActivity.this, ProfileActivity.class);
-                intent.putExtra("username", username);
+                intent.putExtra("userId", userId);
                 startActivity(intent);
             }
         });
@@ -115,7 +115,7 @@ public class QuizListActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(QuizListActivity.this, LeaderboardActivity.class);
-                intent.putExtra("username", username);
+                intent.putExtra("userId", userId);
                 startActivity(intent);
             }
         });
@@ -124,7 +124,6 @@ public class QuizListActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(QuizListActivity.this, AddQuizActivity.class);
-                intent.putExtra("username", username);
                 startActivity(intent);
             }
         });
@@ -140,11 +139,11 @@ public class QuizListActivity extends AppCompatActivity {
         recyclerView.addOnItemTouchListener(new RecyclerView_ItemClickListener(new RecyclerView_ItemClickListener.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
-                QuizInfoDialogFragment quizInfoDialogFragment = new QuizInfoDialogFragment(quizList.get(position));
+                QuizInfoDialogFragment quizInfoDialogFragment = new QuizInfoDialogFragment(quizList.get(position), userId);
                 quizInfoDialogFragment.show(getSupportFragmentManager(), "dialog");
             }
         }));
     }
 
-    private String username;
+    private int userId;
 }

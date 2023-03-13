@@ -6,6 +6,7 @@ import androidx.core.content.ContextCompat;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -22,6 +23,7 @@ import java.util.ArrayList;
 public class PlayQuizActivity extends AppCompatActivity {
 
     private Quiz quiz;
+    private int userId;
     private ArrayList<Question> questions;
     private TextView textViewScoreCount;
     private TextView textViewIndexCount;
@@ -41,8 +43,10 @@ public class PlayQuizActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_quiz);
 
-        quiz = getIntent().getExtras().getParcelable("quiz");
-        questions = getIntent().getExtras().getParcelableArrayList("questions");
+        Bundle bundle = getIntent().getExtras();
+        quiz = bundle.getParcelable("quiz");
+        userId = bundle.getInt("userId");
+        questions = bundle.getParcelableArrayList("questions");
 
         textViewScoreCount = findViewById(R.id.play_quiz_score_count);
         textViewIndexCount = findViewById(R.id.play_quiz_index_count);
@@ -80,7 +84,14 @@ public class PlayQuizActivity extends AppCompatActivity {
                     loadQuestion(score, index);
                     this.start();
                 }else{
-                    //quiz terminé
+                    Intent intent = new Intent(PlayQuizActivity.this, QuizSummaryActivity.class);
+                    intent.putExtra("score", score);
+                    intent.putExtra("questionCount", questions.size());
+                    intent.putExtra("quizTitle", quiz.GetTitle());
+                    intent.putExtra("quizId", quiz.GetID());
+                    intent.putExtra("userId", userId);
+                    startActivity(intent);
+                    finish();
                 }
             }
         }.start();

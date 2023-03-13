@@ -51,12 +51,12 @@
     <string name="time_left" translatable="false">Time left : </string>
     <string name="seconds" translatable="false">seconds</string>
     <string name="score" translatable="false">Score: </string>
-    <string-array name="difficulty_list" translatable="false" >
+    <string-array name="difficulty_list" translatable="false">
         <item>Easy</item>
         <item>Intermediate</item>
         <item>Difficult</item>
     </string-array>
-    <string-array name="theme_list" translatable="false" >
+    <string-array name="theme_list" translatable="false">
         <item>Food</item>
         <item>Sport</item>
         <item>Animals</item>
