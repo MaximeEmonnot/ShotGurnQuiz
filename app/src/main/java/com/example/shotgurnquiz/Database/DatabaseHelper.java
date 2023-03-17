@@ -219,11 +219,18 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     public void AddNewScore(int quizID, int userID, int score){
+        Cursor c = database.query(Score.TABLE,
+                new String[]{Score.COLUMN_ID, Score.COLUMN_SCORE}, Score.COLUMN_QUIZ_ID + " = ? AND " + Score.COLUMN_USER_ID + " = ?", new String[]{Integer.toString(quizID), Integer.toString(userID)}, null, null, null);
+
         ContentValues values = new ContentValues();
         values.put(Score.COLUMN_QUIZ_ID, quizID);
         values.put(Score.COLUMN_USER_ID, userID);
         values.put(Score.COLUMN_SCORE, score);
-        database.insert(Score.TABLE, null, values);
+        if (c.moveToNext()){
+            int oldScore = c.getInt(1);
+            if (oldScore < score) database.update(Score.TABLE, values, Score.COLUMN_ID + " = ?", new String[]{Integer.toString(c.getInt(0))});
+        }
+        else database.insert(Score.TABLE, null, values);
     }
 
     public Score GetUserScore(int quizId, int userId){
