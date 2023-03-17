@@ -51,6 +51,10 @@
     <string name="time_left" translatable="false">Time left : </string>
     <string name="seconds" translatable="false">seconds</string>
     <string name="score" translatable="false">Score: </string>
+    <string name="points_added_season_points" translatable="false"> points have been added to your season points</string>
+    <string name="thanks_for_playing" translatable="false">Thanks for playing</string>
+    <string name="your_score_is" translatable="false">Your score is: </string>
+    <string name="return_to_quiz_list" translatable="false">Return to quiz list</string>
     <string-array name="difficulty_list" translatable="false">
         <item>Easy</item>
         <item>Intermediate</item>

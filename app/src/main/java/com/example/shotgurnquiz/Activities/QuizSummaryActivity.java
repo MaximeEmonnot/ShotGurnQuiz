@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.shotgurnquiz.Database.DatabaseHelper;
+import com.example.shotgurnquiz.Database.Tables.Score;
 import com.example.shotgurnquiz.R;
 
 public class QuizSummaryActivity extends AppCompatActivity {
@@ -37,7 +38,17 @@ public class QuizSummaryActivity extends AppCompatActivity {
         textViewTitle.setText(quizTitle);
         textViewScoreCount.setText(Integer.toString(score));
         textViewScoreMax.setText(Integer.toString(questionCount));
-        textViewPointsCount.setText("10 points have been added to your season points");//Affichage des points
+
+        DatabaseHelper db = DatabaseHelper.GetInstance(this);
+        Score dbScore = db.GetUserScore(quizId, userId);
+        int points = 0;
+
+        if(dbScore == null || dbScore.GetScore() < score){
+            db.AddNewScore(quizId, userId, score);
+            points = score - (dbScore == null ? 0 : dbScore.GetScore());
+        }
+
+        textViewPointsCount.setText(Integer.toString(points)+ " " + getString(R.string.points_added_season_points));
 
         buttonQuizList.setOnClickListener(new View.OnClickListener() {
             @Override

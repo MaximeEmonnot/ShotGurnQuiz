@@ -6,8 +6,8 @@ public class Score {
 
     public Score(Cursor c){
         id = c.getInt(0);
-        quizTitle = c.getString(1);
-        username = c.getString(2);
+        quizId = c.getInt(1);
+        userId = c.getInt(2);
         score = c.getInt(3);
     }
 
@@ -15,12 +15,12 @@ public class Score {
         return id;
     }
 
-    public String GetQuizTitle() {
-        return quizTitle;
+    public int GetQuizId() {
+        return quizId;
     }
 
-    public String GetUsername() {
-        return username;
+    public int GetUserId() {
+        return userId;
     }
 
     public int GetScore() {
@@ -44,7 +44,7 @@ public class Score {
     public static final String DELETE_QUERY = "DROP TABLE " + TABLE + ";";
 
     private int id;
-    private String quizTitle;
-    private String username;
+    private int quizId;
+    private int userId;
     private int score;
 }

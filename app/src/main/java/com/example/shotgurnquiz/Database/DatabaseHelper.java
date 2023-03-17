@@ -226,6 +226,18 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         database.insert(Score.TABLE, null, values);
     }
 
+    public Score GetUserScore(int quizId, int userId){
+        Cursor c = database.query(Score.TABLE,
+                new String[] { Score.COLUMN_ID, Score.COLUMN_QUIZ_ID, Score.COLUMN_USER_ID, Score.COLUMN_SCORE},
+                Score.COLUMN_QUIZ_ID + " = ? and " + Score.COLUMN_USER_ID + " = ?", new String[]{Integer.toString(quizId), Integer.toString(userId)}, null, null, null);
+
+        if (c.getCount() > 0){
+            c.moveToNext();
+            return new Score(c);
+        }
+        return null;
+    }
+
     public ArrayList<Score> GetScores() {
         Cursor c = database.rawQuery("SELECT " + Score.COLUMN_ID +
                 ", " + Quiz.COLUMN_TITLE +
