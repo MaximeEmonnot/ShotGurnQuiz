@@ -95,6 +95,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return (int) database.insert(User.TABLE, null, values);
     }
 
+    public void SetUserPassword(int userId, String password){
+        ContentValues values = new ContentValues();
+        values.put(User.COLUMN_PASSWORD, password);
+
+        database.update(User.TABLE, values, User.COLUMN_ID + " = ?", new String[]{Integer.toString(userId)});
+    }
+
     public List<User> GetAllUser() {
         Cursor c = database.query(User.TABLE,
                 new String[] {User.COLUMN_ID, User.COLUMN_USERNAME, User.COLUMN_EMAIL, User.COLUMN_PASSWORD},

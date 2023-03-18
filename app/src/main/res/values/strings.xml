@@ -56,6 +56,16 @@
     <string name="your_score_is" translatable="false">Your score is: </string>
     <string name="return_to_quiz_list" translatable="false">Return to quiz list</string>
     <string name="points" translatable="false">Points:</string>
+    <string name="season" translatable="false">Season</string>
+    <string name="your_rank" translatable="false">Your rank:</string>
+    <string name="change_password" translatable="false">Change password</string>
+    <string name="username_indicator" translatable="false">Username:</string>
+    <string name="email_indicator" translatable="false">Email:</string>
+    <string name="old_password" translatable="false">Old password</string>
+    <string name="new_password" translatable="false">New password</string>
+    <string name="confirm_new_password" translatable="false">Confirm new password</string>
+    <string name="set_password" translatable="false">Set password</string>
+    <string name="password_successfully_updated" translatable="false">Your password has been successfully updated</string>
     <string-array name="difficulty_list" translatable="false">
         <item>Easy</item>
         <item>Intermediate</item>
