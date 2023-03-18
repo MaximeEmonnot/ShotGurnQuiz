@@ -12,6 +12,7 @@ import com.example.shotgurnquiz.Database.Tables.Question;
 import com.example.shotgurnquiz.Database.Tables.Quiz;
 import com.example.shotgurnquiz.Database.Tables.Score;
 import com.example.shotgurnquiz.Database.Tables.User;
+import com.example.shotgurnquiz.Models.SeasonPoints;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -256,6 +257,23 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         while (c.moveToNext()){
             output.add(new Score(c));
+        }
+
+        c.close();
+        return output;
+    }
+
+    public ArrayList<SeasonPoints> GetRanking(){
+        Cursor c = database.rawQuery("SELECT " + User.COLUMN_USERNAME +
+                ", " + "count(" + Score.COLUMN_SCORE + ")" + " AS points" +
+                " FROM " + Score.TABLE + ", " + User.TABLE + " WHERE " + User.TABLE + "." + User.COLUMN_ID + " = " + Score.TABLE + "." + Score.COLUMN_USER_ID
+                + " GROUP BY " + User.COLUMN_USERNAME
+                + " ORDER BY points DESC", null);
+
+        ArrayList<SeasonPoints> output = new ArrayList<SeasonPoints>();
+
+        while (c.moveToNext()){
+            output.add(new SeasonPoints(c));
         }
 
         c.close();

@@ -162,7 +162,7 @@
                 android:layout_height="match_parent"
                 app:scaleType="fillCenter"/>
 
-            <com.example.shotgurnquiz.camerax.GraphicOverlay
+            <com.example.shotgurnquiz.Camerax.GraphicOverlay
                 android:id="@+id/play_quiz_camera_graphicOverlay"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />

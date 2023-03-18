@@ -16,7 +16,7 @@ import android.widget.Toast;
 import com.example.shotgurnquiz.Database.Tables.Question;
 import com.example.shotgurnquiz.Database.Tables.Quiz;
 import com.example.shotgurnquiz.R;
-import com.example.shotgurnquiz.camerax.CameraManager;
+import com.example.shotgurnquiz.Camerax.CameraManager;
 
 import java.util.ArrayList;
 

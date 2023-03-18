@@ -1,4 +1,4 @@
-package com.example.shotgurnquiz.camerax;
+package com.example.shotgurnquiz.Camerax;
 
 import android.content.Context;
 import android.content.res.Configuration;

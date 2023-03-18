@@ -1,13 +1,11 @@
-package com.example.shotgurnquiz.face_detection;
+package com.example.shotgurnquiz.Face_detection;
 
-import android.content.Context;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.RectF;
 
-import com.example.shotgurnquiz.camerax.GraphicOverlay;
+import com.example.shotgurnquiz.Camerax.GraphicOverlay;
 import com.google.mlkit.vision.face.Face;
 
 public class FaceContourGraphic extends GraphicOverlay.Graphic{

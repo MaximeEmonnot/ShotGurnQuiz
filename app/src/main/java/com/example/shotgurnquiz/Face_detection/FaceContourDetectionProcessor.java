@@ -1,16 +1,14 @@
-package com.example.shotgurnquiz.face_detection;
+package com.example.shotgurnquiz.Face_detection;
 
-import android.app.Activity;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.Rect;
 import android.util.Log;
 
 import com.example.shotgurnquiz.Activities.PlayQuizActivity;
-import com.example.shotgurnquiz.camerax.BaseImageAnalyzer;
-import com.example.shotgurnquiz.camerax.GraphicOverlay;
+import com.example.shotgurnquiz.Camerax.BaseImageAnalyzer;
+import com.example.shotgurnquiz.Camerax.GraphicOverlay;
 import com.google.android.gms.tasks.Task;
-import com.google.android.material.slider.Slider;
 import com.google.mlkit.vision.common.InputImage;
 import com.google.mlkit.vision.face.Face;
 import com.google.mlkit.vision.face.FaceDetection;
@@ -18,7 +16,6 @@ import com.google.mlkit.vision.face.FaceDetector;
 import com.google.mlkit.vision.face.FaceDetectorOptions;
 
 
-import java.io.IOException;
 import java.util.List;
 
 public class FaceContourDetectionProcessor extends BaseImageAnalyzer<List<Face>> {

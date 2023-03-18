@@ -1,4 +1,4 @@
-package com.example.shotgurnquiz.camerax;
+package com.example.shotgurnquiz.Camerax;
 
 import android.content.Context;
 import android.util.Log;
@@ -11,7 +11,7 @@ import androidx.core.content.ContextCompat;
 import androidx.lifecycle.LifecycleOwner;
 import androidx.camera.lifecycle.ProcessCameraProvider;
 
-import com.example.shotgurnquiz.face_detection.FaceContourDetectionProcessor;
+import com.example.shotgurnquiz.Face_detection.FaceContourDetectionProcessor;
 import com.google.common.util.concurrent.ListenableFuture;
 
 import java.util.concurrent.ExecutionException;
