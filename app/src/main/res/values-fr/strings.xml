@@ -2,27 +2,26 @@
     <string name="app_name">ShotGurnQuiz</string>
     <string name="app_title">Shot, Gurn, Quiz !</string>
     <string name="play_offline">Jouer hors ligne</string>
-    <string name="sign_in">Sign in</string>
-    <string name="sign_up">Sign up</string>
-    <string name="email">Email</string>
-    <string name="confirm_email">Confirmer l\'email</string>
+    <string name="sign_up">Inscription</string>
+    <string name="email">Courriel</string>
+    <string name="confirm_email">Confirmer le courriel</string>
     <string name="username">Nom d\'utilisateur</string>
     <string name="password">Mot de passe</string>
     <string name="confirm_password">Confirmer le mot de passe</string>
     <string name="create_account">Créer un compte</string>
-    <string name="no_account">Ne pas avoir encore de compte</string>
+    <string name="no_account">Vous n\'avez pas de compte ?</string>
     <string name="empty_field">Veuillez remplir ce champ</string>
     <string name="incorrect_username">Nom d\'utilisateur incorrect</string>
     <string name="incorrect_password">Mot de passe incorrect</string>
     <string name="fields_not_match">Les champs ne correspondent pas</string>
     <string name="username_already_exist">Ce nom d\'utilisateur est déjà pris</string>
-    <string name="email_already_exist">Un utilisateur avec cet email existe déjà</string>
-    <string name="email_not_valid">Veuillez utiliser une adresse email valide</string>
-    <string name="leader_board">Leaderboard</string>
+    <string name="email_already_exist">Un utilisateur avec ce courriel existe déjà</string>
+    <string name="email_not_valid">Veuillez utiliser un courriel valide</string>
+    <string name="leader_board">Classement</string>
     <string name="profile">Profil</string>
-    <string name="search_here">Recherche ici</string>
+    <string name="search_here">Recherchez</string>
     <string name="popular">Populaire</string>
-    <string name="most_recents">Derniers</string>
+    <string name="most_recents">Récents</string>
     <string name="easy">Facile</string>
     <string name="medium">Intermédiaire</string>
     <string name="hard">Difficile</string>
@@ -39,15 +38,15 @@
     <string name="answer_a">Réponse A</string>
     <string name="answer_b">Réponse B</string>
     <string name="this_is_my_question">Ceci est ma question.</string>
-    <string name="save">Save</string>
+    <string name="save">Enregistrer</string>
     <string name="number_of_questions">Nombre de questions:</string>
     <string name="play">Jouer !</string>
     <string name="are_you_sure_you_want_to_quit">Est-ce que vous êtes sûr de vouloir quitter le jeu ?</string>
     <string name="progress_will_be_lost">La progression sera perdue.</string>
-    <string name="closing_Quiz">Clôture du Quiz</string>
+    <string name="closing_Quiz">Fermeture du Quiz</string>
     <string name="yes">Oui</string>
     <string name="no">No</string>
-    <string name="create">Create</string>
+    <string name="create">Créer</string>
     <string name="time_left">Temps restant : </string>
     <string name="seconds">seconds</string>
     <string name="score">Score : </string>
@@ -60,11 +59,11 @@
     <string name="your_rank">Votre rang:</string>
     <string name="change_password">Changer de mot de passe</string>
     <string name="username_indicator">Nom d\'utilisateur:</string>
-    <string name="email_indicator">Email:</string>
+    <string name="email_indicator">Courriel:</string>
     <string name="old_password">Ancien mot de passe</string>
     <string name="new_password">Nouveau mot de passe</string>
     <string name="confirm_new_password">Confirmer le nouveau mot de passe</string>
-    <string name="set_password">Confirmer le mot de passe</string>
+    <string name="set_password">Définir mot de passe</string>
     <string name="password_successfully_updated">Votre mot de passe a été mis à jour avec succès</string>
     <string-array name="difficulty_list">
         <item>Facile</item>
@@ -76,4 +75,5 @@
         <item>Sport</item>
         <item>Animaux</item>
     </string-array>
+    <string name="sign_in">Connexion</string>
 </resources>

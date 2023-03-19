@@ -146,6 +146,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
+    // Récupération des quiz selon une correspondance du titre
     public ArrayList<Quiz> GetMatchingQuizzes(String matcher){
         Cursor c = database.query(Quiz.TABLE,
                 new String[]{Quiz.COLUMN_ID, Quiz.COLUMN_TITLE, Quiz.COLUMN_THEME, Quiz.COLUMN_DIFFICULTY},
