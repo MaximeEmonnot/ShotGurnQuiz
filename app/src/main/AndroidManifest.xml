@@ -17,21 +17,27 @@
         <activity
             android:name=".Activities.AddQuizActivity"
             android:exported="false" />
-        <activity android:name=".Activities.LeaderboardActivity" />
+        <activity android:name=".Activities.LeaderboardActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Activities.PlayQuizActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
-        <activity android:name=".Activities.ProfileActivity" />
+        <activity android:name=".Activities.ProfileActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".Activities.QuizListActivity"
             android:exported="false" />
         <activity
             android:name=".Activities.SignUpActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".Activities.SignInActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".Activities.WelcomeActivity"
             android:exported="true">

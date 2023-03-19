@@ -3,6 +3,7 @@ package com.example.shotgurnquiz.Fragments;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.util.TypedValue;
 import android.view.View;
@@ -84,8 +85,16 @@ public class QuizInfoDialogFragment extends DialogFragment {
     @Override
     public void onResume() {
         super.onResume();
-        int width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 350, getResources().getDisplayMetrics());
-        int height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 600, getResources().getDisplayMetrics());
-        getDialog().getWindow().setLayout(width,height);
+        int currentOrientation = getResources().getConfiguration().orientation;
+        if (currentOrientation == Configuration.ORIENTATION_LANDSCAPE) {
+            int width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 350, getResources().getDisplayMetrics());
+            int height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 350, getResources().getDisplayMetrics());
+            getDialog().getWindow().setLayout(width,height);
+        }
+        else {
+            int width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 350, getResources().getDisplayMetrics());
+            int height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 600, getResources().getDisplayMetrics());
+            getDialog().getWindow().setLayout(width,height);
+        }
     }
 }
