@@ -23,17 +23,20 @@ import java.util.Map;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
+    // Constructeur privé spécifique aux Singletons
     private DatabaseHelper(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
         database = getWritableDatabase();
     }
 
+    // Instanciation du DatabaseHelper (Singleton)
     public static synchronized DatabaseHelper GetInstance(Context context){
         if (instance == null)
             instance = new DatabaseHelper(context.getApplicationContext(), BASE_NOM, null, BASE_VERSION);
         return instance;
     }
 
+    // Création des différentes tables de la base de données
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(User.CREATION_QUERY);
@@ -42,6 +45,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(Score.CREATION_QUERY);
     }
 
+    // Mise à jour de la base de données : Suppression puis recréation des tables
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL(Score.DELETE_QUERY);
@@ -51,6 +55,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
+    // Récupération d'un utilisateur par son ID
     public User FindUserByID(int id){
         Cursor c = database.query(User.TABLE,
                 new String[] { User.COLUMN_ID, User.COLUMN_USERNAME, User.COLUMN_EMAIL, User.COLUMN_PASSWORD},
@@ -63,6 +68,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return null;
     }
 
+    // Récupération d'un utilisateur par son nom
     public User FindUserByUsername(String username){
         Cursor c = database.query(User.TABLE,
                 new String[] { User.COLUMN_ID, User.COLUMN_USERNAME, User.COLUMN_EMAIL, User.COLUMN_PASSWORD},
@@ -75,6 +81,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return null;
     }
 
+    // Récupération d'un utilisateur par son adresse mail
     public User FindUserByEmail(String email){
         Cursor c = database.query(User.TABLE,
                 new String[] { User.COLUMN_ID, User.COLUMN_USERNAME, User.COLUMN_EMAIL, User.COLUMN_PASSWORD},
@@ -87,6 +94,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return null;
     }
 
+    // Création d'un utilisateur et enregistrement de : Nom d'utilisateur, adresse mail, mot de passe
     public int CreateNewUser(String username, String email, String password){
         ContentValues values = new ContentValues();
         values.put(User.COLUMN_USERNAME, username);
@@ -95,6 +103,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return (int) database.insert(User.TABLE, null, values);
     }
 
+    // Modification du mot de passe d'un utilisateur
     public void SetUserPassword(int userId, String password){
         ContentValues values = new ContentValues();
         values.put(User.COLUMN_PASSWORD, password);
@@ -102,6 +111,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         database.update(User.TABLE, values, User.COLUMN_ID + " = ?", new String[]{Integer.toString(userId)});
     }
 
+    // Récupération de la liste des utilisateurs
     public List<User> GetAllUser() {
         Cursor c = database.query(User.TABLE,
                 new String[] {User.COLUMN_ID, User.COLUMN_USERNAME, User.COLUMN_EMAIL, User.COLUMN_PASSWORD},
@@ -116,6 +126,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return output;
     }
 
+    // Création d'un nouveau quiz : Création d'un tuple Quiz et création des différents tuples Question
     public void CreateNewQuiz(String title, int themeIndex, int difficultyIndex, ArrayList<Question> questions){
         ContentValues quizValues = new ContentValues();
         quizValues.put(Quiz.COLUMN_TITLE, title);
@@ -135,6 +146,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
+    // Récupération de la liste des quiz
     public ArrayList<Quiz> GetAllQuizzes() {
 
         Cursor c = database.query(Quiz.TABLE,
@@ -148,6 +160,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return output;
     }
 
+    // Récupération de la liste des quiz en ordre décroissant selon la date de création (ID du plus grand au plus petit)
     public ArrayList<Quiz> GetAllLatestQuizzes(){
         Cursor c = database.query(Quiz.TABLE,
                 new String[]{Quiz.COLUMN_ID, Quiz.COLUMN_TITLE, Quiz.COLUMN_THEME, Quiz.COLUMN_DIFFICULTY},
@@ -160,6 +173,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return output;
     }
 
+    // Récupération de tous les quiz appartenant à un certain thème
     public ArrayList<Quiz> GetAllQuizzesFromTheme(int themeIndex){
         Cursor c = database.query(Quiz.TABLE,
                 new String[]{Quiz.COLUMN_ID, Quiz.COLUMN_TITLE, Quiz.COLUMN_THEME, Quiz.COLUMN_DIFFICULTY},
@@ -172,6 +186,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return output;
     }
 
+    // Récupération de tous les quiz appartenant à une certaine difficulté
     public ArrayList<Quiz> GetAllQuizzesFromDifficulty(int difficultyIndex){
         Cursor c = database.query(Quiz.TABLE,
                 new String[]{Quiz.COLUMN_ID, Quiz.COLUMN_TITLE, Quiz.COLUMN_THEME, Quiz.COLUMN_DIFFICULTY},
@@ -184,6 +199,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return output;
     }
 
+    // Récupération des quiz les plus populaires
     public ArrayList<Quiz> GetAllPopularQuizzes(){
         // On récupère la liste des quiz dans le tableau de score
         Cursor cScore = database.query(Score.TABLE, new String[]{Score.COLUMN_QUIZ_ID}, null, null, null, null, null);
@@ -216,6 +232,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return output;
     }
 
+    // Récupération de la liste des questions d'un quiz
     public ArrayList<Question> GetAllQuestionsFromQuiz(int quizID){
         Cursor c = database.query(Question.TABLE,
                 new String[]{Question.COLUMN_ID, Question.COLUMN_QUIZ_ID, Question.COLUMN_TITLE, Question.COLUMN_CHOICE1, Question.COLUMN_CHOICE2, Question.COLUMN_ANSWER},
@@ -226,6 +243,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return output;
     }
 
+    // Ajout d'un nouveau score OU modification d'un score déjà existant
     public void AddNewScore(int quizID, int userID, int score){
         Cursor c = database.query(Score.TABLE,
                 new String[]{Score.COLUMN_ID, Score.COLUMN_SCORE}, Score.COLUMN_QUIZ_ID + " = ? AND " + Score.COLUMN_USER_ID + " = ?", new String[]{Integer.toString(quizID), Integer.toString(userID)}, null, null, null);
@@ -241,6 +259,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         else database.insert(Score.TABLE, null, values);
     }
 
+    // Récupération d'un score selon l'ID du quiz et l'ID de l'utilisateur
     public Score GetUserScore(int quizId, int userId){
         Cursor c = database.query(Score.TABLE,
                 new String[] { Score.COLUMN_ID, Score.COLUMN_QUIZ_ID, Score.COLUMN_USER_ID, Score.COLUMN_SCORE},
@@ -253,6 +272,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return null;
     }
 
+    // Récupération de la liste des scores
     public ArrayList<Score> GetScores() {
         Cursor c = database.rawQuery("SELECT " + Score.COLUMN_ID +
                 ", " + Quiz.COLUMN_TITLE +
@@ -270,6 +290,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return output;
     }
 
+    // Récupération des points de saison
     public ArrayList<SeasonPoints> GetRanking(){
         Cursor c = database.rawQuery("SELECT " + User.COLUMN_USERNAME +
                 ", " + "count(" + Score.COLUMN_SCORE + ")" + " AS points" +

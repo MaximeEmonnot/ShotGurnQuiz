@@ -21,18 +21,23 @@ public class SignInActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
 
+        // Instanciation du DatabaseHelper (Singleton)
         DatabaseHelper db = DatabaseHelper.GetInstance(this);
 
+        // Références aux éléments du layout
         Button signin = (Button) findViewById(R.id.btn_sign_in);
+        Button signup = (Button) findViewById(R.id.btn_sign_up);
         EditText username = (EditText) findViewById(R.id.edit_text_sign_in_username);
         EditText password = (EditText) findViewById(R.id.edit_text_sign_in_password);
         TextView errorField = (TextView) findViewById(R.id.sign_in_errorField);
 
+        // OnClick du bouton SignIn
         signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String usernameText = username.getText().toString();
                 String passwordText = password.getText().toString();
+                // Si tous les champs ne sont pas remplis, on affiche différents messages d'erreur
                 if(usernameText.isEmpty()){
                     username.setError(getResources().getText(R.string.empty_field));
                     username.requestFocus();
@@ -42,13 +47,16 @@ public class SignInActivity extends AppCompatActivity {
                     password.requestFocus();
                 }
                 else {
+                    // On vérifie l'existence d'un utilisateur ayant le même nom. Si inexistant, on affiche un message d'erreur
                     User user = db.FindUserByUsername(usernameText);
                     if(user == null)
                         errorField.setText(getResources().getText(R.string.incorrect_username));
                     else{
+                        // Sinon, on vérifie si le mot de passe est correct. On affiche un message d'erreur le cas échéant
                         if (!user.GetPassword().equals(passwordText))
                             errorField.setText(getResources().getText(R.string.incorrect_password));
                         else{
+                            // Si le mot de passe est effectivement correct, on démarre l'activité QuizListActivity avec comme information l'état connecté et l'ID utilisateur
                             Intent intent = new Intent(SignInActivity.this, QuizListActivity.class);
                             intent.putExtra("bIsConnected", true);
                             intent.putExtra("userId", user.GetID());
@@ -59,8 +67,7 @@ public class SignInActivity extends AppCompatActivity {
             }
         });
 
-
-        Button signup = (Button) findViewById(R.id.btn_sign_up);
+        // OnClick du bouton SignUp : On lancera l'activité SignUpActivity
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,6 +77,7 @@ public class SignInActivity extends AppCompatActivity {
         });
     }
 
+    // Animation lors de l'arrêt de l'activité
     @Override
     public void finish(){
         super.finish();

@@ -8,6 +8,7 @@ import androidx.annotation.NonNull;
 
 public class Question implements Parcelable {
 
+    // Construction ayant un paramètre Cursor : Traitement des résultats des requêtes vers la base de données
     public Question(Cursor cursor){
         id = cursor.getInt(0);
         quizID = cursor.getInt(1);
@@ -17,6 +18,7 @@ public class Question implements Parcelable {
         answer = (cursor.getInt(5) == 1);
     }
 
+    // Constructeur classique
     public Question(String _title, String _choice1, String _choice2, boolean _answer){
         title = _title;
         choice1 = _choice1;
@@ -33,6 +35,7 @@ public class Question implements Parcelable {
         answer = parcel.readByte() != 0;
     }
 
+    // Différents getters
     public int GetID() { return id; }
     public int GetQuizID() { return quizID; }
     public String GetTitle() { return title; }
@@ -67,15 +70,14 @@ public class Question implements Parcelable {
         }
     };
 
+    // Différentes variables en base de données (Nom de la table, nom des colonnes, requête de création, requête de suppression)
     public static final String TABLE = "question";
-
     public static final String COLUMN_ID = "id";
     public static final String COLUMN_QUIZ_ID = "quiz_id";
     public static final String COLUMN_TITLE = "title";
     public static final String COLUMN_CHOICE1 = "choice1";
     public static final String COLUMN_CHOICE2 = "choice2";
     public static final String COLUMN_ANSWER = "answer";
-
     public static final String CREATION_QUERY = "CREATE TABLE " + TABLE
             + " (" + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
             + COLUMN_QUIZ_ID + " INTEGER NOT NULL,"
@@ -86,6 +88,7 @@ public class Question implements Parcelable {
             + "FOREIGN KEY (" + COLUMN_QUIZ_ID + ") REFERENCES " + Quiz.TABLE + "(" + Quiz.COLUMN_ID + "));";
     public static final String DELETE_QUERY = "DROP TABLE " + TABLE + ";";
 
+    // Paramètres de la classe, pour des traitements futurs
     private int id;
     private int quizID;
     private String title;

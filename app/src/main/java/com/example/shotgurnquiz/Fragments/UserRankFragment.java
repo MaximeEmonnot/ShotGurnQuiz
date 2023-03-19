@@ -19,16 +19,7 @@ import com.example.shotgurnquiz.R;
  */
 public class UserRankFragment extends Fragment {
 
-    private static final String ARG_PARAM1 = "username";
-    private static final String ARG_PARAM2 = "points";
-    private static final String ARG_PARAM3 = "rank";
-
-    private String username;
-    private int points;
-    private String rank;
-
-    public UserRankFragment() {
-    }
+    public UserRankFragment() { }
 
     public static UserRankFragment newInstance(String username, int points, String rank) {
         UserRankFragment fragment = new UserRankFragment();
@@ -66,4 +57,13 @@ public class UserRankFragment extends Fragment {
 
         return view;
     }
+
+    private static final String ARG_PARAM1 = "username";
+    private static final String ARG_PARAM2 = "points";
+    private static final String ARG_PARAM3 = "rank";
+
+    private String username;
+    private int points;
+    private String rank;
+
 }

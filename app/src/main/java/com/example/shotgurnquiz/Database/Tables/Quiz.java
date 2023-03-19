@@ -8,6 +8,7 @@ import androidx.annotation.NonNull;
 
 public class Quiz implements Parcelable{
 
+    // Construction ayant un paramètre Cursor : Traitement des résultats des requêtes vers la base de données
     public Quiz(Cursor cursor){
         id = cursor.getInt(0);
         title = cursor.getString(1);
@@ -15,6 +16,7 @@ public class Quiz implements Parcelable{
         difficultyIndex = cursor.getInt(3);
     }
 
+    // Constructeur classique
     public Quiz(int _id, String _title, int _themeIndex, int _difficultyIndex){
         id = _id;
         title = _title;
@@ -29,6 +31,7 @@ public class Quiz implements Parcelable{
         difficultyIndex = parcel.readInt();
     }
 
+    // Différents getters
     public int GetID() { return id; }
     public String GetTitle() { return title; }
     public int GetTheme() { return themeIndex; }
@@ -57,13 +60,12 @@ public class Quiz implements Parcelable{
         public Quiz[] newArray(int size) { return new Quiz[size]; }
     };
 
+    // Différentes variables en base de données (Nom de la table, nom des colonnes, requête de création, requête de suppression)
     public static final String TABLE = "quiz";
-
     public static final String COLUMN_ID = "id";
     public static final String COLUMN_TITLE = "title";
     public static final String COLUMN_THEME = "theme";
     public static final String COLUMN_DIFFICULTY = "difficulty";
-
     public static final String CREATION_QUERY = "CREATE TABLE " + TABLE
             + " (" + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
             + COLUMN_TITLE + " TEXT NOT NULL, "
@@ -71,6 +73,7 @@ public class Quiz implements Parcelable{
             + COLUMN_DIFFICULTY + " INTEGER NOT NULL);";
     public static final String DELETE_QUERY = "DROP TABLE " + TABLE + ";";
 
+    // Paramètres de la classe, pour des traitements futurs
     private int id;
     private String title;
     private int themeIndex;

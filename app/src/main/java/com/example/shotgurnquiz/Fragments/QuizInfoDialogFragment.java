@@ -22,12 +22,6 @@ import java.util.List;
 
 public class QuizInfoDialogFragment extends DialogFragment {
 
-    private static final String ARG_PARAM1 = "quiz";
-    private static final String ARG_PARAM2 = "userId";
-
-    private Quiz quiz;
-    private int userId;
-
     public QuizInfoDialogFragment(){}
 
     public static QuizInfoDialogFragment newInstance(Quiz quiz, int userId) {
@@ -88,4 +82,11 @@ public class QuizInfoDialogFragment extends DialogFragment {
         int height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 600, getResources().getDisplayMetrics());
         getDialog().getWindow().setLayout(width,height);
     }
+
+    private static final String ARG_PARAM1 = "quiz";
+    private static final String ARG_PARAM2 = "userId";
+
+    private Quiz quiz;
+    private int userId;
+
 }
