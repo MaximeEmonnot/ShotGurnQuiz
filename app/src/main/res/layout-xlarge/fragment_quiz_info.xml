@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/title"
+                            android:layout_marginTop="20dp"
+                            android:layout_gravity="center_horizontal"
+                            android:theme="@style/LargeTextOnLight"/>
+
+                        <TextView
+                            android:id="@+id/quiz_info_title"
+                            android:layout_width="250dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:textSize="28sp"
+                            android:textColor="@color/colorTextOnLight"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/theme"
+                            android:layout_marginTop="15dp"
+                            android:layout_gravity="center_horizontal"
+                            android:theme="@style/LargeTextOnLight"/>
+
+                        <TextView
+                            android:id="@+id/quiz_info_theme"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textSize="28sp"
+                            android:textColor="@color/colorTextOnLight"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/difficulty"
+                            android:layout_marginTop="15dp"
+                            android:layout_gravity="center_horizontal"
+                            android:theme="@style/LargeTextOnLight"/>
+
+                        <TextView
+                            android:id="@+id/quiz_info_difficulty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textSize="28sp"
+                            android:textColor="@color/colorTextOnLight"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:text="@string/number_of_questions"
+                            android:layout_gravity="center_horizontal"
+                            android:theme="@style/LargeTextOnLight"/>
+
+                        <TextView
+                            android:id="@+id/quiz_info_nb_questions"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textSize="28sp"
+                            android:textColor="@color/colorTextOnLight"/>
+
+                        <Button
+                            android:id="@+id/quiz_info_btn_play"
+                            android:layout_width="125dp"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="15dp"
+                            android:text="@string/play"
+                            android:theme="@style/DarkButton"
+                            android:background="@color/colorButtonBackgroundDark"
+                            android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+        </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

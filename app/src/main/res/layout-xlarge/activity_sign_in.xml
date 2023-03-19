@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SignInActivity"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="600dp"
+        android:layout_height="800dp"
+        android:background="@color/colorSecondBackground"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/sign_in"
+            android:layout_marginTop="60dp"
+            android:textSize="56sp"
+            android:fontFamily="@font/font_kabouter"
+            android:textColor="@color/colorTextOnLight" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_text_sign_in_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="55dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="70dp"
+            android:hint="@string/username"
+            android:drawableLeft="@drawable/user"
+            android:theme="@style/InputField"
+            app:backgroundTint="@color/colorGrayTextOnLight"
+            android:inputType="text"
+            />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_text_sign_in_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="55dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="30dp"
+            android:hint="@string/password"
+            android:drawableLeft="@drawable/lock"
+            android:inputType="textPassword"
+            android:theme="@style/InputField"
+            app:backgroundTint="@color/colorGrayTextOnLight"
+            />
+
+        <TextView
+            android:id="@+id/sign_in_errorField"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_gravity="center_horizontal"
+            android:text=""
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorError" />
+
+        <Button
+            android:id="@+id/btn_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "@string/sign_in"
+            android:theme="@style/DarkButton"
+            android:background="@color/colorButtonBackgroundDark"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/no_account"
+            android:layout_marginTop="50dp"
+            android:theme="@style/MediumTextOnLight" />
+
+        <Button
+            android:id="@+id/btn_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70dp"
+            android:text="@string/sign_up"
+            android:theme="@style/DarkButton"
+            android:background="@color/colorButtonBackgroundDark"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

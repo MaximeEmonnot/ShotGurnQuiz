@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.QuizListActivity"
+    android:background="@color/colorBackground">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginHorizontal="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="0dp"
+                android:backgroundTint="@android:color/transparent">
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/search_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    app:queryHint="@string/search_here"
+                    android:elevation="5dp"
+                    android:background="@color/colorSearchBarBackground"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:visibility="gone"
+                    android:background="@color/colorRecyclerViewBackground"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="@string/popular"
+                android:layout_marginLeft="20dp"
+                android:theme="@style/LargeTextOnLight" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_popular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorRecyclerViewBackground"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="@string/most_recents"
+                android:layout_marginLeft="20dp"
+                android:theme="@style/LargeTextOnLight" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_most_recents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorRecyclerViewBackground"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="@string/easy"
+                android:layout_marginLeft="20dp"
+                android:theme="@style/LargeTextOnLight" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_easy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorRecyclerViewBackground"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="@string/medium"
+                android:layout_marginLeft="20dp"
+                android:theme="@style/LargeTextOnLight" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorRecyclerViewBackground"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="@string/hard"
+                android:layout_marginLeft="20dp"
+                android:theme="@style/LargeTextOnLight" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_hard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorRecyclerViewBackground"
+                android:layout_marginBottom="120dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottom_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:backgroundTint="@color/colorBottomAppBar"
+        android:minHeight="120dp"
+        app:contentInsetStart="0dp" >
+
+        <Button
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/baseline_manage_accounts_54"
+            android:background="?attr/selectableItemBackground"
+            android:text="@string/profile"
+            android:layout_gravity="left"
+            android:layout_marginLeft="50dp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/font_hobgoblin"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/leader_board"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/trophy_54"
+            android:background="?attr/selectableItemBackground"
+            android:text="@string/leader_board"
+            android:layout_gravity="right"
+            android:layout_marginRight="50dp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/font_hobgoblin"
+            android:textSize="30sp" />
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@id/bottom_app_bar"
+        app:srcCompat="@drawable/baseline_add_54"
+        app:backgroundTint="@color/colorAddButton"
+        app:fabCustomSize="120dp"
+        app:maxImageSize="70dp"
+        />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

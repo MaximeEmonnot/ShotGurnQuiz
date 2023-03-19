@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Activities.AddQuizActivity"
+android:background="@color/colorBackground">
+
+        <LinearLayout
+            android:layout_width="600dp"
+            android:layout_height="800dp"
+            android:background="@color/colorSecondBackground"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="60dp"
+                    android:theme="@style/VeryLargeTextOnLight"
+                    android:text="@string/new_quiz"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:theme="@style/MediumTextOnLight"
+                    android:text="@string/title"/>
+
+                <EditText
+                    android:id="@+id/quiz_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="150dp"
+                    android:maxWidth="300dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:maxLength="150"
+                    android:textSize="20sp"
+                    android:text="@string/my_quiz"
+                    android:textColor="@color/colorTextOnLight"
+                    android:maxLines="1"
+                    android:inputType="text"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:theme="@style/MediumTextOnLight"
+                                    android:text="@string/theme"/>
+
+                                <Spinner
+                                    android:id="@+id/spinner_theme"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:minWidth="130dp"
+                                    android:dropDownWidth="130dp"
+                                    android:background="@drawable/spinner_background"
+                                    android:spinnerMode="dropdown"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="30dp">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:theme="@style/MediumTextOnLight"
+                                    android:text="@string/difficulty"/>
+
+                                <Spinner
+                                    android:id="@+id/spinner_difficulty"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:minWidth="130dp"
+                                    android:dropDownWidth="130dp"
+                                    android:background="@drawable/spinner_background"
+                                    android:spinnerMode="dropdown"/>
+                        </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:theme="@style/MediumTextOnLight"
+                    android:text="@string/questions"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorThirdBackground"/>
+
+                <Button
+                    android:id="@+id/btn_create"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="50dp"
+                    android:text="@string/create"
+                    android:theme="@style/DarkButton"
+                    android:background="@color/colorButtonBackgroundDark"/>
+
+        </LinearLayout>
+
+</RelativeLayout>
