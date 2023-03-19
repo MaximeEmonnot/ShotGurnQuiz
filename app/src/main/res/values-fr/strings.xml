@@ -2,6 +2,7 @@
     <string name="app_name">ShotGurnQuiz</string>
     <string name="app_title">Shot, Gurn, Quiz !</string>
     <string name="play_offline">Jouer hors ligne</string>
+    <string name="sign_in">Connexion</string>
     <string name="sign_up">Inscription</string>
     <string name="email">Courriel</string>
     <string name="confirm_email">Confirmer le courriel</string>
@@ -45,10 +46,10 @@
     <string name="progress_will_be_lost">La progression sera perdue.</string>
     <string name="closing_Quiz">Fermeture du Quiz</string>
     <string name="yes">Oui</string>
-    <string name="no">No</string>
+    <string name="no">Non</string>
     <string name="create">Créer</string>
     <string name="time_left">Temps restant : </string>
-    <string name="seconds">seconds</string>
+    <string name="seconds">secondes</string>
     <string name="score">Score : </string>
     <string name="points_added_season_points">des points ont été ajoutés à vos points de saison</string>
     <string name="thanks_for_playing">Merci d\'avoir joué</string>
@@ -75,5 +76,4 @@
         <item>Sport</item>
         <item>Animaux</item>
     </string-array>
-    <string name="sign_in">Connexion</string>
 </resources>
