@@ -13,33 +13,34 @@ import androidx.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.List;
 
+// View permettant l'affichage d'un overlay sur le preview de la camera
 public class GraphicOverlay extends View {
-    private Object lock;
-    private List<Graphic> graphics;
-    public Float mScale;
-    public Float mOffsetX;
-    public Float mOffsetY;
-
     public GraphicOverlay(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         lock = new Object();
         graphics = new ArrayList<Graphic>();
     }
 
+    // Efface tous les Graphic
     public void clear() {
         synchronized(lock) { graphics.clear(); }
         postInvalidate();
     }
 
+    // Ajoute un Graphic
     public void add(Graphic graphic) {
         synchronized(lock) { graphics.add(graphic); }
     }
 
+
+    // Retire un Graphic
     public void remove(Graphic graphic) {
         synchronized(lock) { graphics.remove(graphic); }
         postInvalidate();
     }
 
+
+    // Affiche tous les Graphic à l'ecran
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
@@ -50,6 +51,7 @@ public class GraphicOverlay extends View {
         }
     }
 
+    // Classe Graphic représentant un element graphic de l'overlay
     public abstract static class Graphic{
 
         private GraphicOverlay overlay;
@@ -60,19 +62,22 @@ public class GraphicOverlay extends View {
 
         public abstract void draw(Canvas canvas);
 
-        // for land scape
+        // Methode permettant de connaitre si l'appareil est en mode paysage
         private boolean isLandScapeMode(){
             return overlay.getContext().getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE;
         }
 
+        // Methode permettant de determiner la largeur en fonction de l'orientation de l'appareil
         private float whenLandScapeModeWidth(float width, float height){
             return isLandScapeMode() ? width : height;
         }
 
+        // Methode permettant de determiner la hauteur en fonction de l'orientation de l'appareil
         private float whenLandScapeModeHeight(float width, float height){
             return isLandScapeMode() ? height : width;
         }
 
+        // Methode permettant le calcul de la taille du rectangle à afficher
         public RectF calculateRect(Float height, Float width, Rect boundingBoxT){
 
             float scaleX = (float)overlay.getWidth() / whenLandScapeModeWidth(width, height);
@@ -102,4 +107,11 @@ public class GraphicOverlay extends View {
             return mappedBox;
         }
     }
+
+    // Differentes variables de la class
+    private Object lock;
+    private List<Graphic> graphics;
+    public Float mScale;
+    public Float mOffsetX;
+    public Float mOffsetY;
 }

@@ -321,6 +321,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return output;
     }
 
+    // Differentes variables de la class
     private static DatabaseHelper instance = null;
 
     private static final int BASE_VERSION = 1;

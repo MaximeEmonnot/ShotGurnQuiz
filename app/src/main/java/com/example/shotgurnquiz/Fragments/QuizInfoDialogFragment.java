@@ -107,7 +107,7 @@ public class QuizInfoDialogFragment extends DialogFragment {
     private static final String ARG_PARAM1 = "quiz";
     private static final String ARG_PARAM2 = "userId";
 
-    // Paramètres du fragment
+    // Differentes variables du fragment
     private Quiz quiz;
     private int userId;
 }

@@ -26,6 +26,7 @@ public class Question implements Parcelable {
         answer = _answer;
     }
 
+    // Constructeur permettant de rendre la classe Parcelable pour la passer dans des extra
     public Question (Parcel parcel) {
         id = parcel.readInt();
         quizID = parcel.readInt();
@@ -43,6 +44,8 @@ public class Question implements Parcelable {
     public String GetChoice2() { return choice2; }
     public boolean GetAnswer() { return answer; }
 
+
+    // Methodes permettant de rendre la classe Parcelable pour la passer dans des extra
     @Override
     public int describeContents() {
         return 0;

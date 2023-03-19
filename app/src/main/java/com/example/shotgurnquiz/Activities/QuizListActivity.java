@@ -57,25 +57,27 @@ public class QuizListActivity extends AppCompatActivity {
         // Instanciation du DatabaseHelper (Singleton)
         DatabaseHelper db = DatabaseHelper.GetInstance(this);
 
-        ArrayList<Quiz> quizList = db.GetAllQuizzes();
+
+        // Remplissage des recyclerView avec la liste de quiz correspondant en base de données
         loadRecyclerView(R.id.recycler_view_popular, db.GetAllPopularQuizzes());
         loadRecyclerView(R.id.recycler_view_most_recents, db.GetAllLatestQuizzes());
         loadRecyclerView(R.id.recycler_view_hard, db.GetAllQuizzesFromDifficulty(2));
         loadRecyclerView(R.id.recycler_view_medium, db.GetAllQuizzesFromDifficulty(1));
         loadRecyclerView(R.id.recycler_view_easy, db.GetAllQuizzesFromDifficulty(0));
 
+
+        // Remplissage du recyclerView de la barre de recherche avec tous les quiz dans un premier temps
         recyclerViewSearch.setAdapter(new QuizCard_RecyclerViewAdapter(this, db.GetAllQuizzes()));
         recyclerViewSearch.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         recyclerViewSearch.addItemDecoration(new RecyclerView_SpacesItemDecoration(20, 10, LinearLayoutManager.HORIZONTAL));
 
-
+        // lors d'un clique sur la barre de recherche ou sur l'icone de recherche le recycler view s'affiche avec une animation
         searchBar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 searchBar.setIconified(false);
             }
         });
-
         searchBar.setOnSearchClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -85,6 +87,7 @@ public class QuizListActivity extends AppCompatActivity {
             }
         });
 
+        // Lorsque le texte de la recherche change, le recyclerView est mis à jour
         searchBar.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextChange(String newText) {
@@ -97,6 +100,8 @@ public class QuizListActivity extends AppCompatActivity {
             }
         });
 
+
+        // lors d'un appui sur le bouton close, le recycler view disparait avec une animation
         searchBar.setOnCloseListener(new SearchView.OnCloseListener(){
             @Override
             public boolean onClose() {
@@ -117,6 +122,7 @@ public class QuizListActivity extends AppCompatActivity {
             }
         });
 
+        // lors d'un appui sur le bouton profil, l'activité correspondante s'ouvre
         profileButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -126,6 +132,7 @@ public class QuizListActivity extends AppCompatActivity {
             }
         });
 
+        // lors d'un appui sur le bouton leaderboard, l'activité correspondante s'ouvre
         leaderboardButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -135,6 +142,7 @@ public class QuizListActivity extends AppCompatActivity {
             }
         });
 
+        // lors d'un appui sur le bouton d'ajout de quiz, l'activité correspondante s'ouvre
         addQuizButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -144,6 +152,7 @@ public class QuizListActivity extends AppCompatActivity {
         });
     }
 
+    // Methode prenant en paramètre l'id du recyclerView et une liste de quiz, permet le remplissage du recyclerView avec la liste de quiz
     private void loadRecyclerView(int id, ArrayList<Quiz> quizList){
 
         RecyclerView recyclerView = findViewById(id);
@@ -160,5 +169,6 @@ public class QuizListActivity extends AppCompatActivity {
         }));
     }
 
+    // Differentes variables de l'activité
     private int userId;
 }

@@ -109,6 +109,6 @@ public class ChangePasswordDialogFragment extends DialogFragment {
     // Constante pour le nom de l'argument lors de l'instanciation
     private static final String ARG_PARAM1 = "userId";
 
-    // Paramètre du fragment
+    // Differentes variables du fragment
     private int userId;
 }

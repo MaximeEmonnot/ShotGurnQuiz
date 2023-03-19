@@ -42,9 +42,10 @@ public class PlayQuizActivity extends AppCompatActivity {
         textViewTimeCount = findViewById(R.id.play_quiz_time_count);
         TextView textViewIndexMax = findViewById(R.id.play_quiz_index_max);
 
+        // Affichage du nombre total de questions
         textViewIndexMax.setText(Integer.toString(questions.size()));
 
-        // Lancement de la première question
+        // Affichage de la première question
         index = 0;
         score = 0;
         loadQuestion(score, index);
@@ -53,9 +54,9 @@ public class PlayQuizActivity extends AppCompatActivity {
         createCameraManager();
         checkForPermission();
 
-        // Lancement d'un timer : Toutes les 10 secondes, on vérifiera la réponse du joueur
+        // Lancement du thread de jeu : Toutes les 10 secondes, on vérifie la réponse du joueur puis on passe à la question suivante
         gameThread = new CountDownTimer(10000, 1000) {
-            // A chaque Tick, le temps restant est mis à jour pour l'affichage
+            // A chaque Tick (toute les 1 seconde), le temps restant est mis à jour pour l'affichage
             public void onTick(long millisUntilFinished) {
                 runOnUiThread(new Runnable() {
                     @Override
@@ -76,7 +77,7 @@ public class PlayQuizActivity extends AppCompatActivity {
                     loadQuestion(score, index);
                     this.start();
                 }else{
-                    // Sinon, le quiz est terminé : On lancera l'activité QuizSummaryActivity
+                    // Sinon, le quiz est terminé : On lance l'activité QuizSummaryActivity
                     Intent intent = new Intent(PlayQuizActivity.this, QuizSummaryActivity.class);
                     intent.putExtra("score", score);
                     intent.putExtra("questionCount", questions.size());
@@ -125,14 +126,17 @@ public class PlayQuizActivity extends AppCompatActivity {
         return true;
     }
 
-    // Traitement du résultat aux requêtes de permissions
+    // Traitement du résultat de la requêtes de permissions
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == REQUEST_CODE_PERMISSIONS) {
+            // Si les permissions sont accordées, on lance la camera
             if (allPermissionsGranted()) {
                 cameraManager.startCamera();
-            } else {
+            }
+            // Sinon on quitte l'activité et on notifie l'utilisateur
+            else {
                 Toast.makeText(this, "Permissions not granted by the user.", Toast.LENGTH_SHORT).show();
                 finish();
             }
@@ -144,7 +148,7 @@ public class PlayQuizActivity extends AppCompatActivity {
         cameraManager = new CameraManager(this, findViewById(R.id.play_quiz_camera_stream), this, findViewById(R.id.play_quiz_camera_graphicOverlay));
     }
 
-    // Si l'on quitte l'application via le bouton retour, affichage d'un message d'alerte
+    // Si l'on quitte l'application via le bouton retour, affichage d'un message d'alerte pour demander confirmation
     @Override
     public void onBackPressed() {
         new AlertDialog.Builder(this)
@@ -154,6 +158,7 @@ public class PlayQuizActivity extends AppCompatActivity {
                 {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+                        // Si l'utilisateur confirme, on arrête la boucle de jeu et on quitte l'activité
                         gameThread.cancel();
                         finish();
                     }
@@ -163,7 +168,7 @@ public class PlayQuizActivity extends AppCompatActivity {
                 .show();
     }
 
-    // Différents paramètres de l'activité
+    // Differentes variables de l'activité
     private Quiz quiz;
     private int userId;
     private ArrayList<Question> questions;

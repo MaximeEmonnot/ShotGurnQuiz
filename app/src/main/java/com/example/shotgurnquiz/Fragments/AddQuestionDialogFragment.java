@@ -41,22 +41,28 @@ public class AddQuestionDialogFragment extends DialogFragment {
 
         Question question;
 
+        // Si l'index est supérieur à la taille de la liste de questions alors on ajoute une nouvelle question
         if(index == questionAdapter.getItemCount() - 1){
             question = new Question(getResources().getString(R.string.this_is_my_question), getResources().getString(R.string.answer_a), getResources().getString(R.string.answer_b), true);
             questionAdapter.push(question);
-        }else{
+        }
+        // Sinon on récupére la question correspondant à l'index pour la modifier
+        else{
             question = questionAdapter.getItem(index);
         }
 
+        // Affichage des informations de la question selectionnée
         editTextTitle.setText(question.GetTitle());
         editTextAnswerA.setText(question.GetChoice1());
         editTextAnswerB.setText(question.GetChoice2());
 
+        // Basculement entre les boutons de la sélection de la bonne réponse
         if(question.GetAnswer() == true)
             radioAnswerA.setChecked(true);
         else
             radioAnswerB.setChecked(true);
 
+        // Lors de l'appui sur le bouton save, modifie la question dans l'adaptateur et ferme le dialog
         buttonSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -71,6 +77,7 @@ public class AddQuestionDialogFragment extends DialogFragment {
             }
         });
 
+        // Selection de la réponse A comme bonne réponse
         radioAnswerA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -78,6 +85,7 @@ public class AddQuestionDialogFragment extends DialogFragment {
             }
         });
 
+        // Selection de la réponse B comme bonne réponse
         radioAnswerB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -85,6 +93,7 @@ public class AddQuestionDialogFragment extends DialogFragment {
             }
         });
 
+        // Suppression de la question dans l'adaptateur et fermeture du dialog
         buttonDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -98,6 +107,7 @@ public class AddQuestionDialogFragment extends DialogFragment {
         return builder.create();
     }
 
+    // Rédéfinition des dimensions du DialogFragment lors de l'évènement onResume()
     @Override
     public void onResume() {
         super.onResume();
@@ -106,6 +116,7 @@ public class AddQuestionDialogFragment extends DialogFragment {
         getDialog().getWindow().setLayout(width,height);
     }
 
+    // Differentes variables du fragment
     private QuestionCard_RecyclerViewAdapter questionAdapter;
     private int index;
 }

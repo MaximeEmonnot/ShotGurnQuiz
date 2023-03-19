@@ -14,12 +14,14 @@ import com.example.shotgurnquiz.R;
 
 import java.util.ArrayList;
 
+// Adaptateur pour recyclerView permettant l'affichage de quiz
 public class QuizCard_RecyclerViewAdapter extends RecyclerView.Adapter<QuizCard_RecyclerViewAdapter.MyViewHolder> {
     public QuizCard_RecyclerViewAdapter(Context context, ArrayList<Quiz> quizCards){
         this.context = context;
         this.quizCards = quizCards;
     }
 
+    // Definition du layout à utiliser pour les differents elements
     @NonNull
     @Override
     public QuizCard_RecyclerViewAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -28,16 +30,19 @@ public class QuizCard_RecyclerViewAdapter extends RecyclerView.Adapter<QuizCard_
         return new QuizCard_RecyclerViewAdapter.MyViewHolder(view);
     }
 
+    // Definit quels sont les paramètres à mettre dans l'element de la liste à une position donnée
     @Override
     public void onBindViewHolder(@NonNull QuizCard_RecyclerViewAdapter.MyViewHolder holder, int position) {
         holder.textViewTitle.setText(quizCards.get(position).GetTitle());
     }
 
+    // Récupère le nombre d'items dans le recyclerView
     @Override
     public int getItemCount() {
         return quizCards.size();
     }
 
+    // Définition du ViewHolder qui définit les paramètres d'un item quiz
     public static class MyViewHolder extends RecyclerView.ViewHolder{
 
         TextView textViewTitle;
@@ -45,9 +50,12 @@ public class QuizCard_RecyclerViewAdapter extends RecyclerView.Adapter<QuizCard_
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
+            // Références à l'élément du layout
             textViewTitle = itemView.findViewById(R.id.recycler_view_quiz_title);
         }
     }
+
+    // Differentes variables de la class
     private Context context;
     private ArrayList<Quiz> quizCards;
 }

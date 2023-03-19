@@ -15,6 +15,7 @@ import com.example.shotgurnquiz.R;
 
 import java.util.ArrayList;
 
+// Adaptateur pour recyclerView permettant l'affichage de SeasonPoints
 public class SeasonPointsCard_RecyclerViewAdapter extends RecyclerView.Adapter<SeasonPointsCard_RecyclerViewAdapter.MyViewHolder> {
 
     public SeasonPointsCard_RecyclerViewAdapter(Context context, ArrayList<SeasonPoints> seasonPointsCards){
@@ -22,6 +23,7 @@ public class SeasonPointsCard_RecyclerViewAdapter extends RecyclerView.Adapter<S
         this.seasonPointsCards = seasonPointsCards;
     }
 
+    // Definition du layout à utiliser pour les differents elements
     @NonNull
     @Override
     public SeasonPointsCard_RecyclerViewAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -30,6 +32,7 @@ public class SeasonPointsCard_RecyclerViewAdapter extends RecyclerView.Adapter<S
         return new SeasonPointsCard_RecyclerViewAdapter.MyViewHolder(view);
     }
 
+    // Definit quels sont les paramètres à mettre dans l'element de la liste à une position donnée
     @Override
     public void onBindViewHolder(@NonNull SeasonPointsCard_RecyclerViewAdapter.MyViewHolder holder, int position) {
         holder.textViewUsername.setText(seasonPointsCards.get(position).getUsername());
@@ -37,11 +40,13 @@ public class SeasonPointsCard_RecyclerViewAdapter extends RecyclerView.Adapter<S
         holder.textViewRank.setText("#" + Integer.toString(position + 1));
     }
 
+    // Récupère le nombre d'items dans le recyclerView
     @Override
     public int getItemCount() {
         return seasonPointsCards.size();
     }
 
+    // Définition du ViewHolder qui définit les paramètres d'un item quiz
     public static class MyViewHolder extends RecyclerView.ViewHolder{
 
         TextView textViewUsername;
@@ -51,11 +56,14 @@ public class SeasonPointsCard_RecyclerViewAdapter extends RecyclerView.Adapter<S
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
+            // Références aux éléments du layout
             textViewUsername = itemView.findViewById(R.id.recycler_view_season_points_username);
             textViewPointsCount = itemView.findViewById(R.id.recycler_view_season_points_points_count);
             textViewRank = itemView.findViewById(R.id.recycler_view_season_points_rank);
         }
     }
+
+    // Differentes variables de la class
     private Context context;
     private ArrayList<SeasonPoints> seasonPointsCards;
 }

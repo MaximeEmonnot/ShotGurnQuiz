@@ -24,6 +24,7 @@ public class Quiz implements Parcelable{
         difficultyIndex = _difficultyIndex;
     }
 
+    // Constructeur permettant de rendre la classe Parcelable pour la passer dans des extra
     public Quiz (Parcel parcel) {
         id = parcel.readInt();
         title = parcel.readString();
@@ -37,6 +38,7 @@ public class Quiz implements Parcelable{
     public int GetTheme() { return themeIndex; }
     public int GetDifficulty() { return difficultyIndex; }
 
+    // Methodes permettant de rendre la classe Parcelable pour la passer dans des extra
     @Override
     public int describeContents() {
         return 0;

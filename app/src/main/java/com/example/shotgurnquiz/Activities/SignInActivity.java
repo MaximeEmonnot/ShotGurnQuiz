@@ -37,7 +37,7 @@ public class SignInActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String usernameText = username.getText().toString();
                 String passwordText = password.getText().toString();
-                // Si tous les champs ne sont pas remplis, on affiche différents messages d'erreur
+                // Si tous les champs ne sont pas remplis, on affiche un message d'erreur
                 if(usernameText.isEmpty()){
                     username.setError(getResources().getText(R.string.empty_field));
                     username.requestFocus();

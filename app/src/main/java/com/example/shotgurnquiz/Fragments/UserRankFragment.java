@@ -11,12 +11,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.shotgurnquiz.R;
-
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link UserRankFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class UserRankFragment extends Fragment {
 
     public UserRankFragment() { }
@@ -68,7 +62,7 @@ public class UserRankFragment extends Fragment {
     private static final String ARG_PARAM2 = "points";
     private static final String ARG_PARAM3 = "rank";
 
-    // Paramètres du fragment
+    // Differentes variables du fragment
     private String username;
     private int points;
     private String rank;

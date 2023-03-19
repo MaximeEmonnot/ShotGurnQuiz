@@ -51,7 +51,7 @@ public class AddQuizActivity extends AppCompatActivity {
             recyclerViewQuestion.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
             recyclerViewQuestion.addItemDecoration(new RecyclerView_SpacesItemDecoration(20, 10, LinearLayoutManager.HORIZONTAL));
 
-            // OnTouch du RecyclerView Question : On affiche un Dialog correspondant la question selectionnée ou ajoutée
+            // OnTouch du RecyclerView Question : On affiche un Dialog correspondant à la question selectionnée ou ajoutée
             recyclerViewQuestion.addOnItemTouchListener(new RecyclerView_ItemClickListener(new RecyclerView_ItemClickListener.OnItemClickListener() {
                 @Override
                 public void onItemClick(View view, int position) {

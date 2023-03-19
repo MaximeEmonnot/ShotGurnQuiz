@@ -47,7 +47,7 @@ public class LeaderboardActivity extends AppCompatActivity {
         // Récupération du Ranking global (tous les utilisateurs)
         ArrayList<SeasonPoints> SeasonPointsList = db.GetRanking();
 
-        // Référence à l'élément ViewSeasonPoints du layout
+        // Configuration du recyclerView contenant la liste des classements
         RecyclerView recyclerViewSeasonPoints = (RecyclerView) findViewById(R.id.leaderboard_recycler_view_rankings);
 
         recyclerViewSeasonPoints.setAdapter(new SeasonPointsCard_RecyclerViewAdapter(this, SeasonPointsList));
@@ -62,7 +62,7 @@ public class LeaderboardActivity extends AppCompatActivity {
             }
         }
 
-        // Affichage du classement de l'utilisateur
+        // Affichage du classement de l'utilisateur dans un fragment du layout
         Fragment userRankFragment;
         if(index < SeasonPointsList.size())
             userRankFragment = UserRankFragment.newInstance(user.GetUsername(), SeasonPointsList.get(index).getPoints(), "#" + Integer.toString(index + 1));

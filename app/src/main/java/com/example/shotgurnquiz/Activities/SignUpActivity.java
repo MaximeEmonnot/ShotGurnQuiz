@@ -54,14 +54,17 @@ public class SignUpActivity extends AppCompatActivity {
                     password.setError(getResources().getText(R.string.empty_field));
                     password.requestFocus();
                 }
+                // Si l'email n'est pas un email valide on affiche une erreur
                 else if(!emailText.matches("[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+")){
                     email.setError(getResources().getText(R.string.email_not_valid));
                     email.requestFocus();
                 }
+                // Si l'email et la confirmation de l'email sont differents on affiche un message d'erreur
                 else if(!emailText.equals(confirmEmailText)) {
                     confirmEmail.setError(getResources().getText(R.string.fields_not_match));
                     confirmEmail.requestFocus();
                 }
+                // Si le mot de passe et la confirmation du mot de passe sont differents on affiche un message d'erreur
                 else if(!passwordText.equals(confirmPasswordText)) {
                     confirmPassword.setError(getResources().getText(R.string.fields_not_match));
                     confirmPassword.requestFocus();
