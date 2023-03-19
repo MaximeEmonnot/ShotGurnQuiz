@@ -23,15 +23,17 @@ public class AddQuestionDialogFragment extends DialogFragment {
         this.index = index;
     }
 
+    // Création du DialogFragment
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
 
+        // Définition du layout du DialogFragment
         View rootView = this.getLayoutInflater().inflate(R.layout.fragment_add_question, null);
 
+        // Références aux éléments du layout
         EditText editTextTitle = (EditText) rootView.findViewById(R.id.question_title);
         EditText editTextAnswerA = (EditText) rootView.findViewById(R.id.answer_a);
         EditText editTextAnswerB = (EditText) rootView.findViewById(R.id.answer_b);
-
         Button buttonSave = (Button) rootView.findViewById(R.id.btn_save);
         RadioButton radioAnswerA = (RadioButton) rootView.findViewById(R.id.radio_answer_a);
         RadioButton radioAnswerB = (RadioButton) rootView.findViewById(R.id.radio_answer_b);

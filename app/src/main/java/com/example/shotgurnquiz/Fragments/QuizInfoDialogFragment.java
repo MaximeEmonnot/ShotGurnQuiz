@@ -25,6 +25,7 @@ public class QuizInfoDialogFragment extends DialogFragment {
 
     public QuizInfoDialogFragment(){}
 
+    // Nouvelle instance du DialogFragment : On définit les arguments Quiz et UserID pour la création dudit DialogFragment
     public static QuizInfoDialogFragment newInstance(Quiz quiz, int userId) {
         QuizInfoDialogFragment fragment = new QuizInfoDialogFragment();
         Bundle args = new Bundle();
@@ -34,31 +35,39 @@ public class QuizInfoDialogFragment extends DialogFragment {
         return fragment;
     }
 
+    // Création du DialogFragment
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
 
+        // On récupère les différents arguments définis dans l'instanciation
         if (getArguments() != null) {
             quiz = getArguments().getParcelable(ARG_PARAM1);
             userId = getArguments().getInt(ARG_PARAM2);
         }
 
+        // Définition du layout du DialogFragment
         View rootView = this.getLayoutInflater().inflate(R.layout.fragment_quiz_info, null);
 
+        // Références aux éléments du layout
         TextView textViewTitle = (TextView) rootView.findViewById(R.id.quiz_info_title);
         TextView textViewTheme = (TextView) rootView.findViewById(R.id.quiz_info_theme);
         TextView textViewDifficulty = (TextView) rootView.findViewById(R.id.quiz_info_difficulty);
         TextView textViewNumberOfQuestions = (TextView) rootView.findViewById(R.id.quiz_info_nb_questions);
+        Button buttonPlay = (Button) rootView.findViewById(R.id.quiz_info_btn_play);
 
+        // Instanciation du DatabaseHelper (Singleton)
         DatabaseHelper db = DatabaseHelper.GetInstance(getActivity().getBaseContext());
+
+        // Récupération de l'ensemble des questions du quiz
         ArrayList<Question> questions = db.GetAllQuestionsFromQuiz(quiz.GetID());
 
+        // Affichage des différentes informations : Titre du quiz, thème du quiz, difficulté du quiz, nombre de questions
         textViewTitle.setText(quiz.GetTitle());
         textViewTheme.setText(getResources().getStringArray(R.array.theme_list)[quiz.GetTheme()]);
         textViewDifficulty.setText(getResources().getStringArray(R.array.difficulty_list)[quiz.GetDifficulty()]);
         textViewNumberOfQuestions.setText(String.valueOf(questions.size()));
 
-        Button buttonPlay = (Button) rootView.findViewById(R.id.quiz_info_btn_play);
-
+        // OnClick du bouton Play : On lancera l'activité PlayQuizActivity avec les informations suivantes : Quiz, liste des questions, ID utilisateur
         buttonPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -71,11 +80,13 @@ public class QuizInfoDialogFragment extends DialogFragment {
             }
         });
 
+        // Affichage du DialogFragment
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setView(rootView);
         return builder.create();
     }
 
+    // Changement d'affichage selon l'orientation de l'écran
     @Override
     public void onResume() {
         super.onResume();
@@ -92,9 +103,11 @@ public class QuizInfoDialogFragment extends DialogFragment {
         }
     }
 
+    // Constantes pour les arguments lors de l'instanciation
     private static final String ARG_PARAM1 = "quiz";
     private static final String ARG_PARAM2 = "userId";
 
+    // Paramètres du fragment
     private Quiz quiz;
     private int userId;
 }
