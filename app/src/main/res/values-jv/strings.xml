@@ -28,4 +28,53 @@
     <string name="medium">penengah</string>
     <string name="hard">angel</string>
     <string name="account_successfully_created">Akun sampeyan wis kasil digawe</string>
+    <string name="questions">Pitakonan:</string>
+    <string name="title">judhul</string>
+    <string name="my_quiz">kuisku</string>
+    <string name="difficulty">Kesulitan:</string>
+    <string name="theme">Tema:</string>
+    <string name="new_quiz">Quiz anyar</string>
+    <string name="question">Pitakonan</string>
+    <string name="answer_a_title">Wangsulan A:</string>
+    <string name="answer_b_title">Wangsulan B:</string>
+    <string name="answer_a">Wangsulan A</string>
+    <string name="answer_b">Wangsulan B</string>
+    <string name="this_is_my_question">Iki pitakonku.</string>
+    <string name="save">Simpen</string>
+    <string name="number_of_questions">Jumlah pitakonan:</string>
+    <string name="play">Play iku!</string>
+    <string name="are_you_sure_you_want_to_quit">Apa sampeyan yakin pengin mandheg?</string>
+    <string name="progress_will_be_lost">Kemajuan bakal ilang.</string>
+    <string name="closing_Quiz">Panutup Kuis</string>
+    <string name="yes">ya wis</string>
+    <string name="no">Ora</string>
+    <string name="create">Nggawe</string>
+    <string name="time_left">Sisa wektu:</string>
+    <string name="seconds">detik</string>
+    <string name="score">Skor:</string>
+    <string name="points_added_season_points">"  TCTerms wis ditambahake menyang TCTerms mangsa Panjenengan"</string>
+    <string name="thanks_for_playing">Matur nuwun kanggo muter</string>
+    <string name="your_score_is">Skor sampeyan yaiku:</string>
+    <string name="return_to_quiz_list">Bali menyang dhaptar kuis</string>
+    <string name="points">titik:</string>
+    <string name="season">mangsa</string>
+    <string name="your_rank">pangkat sampeyan:</string>
+    <string name="change_password">Ganti tembung sandhi</string>
+    <string name="username_indicator">Jeneng panganggo:</string>
+    <string name="email_indicator">Email:</string>
+    <string name="old_password">Sandi lawas</string>
+    <string name="new_password">Sandi anyar</string>
+    <string name="confirm_new_password">Konfirmasi sandhi anyar</string>
+    <string name="set_password">Setel sandhi</string>
+    <string name="password_successfully_updated">Tembung sandhi panjenengan wis kasil dianyari</string>
+    <string-array name="difficulty_list">
+        <item>gampang</item>
+        <item>penengah</item>
+        <item>angel</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>panganan</item>
+        <item>olahraga</item>
+        <item>kewan</item>
+    </string-array>
 </resources>

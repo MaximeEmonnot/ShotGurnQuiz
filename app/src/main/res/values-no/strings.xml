@@ -28,4 +28,53 @@
     <string name="medium">Middels</string>
     <string name="hard">Vanskelig</string>
     <string name="account_successfully_created">din konto har blitt opprettet</string>
+    <string name="questions">Spørsmål:</string>
+    <string name="title">Tittel</string>
+    <string name="my_quiz">Min quiz</string>
+    <string name="difficulty">Vanskelighet:</string>
+    <string name="theme">Tema:</string>
+    <string name="new_quiz">Ny quiz</string>
+    <string name="question">Spørsmål</string>
+    <string name="answer_a_title">Svar A:</string>
+    <string name="answer_b_title">Svar B:</string>
+    <string name="answer_a">Svar A</string>
+    <string name="answer_b">Svar B</string>
+    <string name="this_is_my_question">Dette er spørsmålet mitt.</string>
+    <string name="save">Lagre</string>
+    <string name="number_of_questions">Antall spørsmål:</string>
+    <string name="play">Spill Det!</string>
+    <string name="are_you_sure_you_want_to_quit">Er du sikker på at du vil slutte?</string>
+    <string name="progress_will_be_lost">Fremskritt vil gå tapt.</string>
+    <string name="closing_Quiz">Avslutningsquiz</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nei</string>
+    <string name="create">Skape</string>
+    <string name="time_left">Tid igjen :</string>
+    <string name="seconds">sekunder</string>
+    <string name="score">Poengsum:</string>
+    <string name="points_added_season_points">"  poeng er lagt til sesongpoengene dine"</string>
+    <string name="thanks_for_playing">Takk for at du spiller</string>
+    <string name="your_score_is">Poengsummen din er:</string>
+    <string name="return_to_quiz_list">Gå tilbake til quizlisten</string>
+    <string name="points">Poeng:</string>
+    <string name="season">Årstid</string>
+    <string name="your_rank">Din rangering:</string>
+    <string name="change_password">Bytt passord</string>
+    <string name="username_indicator">Brukernavn:</string>
+    <string name="email_indicator">E-post:</string>
+    <string name="old_password">Gammelt passord</string>
+    <string name="new_password">Nytt passord</string>
+    <string name="confirm_new_password">Bekrefte nytt passord</string>
+    <string name="set_password">Lag et passord</string>
+    <string name="password_successfully_updated">Passordet ditt har blitt oppdatert</string>
+    <string-array name="difficulty_list">
+        <item>lett</item>
+        <item>mellomliggende</item>
+        <item>Vanskelig</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>mat</item>
+        <item>sport</item>
+        <item>dyr</item>
+    </string-array>
 </resources>

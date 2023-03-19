@@ -19,14 +19,15 @@ public class QuizSummaryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz_summary);
 
+        // Récupération des différentes informations envoyées précédemment via Intent
         Bundle bundle = getIntent().getExtras();
-
         int score = bundle.getInt("score");
         int questionCount = bundle.getInt("questionCount");
         String quizTitle = bundle.getString("quizTitle");
         int quizId = bundle.getInt("quizId");
         int userId = bundle.getInt("userId");
 
+        // Références aux éléments du layout
         TextView textViewTitle = (TextView) findViewById(R.id.quiz_summary_title);
         TextView textViewScoreCount = (TextView) findViewById(R.id.quiz_summary_score_count);
         TextView textViewScoreMax = (TextView) findViewById(R.id.quiz_summary_score_max);
@@ -34,11 +35,6 @@ public class QuizSummaryActivity extends AppCompatActivity {
         Button buttonQuizList = (Button) findViewById(R.id.quiz_summary_btn_quiz_list);
 
         //Ajout du score en bd ou modification si deja existant et calcul des points
-
-        textViewTitle.setText(quizTitle);
-        textViewScoreCount.setText(Integer.toString(score));
-        textViewScoreMax.setText(Integer.toString(questionCount));
-
         DatabaseHelper db = DatabaseHelper.GetInstance(this);
         Score dbScore = db.GetUserScore(quizId, userId);
         int points = 0;
@@ -48,8 +44,13 @@ public class QuizSummaryActivity extends AppCompatActivity {
             points = score - (dbScore == null ? 0 : dbScore.GetScore());
         }
 
+        // Affichage du score du joueur pour le quiz effectué, ainsi que des points de saison ajoutés à son profil
+        textViewTitle.setText(quizTitle);
+        textViewScoreCount.setText(Integer.toString(score));
+        textViewScoreMax.setText(Integer.toString(questionCount));
         textViewPointsCount.setText(Integer.toString(points)+ " " + getString(R.string.points_added_season_points));
 
+        // OnClick de buttonQuizList : Retour à l'activité QuizListActivity
         buttonQuizList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -28,4 +28,53 @@
     <string name="medium">Giddugaleessa</string>
     <string name="hard">Rakkisaa</string>
     <string name="account_successfully_created">Akkaawuntii keessan milkaa\'inaan uumameera</string>
+    <string name="questions">Gaaffiiwwan:</string>
+    <string name="title">Mata-duree</string>
+    <string name="my_quiz">Quiz koo</string>
+    <string name="difficulty">Rakkoo: 1.1.</string>
+    <string name="theme">Dhimma haasaa:</string>
+    <string name="new_quiz">Quiz Haaraa</string>
+    <string name="question">Gaaffii</string>
+    <string name="answer_a_title">Deebii A:</string>
+    <string name="answer_b_title">Deebii B: 1.1.</string>
+    <string name="answer_a">Deebii A</string>
+    <string name="answer_b">Deebii B</string>
+    <string name="this_is_my_question">Kun gaaffii kooti.</string>
+    <string name="save">Qusachuu</string>
+    <string name="number_of_questions">Baay’ina gaaffilee:</string>
+    <string name="play">Taphadhu!</string>
+    <string name="are_you_sure_you_want_to_quit">Hojii dhiisuu akka barbaaddu mirkaneeffatteettaa?</string>
+    <string name="progress_will_be_lost">Guddinni ni bada.</string>
+    <string name="closing_Quiz">Kuwiizii Cufiinsaa</string>
+    <string name="yes">Eeyyee</string>
+    <string name="no">Lakki</string>
+    <string name="create">Uumuu</string>
+    <string name="time_left">Yeroon hafe : .</string>
+    <string name="seconds">sekondii</string>
+    <string name="score">Qabxii:</string>
+    <string name="points_added_season_points">"  qabxiin qabxii bara dorgommii keessanii irratti dabalameera"</string>
+    <string name="thanks_for_playing">Taphachuu keessaniif galatoomaa</string>
+    <string name="your_score_is">Qabxiin kee:</string>
+    <string name="return_to_quiz_list">Gara tarree gaaffiitti deebi\'i</string>
+    <string name="points">Qabxiilee: 1.1.</string>
+    <string name="season">Waqtii</string>
+    <string name="your_rank">Sadarkaan keessan:</string>
+    <string name="change_password">Jecha icciitii jijjiiri</string>
+    <string name="username_indicator">Maqaa fayyadamaa:</string>
+    <string name="email_indicator">Imeelii:</string>
+    <string name="old_password">Jecha icciitii durii</string>
+    <string name="new_password">Jecha icciitii haaraa</string>
+    <string name="confirm_new_password">Jecha icciitii haaraa mirkaneessi</string>
+    <string name="set_password">Jecha icciitii saagi</string>
+    <string name="password_successfully_updated">Jechi icciitii keessan milkaa\'inaan haaromfameera</string>
+    <string-array name="difficulty_list">
+        <item>salphaa</item>
+        <item>giddugaleessa</item>
+        <item>Rakkisaa</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>nyaata</item>
+        <item>ispoortii</item>
+        <item>bineensota</item>
+    </string-array>
 </resources>

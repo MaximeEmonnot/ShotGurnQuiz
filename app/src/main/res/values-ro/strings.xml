@@ -28,4 +28,53 @@
     <string name="medium">Intermediar</string>
     <string name="hard">Dificil</string>
     <string name="account_successfully_created">Contul tau a fost creat cu succes</string>
+    <string name="questions">Întrebări:</string>
+    <string name="title">Titlu</string>
+    <string name="my_quiz">Testul meu</string>
+    <string name="difficulty">Dificultate:</string>
+    <string name="theme">Temă:</string>
+    <string name="new_quiz">Test nou</string>
+    <string name="question">Întrebare</string>
+    <string name="answer_a_title">Raspuns A:</string>
+    <string name="answer_b_title">Raspuns B:</string>
+    <string name="answer_a">Raspunde A</string>
+    <string name="answer_b">Raspuns B</string>
+    <string name="this_is_my_question">Aceasta este întrebarea mea.</string>
+    <string name="save">Salvați</string>
+    <string name="number_of_questions">Numar de intrebari:</string>
+    <string name="play">Joacă-l!</string>
+    <string name="are_you_sure_you_want_to_quit">Esti sigur ca vrei sa renunti?</string>
+    <string name="progress_will_be_lost">Progresul va fi pierdut.</string>
+    <string name="closing_Quiz">Test de închidere</string>
+    <string name="yes">da</string>
+    <string name="no">Nu</string>
+    <string name="create">Crea</string>
+    <string name="time_left">Timp rămas :</string>
+    <string name="seconds">secunde</string>
+    <string name="score">Scor:</string>
+    <string name="points_added_season_points">"  puncte au fost adăugate la punctele tale de sezon"</string>
+    <string name="thanks_for_playing">Multumesc pentru joc</string>
+    <string name="your_score_is">Scorul tau este:</string>
+    <string name="return_to_quiz_list">Reveniți la lista de teste</string>
+    <string name="points">Puncte:</string>
+    <string name="season">Sezon</string>
+    <string name="your_rank">rangul tau:</string>
+    <string name="change_password">Schimbaţi parola</string>
+    <string name="username_indicator">Nume de utilizator:</string>
+    <string name="email_indicator">E-mail:</string>
+    <string name="old_password">Parola veche</string>
+    <string name="new_password">Parolă Nouă</string>
+    <string name="confirm_new_password">Confirmă noua parolă</string>
+    <string name="set_password">Seteaza parola</string>
+    <string name="password_successfully_updated">Parola ta a fost actualizata cu succes</string>
+    <string-array name="difficulty_list">
+        <item>uşor</item>
+        <item>intermediar</item>
+        <item>Dificil</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>alimente</item>
+        <item>sport</item>
+        <item>animalelor</item>
+    </string-array>
 </resources>

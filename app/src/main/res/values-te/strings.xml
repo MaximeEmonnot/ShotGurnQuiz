@@ -28,4 +28,53 @@
     <string name="medium">ఇంటర్మీడియట్</string>
     <string name="hard">కష్టం</string>
     <string name="account_successfully_created">మీ ఖాతా విజయవంతంగా సృష్టించబడింది</string>
+    <string name="questions">ప్రశ్నలు:</string>
+    <string name="title">శీర్షిక</string>
+    <string name="my_quiz">నా క్విజ్</string>
+    <string name="difficulty">కష్టం:</string>
+    <string name="theme">థీమ్:</string>
+    <string name="new_quiz">కొత్త క్విజ్</string>
+    <string name="question">ప్రశ్న</string>
+    <string name="answer_a_title">సమాధానం A:</string>
+    <string name="answer_b_title">సమాధానం B:</string>
+    <string name="answer_a">సమాధానం ఎ</string>
+    <string name="answer_b">సమాధానం బి</string>
+    <string name="this_is_my_question">ఇది నా ప్రశ్న.</string>
+    <string name="save">సేవ్ చేయండి</string>
+    <string name="number_of_questions">ప్రశ్నల సంఖ్య:</string>
+    <string name="play">ఆడండి!</string>
+    <string name="are_you_sure_you_want_to_quit">మీరు ఖచ్చితంగా నిష్క్రమించాలనుకుంటున్నారా?</string>
+    <string name="progress_will_be_lost">పురోగతి పోతుంది.</string>
+    <string name="closing_Quiz">క్విజ్ ముగింపు</string>
+    <string name="yes">అవును</string>
+    <string name="no">సంఖ్య</string>
+    <string name="create">సృష్టించు</string>
+    <string name="time_left">మిగిలి వున్న సమయం :</string>
+    <string name="seconds">సెకన్లు</string>
+    <string name="score">స్కోర్:</string>
+    <string name="points_added_season_points">"  మీ సీజన్ పాయింట్లకు పాయింట్లు జోడించబడ్డాయి"</string>
+    <string name="thanks_for_playing">ఆడినందుకు ధన్యవాదాలు</string>
+    <string name="your_score_is">మీ స్కోర్:</string>
+    <string name="return_to_quiz_list">క్విజ్ జాబితాకు తిరిగి వెళ్ళు</string>
+    <string name="points">పాయింట్లు:</string>
+    <string name="season">బుతువు</string>
+    <string name="your_rank">మీ ర్యాంక్:</string>
+    <string name="change_password">పాస్వర్డ్ మార్చండి</string>
+    <string name="username_indicator">వినియోగదారు పేరు:</string>
+    <string name="email_indicator">ఇమెయిల్:</string>
+    <string name="old_password">పాత పాస్వర్డ్</string>
+    <string name="new_password">కొత్త పాస్వర్డ్</string>
+    <string name="confirm_new_password">కొత్త పాస్‌వర్డ్‌ను నిర్ధారించండి</string>
+    <string name="set_password">పాస్వర్డ్ను సెట్ చేయండి</string>
+    <string name="password_successfully_updated">మీ పాస్‌వర్డ్ విజయవంతంగా నవీకరించబడింది</string>
+    <string-array name="difficulty_list">
+        <item>సులభంగా</item>
+        <item>ఇంటర్మీడియట్</item>
+        <item>కష్టం</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>ఆహారం</item>
+        <item>క్రీడ</item>
+        <item>జంతువులు</item>
+    </string-array>
 </resources>

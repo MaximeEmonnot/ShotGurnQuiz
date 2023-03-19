@@ -28,4 +28,53 @@
     <string name="medium">Intermedio</string>
     <string name="hard">Sasachakuy</string>
     <string name="account_successfully_created">Yupayniykiqa allin ruwasqañam</string>
+    <string name="questions">Tapukuykuna:</string>
+    <string name="title">Suti</string>
+    <string name="my_quiz">Mi quiz</string>
+    <string name="difficulty">Sasachakuy:</string>
+    <string name="theme">Rimay:</string>
+    <string name="new_quiz">Musuq Quiz</string>
+    <string name="question">Tapukuy</string>
+    <string name="answer_a_title">A kutichiy: .</string>
+    <string name="answer_b_title">B kutichiy: .</string>
+    <string name="answer_a">Kutichiy A</string>
+    <string name="answer_b">Kutichiy B</string>
+    <string name="this_is_my_question">Kaymi tapukuyniy.</string>
+    <string name="save">Waqaychay</string>
+    <string name="number_of_questions">Hayka tapukuykuna:</string>
+    <string name="play">¡Pukllay!</string>
+    <string name="are_you_sure_you_want_to_quit">¿Segurochu kanki saqeyta munasqaykimanta?</string>
+    <string name="progress_will_be_lost">Ñawpaqman puriyqa chinkapunqan.</string>
+    <string name="closing_Quiz">Quiz de Clausura</string>
+    <string name="yes">Arí</string>
+    <string name="no">Manam</string>
+    <string name="create">Paqarichiy</string>
+    <string name="time_left">Puchuq pacha : .</string>
+    <string name="seconds">segundos nisqapi</string>
+    <string name="score">Chusukuna:</string>
+    <string name="points_added_season_points">"  puntos nisqakuna yapasqa kanku temporada puntos nisqaykiman"</string>
+    <string name="thanks_for_playing">Gracias pukllasqaykimanta</string>
+    <string name="your_score_is">Puntuacionniykiqa kaymi:</string>
+    <string name="return_to_quiz_list">Kutiy lista de quiz nisqaman</string>
+    <string name="points">Puntos:</string>
+    <string name="season">Pacha</string>
+    <string name="your_rank">Rankiyki:</string>
+    <string name="change_password">Yaykuna rimayta tikray</string>
+    <string name="username_indicator">Ruraqpa sutin:</string>
+    <string name="email_indicator">Correo electrónico:</string>
+    <string name="old_password">Ñawpa yaykuna rimay</string>
+    <string name="new_password">Musuq yaykuna rimay</string>
+    <string name="confirm_new_password">Musuq yaykuna rimayta takyachiy</string>
+    <string name="set_password">Yaykuna rimayta churay</string>
+    <string name="password_successfully_updated">Yaykuna rimayniykiqa allintam musuqyachisqa</string>
+    <string-array name="difficulty_list">
+        <item>mana sasa</item>
+        <item>intermedio</item>
+        <item>Sasachakuy</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>mikuna</item>
+        <item>pukllay</item>
+        <item>uywakuna</item>
+    </string-array>
 </resources>

@@ -35,20 +35,26 @@ public class LeaderboardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_leaderboard);
 
+        // Récupération de l'ID utilisateur via Intent
         int userId = getIntent().getExtras().getInt("userId");
 
+        // Instanciation du DatabaseHelper (Singleton)
         DatabaseHelper db = DatabaseHelper.GetInstance(this);
 
+        // Récupération des informations de l'utilisateur
         User user = db.FindUserByID(userId);
+
+        // Récupération du Ranking global (tous les utilisateurs)
         ArrayList<SeasonPoints> SeasonPointsList = db.GetRanking();
 
+        // Référence à l'élément ViewSeasonPoints du layout
         RecyclerView recyclerViewSeasonPoints = (RecyclerView) findViewById(R.id.leaderboard_recycler_view_rankings);
 
         recyclerViewSeasonPoints.setAdapter(new SeasonPointsCard_RecyclerViewAdapter(this, SeasonPointsList));
         recyclerViewSeasonPoints.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         recyclerViewSeasonPoints.addItemDecoration(new RecyclerView_SpacesItemDecoration(20, 10, LinearLayoutManager.VERTICAL));
 
-
+        // On récupère l'index du Ranking Global correspondant à l'utilisateur
         int index;
         for(index = 0; index <  SeasonPointsList.size(); index++){
             if(SeasonPointsList.get(index).getUsername().equals(user.GetUsername())){
@@ -56,23 +62,16 @@ public class LeaderboardActivity extends AppCompatActivity {
             }
         }
 
-
-
+        // Affichage du classement de l'utilisateur
         Fragment userRankFragment;
-
         if(index < SeasonPointsList.size())
             userRankFragment = UserRankFragment.newInstance(user.GetUsername(), SeasonPointsList.get(index).getPoints(), "#" + Integer.toString(index + 1));
         else
             userRankFragment = UserRankFragment.newInstance(user.GetUsername(), 1, "Not ranked");
 
-
         getSupportFragmentManager().beginTransaction()
                 .add(R.id.leaderboard_user_rank, userRankFragment)
                 .commit();
-
-
-
-
 
     }
 }

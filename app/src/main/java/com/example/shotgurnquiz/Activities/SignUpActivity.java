@@ -20,8 +20,10 @@ public class SignUpActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
+        // Instanciation du DatabaseHelper (Singleton)
         DatabaseHelper db = DatabaseHelper.GetInstance(this);
 
+        // Références aux élements du layout
         Button createAccount = (Button) findViewById(R.id.btn_create_account);
         EditText username = (EditText) findViewById(R.id.edit_text_sign_up_username);
         EditText email = (EditText) findViewById(R.id.edit_text_sign_up_email);
@@ -29,6 +31,7 @@ public class SignUpActivity extends AppCompatActivity {
         EditText password = (EditText) findViewById(R.id.edit_text_sign_up_password);
         EditText confirmPassword = (EditText) findViewById(R.id.edit_text_sign_up_confirm_password);
 
+        // OnClick du bouton CreateAccount
         createAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -38,6 +41,7 @@ public class SignUpActivity extends AppCompatActivity {
                 String passwordText = password.getText().toString();
                 String confirmPasswordText = confirmPassword.getText().toString();
 
+                // Si tous les champs ne sont pas remplis, on affiche différents messages d'erreur
                 if(usernameText.isEmpty()) {
                     username.setError(getResources().getText(R.string.empty_field));
                     username.requestFocus();
@@ -63,6 +67,7 @@ public class SignUpActivity extends AppCompatActivity {
                     confirmPassword.requestFocus();
                 }
                 else{
+                    // Une fois tous les champs remplis, on vérifie l'existence ou non d'un utilisateur ayant soit le même nom soit la même adresse mail
                     if(db.FindUserByUsername(usernameText) != null) {
                         username.setError(getResources().getText(R.string.username_already_exist));
                         username.requestFocus();
@@ -72,6 +77,7 @@ public class SignUpActivity extends AppCompatActivity {
                         email.requestFocus();
                     }
                     else {
+                        // Si aucun utilisateur n'a été trouvé, on ajoute l'utilisateur en base de données et on se connecte en envoyant comme information l'état connecté et l'ID utilisateur
                         int userId = db.CreateNewUser(usernameText, emailText, passwordText);
                         Toast.makeText(getBaseContext(),R.string.account_successfully_created,Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(SignUpActivity.this, QuizListActivity.class);
@@ -84,6 +90,7 @@ public class SignUpActivity extends AppCompatActivity {
         });
     }
 
+    // Animation lors de l'arrêt de l'activité
     @Override
     public void finish(){
         super.finish();

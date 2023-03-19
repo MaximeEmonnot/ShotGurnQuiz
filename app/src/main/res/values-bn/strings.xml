@@ -28,4 +28,53 @@
     <string name="medium">মধ্যবর্তী</string>
     <string name="hard">কঠিন</string>
     <string name="account_successfully_created">আপনার অ্যাকাউন্ট সফলভাবে তৈরি করা হয়েছে</string>
+    <string name="questions">প্রশ্ন:</string>
+    <string name="title">শিরোনাম</string>
+    <string name="my_quiz">আমার ক্যুইজ</string>
+    <string name="difficulty">অসুবিধা:</string>
+    <string name="theme">থিম:</string>
+    <string name="new_quiz">নতুন কুইজ</string>
+    <string name="question">প্রশ্ন</string>
+    <string name="answer_a_title">উত্তর A:</string>
+    <string name="answer_b_title">উত্তর B:</string>
+    <string name="answer_a">উত্তর A</string>
+    <string name="answer_b">উত্তর খ</string>
+    <string name="this_is_my_question">এই আমার প্রশ্ন.</string>
+    <string name="save">সংরক্ষণ</string>
+    <string name="number_of_questions">প্রশ্নের সংখ্যা:</string>
+    <string name="play">এটা খেলা!</string>
+    <string name="are_you_sure_you_want_to_quit">আপনি কি নিশ্চিত যে আপনি পরিত্যাগ করতে চান?</string>
+    <string name="progress_will_be_lost">অগ্রগতি হারিয়ে যাবে।</string>
+    <string name="closing_Quiz">সমাপনী কুইজ</string>
+    <string name="yes">হ্যাঁ</string>
+    <string name="no">না</string>
+    <string name="create">সৃষ্টি</string>
+    <string name="time_left">বাকি সময়:</string>
+    <string name="seconds">সেকেন্ড</string>
+    <string name="score">স্কোর:</string>
+    <string name="points_added_season_points">"  পয়েন্ট আপনার সিজন পয়েন্ট যোগ করা হয়েছে"</string>
+    <string name="thanks_for_playing">খেলার জন্য ধন্যবাদ</string>
+    <string name="your_score_is">তোমার সংগ্রহ:</string>
+    <string name="return_to_quiz_list">কুইজ তালিকায় ফিরে যান</string>
+    <string name="points">পয়েন্ট:</string>
+    <string name="season">মৌসম</string>
+    <string name="your_rank">তোমার পদ:</string>
+    <string name="change_password">পাসওয়ার্ড পরিবর্তন করুন</string>
+    <string name="username_indicator">ব্যবহারকারীর নাম:</string>
+    <string name="email_indicator">ইমেইল:</string>
+    <string name="old_password">পুরানো পাসওয়ার্ড</string>
+    <string name="new_password">নতুন পাসওয়ার্ড</string>
+    <string name="confirm_new_password">নিশ্চিত কর নতুন গোপননম্বর</string>
+    <string name="set_password">পাসওয়ার্ড সেট করুন</string>
+    <string name="password_successfully_updated">আপনার পাসওয়ার্ড সফলভাবে আপডেট করা হয়েছে</string>
+    <string-array name="difficulty_list">
+        <item>সহজ</item>
+        <item>মধ্যবর্তী</item>
+        <item>কঠিন</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>খাদ্য</item>
+        <item>খেলা</item>
+        <item>প্রাণী</item>
+    </string-array>
 </resources>

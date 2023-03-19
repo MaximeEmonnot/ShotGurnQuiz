@@ -28,4 +28,53 @@
     <string name="medium">Dhexdhexaad</string>
     <string name="hard">Adag</string>
     <string name="account_successfully_created">Koontadaada si guul leh ayaa loo sameeyay</string>
+    <string name="questions">Su\'aalo:</string>
+    <string name="title">Ciwaanka</string>
+    <string name="my_quiz">Kediskayga</string>
+    <string name="difficulty">Dhib:</string>
+    <string name="theme">Dulucda:</string>
+    <string name="new_quiz">Kedis Cusub</string>
+    <string name="question">Su\'aal</string>
+    <string name="answer_a_title">Jawaab A:</string>
+    <string name="answer_b_title">Jawaab B:</string>
+    <string name="answer_a">Jawaab A</string>
+    <string name="answer_b">Jawaabta B</string>
+    <string name="this_is_my_question">Tani waa su\'aashayda.</string>
+    <string name="save">Badbaadin</string>
+    <string name="number_of_questions">Tirada su\'aalaha:</string>
+    <string name="play">Ciyaar!</string>
+    <string name="are_you_sure_you_want_to_quit">Ma hubtaa inaad doonayso inaad joojiso?</string>
+    <string name="progress_will_be_lost">Horumarku waa lumin doonaa.</string>
+    <string name="closing_Quiz">Kediska xidhitaanka</string>
+    <string name="yes">Haa</string>
+    <string name="no">Maya</string>
+    <string name="create">Abuur</string>
+    <string name="time_left">Waqtiga haray:</string>
+    <string name="seconds">ilbiriqsi</string>
+    <string name="score">Dhibcaha</string>
+    <string name="points_added_season_points">"  dhibcood ayaa lagu daray xilli ciyaareedkan"</string>
+    <string name="thanks_for_playing">Waad ku mahadsan tahay ciyaarta</string>
+    <string name="your_score_is">Dhibcahaagu waa:</string>
+    <string name="return_to_quiz_list">Ku laabo liiska su\'aalaha</string>
+    <string name="points">Dhibco:</string>
+    <string name="season">Xiliga</string>
+    <string name="your_rank">Darajadaada:</string>
+    <string name="change_password">Badalida Lambarka sirta ah</string>
+    <string name="username_indicator">Magaca isticmaalaha:</string>
+    <string name="email_indicator">Iimayl:</string>
+    <string name="old_password">Furaha hore</string>
+    <string name="new_password">Furaha cusub</string>
+    <string name="confirm_new_password">Xaqiiji erayga sirta ah ee cusub</string>
+    <string name="set_password">Deji erayga sirta ah</string>
+    <string name="password_successfully_updated">Furahaaga si guul leh ayaa loo cusboonaysiiyay</string>
+    <string-array name="difficulty_list">
+        <item>fudud</item>
+        <item>dhexe</item>
+        <item>Adag</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>cunto</item>
+        <item>ciyaaraha</item>
+        <item>xoolaha</item>
+    </string-array>
 </resources>

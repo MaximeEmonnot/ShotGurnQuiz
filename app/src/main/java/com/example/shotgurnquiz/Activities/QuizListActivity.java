@@ -31,17 +31,19 @@ public class QuizListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz_list);
 
+        // Récupération de l'état connecté via Intent
         Bundle bundle = getIntent().getExtras();
         boolean bIsConnected = bundle.getBoolean("bIsConnected");
 
+        // Références aux éléments du layout
         RecyclerView recyclerViewSearch = findViewById(R.id.recycler_view_search);
         SearchView searchBar = (SearchView) findViewById(R.id.search_bar);
-
         BottomAppBar bottomAppBar = (BottomAppBar) findViewById(R.id.bottom_app_bar);
         Button profileButton = (Button) findViewById(R.id.profile);
         Button leaderboardButton = (Button) findViewById(R.id.leader_board);
         FloatingActionButton addQuizButton = (FloatingActionButton) findViewById((R.id.add_quiz));
 
+        // Selon l'état connecté, on définit l'affichage de certains éléments. De ce fait, par exemple, impossible d'accéder au profil si nous ne sommes pas connectés
         if (!bIsConnected) {
             bottomAppBar.setVisibility(View.GONE);
             profileButton.setVisibility(View.GONE);
@@ -52,9 +54,10 @@ public class QuizListActivity extends AppCompatActivity {
             userId = bundle.getInt("userId");
         }
 
+        // Instanciation du DatabaseHelper (Singleton)
         DatabaseHelper db = DatabaseHelper.GetInstance(this);
-        ArrayList<Quiz> quizList = db.GetAllQuizzes();
 
+        ArrayList<Quiz> quizList = db.GetAllQuizzes();
         loadRecyclerView(R.id.recycler_view_popular, db.GetAllPopularQuizzes());
         loadRecyclerView(R.id.recycler_view_most_recents, db.GetAllLatestQuizzes());
         loadRecyclerView(R.id.recycler_view_hard, db.GetAllQuizzesFromDifficulty(2));

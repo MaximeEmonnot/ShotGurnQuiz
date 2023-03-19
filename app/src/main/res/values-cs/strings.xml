@@ -28,4 +28,53 @@
     <string name="medium">středně pokročilí</string>
     <string name="hard">Obtížný</string>
     <string name="account_successfully_created">Váš účet byl úspěšně založen</string>
+    <string name="questions">otázky:</string>
+    <string name="title">Titul</string>
+    <string name="my_quiz">Můj kvíz</string>
+    <string name="difficulty">Obtížnost:</string>
+    <string name="theme">Téma:</string>
+    <string name="new_quiz">Nový kvíz</string>
+    <string name="question">Otázka</string>
+    <string name="answer_a_title">Odpověď A:</string>
+    <string name="answer_b_title">Odpověď B:</string>
+    <string name="answer_a">Odpověď A</string>
+    <string name="answer_b">Odpověď B</string>
+    <string name="this_is_my_question">To je moje otázka.</string>
+    <string name="save">Uložit</string>
+    <string name="number_of_questions">Počet otázek:</string>
+    <string name="play">Zahraj to!</string>
+    <string name="are_you_sure_you_want_to_quit">Jste si jisti, že chcete skončit?</string>
+    <string name="progress_will_be_lost">Pokrok bude ztracen.</string>
+    <string name="closing_Quiz">Závěrečný kvíz</string>
+    <string name="yes">Ano</string>
+    <string name="no">Ne</string>
+    <string name="create">Vytvořit</string>
+    <string name="time_left">Zbývající čas :</string>
+    <string name="seconds">sekundy</string>
+    <string name="score">Skóre:</string>
+    <string name="points_added_season_points">"  body byly přidány k vašim sezónním bodům"</string>
+    <string name="thanks_for_playing">Díky za hraní</string>
+    <string name="your_score_is">Vaše skóre je:</string>
+    <string name="return_to_quiz_list">Návrat na seznam kvízů</string>
+    <string name="points">Body:</string>
+    <string name="season">Sezóna</string>
+    <string name="your_rank">Vaše hodnost:</string>
+    <string name="change_password">Změnit heslo</string>
+    <string name="username_indicator">uživatelské jméno:</string>
+    <string name="email_indicator">E-mailem:</string>
+    <string name="old_password">Staré heslo</string>
+    <string name="new_password">Nové heslo</string>
+    <string name="confirm_new_password">Potvrďte nové heslo</string>
+    <string name="set_password">Nastavit heslo</string>
+    <string name="password_successfully_updated">Vaše heslo bylo úspěšně aktualizováno</string>
+    <string-array name="difficulty_list">
+        <item>snadný</item>
+        <item>středně pokročilí</item>
+        <item>Obtížný</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>jídlo</item>
+        <item>sport</item>
+        <item>zvířat</item>
+    </string-array>
 </resources>

@@ -28,4 +28,53 @@
     <string name="medium">Средњи</string>
     <string name="hard">Тешко</string>
     <string name="account_successfully_created">Ваш налог је успешно креиран</string>
+    <string name="questions">питања:</string>
+    <string name="title">Наслов</string>
+    <string name="my_quiz">Мој квиз</string>
+    <string name="difficulty">потешкоћа:</string>
+    <string name="theme">Тема:</string>
+    <string name="new_quiz">Нови квиз</string>
+    <string name="question">Питање</string>
+    <string name="answer_a_title">Одговор А:</string>
+    <string name="answer_b_title">Одговор Б:</string>
+    <string name="answer_a">Одговор А</string>
+    <string name="answer_b">Одговор Б</string>
+    <string name="this_is_my_question">Ово је моје питање.</string>
+    <string name="save">сачувати</string>
+    <string name="number_of_questions">Број питања:</string>
+    <string name="play">Играј!</string>
+    <string name="are_you_sure_you_want_to_quit">Јесте ли сигурни да желите да прекинете?</string>
+    <string name="progress_will_be_lost">Напредак ће бити изгубљен.</string>
+    <string name="closing_Quiz">Завршни квиз</string>
+    <string name="yes">да</string>
+    <string name="no">Не</string>
+    <string name="create">Креирај</string>
+    <string name="time_left">Преостало време :</string>
+    <string name="seconds">секунди</string>
+    <string name="score">Оцена:</string>
+    <string name="points_added_season_points">"  бодови су додати вашим сезонским бодовима"</string>
+    <string name="thanks_for_playing">Хвала за играње</string>
+    <string name="your_score_is">Ваш резултат је:</string>
+    <string name="return_to_quiz_list">Вратите се на листу квизова</string>
+    <string name="points">Бодова:</string>
+    <string name="season">Годишње доба</string>
+    <string name="your_rank">Ваш ранг:</string>
+    <string name="change_password">Промени лозинку</string>
+    <string name="username_indicator">Корисничко име:</string>
+    <string name="email_indicator">Емаил:</string>
+    <string name="old_password">Стара шифра</string>
+    <string name="new_password">Нова лозинка</string>
+    <string name="confirm_new_password">Потврдите нову лозинку</string>
+    <string name="set_password">Постави лозинку</string>
+    <string name="password_successfully_updated">Ваша лозинка је успешно ажурирана</string>
+    <string-array name="difficulty_list">
+        <item>лако</item>
+        <item>средњи</item>
+        <item>Тешко</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>храна</item>
+        <item>спорт</item>
+        <item>Животиње</item>
+    </string-array>
 </resources>

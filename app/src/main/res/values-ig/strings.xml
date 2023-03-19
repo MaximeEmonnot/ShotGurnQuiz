@@ -28,4 +28,53 @@
     <string name="medium">Ọkara</string>
     <string name="hard">O siri ike</string>
     <string name="account_successfully_created">Emepụtala akaụntụ gị nke ọma</string>
+    <string name="questions">Ajụjụ:</string>
+    <string name="title">Aha</string>
+    <string name="my_quiz">Ajuju m</string>
+    <string name="difficulty">Ihe isi ike:</string>
+    <string name="theme">Isiokwu:</string>
+    <string name="new_quiz">Ajụjụ ọhụrụ</string>
+    <string name="question">Ajụjụ</string>
+    <string name="answer_a_title">Azịza A:</string>
+    <string name="answer_b_title">Azịza B:</string>
+    <string name="answer_a">Azịza A</string>
+    <string name="answer_b">Azịza B</string>
+    <string name="this_is_my_question">Nke a bụ ajụjụ m.</string>
+    <string name="save">Chekwa</string>
+    <string name="number_of_questions">Ọnụọgụ ajụjụ:</string>
+    <string name="play">Gwuo ya!</string>
+    <string name="are_you_sure_you_want_to_quit">Ị ji n\'aka na ị chọrọ ịkwụsị?</string>
+    <string name="progress_will_be_lost">Ọganihu ga-efunahụ.</string>
+    <string name="closing_Quiz">Ajụjụ mmechi</string>
+    <string name="yes">Ee</string>
+    <string name="no">Mba</string>
+    <string name="create">Mepụta</string>
+    <string name="time_left">Oge fọdụrụ :</string>
+    <string name="seconds">sekọnd</string>
+    <string name="score">Akara:</string>
+    <string name="points_added_season_points">"  agbakwunyere isi ihe na isi oge gị"</string>
+    <string name="thanks_for_playing">Daalụ maka igwu egwu</string>
+    <string name="your_score_is">Akara gị bụ:</string>
+    <string name="return_to_quiz_list">Laghachi na ndepụta ajụjụ</string>
+    <string name="points">Isi ihe:</string>
+    <string name="season">Oge</string>
+    <string name="your_rank">Ọkwa gị:</string>
+    <string name="change_password">Gbanwee okwuntughe</string>
+    <string name="username_indicator">Aha njirimara:</string>
+    <string name="email_indicator">Email:</string>
+    <string name="old_password">Okwuntughe Ochie</string>
+    <string name="new_password">Okwuntughe Ọhụrụ</string>
+    <string name="confirm_new_password">Kwenye paswọọdụ ọhụrụ</string>
+    <string name="set_password">Tọọ okwuntughe</string>
+    <string name="password_successfully_updated">Emelitela paswọọdụ gị nke ọma</string>
+    <string-array name="difficulty_list">
+        <item>mfe</item>
+        <item>etiti</item>
+        <item>O siri ike</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>nri</item>
+        <item>egwuregwu</item>
+        <item>anụmanụ</item>
+    </string-array>
 </resources>

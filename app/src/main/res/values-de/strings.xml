@@ -28,4 +28,53 @@
     <string name="medium">Mittlere</string>
     <string name="hard">Schwer</string>
     <string name="account_successfully_created">Ihr Konto wurde erfolgreich erstellt</string>
+    <string name="questions" >Fragen:</string>
+    <string name="title" >Titel:</string>
+    <string name="my_quiz" >Mein Quiz</string>
+    <string name="difficulty" >Schwierigkeitsgrad:</string>
+    <string name="theme" >Thema:</string>
+    <string name="new_quiz" >Neues Quiz</string>
+    <string name="question" >Frage</string>
+    <string name="answer_a_title" >Antwort A:</string>
+    <string name="answer_b_title" >Antwort B:</string>
+    <string name="answer_a" >Antwort A</string>
+    <string name="answer_b" >Antwort B</string>
+    <string name="this_is_my_question" >Dies ist meine Frage.</string>
+    <string name="save" >Speichern</string>
+    <string name="number_of_questions" >Anzahl der Fragen:</string>
+    <string name="play" >Spiel es !</string>
+    <string name="are_you_sure_you_want_to_quit" >Sind Sie sicher, dass Sie aufhören wollen?</string>
+    <string name="progress_will_be_lost" >Fortschritt geht verloren.</string>
+    <string name="closing_Quiz" >Schließen des Quiz</string>
+    <string name="yes" >Ja</string>
+    <string name="no" >Nein</string>
+    <string name="create" >Erstellen</string>
+    <string name="time_left" >Verbleibende Zeit : </string>
+    <string name="seconds" >Sekunden</string>
+    <string name="score" >Score: </string>
+    <string name="points_added_season_points" >Punkte wurden zu Ihren Saisonpunkten hinzugefügt</string>
+    <string name="thanks_for_playing" >Danke fürs Spielen</string>
+    <string name="your_score_is" >Ihr Punktestand ist: </string>
+    <string name="return_to_quiz_list" >Zurück zur Quizliste</string>
+    <string name="points" >Punkte:</string>
+    <string name="season" >Saison</string>
+    <string name="your_rank" >Ihr Rang:</string>
+    <string name="change_password" >Passwort ändern</string>
+    <string name="username_indicator" >Benutzername:</string>
+    <string name="email_indicator" >E-Mail:</string>
+    <string name="old_password" >Altes Passwort</string>
+    <string name="new_password" >Neues Passwort</string>
+    <string name="confirm_new_password" >Bestätigen Sie das neue Passwort</string>
+    <string name="set_password" >Passwort setzen</string>
+    <string name="password_successfully_updated" >Ihr Passwort wurde erfolgreich aktualisiert</string>
+    <string-array name="difficulty_list" >
+        <item>Einfach</item>
+        <item>Mittlerer Schwierigkeitsgrad</item>
+        <item>Schwierig</item>
+    </string-array>
+    <string-array name="theme_list" >
+        <item>Lebensmittel</item>
+        <item>Sport</item>
+        <item>Tiere</item>
+    </string-array>
 </resources>

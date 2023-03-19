@@ -28,4 +28,53 @@
     <string name="medium">இடைநிலை</string>
     <string name="hard">கடினமானது</string>
     <string name="account_successfully_created">உங்கள் கணக்கு வெற்றிகரமாக உருவாக்கப்பட்டது</string>
+    <string name="questions">கேள்விகள்:</string>
+    <string name="title">தலைப்பு</string>
+    <string name="my_quiz">என் வினாடி வினா</string>
+    <string name="difficulty">சிரமம்:</string>
+    <string name="theme">தீம்:</string>
+    <string name="new_quiz">புதிய வினாடிவினா</string>
+    <string name="question">கேள்வி</string>
+    <string name="answer_a_title">பதில் A:</string>
+    <string name="answer_b_title">பதில் பி:</string>
+    <string name="answer_a">பதில் ஏ</string>
+    <string name="answer_b">பதில் பி</string>
+    <string name="this_is_my_question">இதுதான் என் கேள்வி.</string>
+    <string name="save">சேமிக்கவும்</string>
+    <string name="number_of_questions">கேள்விகளின் எண்ணிக்கை:</string>
+    <string name="play">விளையாடு!</string>
+    <string name="are_you_sure_you_want_to_quit">நீங்கள் நிச்சயம் வெளியேற வேண்டுமா?</string>
+    <string name="progress_will_be_lost">முன்னேற்றம் இழக்கப்படும்.</string>
+    <string name="closing_Quiz">நிறைவு வினாடி வினா</string>
+    <string name="yes">ஆம்</string>
+    <string name="no">இல்லை</string>
+    <string name="create">உருவாக்கு</string>
+    <string name="time_left">மீதமுள்ள நேரம்:</string>
+    <string name="seconds">வினாடிகள்</string>
+    <string name="score">மதிப்பெண்:</string>
+    <string name="points_added_season_points">"  உங்கள் சீசன் புள்ளிகளில் புள்ளிகள் சேர்க்கப்பட்டுள்ளன"</string>
+    <string name="thanks_for_playing">விளையாடியதற்கு நன்றி</string>
+    <string name="your_score_is">உங்கள் மதிப்பெண்:</string>
+    <string name="return_to_quiz_list">வினாடி வினா பட்டியலுக்குத் திரும்பு</string>
+    <string name="points">புள்ளிகள்:</string>
+    <string name="season">பருவம்</string>
+    <string name="your_rank">உங்கள் தரவரிசை:</string>
+    <string name="change_password">கடவுச்சொல்லை மாற்று</string>
+    <string name="username_indicator">பயனர் பெயர்:</string>
+    <string name="email_indicator">மின்னஞ்சல்:</string>
+    <string name="old_password">பழைய கடவுச்சொல்</string>
+    <string name="new_password">புதிய கடவுச்சொல்</string>
+    <string name="confirm_new_password">புதிய கடவு சொல்லை உறுதி செய்</string>
+    <string name="set_password">கடவுச்சொல்லை அமைக்கவும்</string>
+    <string name="password_successfully_updated">உங்கள் கடவுச்சொல் வெற்றிகரமாக புதுப்பிக்கப்பட்டது</string>
+    <string-array name="difficulty_list">
+        <item>சுலபம்</item>
+        <item>இடைநிலை</item>
+        <item>கடினமானது</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>உணவு</item>
+        <item>விளையாட்டு</item>
+        <item>விலங்குகள்</item>
+    </string-array>
 </resources>

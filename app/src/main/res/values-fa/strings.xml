@@ -28,4 +28,53 @@
     <string name="medium">حد واسط</string>
     <string name="hard">دشوار</string>
     <string name="account_successfully_created">حساب کاربری شما با موفقیت ایجاد شد</string>
+    <string name="questions">سوالات:</string>
+    <string name="title">عنوان</string>
+    <string name="my_quiz">مسابقه من</string>
+    <string name="difficulty">سختی:</string>
+    <string name="theme">موضوع:</string>
+    <string name="new_quiz">آزمون جدید</string>
+    <string name="question">سوال</string>
+    <string name="answer_a_title">پاسخ الف:</string>
+    <string name="answer_b_title">پاسخ ب:</string>
+    <string name="answer_a">جواب الف</string>
+    <string name="answer_b">پاسخ ب</string>
+    <string name="this_is_my_question">این سوال من است.</string>
+    <string name="save">صرفه جویی</string>
+    <string name="number_of_questions">تعداد سوالات:</string>
+    <string name="play">پخش کن!</string>
+    <string name="are_you_sure_you_want_to_quit">آیا مطمئن هستید که می خواهید ترک کنید؟</string>
+    <string name="progress_will_be_lost">پیشرفت از دست خواهد رفت.</string>
+    <string name="closing_Quiz">آزمون پایانی</string>
+    <string name="yes">آره</string>
+    <string name="no">خیر</string>
+    <string name="create">ايجاد كردن</string>
+    <string name="time_left">زمان باقی مانده:</string>
+    <string name="seconds">ثانیه</string>
+    <string name="score">نمره:</string>
+    <string name="points_added_season_points">"  امتیاز به امتیازات فصل شما اضافه شده است"</string>
+    <string name="thanks_for_playing">ممنون که بازی کردی</string>
+    <string name="your_score_is">امتیاز شما این است:</string>
+    <string name="return_to_quiz_list">بازگشت به لیست آزمون</string>
+    <string name="points">نکته ها:</string>
+    <string name="season">فصل</string>
+    <string name="your_rank">امتیاز شما:</string>
+    <string name="change_password">رمز عبور را تغییر دهید</string>
+    <string name="username_indicator">نام کاربری:</string>
+    <string name="email_indicator">پست الکترونیک:</string>
+    <string name="old_password">رمز عبور قدیمی</string>
+    <string name="new_password">رمز عبور جدید</string>
+    <string name="confirm_new_password">رمز عبور جدید را تایید کنید</string>
+    <string name="set_password">قراردادن رمز عبور</string>
+    <string name="password_successfully_updated">رمز عبور شما با موفقیت به روز شد</string>
+    <string-array name="difficulty_list">
+        <item>آسان</item>
+        <item>حد واسط</item>
+        <item>دشوار</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>غذا</item>
+        <item>ورزش</item>
+        <item>حیوانات</item>
+    </string-array>
 </resources>

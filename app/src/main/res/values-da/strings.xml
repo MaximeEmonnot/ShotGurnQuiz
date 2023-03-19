@@ -28,4 +28,53 @@
     <string name="medium">Mellemliggende</string>
     <string name="hard">Svært</string>
     <string name="account_successfully_created">Din konto er blevet oprettet</string>
+    <string name="questions">Spørgsmål:</string>
+    <string name="title">Titel</string>
+    <string name="my_quiz">Min quiz</string>
+    <string name="difficulty">Vanskelighed:</string>
+    <string name="theme">Tema:</string>
+    <string name="new_quiz">Ny quiz</string>
+    <string name="question">Spørgsmål</string>
+    <string name="answer_a_title">Svar A:</string>
+    <string name="answer_b_title">Svar B:</string>
+    <string name="answer_a">Svar A</string>
+    <string name="answer_b">Svar B</string>
+    <string name="this_is_my_question">Dette er mit spørgsmål.</string>
+    <string name="save">Gemme</string>
+    <string name="number_of_questions">Antal spørgsmål:</string>
+    <string name="play">Spil det!</string>
+    <string name="are_you_sure_you_want_to_quit">Er du sikker på, at du vil stoppe?</string>
+    <string name="progress_will_be_lost">Fremskridt vil gå tabt.</string>
+    <string name="closing_Quiz">Afslutningsquiz</string>
+    <string name="yes">Ja</string>
+    <string name="no">Ingen</string>
+    <string name="create">skab</string>
+    <string name="time_left">Tid tilbage :</string>
+    <string name="seconds">sekunder</string>
+    <string name="score">Score:</string>
+    <string name="points_added_season_points">"  point er blevet tilføjet til dine sæsonpoint"</string>
+    <string name="thanks_for_playing">Tak fordi du spiller</string>
+    <string name="your_score_is">Din score er:</string>
+    <string name="return_to_quiz_list">Vend tilbage til quizlisten</string>
+    <string name="points">Points:</string>
+    <string name="season">Sæson</string>
+    <string name="your_rank">Din rang:</string>
+    <string name="change_password">Skift kodeord</string>
+    <string name="username_indicator">Brugernavn:</string>
+    <string name="email_indicator">E-mail:</string>
+    <string name="old_password">Gammelt kodeord</string>
+    <string name="new_password">Nyt kodeord</string>
+    <string name="confirm_new_password">Bekræft ny adgangskode</string>
+    <string name="set_password">Indstil adgangskode</string>
+    <string name="password_successfully_updated">Din adgangskode er blevet opdateret</string>
+    <string-array name="difficulty_list">
+        <item>let</item>
+        <item>mellemliggende</item>
+        <item>Svært</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>mad</item>
+        <item>sport</item>
+        <item>dyr</item>
+    </string-array>
 </resources>

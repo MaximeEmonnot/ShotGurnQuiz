@@ -19,14 +19,20 @@ public class WelcomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
 
-        TextView titleTextView = findViewById(R.id.textview_title);
+        // Références aux éléments du layout et application des différentes animations
         Animation popUpAnimation = AnimationUtils.loadAnimation(this, R.anim.pop_up);
+        TextView titleTextView = findViewById(R.id.textview_title);
         titleTextView.startAnimation(popUpAnimation);
 
-        Button signInButton = findViewById(R.id.btn_welcome_sign_in);
         Animation slideInFromLeftAnimation = AnimationUtils.loadAnimation(this, R.anim.slidein_from_left);
+        Button signInButton = findViewById(R.id.btn_welcome_sign_in);
         signInButton.startAnimation(slideInFromLeftAnimation);
 
+        Animation slideInFromRightAnimation = AnimationUtils.loadAnimation(this, R.anim.slidein_from_right);
+        Button playOfflineButton = findViewById(R.id.btn_play_offline);
+        playOfflineButton.startAnimation(slideInFromRightAnimation);
+
+        // OnClick du bouton SignIn : on lancera l'activité SignInActivity
         signInButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -35,10 +41,7 @@ public class WelcomeActivity extends AppCompatActivity {
             }
         });
 
-        Button playOfflineButton = findViewById(R.id.btn_play_offline);
-        Animation slideInFromRightAnimation = AnimationUtils.loadAnimation(this, R.anim.slidein_from_right);
-        playOfflineButton.startAnimation(slideInFromRightAnimation);
-
+        // OnClick du bouton PlayOffline : On lancera l'activité QuizListActivity avec comme information l'état non-connecté
         playOfflineButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -28,4 +28,53 @@
     <string name="medium">ਵਿਚਕਾਰਲਾ</string>
     <string name="hard">ਔਖਾ</string>
     <string name="account_successfully_created">ਤੁਹਾਡਾ ਖਾਤਾ ਸਫਲਤਾਪੂਰਵਕ ਬਣਾਇਆ ਗਿਆ ਹੈ</string>
+    <string name="questions">ਸਵਾਲ:</string>
+    <string name="title">ਸਿਰਲੇਖ</string>
+    <string name="my_quiz">ਮੇਰੀ ਕਵਿਜ਼</string>
+    <string name="difficulty">ਮੁਸ਼ਕਲ:</string>
+    <string name="theme">ਥੀਮ:</string>
+    <string name="new_quiz">ਨਵੀਂ ਕਵਿਜ਼</string>
+    <string name="question">ਸਵਾਲ</string>
+    <string name="answer_a_title">ਜਵਾਬ A:</string>
+    <string name="answer_b_title">ਜਵਾਬ B:</string>
+    <string name="answer_a">ਜਵਾਬ ਏ</string>
+    <string name="answer_b">ਜਵਾਬ ਬੀ</string>
+    <string name="this_is_my_question">ਇਹ ਮੇਰਾ ਸਵਾਲ ਹੈ।</string>
+    <string name="save">ਸੇਵ ਕਰੋ</string>
+    <string name="number_of_questions">ਸਵਾਲਾਂ ਦੀ ਗਿਣਤੀ:</string>
+    <string name="play">ਇਸਨੂੰ ਚਲਾਓ!</string>
+    <string name="are_you_sure_you_want_to_quit">ਕੀ ਤੁਸੀਂ ਪੱਕਾ ਛੱਡਣਾ ਚਾਹੁੰਦੇ ਹੋ?</string>
+    <string name="progress_will_be_lost">ਤਰੱਕੀ ਖਤਮ ਹੋ ਜਾਵੇਗੀ।</string>
+    <string name="closing_Quiz">ਕਵਿਜ਼ ਨੂੰ ਬੰਦ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ</string>
+    <string name="yes">ਹਾਂ</string>
+    <string name="no">ਨੰ</string>
+    <string name="create">ਬਣਾਓ</string>
+    <string name="time_left">ਬੱਚਿਆ ਸਮਾਂ :</string>
+    <string name="seconds">ਸਕਿੰਟ</string>
+    <string name="score">ਸਕੋਰ:</string>
+    <string name="points_added_season_points">"  ਤੁਹਾਡੇ ਸੀਜ਼ਨ ਪੁਆਇੰਟਾਂ ਵਿੱਚ ਪੁਆਇੰਟ ਸ਼ਾਮਲ ਕੀਤੇ ਗਏ ਹਨ"</string>
+    <string name="thanks_for_playing">ਖੇਡਣ ਲਈ ਧੰਨਵਾਦ</string>
+    <string name="your_score_is">ਤੁਹਾਡਾ ਸਕੋਰ ਹੈ:</string>
+    <string name="return_to_quiz_list">ਕਵਿਜ਼ ਸੂਚੀ \'ਤੇ ਵਾਪਸ ਜਾਓ</string>
+    <string name="points">ਅੰਕ:</string>
+    <string name="season">ਸੀਜ਼ਨ</string>
+    <string name="your_rank">ਤੁਹਾਡਾ ਦਰਜਾ:</string>
+    <string name="change_password">ਪਾਸਵਰਡ ਬਦਲੋ</string>
+    <string name="username_indicator">ਉਪਭੋਗਤਾ ਨਾਮ:</string>
+    <string name="email_indicator">ਈ - ਮੇਲ:</string>
+    <string name="old_password">ਪੁਰਾਣਾ ਪਾਸਵਰਡ</string>
+    <string name="new_password">ਨਵਾਂ ਪਾਸਵਰਡ</string>
+    <string name="confirm_new_password">ਨਵੇਂ ਪਾਸਵਰਡ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ</string>
+    <string name="set_password">ਪਾਸਵਰਡ ਸੈੱਟ ਕਰੋ</string>
+    <string name="password_successfully_updated">ਤੁਹਾਡਾ ਪਾਸਵਰਡ ਸਫਲਤਾਪੂਰਵਕ ਅੱਪਡੇਟ ਕੀਤਾ ਗਿਆ ਹੈ</string>
+    <string-array name="difficulty_list">
+        <item>ਆਸਾਨ</item>
+        <item>ਵਿਚਕਾਰਲਾ</item>
+        <item>ਔਖਾ</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>ਭੋਜਨ</item>
+        <item>ਖੇਡ</item>
+        <item>ਜਾਨਵਰ</item>
+    </string-array>
 </resources>

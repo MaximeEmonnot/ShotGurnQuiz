@@ -28,4 +28,53 @@
     <string name="medium">መካከለኛ</string>
     <string name="hard">አስቸጋሪ</string>
     <string name="account_successfully_created">መለያዎ በተሳካ ሁኔታ ተፈጥሯል</string>
+    <string name="questions">ጥያቄዎች፡-</string>
+    <string name="title">ርዕስ</string>
+    <string name="my_quiz">የኔ ጥያቄ</string>
+    <string name="difficulty">አስቸጋሪነት፡</string>
+    <string name="theme">ጭብጥ፡</string>
+    <string name="new_quiz">አዲስ ጥያቄዎች</string>
+    <string name="question">ጥያቄ</string>
+    <string name="answer_a_title">መልስ ሀ፡</string>
+    <string name="answer_b_title">መልስ ለ፡</string>
+    <string name="answer_a">መልስ ሀ</string>
+    <string name="answer_b">መልስ ለ</string>
+    <string name="this_is_my_question">ይህ የኔ ጥያቄ ነው።</string>
+    <string name="save">አስቀምጥ</string>
+    <string name="number_of_questions">የጥያቄዎች ብዛት፡</string>
+    <string name="play">አጫውት!</string>
+    <string name="are_you_sure_you_want_to_quit">እርግጠኛ ነዎት ማቆም ይፈልጋሉ?</string>
+    <string name="progress_will_be_lost">መሻሻል ይጠፋል።</string>
+    <string name="closing_Quiz">ጥያቄዎችን በመዝጋት ላይ</string>
+    <string name="yes">አዎ</string>
+    <string name="no">አይ</string>
+    <string name="create">ፍጠር</string>
+    <string name="time_left">ቀሪ ግዜ :</string>
+    <string name="seconds">ሰከንዶች</string>
+    <string name="score">ነጥብ፡</string>
+    <string name="points_added_season_points">"  ነጥቦች በእርስዎ የውድድር ዘመን ነጥቦች ላይ ተጨምረዋል።"</string>
+    <string name="thanks_for_playing">ስለተጫወቱ እናመሰግናለን</string>
+    <string name="your_score_is">ነጥብህ፡-</string>
+    <string name="return_to_quiz_list">ወደ የጥያቄ ዝርዝር ተመለስ</string>
+    <string name="points">ነጥቦች፡-</string>
+    <string name="season">ወቅት</string>
+    <string name="your_rank">የእርስዎ ደረጃ፡</string>
+    <string name="change_password">የሚስጥር ቁልፍ ይቀይሩ</string>
+    <string name="username_indicator">የተጠቃሚ ስም፡</string>
+    <string name="email_indicator">ኢሜይል፡-</string>
+    <string name="old_password">የድሮ የይለፍ ቃል</string>
+    <string name="new_password">አዲስ የይለፍ ቃል</string>
+    <string name="confirm_new_password">አዲሱን የይለፍ ቃል አረጋግጥ</string>
+    <string name="set_password">የይለፍ ቃል አዘጋጅ</string>
+    <string name="password_successfully_updated">የይለፍ ቃልህ በተሳካ ሁኔታ ዘምኗል</string>
+    <string-array name="difficulty_list">
+        <item>ቀላል</item>
+        <item>መካከለኛ</item>
+        <item>አስቸጋሪ</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>ምግብ</item>
+        <item>ስፖርት</item>
+        <item>እንስሳት</item>
+    </string-array>
 </resources>

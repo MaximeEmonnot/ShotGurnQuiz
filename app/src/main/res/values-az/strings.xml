@@ -28,4 +28,53 @@
     <string name="medium">Aralıq</string>
     <string name="hard">Çətin</string>
     <string name="account_successfully_created">Hesabınız uğurla yaradıldı</string>
+    <string name="questions">Suallar:</string>
+    <string name="title">Başlıq</string>
+    <string name="my_quiz">Mənim viktorina</string>
+    <string name="difficulty">Çətinlik:</string>
+    <string name="theme">Mövzu:</string>
+    <string name="new_quiz">Yeni Quiz</string>
+    <string name="question">Sual</string>
+    <string name="answer_a_title">Cavab A:</string>
+    <string name="answer_b_title">Cavab B:</string>
+    <string name="answer_a">Cavab A</string>
+    <string name="answer_b">Cavab B</string>
+    <string name="this_is_my_question">Bu mənim sualımdır.</string>
+    <string name="save">Yadda saxla</string>
+    <string name="number_of_questions">Sualların sayı:</string>
+    <string name="play">Oyna!</string>
+    <string name="are_you_sure_you_want_to_quit">Çıxmaq istədiyinizə əminsiniz?</string>
+    <string name="progress_will_be_lost">Tərəqqi itiriləcək.</string>
+    <string name="closing_Quiz">Yekun Viktorina</string>
+    <string name="yes">Bəli</string>
+    <string name="no">Yox</string>
+    <string name="create">Yaradın</string>
+    <string name="time_left">Qalan vaxt:</string>
+    <string name="seconds">saniyə</string>
+    <string name="score">Xal:</string>
+    <string name="points_added_season_points">"  xallar mövsüm xallarınıza əlavə edildi"</string>
+    <string name="thanks_for_playing">Oynadığınız üçün təşəkkür edirik</string>
+    <string name="your_score_is">Hesabınız:</string>
+    <string name="return_to_quiz_list">Viktorina siyahısına qayıdın</string>
+    <string name="points">Xallar:</string>
+    <string name="season">Mövsüm</string>
+    <string name="your_rank">Sizin dərəcəniz:</string>
+    <string name="change_password">Parolu dəyişdirin</string>
+    <string name="username_indicator">İstifadəçi adı:</string>
+    <string name="email_indicator">E-poçt:</string>
+    <string name="old_password">Köhnə Şifrə</string>
+    <string name="new_password">Yeni şifrə</string>
+    <string name="confirm_new_password">Yeni Şifrəni təsdiq</string>
+    <string name="set_password">Parol təyin edin</string>
+    <string name="password_successfully_updated">Parolunuz uğurla yeniləndi</string>
+    <string-array name="difficulty_list">
+        <item>asan</item>
+        <item>Aralıq</item>
+        <item>Çətin</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>yemək</item>
+        <item>idman</item>
+        <item>heyvanlar</item>
+    </string-array>
 </resources>

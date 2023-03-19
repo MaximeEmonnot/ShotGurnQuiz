@@ -28,4 +28,53 @@
     <string name="medium">අතරමැදි</string>
     <string name="hard">දුෂ්කර</string>
     <string name="account_successfully_created">ඔබගේ ගිණුම සාර්ථකව නිර්මාණය කර ඇත</string>
+    <string name="questions">ප්රශ්නය:</string>
+    <string name="title">ශීර්ෂය</string>
+    <string name="my_quiz">මගේ ප්‍රශ්නාවලිය</string>
+    <string name="difficulty">දුෂ්කරතාව:</string>
+    <string name="theme">තේමාව:</string>
+    <string name="new_quiz">නව ප්‍රශ්නාවලිය</string>
+    <string name="question">ප්රශ්නය</string>
+    <string name="answer_a_title">පිළිතුර A:</string>
+    <string name="answer_b_title">පිළිතුර B:</string>
+    <string name="answer_a">පිළිතුර A</string>
+    <string name="answer_b">පිළිතුර බී</string>
+    <string name="this_is_my_question">මෙය මගේ ප්‍රශ්නයයි.</string>
+    <string name="save">සුරකින්න</string>
+    <string name="number_of_questions">ප්රශ්න ගණන:</string>
+    <string name="play">එය සෙල්ලම් කරන්න!</string>
+    <string name="are_you_sure_you_want_to_quit">ඔබට ඉවත් වීමට අවශ්‍ය බව විශ්වාසද?</string>
+    <string name="progress_will_be_lost">දියුණුව නැති වේවි.</string>
+    <string name="closing_Quiz">ප්‍රශ්නාවලිය අවසන් කිරීම</string>
+    <string name="yes">ඔව්</string>
+    <string name="no">නැත</string>
+    <string name="create">නිර්මාණය කරන්න</string>
+    <string name="time_left">ඉතිරි කාලය :</string>
+    <string name="seconds">තත්පර</string>
+    <string name="score">ස්කෝර්:</string>
+    <string name="points_added_season_points">"  ඔබගේ වාර ලකුණු වලට ලකුණු එකතු කර ඇත"</string>
+    <string name="thanks_for_playing">සෙල්ලම් කළාට ස්තුතියි</string>
+    <string name="your_score_is">ඔබේ ලකුණු:</string>
+    <string name="return_to_quiz_list">ප්‍රශ්නාවලිය ලැයිස්තුව වෙත ආපසු යන්න</string>
+    <string name="points">ලකුණු:</string>
+    <string name="season">වාරය</string>
+    <string name="your_rank">ඔබේ තරාතිරම:</string>
+    <string name="change_password">මුරපදය වෙනස් කරන්න</string>
+    <string name="username_indicator">පරිශීලක නාමය:</string>
+    <string name="email_indicator">විද්යුත් තැපෑල:</string>
+    <string name="old_password">පැරණි මුරපදය</string>
+    <string name="new_password">නව මුරපදය</string>
+    <string name="confirm_new_password">නව මුරපදය තහවුරු කරන්න</string>
+    <string name="set_password">මුරපදය සකසන්න</string>
+    <string name="password_successfully_updated">ඔබගේ මුරපදය සාර්ථකව යාවත්කාලීන කර ඇත</string>
+    <string-array name="difficulty_list">
+        <item>පහසු</item>
+        <item>අතරමැදි</item>
+        <item>දුෂ්කර</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>ආහාර</item>
+        <item>ක්රීඩාව</item>
+        <item>සතුන්</item>
+    </string-array>
 </resources>

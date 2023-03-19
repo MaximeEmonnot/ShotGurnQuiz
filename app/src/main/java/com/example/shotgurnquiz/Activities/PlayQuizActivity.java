@@ -22,51 +22,40 @@ import java.util.ArrayList;
 
 public class PlayQuizActivity extends AppCompatActivity {
 
-    private Quiz quiz;
-    private int userId;
-    private ArrayList<Question> questions;
-    private TextView textViewScoreCount;
-    private TextView textViewIndexCount;
-    private TextView textViewQuestion;
-    private TextView textViewAnswerATxt;
-    private TextView textViewAnswerBTxt;
-    private TextView textViewTimeCount;
-    public boolean answer = false;
-    private int score;
-    private int index;
-    private final static String[] REQUIRED_PERMISSIONS = {android.Manifest.permission.CAMERA};
-    private final static int REQUEST_CODE_PERMISSIONS = 10;
-    private CameraManager cameraManager;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_quiz);
 
+        // Récupération des différentes informations envoyées par Intent précédemment
         Bundle bundle = getIntent().getExtras();
         quiz = bundle.getParcelable("quiz");
         userId = bundle.getInt("userId");
         questions = bundle.getParcelableArrayList("questions");
 
+        // Références aux éléments du layout
         textViewScoreCount = findViewById(R.id.play_quiz_score_count);
         textViewIndexCount = findViewById(R.id.play_quiz_index_count);
         textViewQuestion = findViewById(R.id.play_quiz_question);
         textViewAnswerATxt = findViewById(R.id.play_quiz_answer_a_txt);
         textViewAnswerBTxt = findViewById(R.id.play_quiz_answer_b_txt);
         textViewTimeCount = findViewById(R.id.play_quiz_time_count);
-
         TextView textViewIndexMax = findViewById(R.id.play_quiz_index_max);
 
         textViewIndexMax.setText(Integer.toString(questions.size()));
 
+        // Lancement de la première question
         index = 0;
         score = 0;
         loadQuestion(score, index);
 
+        // Création du CameraManager et vérification des permissions accordées
         createCameraManager();
         checkForPermission();
 
+        // Lancement d'un timer : Toutes les 10 secondes, on vérifiera la réponse du joueur
         new CountDownTimer(10000, 1000) {
+            // A chaque Tick, le temps restant est mis à jour pour l'affichage
             public void onTick(long millisUntilFinished) {
                 runOnUiThread(new Runnable() {
                     @Override
@@ -75,15 +64,19 @@ public class PlayQuizActivity extends AppCompatActivity {
                     }
                 });
             }
+            // Une fois le temps écoulé, on vérifie la réponse du joueur
             public void onFinish() {
+                // Si la réponse est correcte, on ajoute 1 point au score
                 if (answer == questions.get(index).GetAnswer()) {
                     score++;
                 }
+                // On passe à la question suivante, si elle existe
                 index++;
                 if(index < questions.size()) {
                     loadQuestion(score, index);
                     this.start();
                 }else{
+                    // Sinon, le quiz est terminé : On lancera l'activité QuizSummaryActivity
                     Intent intent = new Intent(PlayQuizActivity.this, QuizSummaryActivity.class);
                     intent.putExtra("score", score);
                     intent.putExtra("questionCount", questions.size());
@@ -97,6 +90,8 @@ public class PlayQuizActivity extends AppCompatActivity {
         }.start();
     }
 
+    // Lancement d'une question : On affiche l'intitulé de la question, ainsi que les différents choix de réponse
+    // On affiche également le score mis à jour et le numéro de question
     private void loadQuestion(int score, int index){
         Question question = questions.get(index);
         runOnUiThread(new Runnable() {
@@ -111,6 +106,7 @@ public class PlayQuizActivity extends AppCompatActivity {
         });
     }
 
+    // Vérification des permissions : si les permissions ne sont pas accordées, une requête à l'utilisateur est effectuée
     private void checkForPermission() {
         if (allPermissionsGranted()) {
             cameraManager.startCamera();
@@ -119,6 +115,7 @@ public class PlayQuizActivity extends AppCompatActivity {
         }
     }
 
+    // Fonction Helper pour vérifier si l'ensemble des permissions requises sont accordées
     private boolean allPermissionsGranted(){
         for (String permission : REQUIRED_PERMISSIONS) {
             if (ContextCompat.checkSelfPermission(this, permission) != PackageManager.PERMISSION_GRANTED) {
@@ -128,6 +125,7 @@ public class PlayQuizActivity extends AppCompatActivity {
         return true;
     }
 
+    // Traitement du résultat aux requêtes de permissions
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
@@ -141,10 +139,12 @@ public class PlayQuizActivity extends AppCompatActivity {
         }
     }
 
+    // Fonction Helper pour la création du CameraManager
     private void createCameraManager() {
         cameraManager = new CameraManager(this, findViewById(R.id.play_quiz_camera_stream), this, findViewById(R.id.play_quiz_camera_graphicOverlay));
     }
 
+    // Si l'on quitte l'application via le bouton retour, affichage d'un message d'alerte
     @Override
     public void onBackPressed() {
         new AlertDialog.Builder(this)
@@ -161,4 +161,21 @@ public class PlayQuizActivity extends AppCompatActivity {
                 .setNegativeButton(getResources().getString(R.string.no), null)
                 .show();
     }
+
+    // Différents paramètres de l'activité
+    private Quiz quiz;
+    private int userId;
+    private ArrayList<Question> questions;
+    private TextView textViewScoreCount;
+    private TextView textViewIndexCount;
+    private TextView textViewQuestion;
+    private TextView textViewAnswerATxt;
+    private TextView textViewAnswerBTxt;
+    private TextView textViewTimeCount;
+    public boolean answer = false;
+    private int score;
+    private int index;
+    private final static String[] REQUIRED_PERMISSIONS = {android.Manifest.permission.CAMERA};
+    private final static int REQUEST_CODE_PERMISSIONS = 10;
+    private CameraManager cameraManager;
 }

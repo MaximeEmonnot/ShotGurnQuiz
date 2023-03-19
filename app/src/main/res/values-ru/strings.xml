@@ -28,4 +28,53 @@
     <string name="medium">Средний</string>
     <string name="hard">Трудный</string>
     <string name="account_successfully_created">Ваша учетная запись успешно создана</string>
+    <string name="questions">Вопросы:</string>
+    <string name="title">Заголовок</string>
+    <string name="my_quiz">Моя викторина</string>
+    <string name="difficulty">Сложность:</string>
+    <string name="theme">Тема:</string>
+    <string name="new_quiz">Новая викторина</string>
+    <string name="question">Вопрос</string>
+    <string name="answer_a_title">Ответ А:</string>
+    <string name="answer_b_title">Ответ Б:</string>
+    <string name="answer_a">Ответ А</string>
+    <string name="answer_b">Ответ Б</string>
+    <string name="this_is_my_question">Это мой вопрос.</string>
+    <string name="save">Сохранять</string>
+    <string name="number_of_questions">Количество вопросов:</string>
+    <string name="play">Сыграй!</string>
+    <string name="are_you_sure_you_want_to_quit">Вы уверены, что хотите выйти?</string>
+    <string name="progress_will_be_lost">Прогресс будет потерян.</string>
+    <string name="closing_Quiz">Заключительная викторина</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="create">Создавать</string>
+    <string name="time_left">Оставшееся время :</string>
+    <string name="seconds">секунды</string>
+    <string name="score">Счет:</string>
+    <string name="points_added_season_points">"  к вашим сезонным очкам добавлены очки"</string>
+    <string name="thanks_for_playing">Спасибо за игру</string>
+    <string name="your_score_is">Ваш счет:</string>
+    <string name="return_to_quiz_list">Вернуться к списку викторин</string>
+    <string name="points">Точки:</string>
+    <string name="season">Время года</string>
+    <string name="your_rank">Ваш ранг:</string>
+    <string name="change_password">Изменить пароль</string>
+    <string name="username_indicator">Имя пользователя:</string>
+    <string name="email_indicator">Электронная почта:</string>
+    <string name="old_password">Старый пароль</string>
+    <string name="new_password">Новый пароль</string>
+    <string name="confirm_new_password">Подтвердите новый пароль</string>
+    <string name="set_password">Установка пароля</string>
+    <string name="password_successfully_updated">Ваш пароль был успешно изменен</string>
+    <string-array name="difficulty_list">
+        <item>легкий</item>
+        <item>средний</item>
+        <item>Трудный</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>еда</item>
+        <item>спорт</item>
+        <item>животные</item>
+    </string-array>
 </resources>

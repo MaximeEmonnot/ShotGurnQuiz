@@ -28,4 +28,53 @@
     <string name="medium">Pakati</string>
     <string name="hard">Zvakaoma</string>
     <string name="account_successfully_created">Akaunti yako yakagadzirwa zvakanaka</string>
+    <string name="questions">Mibvunzo:</string>
+    <string name="title">Title</string>
+    <string name="my_quiz">Mubvunzo wangu</string>
+    <string name="difficulty">Dambudziko:</string>
+    <string name="theme">Dingindira</string>
+    <string name="new_quiz">New Quiz</string>
+    <string name="question">Mubvunzo</string>
+    <string name="answer_a_title">Mhinduro A:</string>
+    <string name="answer_b_title">Mhinduro B:</string>
+    <string name="answer_a">Mhinduro A</string>
+    <string name="answer_b">Mhinduro B</string>
+    <string name="this_is_my_question">Uyu ndiwo mubvunzo wangu.</string>
+    <string name="save">Sevha</string>
+    <string name="number_of_questions">Nhamba yemibvunzo:</string>
+    <string name="play">Itambe!</string>
+    <string name="are_you_sure_you_want_to_quit">Une chokwadi chekuti unoda kusiya?</string>
+    <string name="progress_will_be_lost">Budiriro inorasika.</string>
+    <string name="closing_Quiz">Kuvhara Mibvunzo</string>
+    <string name="yes">Ehe</string>
+    <string name="no">Aihwa</string>
+    <string name="create">Create</string>
+    <string name="time_left">Nguva yasara :</string>
+    <string name="seconds">seconds</string>
+    <string name="score">Zvibodzwa:</string>
+    <string name="points_added_season_points">"  mapoinzi akawedzerwa kumapoinzi ako emwaka"</string>
+    <string name="thanks_for_playing">Thanks nekutamba</string>
+    <string name="your_score_is">Chibodzwa chako ndeichi:</string>
+    <string name="return_to_quiz_list">Dzokera kune quiz list</string>
+    <string name="points">Points:</string>
+    <string name="season">Mwaka</string>
+    <string name="your_rank">Chinzvimbo chako:</string>
+    <string name="change_password">Chinja password</string>
+    <string name="username_indicator">Username</string>
+    <string name="email_indicator">Email:</string>
+    <string name="old_password">Password yekare</string>
+    <string name="new_password">Nyowani password</string>
+    <string name="confirm_new_password">Simbisa password itsva</string>
+    <string name="set_password">Seta password</string>
+    <string name="password_successfully_updated">Password yako yakagadziridzwa</string>
+    <string-array name="difficulty_list">
+        <item>nyore</item>
+        <item>pakati</item>
+        <item>Zvakaoma</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>chikafu</item>
+        <item>mutambo</item>
+        <item>mhuka</item>
+    </string-array>
 </resources>

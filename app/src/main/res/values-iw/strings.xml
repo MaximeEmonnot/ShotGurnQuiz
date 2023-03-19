@@ -28,4 +28,53 @@
     <string name="medium">ביניים</string>
     <string name="hard">קָשֶׁה</string>
     <string name="account_successfully_created">החשבון שלך נוצר בהצלחה</string>
+    <string name="questions">שאלות:</string>
+    <string name="title">כותרת</string>
+    <string name="my_quiz">החידון שלי</string>
+    <string name="difficulty">קושי:</string>
+    <string name="theme">נושא:</string>
+    <string name="new_quiz">חידון חדש</string>
+    <string name="question">שְׁאֵלָה</string>
+    <string name="answer_a_title">תשובה א\':</string>
+    <string name="answer_b_title">תשובה ב\':</string>
+    <string name="answer_a">תשובה א</string>
+    <string name="answer_b">תשובה ב</string>
+    <string name="this_is_my_question">זו השאלה שלי.</string>
+    <string name="save">להציל</string>
+    <string name="number_of_questions">מספר שאלות:</string>
+    <string name="play">נגן את זה!</string>
+    <string name="are_you_sure_you_want_to_quit">אתה בטוח שברצונך לפרוש?</string>
+    <string name="progress_will_be_lost">ההתקדמות תאבד.</string>
+    <string name="closing_Quiz">חידון סיום</string>
+    <string name="yes">כן</string>
+    <string name="no">לא</string>
+    <string name="create">לִיצוֹר</string>
+    <string name="time_left">הזמן שנותר :</string>
+    <string name="seconds">שניות</string>
+    <string name="score">ציון:</string>
+    <string name="points_added_season_points">"  נקודות נוספו לנקודות העונה שלך"</string>
+    <string name="thanks_for_playing">תודה על ששיחקת</string>
+    <string name="your_score_is">הציון שלך הוא:</string>
+    <string name="return_to_quiz_list">חזור לרשימת החידון</string>
+    <string name="points">נקודות:</string>
+    <string name="season">עונה</string>
+    <string name="your_rank">הדרגה שלך:</string>
+    <string name="change_password">שנה סיסמא</string>
+    <string name="username_indicator">שם משתמש:</string>
+    <string name="email_indicator">אימייל:</string>
+    <string name="old_password">סיסמה ישנה</string>
+    <string name="new_password">סיסמה חדשה</string>
+    <string name="confirm_new_password">תאשר סיסמא חדשה</string>
+    <string name="set_password">הגדר סיסמא</string>
+    <string name="password_successfully_updated">הסיסמה שלך עודכנה בהצלחה</string>
+    <string-array name="difficulty_list">
+        <item>קַל</item>
+        <item>ביניים</item>
+        <item>קָשֶׁה</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>מזון</item>
+        <item>ספּוֹרט</item>
+        <item>בעלי חיים</item>
+    </string-array>
 </resources>

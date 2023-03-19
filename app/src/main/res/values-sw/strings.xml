@@ -28,4 +28,53 @@
     <string name="medium">Kati</string>
     <string name="hard">Ngumu</string>
     <string name="account_successfully_created">Akaunti yako imeundwa</string>
+    <string name="questions">Maswali:</string>
+    <string name="title">Kichwa</string>
+    <string name="my_quiz">Jaribio langu</string>
+    <string name="difficulty">Ugumu:</string>
+    <string name="theme">Mandhari:</string>
+    <string name="new_quiz">Maswali Mapya</string>
+    <string name="question">Swali</string>
+    <string name="answer_a_title">Jibu A:</string>
+    <string name="answer_b_title">Jibu B:</string>
+    <string name="answer_a">Jibu A</string>
+    <string name="answer_b">Jibu B</string>
+    <string name="this_is_my_question">Hili ni swali langu.</string>
+    <string name="save">Hifadhi</string>
+    <string name="number_of_questions">Idadi ya maswali:</string>
+    <string name="play">Icheze!</string>
+    <string name="are_you_sure_you_want_to_quit">Una uhakika unataka kuacha?</string>
+    <string name="progress_will_be_lost">Maendeleo yatapotea.</string>
+    <string name="closing_Quiz">Maswali ya Kufunga</string>
+    <string name="yes">Ndiyo</string>
+    <string name="no">Hapana</string>
+    <string name="create">Unda</string>
+    <string name="time_left">Mda Umekwenda :</string>
+    <string name="seconds">sekunde</string>
+    <string name="score">Alama:</string>
+    <string name="points_added_season_points">"  pointi zimeongezwa kwa pointi zako za msimu"</string>
+    <string name="thanks_for_playing">Asante kwa kucheza</string>
+    <string name="your_score_is">Alama yako ni:</string>
+    <string name="return_to_quiz_list">Rudi kwenye orodha ya maswali</string>
+    <string name="points">Alama:</string>
+    <string name="season">Msimu</string>
+    <string name="your_rank">Cheo chako:</string>
+    <string name="change_password">Badilisha neno la siri</string>
+    <string name="username_indicator">Jina la mtumiaji:</string>
+    <string name="email_indicator">Barua pepe:</string>
+    <string name="old_password">Namba ya siri ya zamani</string>
+    <string name="new_password">Nenosiri mpya</string>
+    <string name="confirm_new_password">Thibitisha nenosiri jipya</string>
+    <string name="set_password">Weka nenosiri</string>
+    <string name="password_successfully_updated">Nenosiri lako limesasishwa</string>
+    <string-array name="difficulty_list">
+        <item>rahisi</item>
+        <item>kati</item>
+        <item>Ngumu</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>chakula</item>
+        <item>mchezo</item>
+        <item>wanyama</item>
+    </string-array>
 </resources>

@@ -28,4 +28,53 @@
     <string name="medium">Orta seviye</string>
     <string name="hard">Zor</string>
     <string name="account_successfully_created">Hesabınız başarıyla oluşturuldu</string>
+    <string name="questions">Sorular:</string>
+    <string name="title">Başlık</string>
+    <string name="my_quiz">sınavım</string>
+    <string name="difficulty">Zorluk:</string>
+    <string name="theme">Tema:</string>
+    <string name="new_quiz">Yeni Sınav</string>
+    <string name="question">Soru</string>
+    <string name="answer_a_title">Cevap A:</string>
+    <string name="answer_b_title">Cevap B:</string>
+    <string name="answer_a">Cevap A</string>
+    <string name="answer_b">Cevap B</string>
+    <string name="this_is_my_question">Bu benim sorum.</string>
+    <string name="save">Kaydetmek</string>
+    <string name="number_of_questions">Soru sayısı:</string>
+    <string name="play">Oynat!</string>
+    <string name="are_you_sure_you_want_to_quit">Çıkmak istediğinden emin misin?</string>
+    <string name="progress_will_be_lost">İlerleme kaybolacak.</string>
+    <string name="closing_Quiz">Kapanış Sınavı</string>
+    <string name="yes">Evet</string>
+    <string name="no">HAYIR</string>
+    <string name="create">Yaratmak</string>
+    <string name="time_left">Kalan zaman :</string>
+    <string name="seconds">saniye</string>
+    <string name="score">Gol:</string>
+    <string name="points_added_season_points">"  sezon puanlarınıza puanlar eklendi"</string>
+    <string name="thanks_for_playing">Oynadığınız için teşekkürler</string>
+    <string name="your_score_is">Skorunuz:</string>
+    <string name="return_to_quiz_list">Test listesine dön</string>
+    <string name="points">Puanlar:</string>
+    <string name="season">Mevsim</string>
+    <string name="your_rank">Rütbeniz:</string>
+    <string name="change_password">Şifre değiştir</string>
+    <string name="username_indicator">Kullanıcı adı:</string>
+    <string name="email_indicator">E-posta:</string>
+    <string name="old_password">Eski Şifre</string>
+    <string name="new_password">Yeni Şifre</string>
+    <string name="confirm_new_password">Yeni şifreyi onayla</string>
+    <string name="set_password">Şifreyi belirle</string>
+    <string name="password_successfully_updated">Şifreniz başarıyla güncellendi</string>
+    <string-array name="difficulty_list">
+        <item>Kolay</item>
+        <item>Orta seviye</item>
+        <item>Zor</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>Yiyecek</item>
+        <item>Spor</item>
+        <item>Hayvanlar</item>
+    </string-array>
 </resources>

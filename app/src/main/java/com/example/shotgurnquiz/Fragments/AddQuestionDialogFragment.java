@@ -19,14 +19,12 @@ import com.example.shotgurnquiz.RecyclerViewConfigs.QuestionCard_RecyclerViewAda
 public class AddQuestionDialogFragment extends DialogFragment {
 
     public AddQuestionDialogFragment(QuestionCard_RecyclerViewAdapter questionAdapter, int index) {
-
         this.questionAdapter = questionAdapter;
         this.index = index;
     }
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-
 
         View rootView = this.getLayoutInflater().inflate(R.layout.fragment_add_question, null);
 
@@ -108,5 +106,4 @@ public class AddQuestionDialogFragment extends DialogFragment {
 
     private QuestionCard_RecyclerViewAdapter questionAdapter;
     private int index;
-
 }

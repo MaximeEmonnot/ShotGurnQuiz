@@ -22,19 +22,25 @@ public class ProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
+        // Récupération de l'ID utilisateur via Intent
         int userId = getIntent().getExtras().getInt("userId");
 
+        // Instanciation du DatabaseHelper (Singleton)
         DatabaseHelper db = DatabaseHelper.GetInstance(this);
 
+        // Récupération de l'utilisateur en base de données (via ID)
         User user = db.FindUserByID(userId);
 
+        // Références aux élémetns du layout
         TextView textViewUsername = (TextView) findViewById(R.id.profile_username);
         TextView textViewEmail = (TextView) findViewById(R.id.profile_email);
         Button buttonChangePassword = (Button) findViewById(R.id.quiz_profile_btn_change_password);
 
+        // On affiche les informations de l'utilisateur
         textViewUsername.setText(user.GetUsername());
         textViewEmail.setText(user.GetEmail());
 
+        // OnClick du bouton ChangePassword : On ouvrira le ChangePasswordDialogFragment
         buttonChangePassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

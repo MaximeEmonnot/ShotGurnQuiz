@@ -17,10 +17,6 @@ import com.example.shotgurnquiz.R;
 
 public class ChangePasswordDialogFragment extends DialogFragment {
 
-    private static final String ARG_PARAM1 = "userId";
-
-    private int userId;
-
     public ChangePasswordDialogFragment(){}
 
     public static ChangePasswordDialogFragment newInstance(int userId) {
@@ -93,4 +89,8 @@ public class ChangePasswordDialogFragment extends DialogFragment {
         int height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 500, getResources().getDisplayMetrics());
         getDialog().getWindow().setLayout(width,height);
     }
+
+    private static final String ARG_PARAM1 = "userId";
+
+    private int userId;
 }

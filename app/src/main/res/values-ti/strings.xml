@@ -28,4 +28,53 @@
     <string name="medium">ማእኸላይ</string>
     <string name="hard">ከቢድ</string>
     <string name="account_successfully_created">ኣካውንትካ ብዓወት ተፈጢሩ ኣሎ።</string>
+    <string name="questions">ሕቶታት፤</string>
+    <string name="title">ርእሲ</string>
+    <string name="my_quiz">ናተይ ኲይዝ</string>
+    <string name="difficulty">ጸገም፤</string>
+    <string name="theme">ጭብጢ:</string>
+    <string name="new_quiz">ሓድሽ ኲይዝ</string>
+    <string name="question">ሕቶ</string>
+    <string name="answer_a_title">መልሲ ሀ፤</string>
+    <string name="answer_b_title">መልሲ ለ፤</string>
+    <string name="answer_a">መልሲ ሀ</string>
+    <string name="answer_b">መልሲ ለ</string>
+    <string name="this_is_my_question">እዚ ሕቶይ እዩ።</string>
+    <string name="save">ምቑጣብ</string>
+    <string name="number_of_questions">ብዝሒ ሕቶታት፤</string>
+    <string name="play">ተጻወቶ!</string>
+    <string name="are_you_sure_you_want_to_quit">ርግጸኛ ዲኻ ክትገድፎ ከም እትደሊ?</string>
+    <string name="progress_will_be_lost">ምዕባለ ክጠፍእ እዩ።</string>
+    <string name="closing_Quiz">መዕጸዊ ኲይዝ</string>
+    <string name="yes">እወ</string>
+    <string name="no">አይኮንን</string>
+    <string name="create">ፍጠር</string>
+    <string name="time_left">ዝተረፈ ግዜ :</string>
+    <string name="seconds">ካልኢት</string>
+    <string name="score">ነጥቢ:</string>
+    <string name="points_added_season_points">"  ነጥቢ ኣብ ናይ ዓመተ ስፖርት ነጥቢ ተወሰኸሉ።"</string>
+    <string name="thanks_for_playing">ስለ ዝተጻወትኩም የቐንየልና</string>
+    <string name="your_score_is">ነጥብኻ ድማ፤</string>
+    <string name="return_to_quiz_list">ናብ ዝርዝር ኲይዝ ተመለስ</string>
+    <string name="points">ነጥብታት፤</string>
+    <string name="season">ወቕቲ</string>
+    <string name="your_rank">መዓርግካ፤</string>
+    <string name="change_password">ፓስዎርድ ምቕያር</string>
+    <string name="username_indicator">ስም ተጠቃሚ፤</string>
+    <string name="email_indicator">ኢመይል፤</string>
+    <string name="old_password">ናይ ቀደም ምልክት ቃል</string>
+    <string name="new_password">ሓድሽ ምልክት ቃል</string>
+    <string name="confirm_new_password">ሓድሽ ምልክት ቃል ኣረጋግጽ</string>
+    <string name="set_password">ምልክት ቃል ኣቐምጥ</string>
+    <string name="password_successfully_updated">ፓስዎርድካ ብዓወት ተሓዲሱ ኣሎ።</string>
+    <string-array name="difficulty_list">
+        <item>ቀሊል</item>
+        <item>ማእኸላይ</item>
+        <item>ከቢድ</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>ምግቢ</item>
+        <item>ስፖርት</item>
+        <item>እንስሳታት</item>
+    </string-array>
 </resources>

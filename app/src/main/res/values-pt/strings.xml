@@ -28,4 +28,53 @@
     <string name="medium">Intermediário</string>
     <string name="hard">Difícil</string>
     <string name="account_successfully_created">Sua conta foi criada com sucesso</string>
+    <string name="questions">Questões:</string>
+    <string name="title">Título</string>
+    <string name="my_quiz">meu teste</string>
+    <string name="difficulty">Dificuldade:</string>
+    <string name="theme">Tema:</string>
+    <string name="new_quiz">Novo teste</string>
+    <string name="question">Pergunta</string>
+    <string name="answer_a_title">Resposta A:</string>
+    <string name="answer_b_title">Resposta B:</string>
+    <string name="answer_a">Resposta A</string>
+    <string name="answer_b">Resposta B</string>
+    <string name="this_is_my_question">Esta é a minha pergunta.</string>
+    <string name="save">Salvar</string>
+    <string name="number_of_questions">Número de perguntas:</string>
+    <string name="play">Jogue!</string>
+    <string name="are_you_sure_you_want_to_quit">Você tem certeza que quer sair?</string>
+    <string name="progress_will_be_lost">O progresso será perdido.</string>
+    <string name="closing_Quiz">Questionário de encerramento</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+    <string name="create">Criar</string>
+    <string name="time_left">Tempo restante :</string>
+    <string name="seconds">segundos</string>
+    <string name="score">Pontuação:</string>
+    <string name="points_added_season_points">"  pontos foram adicionados aos seus pontos de temporada"</string>
+    <string name="thanks_for_playing">Obrigado por jogar</string>
+    <string name="your_score_is">Sua pontuação é:</string>
+    <string name="return_to_quiz_list">Voltar à lista de perguntas</string>
+    <string name="points">Pontos:</string>
+    <string name="season">Temporada</string>
+    <string name="your_rank">Sua classificação:</string>
+    <string name="change_password">Alterar a senha</string>
+    <string name="username_indicator">Nome de usuário:</string>
+    <string name="email_indicator">E-mail:</string>
+    <string name="old_password">Senha Antiga</string>
+    <string name="new_password">Nova Senha</string>
+    <string name="confirm_new_password">Confirme a nova senha</string>
+    <string name="set_password">Configurar senha</string>
+    <string name="password_successfully_updated">Sua senha foi atualizada com sucesso</string>
+    <string-array name="difficulty_list">
+        <item>fácil</item>
+        <item>intermediário</item>
+        <item>Difícil</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>comida</item>
+        <item>esporte</item>
+        <item>animais</item>
+    </string-array>
 </resources>
