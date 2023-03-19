@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="800dp"
     tools:context=".Activities.PlayQuizActivity"
     android:background="@color/colorBackground">
 
@@ -78,15 +78,15 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/baseline_emoji_emotions_100"
+        android:src="@drawable/baseline_emoji_emotions_70"
         app:layout_constraintTop_toTopOf="@id/play_quiz_answer_a"
         app:layout_constraintStart_toStartOf="@id/play_quiz_answer_a"
         app:layout_constraintBottom_toBottomOf="@id/play_quiz_answer_a"/>
 
     <TextView
         android:id="@+id/play_quiz_answer_a_txt"
-        android:layout_width="200dp"
-        android:layout_height="100dp"
+        android:layout_width="230dp"
+        android:layout_height="70dp"
         android:gravity="center"
         android:theme="@style/MediumTextOnLight"
         app:layout_constraintTop_toTopOf="@id/play_quiz_answer_a"
@@ -106,15 +106,15 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/baseline_outlet_100"
+        android:src="@drawable/baseline_outlet_70"
         app:layout_constraintTop_toTopOf="@id/play_quiz_answer_b"
         app:layout_constraintStart_toStartOf="@id/play_quiz_answer_b"
         app:layout_constraintBottom_toBottomOf="@id/play_quiz_answer_b"/>
 
     <TextView
         android:id="@+id/play_quiz_answer_b_txt"
-        android:layout_width="200dp"
-        android:layout_height="100dp"
+        android:layout_width="230dp"
+        android:layout_height="70dp"
         android:gravity="center"
         android:theme="@style/MediumTextOnLight"
         app:layout_constraintTop_toTopOf="@id/play_quiz_answer_b"
@@ -149,8 +149,8 @@
 
     <FrameLayout
         android:id="@+id/play_quiz_camera"
-        android:layout_width="200dp"
-        android:layout_height="300dp"
+        android:layout_width="150dp"
+        android:layout_height="270dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/play_quiz_time"

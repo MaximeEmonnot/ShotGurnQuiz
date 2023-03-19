@@ -3,7 +3,8 @@
     android:layout_width="200dp"
     android:layout_height="160dp"
     android:background="@color/colorRecyclerViewBackground"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:backgroundTint="@color/colorQuizCardBackground">
 
     <TextView
         android:id="@+id/recycler_view_question_index"
