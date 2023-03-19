@@ -54,7 +54,7 @@ public class PlayQuizActivity extends AppCompatActivity {
         checkForPermission();
 
         // Lancement d'un timer : Toutes les 10 secondes, on vérifiera la réponse du joueur
-        new CountDownTimer(10000, 1000) {
+        gameThread = new CountDownTimer(10000, 1000) {
             // A chaque Tick, le temps restant est mis à jour pour l'affichage
             public void onTick(long millisUntilFinished) {
                 runOnUiThread(new Runnable() {
@@ -154,6 +154,7 @@ public class PlayQuizActivity extends AppCompatActivity {
                 {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+                        gameThread.cancel();
                         finish();
                     }
 
@@ -172,6 +173,8 @@ public class PlayQuizActivity extends AppCompatActivity {
     private TextView textViewAnswerATxt;
     private TextView textViewAnswerBTxt;
     private TextView textViewTimeCount;
+
+    private CountDownTimer gameThread;
     public boolean answer = false;
     private int score;
     private int index;
