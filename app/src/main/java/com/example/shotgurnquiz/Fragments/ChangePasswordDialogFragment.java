@@ -17,15 +17,25 @@ import com.example.shotgurnquiz.R;
 
 public class ChangePasswordDialogFragment extends DialogFragment {
 
+    private static final String ARG_PARAM1 = "userId";
+
     private int userId;
 
-    public ChangePasswordDialogFragment(int _userId){
-        this.userId = _userId;
+    public ChangePasswordDialogFragment(){}
+
+    public static ChangePasswordDialogFragment newInstance(int userId) {
+        ChangePasswordDialogFragment fragment = new ChangePasswordDialogFragment();
+        Bundle args = new Bundle();
+        args.putInt(ARG_PARAM1, userId);
+        fragment.setArguments(args);
+        return fragment;
     }
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-
+        if (getArguments() != null) {
+            userId = getArguments().getInt(ARG_PARAM1);
+        }
 
         View rootView = this.getLayoutInflater().inflate(R.layout.fragment_change_password, null);
 

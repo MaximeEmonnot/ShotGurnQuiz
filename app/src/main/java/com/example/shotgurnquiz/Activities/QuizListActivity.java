@@ -139,7 +139,7 @@ public class QuizListActivity extends AppCompatActivity {
         recyclerView.addOnItemTouchListener(new RecyclerView_ItemClickListener(new RecyclerView_ItemClickListener.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
-                QuizInfoDialogFragment quizInfoDialogFragment = new QuizInfoDialogFragment(quizList.get(position), userId);
+                QuizInfoDialogFragment quizInfoDialogFragment = QuizInfoDialogFragment.newInstance(quizList.get(position), userId);
                 quizInfoDialogFragment.show(getSupportFragmentManager(), "dialog");
             }
         }));

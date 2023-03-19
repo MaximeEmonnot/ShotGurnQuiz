@@ -38,7 +38,7 @@ public class ProfileActivity extends AppCompatActivity {
         buttonChangePassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ChangePasswordDialogFragment changePasswordDialogFragment = new ChangePasswordDialogFragment(userId);
+                ChangePasswordDialogFragment changePasswordDialogFragment = ChangePasswordDialogFragment.newInstance(userId);
                 changePasswordDialogFragment.show(getSupportFragmentManager(), "dialog");
             }
         });

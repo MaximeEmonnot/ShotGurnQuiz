@@ -16,8 +16,7 @@
             android:exported="false" />
         <activity
             android:name=".Activities.AddQuizActivity"
-            android:exported="false"
-            android:screenOrientation="portrait" />
+            android:exported="false" />
         <activity android:name=".Activities.LeaderboardActivity" />
         <activity
             android:name=".Activities.PlayQuizActivity"
@@ -29,16 +28,13 @@
             android:exported="false" />
         <activity
             android:name=".Activities.SignUpActivity"
-            android:exported="false"
-            android:screenOrientation="portrait" />
+            android:exported="false" />
         <activity
             android:name=".Activities.SignInActivity"
-            android:exported="false"
-            android:screenOrientation="portrait" />
+            android:exported="false" />
         <activity
             android:name=".Activities.WelcomeActivity"
-            android:exported="true"
-            android:screenOrientation="portrait">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

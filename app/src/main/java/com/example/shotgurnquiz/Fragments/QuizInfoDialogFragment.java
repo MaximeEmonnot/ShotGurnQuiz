@@ -22,17 +22,30 @@ import java.util.List;
 
 public class QuizInfoDialogFragment extends DialogFragment {
 
+    private static final String ARG_PARAM1 = "quiz";
+    private static final String ARG_PARAM2 = "userId";
+
     private Quiz quiz;
     private int userId;
 
-    public QuizInfoDialogFragment(Quiz _quiz, int _userId){
-        this.quiz = _quiz;
-        this.userId = _userId;
+    public QuizInfoDialogFragment(){}
+
+    public static QuizInfoDialogFragment newInstance(Quiz quiz, int userId) {
+        QuizInfoDialogFragment fragment = new QuizInfoDialogFragment();
+        Bundle args = new Bundle();
+        args.putParcelable(ARG_PARAM1, quiz);
+        args.putInt(ARG_PARAM2, userId);
+        fragment.setArguments(args);
+        return fragment;
     }
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
 
+        if (getArguments() != null) {
+            quiz = getArguments().getParcelable(ARG_PARAM1);
+            userId = getArguments().getInt(ARG_PARAM2);
+        }
 
         View rootView = this.getLayoutInflater().inflate(R.layout.fragment_quiz_info, null);
 
