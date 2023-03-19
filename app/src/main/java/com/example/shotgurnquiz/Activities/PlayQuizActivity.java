@@ -61,7 +61,7 @@ public class PlayQuizActivity extends AppCompatActivity {
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        textViewTimeCount.setText(Integer.toString((int) (millisUntilFinished / 1000)));
+                        textViewTimeCount.setText(" " + Integer.toString((int) (millisUntilFinished / 1000)) + " ");
                     }
                 });
             }
@@ -98,7 +98,7 @@ public class PlayQuizActivity extends AppCompatActivity {
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                textViewScoreCount.setText(String.valueOf(score));
+                textViewScoreCount.setText(" " + String.valueOf(score));
                 textViewIndexCount.setText(String.valueOf(index + 1));
                 textViewQuestion.setText(question.GetTitle());
                 textViewAnswerATxt.setText(question.GetChoice1());
