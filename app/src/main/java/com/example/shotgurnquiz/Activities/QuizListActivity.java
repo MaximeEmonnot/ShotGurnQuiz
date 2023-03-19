@@ -64,7 +64,7 @@ public class QuizListActivity extends AppCompatActivity {
         loadRecyclerView(R.id.recycler_view_medium, db.GetAllQuizzesFromDifficulty(1));
         loadRecyclerView(R.id.recycler_view_easy, db.GetAllQuizzesFromDifficulty(0));
 
-        recyclerViewSearch.setAdapter(new QuizCard_RecyclerViewAdapter(this, new ArrayList<Quiz>()));
+        recyclerViewSearch.setAdapter(new QuizCard_RecyclerViewAdapter(this, db.GetAllQuizzes()));
         recyclerViewSearch.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         recyclerViewSearch.addItemDecoration(new RecyclerView_SpacesItemDecoration(20, 10, LinearLayoutManager.HORIZONTAL));
 
@@ -82,6 +82,18 @@ public class QuizListActivity extends AppCompatActivity {
                 recyclerViewSearch.setVisibility(View.VISIBLE);
                 Animation showAnimation = AnimationUtils.loadAnimation(getBaseContext(), R.anim.recycler_view_search_show);
                 recyclerViewSearch.startAnimation(showAnimation);
+            }
+        });
+
+        searchBar.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                recyclerViewSearch.setAdapter(new QuizCard_RecyclerViewAdapter(getBaseContext(), db.GetMatchingQuizzes(searchBar.getQuery().toString())));
+                return false;
+            }
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
             }
         });
 

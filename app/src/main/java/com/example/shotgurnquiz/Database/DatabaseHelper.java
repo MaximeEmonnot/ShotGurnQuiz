@@ -146,6 +146,18 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
+    public ArrayList<Quiz> GetMatchingQuizzes(String matcher){
+        Cursor c = database.query(Quiz.TABLE,
+                new String[]{Quiz.COLUMN_ID, Quiz.COLUMN_TITLE, Quiz.COLUMN_THEME, Quiz.COLUMN_DIFFICULTY},
+                Quiz.COLUMN_TITLE + " like  ?", new String[]{ "%" + matcher + "%" }, null, null, null);
+        ArrayList<Quiz> output = new ArrayList<Quiz>();
+
+        while (c.moveToNext()) output.add(new Quiz(c));
+        c.close();
+
+        return output;
+    }
+
     // Récupération de la liste des quiz
     public ArrayList<Quiz> GetAllQuizzes() {
 
