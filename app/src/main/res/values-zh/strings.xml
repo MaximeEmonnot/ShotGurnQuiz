@@ -28,4 +28,53 @@
 <string name="medium">中间的</string>
 <string name="hard">难的</string>
 <string name="account_successfully_created">您的帐户已经创建成功</string>
+    <string name="questions" >问题:</string>
+    <string name="title" >标题:</string>
+    <string name="my_quiz" >我的测验</string>
+    <string name="difficulty" >难度:</string>
+    <string name="theme" >主题:</string>
+    <string name="new_quiz" >新的测验</string>
+    <string name="question" >问题</string>
+    <string name="answer_a_title" >答案A：</string>
+    <string name="answer_b_title" >Answer B:</string>
+    <string name="answer_a" >答案A</string>
+    <string name="answer_b" >答案B</string>
+    <string name="this_is_my_question" >这是我的问题</string>
+    <string name="save" >Save</string>
+    <string name="number_of_questions" >问题的数量：</string>
+    <string name="play" >Play it !</string>
+    <string name="are_you_sure_you_want_to_quit" >你确定你要退出吗？</string>
+    <string name="progress_will_be_lost" >进度将被丢失。</string>
+    <string name="closing_Quiz" >关闭测验</string>
+    <string name="yes" >是的</string>
+    <string name="no" >没有</string>
+    <string name="create" >Create</string>
+    <string name="time_left" >剩余时间：</string>
+    <string name="seconds" >秒</string>
+    <string name="score" >Score: </string>
+    <string name="points_added_season_points" >积分已被添加到你的赛季积分中</string>
+    <string name="thanks_for_playing" >感谢你的参与</string>
+    <string name="your_score_is" >你的分数是: </string>
+    <string name="return_to_quiz_list" >返回到测验列表</string>
+    <string name="points" >积分:</string>
+    <string name="season" >季节</string>
+    <string name="your_rank" >你的排名:</string>
+    <string name="change_password" >更改密码</string>
+    <string name="username_indicator" >用户名:</string>
+    <string name="email_indicator" >电子邮件:</string>
+    <string name="old_password" >旧密码</string>
+    <string name="new_password" >新密码</string>
+    <string name="confirm_new_password" >确认新密码</string>
+    <string name="set_password" >设置密码</string>
+    <string name="password_successfully_updated" >你的密码已被成功更新</string>
+    <string-array name="difficulty_list" >
+        <item>Easy</item>
+        <item>中级></item>
+        <item>困难的</item>
+    </string-array>
+    <string-array name="theme_list" >
+        <item>食品</item>
+        <item>体育</item>
+        <item>动物</item>
+    </string-array>
 </resources>

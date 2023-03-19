@@ -28,4 +28,53 @@
     <string name="medium">Ya katikati</string>
     <string name="hard">Mpasi</string>
     <string name="account_successfully_created">Compte na yo esalemi malamu</string>
+    <string name="questions">Mituna:</string>
+    <string name="title">Titre</string>
+    <string name="my_quiz">Quiz na ngai</string>
+    <string name="difficulty">Mokakatano:</string>
+    <string name="theme">Moto ya likambo:</string>
+    <string name="new_quiz">Quiz ya sika</string>
+    <string name="question">Motuna</string>
+    <string name="answer_a_title">Eyano A:</string>
+    <string name="answer_b_title">Eyano B: .</string>
+    <string name="answer_a">Eyano A</string>
+    <string name="answer_b">Eyano B</string>
+    <string name="this_is_my_question">Oyo ezali motuna na ngai.</string>
+    <string name="save">Kobikisa</string>
+    <string name="number_of_questions">Motángo ya mituna:</string>
+    <string name="play">Beta yango!</string>
+    <string name="are_you_sure_you_want_to_quit">Ozali na ntembe te ete olingi kotika yango?</string>
+    <string name="progress_will_be_lost">Bokoli ekobunga.</string>
+    <string name="closing_Quiz">Quiz ya bosukisi</string>
+    <string name="yes">Iyo</string>
+    <string name="no">Te</string>
+    <string name="create">Kosala</string>
+    <string name="time_left">Ntango etikali :</string>
+    <string name="seconds">basegɔnde</string>
+    <string name="score">Point:</string>
+    <string name="points_added_season_points">"  ba points ebakisami na ba points na yo ya saison"</string>
+    <string name="thanks_for_playing">Merci pona kosakana</string>
+    <string name="your_score_is">Point na yo ezali:</string>
+    <string name="return_to_quiz_list">Zongela na liste ya ba quiz</string>
+    <string name="points">Points:</string>
+    <string name="season">Eleko</string>
+    <string name="your_rank">Molongo na yo:</string>
+    <string name="change_password">Bobongola mot de passe</string>
+    <string name="username_indicator">Nkombo ya mosaleli:</string>
+    <string name="email_indicator">Email:</string>
+    <string name="old_password">Mot de passe ya kala</string>
+    <string name="new_password">Mot de passe ya sika</string>
+    <string name="confirm_new_password">Confirmer mot de passe ya sika</string>
+    <string name="set_password">Set mot de passe</string>
+    <string name="password_successfully_updated">Mot de passe na yo elongi kozala mise à jour</string>
+    <string-array name="difficulty_list">
+        <item>pete</item>
+        <item>ya katikati</item>
+        <item>Mpasi</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>bilei</item>
+        <item>lisano ya masano</item>
+        <item>banyama</item>
+    </string-array>
 </resources>

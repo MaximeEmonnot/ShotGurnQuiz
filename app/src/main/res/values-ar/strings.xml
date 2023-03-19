@@ -28,4 +28,53 @@
     <string name="medium">متوسط</string>
     <string name="hard">صعب</string>
     <string name="account_successfully_created">تم إنشاء حسابك بنجاح</string>
+    <string name="questions">أسئلة:</string>
+    <string name="title">عنوان</string>
+    <string name="my_quiz">الاختبار الخاص بي</string>
+    <string name="difficulty">صعوبة:</string>
+    <string name="theme">سمة:</string>
+    <string name="new_quiz">مسابقة جديدة</string>
+    <string name="question">سؤال</string>
+    <string name="answer_a_title">الجواب أ:</string>
+    <string name="answer_b_title">الجواب ب:</string>
+    <string name="answer_a">الجواب أ</string>
+    <string name="answer_b">الجواب ب</string>
+    <string name="this_is_my_question">هذا سؤالي.</string>
+    <string name="save">يحفظ</string>
+    <string name="number_of_questions">عدد الأسئلة:</string>
+    <string name="play">العبها!</string>
+    <string name="are_you_sure_you_want_to_quit">هل أنت متأكد من أنك تريد الخروج؟</string>
+    <string name="progress_will_be_lost">سيضيع التقدم.</string>
+    <string name="closing_Quiz">مسابقة ختامية</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="create">يخلق</string>
+    <string name="time_left">الوقت المتبقي :</string>
+    <string name="seconds">ثواني</string>
+    <string name="score">نتيجة:</string>
+    <string name="points_added_season_points">"  تمت إضافة نقاط إلى نقاط الموسم الخاصة بك"</string>
+    <string name="thanks_for_playing">شكرا للعب</string>
+    <string name="your_score_is">نتيجتك هي:</string>
+    <string name="return_to_quiz_list">العودة إلى قائمة الاختبار</string>
+    <string name="points">نقاط:</string>
+    <string name="season">موسم</string>
+    <string name="your_rank">رتبتك:</string>
+    <string name="change_password">تغيير كلمة المرور</string>
+    <string name="username_indicator">اسم المستخدم:</string>
+    <string name="email_indicator">بريد إلكتروني:</string>
+    <string name="old_password">كلمة المرور القديمة</string>
+    <string name="new_password">كلمة المرور الجديدة</string>
+    <string name="confirm_new_password">تأكيد كلمة المرور الجديدة</string>
+    <string name="set_password">ضبط كلمة السر</string>
+    <string name="password_successfully_updated">لقد تم تحديث كلمة السر الخاصة بك بنجاح</string>
+    <string-array name="difficulty_list">
+        <item>سهل</item>
+        <item>متوسط</item>
+        <item>صعب</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>طعام</item>
+        <item>رياضة</item>
+        <item>الحيوانات</item>
+    </string-array>
 </resources>

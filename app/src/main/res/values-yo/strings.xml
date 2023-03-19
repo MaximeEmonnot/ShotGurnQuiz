@@ -28,4 +28,53 @@
     <string name="medium">Agbedemeji</string>
     <string name="hard">O le</string>
     <string name="account_successfully_created">A ti ṣẹda akọọlẹ rẹ ni aṣeyọri</string>
+    <string name="questions" >Awọn ibeere:</string>
+    <string name="title" >Akọle</string>
+    <string name="my_quiz" >Idanwo mi</string>
+    <string name="difficulty" >Iṣoro:</string>
+    <string name="theme" >Akori:</string>
+    <string name="new_quiz" >Idanwo Tuntun</string>
+    <string name="question" >Ibeere</string>
+    <string name="answer_a_title" >Idahun A:</string>
+    <string name="answer_b_title" >Idahun B:</string>
+    <string name="answer_a" >Idahun A</string>
+    <string name="answer_b" >Idahun B</string>
+    <string name="this_is_my_question" >Eyi ni ibeere mi.</string>
+    <string name="save" >Fipamọ</string>
+    <string name="number_of_questions" >Nọmba awọn ibeere:</string>
+    <string name="play" >Mu ṣiṣẹ!</string>
+    <string name="are_you_sure_you_want_to_quit" >Ṣe o da ọ loju pe o fẹ dawọ silẹ?</string>
+    <string name="progress_will_be_lost" >Ilọsiwaju yoo sọnu.</string>
+    <string name="closing_Quiz" >Idanwo pipade</string>
+    <string name="yes" >Bẹẹni</string>
+    <string name="no" >Rara</string>
+    <string name="create" >Ṣẹda</string>
+    <string name="time_left" >Asiko ti o seku :</string>
+    <string name="seconds" >iṣẹju-aaya</string>
+    <string name="score" >O wole:</string>
+    <string name="points_added_season_points" >  ojuami ti a ti fi kun si rẹ akoko ojuami</string>
+    <string name="thanks_for_playing" >O ṣeun fun ndun</string>
+    <string name="your_score_is" >Dimegilio rẹ ni: </string>
+    <string name="return_to_quiz_list" >Pada si akojọ adanwo</string>
+    <string name="points" >Awọn ojuami:</string>
+    <string name="season" >Akoko</string>
+    <string name="your_rank" >Ipo rẹ:</string>
+    <string name="change_password" >Tun oruko akowole re se</string>
+    <string name="username_indicator" >Orukọ olumulo:</string>
+    <string name="email_indicator" >Imeeli:</string>
+    <string name="old_password" >Ọrọ aṣina Atijọ</string>
+    <string name="new_password" >Ọrọ aṣina Tuntun</string>
+    <string name="confirm_new_password" >Jẹrisi ọrọ igbaniwọle tuntun</string>
+    <string name="set_password" >Ṣeto ọrọ igbaniwọle</string>
+    <string name="password_successfully_updated" >Ọrọigbaniwọle rẹ ti ni imudojuiwọn ni aṣeyọri</string>
+    <string-array name="difficulty_list" >
+        <item>Rọrun</item>
+        <item>Agbedemeji</item>
+        <item>O le</item>
+    </string-array>
+    <string-array name="theme_list" >
+        <item>Ounjẹ</item>
+        <item>Idaraya</item>
+        <item>Ẹranko</item>
+    </string-array>
 </resources>

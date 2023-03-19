@@ -28,4 +28,53 @@
     <string name="medium">मध्यम</string>
     <string name="hard">कठिन</string>
     <string name="account_successfully_created">आपका खाता सफलतापूर्वक बना दिया गया है</string>
+    <string name="questions">प्रशन:</string>
+    <string name="title">शीर्षक</string>
+    <string name="my_quiz">मेरी प्रश्नोत्तरी</string>
+    <string name="difficulty">कठिनाई:</string>
+    <string name="theme">थीम:</string>
+    <string name="new_quiz">नई प्रश्नोत्तरी</string>
+    <string name="question">सवाल</string>
+    <string name="answer_a_title">उत्तर ए:</string>
+    <string name="answer_b_title">उत्तर बी:</string>
+    <string name="answer_a">उत्तर ए</string>
+    <string name="answer_b">उत्तर बी</string>
+    <string name="this_is_my_question">यह मेरा प्रश्न है।</string>
+    <string name="save">बचाना</string>
+    <string name="number_of_questions">प्रश्नों की संख्या:</string>
+    <string name="play">इसे खेलने!</string>
+    <string name="are_you_sure_you_want_to_quit">क्या आप वाकई छोड़ना चाहते हैं?</string>
+    <string name="progress_will_be_lost">प्रगति खो जाएगी।</string>
+    <string name="closing_Quiz">समापन प्रश्नोत्तरी</string>
+    <string name="yes">हाँ</string>
+    <string name="no">नहीं</string>
+    <string name="create">बनाएं</string>
+    <string name="time_left">शेष समय :</string>
+    <string name="seconds">सेकंड</string>
+    <string name="score">अंक:</string>
+    <string name="points_added_season_points">"  अंक आपके सीज़न बिंदुओं में जोड़ दिए गए हैं"</string>
+    <string name="thanks_for_playing">खेलने के लिए धन्यवाद</string>
+    <string name="your_score_is">आपका स्कोर है:</string>
+    <string name="return_to_quiz_list">प्रश्नोत्तरी सूची पर लौटें</string>
+    <string name="points">अंक:</string>
+    <string name="season">मौसम</string>
+    <string name="your_rank">आपका रैंक:</string>
+    <string name="change_password">पासवर्ड बदलें</string>
+    <string name="username_indicator">उपयोगकर्ता नाम:</string>
+    <string name="email_indicator">ईमेल:</string>
+    <string name="old_password">पुराना पासवर्ड</string>
+    <string name="new_password">नया पासवर्ड</string>
+    <string name="confirm_new_password">नए पासवर्ड की पुष्टि करें</string>
+    <string name="set_password">सांकेतिक शब्द लगना</string>
+    <string name="password_successfully_updated">आपका पासवर्ड सफलतापूर्वक अपडेट कर दिया गया है</string>
+    <string-array name="difficulty_list">
+        <item>आसान</item>
+        <item>मध्यम</item>
+        <item>कठिन</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>खाना</item>
+        <item>खेल</item>
+        <item>जानवरों</item>
+    </string-array>
 </resources>

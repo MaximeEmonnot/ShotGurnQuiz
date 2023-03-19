@@ -28,4 +28,53 @@
     <string name="medium">中級</string>
     <string name="hard">難しい</string>
     <string name="account_successfully_created">アカウントが正常に作成されました</string>
+    <string name="questions">質問:</string>
+    <string name="title">タイトル</string>
+    <string name="my_quiz">私のクイズ</string>
+    <string name="difficulty">困難：</string>
+    <string name="theme">テーマ：</string>
+    <string name="new_quiz">新しいクイズ</string>
+    <string name="question">質問</string>
+    <string name="answer_a_title">答え A:</string>
+    <string name="answer_b_title">答え B:</string>
+    <string name="answer_a">回答A</string>
+    <string name="answer_b">回答B</string>
+    <string name="this_is_my_question">これは私の質問です。</string>
+    <string name="save">保存</string>
+    <string name="number_of_questions">質問数:</string>
+    <string name="play">それをプレイ！</string>
+    <string name="are_you_sure_you_want_to_quit">本当にやめる気？</string>
+    <string name="progress_will_be_lost">進行状況は失われます。</string>
+    <string name="closing_Quiz">締めくくりクイズ</string>
+    <string name="yes">はい</string>
+    <string name="no">いいえ</string>
+    <string name="create">作成</string>
+    <string name="time_left">残り時間 ：</string>
+    <string name="seconds">秒</string>
+    <string name="score">スコア：</string>
+    <string name="points_added_season_points">"  ポイントがシーズンポイントに追加されました"</string>
+    <string name="thanks_for_playing">遊んでくれてありがとう</string>
+    <string name="your_score_is">あなたのスコアは：</string>
+    <string name="return_to_quiz_list">クイズ一覧に戻る</string>
+    <string name="points">ポイント:</string>
+    <string name="season">季節</string>
+    <string name="your_rank">あなたのランク:</string>
+    <string name="change_password">パスワードを変更する</string>
+    <string name="username_indicator">ユーザー名:</string>
+    <string name="email_indicator">Eメール：</string>
+    <string name="old_password">以前のパスワード</string>
+    <string name="new_password">新しいパスワード</string>
+    <string name="confirm_new_password">新しいパスワードを確認</string>
+    <string name="set_password">パスワードを設定してください</string>
+    <string name="password_successfully_updated">パスワードが正常に更新されました</string>
+    <string-array name="difficulty_list">
+        <item>簡単</item>
+        <item>中級</item>
+        <item>難しい</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>食べ物</item>
+        <item>スポーツ</item>
+        <item>動物</item>
+    </string-array>
 </resources>

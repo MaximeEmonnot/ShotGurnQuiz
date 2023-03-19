@@ -28,4 +28,53 @@
     <string name="medium">Tussenliggend</string>
     <string name="hard">Moeilijk</string>
     <string name="account_successfully_created">Je account is succesvol aangemaakt</string>
+    <string name="questions">Vragen:</string>
+    <string name="title">Titel</string>
+    <string name="my_quiz">Mijn quiz</string>
+    <string name="difficulty">Moeilijkheidsgraad:</string>
+    <string name="theme">Thema:</string>
+    <string name="new_quiz">Nieuwe quiz</string>
+    <string name="question">Vraag</string>
+    <string name="answer_a_title">Antwoord: A:</string>
+    <string name="answer_b_title">Antwoord B:</string>
+    <string name="answer_a">Antwoord: A</string>
+    <string name="answer_b">Antwoord B</string>
+    <string name="this_is_my_question">Dit is mijn vraag.</string>
+    <string name="save">Redden</string>
+    <string name="number_of_questions">Aantal vragen:</string>
+    <string name="play">Speel het!</string>
+    <string name="are_you_sure_you_want_to_quit">Weet je zeker dat je wilt stoppen?</string>
+    <string name="progress_will_be_lost">Vooruitgang gaat verloren.</string>
+    <string name="closing_Quiz">Quiz afsluiten</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nee</string>
+    <string name="create">Creëren</string>
+    <string name="time_left">Tijd over :</string>
+    <string name="seconds">seconden</string>
+    <string name="score">Score:</string>
+    <string name="points_added_season_points">"  punten zijn toegevoegd aan je seizoenspunten"</string>
+    <string name="thanks_for_playing">Bedankt voor het spelen</string>
+    <string name="your_score_is">Je score is:</string>
+    <string name="return_to_quiz_list">Keer terug naar de quizlijst</string>
+    <string name="points">punten:</string>
+    <string name="season">Seizoen</string>
+    <string name="your_rank">Je rang:</string>
+    <string name="change_password">Verander wachtwoord</string>
+    <string name="username_indicator">Gebruikersnaam:</string>
+    <string name="email_indicator">E-mail:</string>
+    <string name="old_password">Oud Wachtwoord</string>
+    <string name="new_password">Nieuw paswoord</string>
+    <string name="confirm_new_password">Bevestig nieuw wachtwoord</string>
+    <string name="set_password">Stel een wachtwoord in</string>
+    <string name="password_successfully_updated">je wachtwoord is succesvol geupdate</string>
+    <string-array name="difficulty_list">
+        <item>eenvoudig</item>
+        <item>tussenliggend</item>
+        <item>Moeilijk</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>voedsel</item>
+        <item>sport</item>
+        <item>dieren</item>
+    </string-array>
 </resources>

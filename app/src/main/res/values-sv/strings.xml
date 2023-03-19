@@ -28,4 +28,53 @@
     <string name="medium">Mellanliggande</string>
     <string name="hard">Svår</string>
     <string name="account_successfully_created">ditt konto har skapats</string>
+    <string name="questions">Frågor:</string>
+    <string name="title">Titel</string>
+    <string name="my_quiz">Mitt frågesport</string>
+    <string name="difficulty">Svårighet:</string>
+    <string name="theme">Tema:</string>
+    <string name="new_quiz">Nytt frågesport</string>
+    <string name="question">Fråga</string>
+    <string name="answer_a_title">Svar A:</string>
+    <string name="answer_b_title">Svar B:</string>
+    <string name="answer_a">Svar A</string>
+    <string name="answer_b">Svar B</string>
+    <string name="this_is_my_question">Detta är min fråga.</string>
+    <string name="save">Spara</string>
+    <string name="number_of_questions">Antal frågor:</string>
+    <string name="play">Spela den!</string>
+    <string name="are_you_sure_you_want_to_quit">Är du säker på att du vill sluta?</string>
+    <string name="progress_will_be_lost">Framsteg kommer att gå förlorade.</string>
+    <string name="closing_Quiz">Avslutningsquiz</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nej</string>
+    <string name="create">Skapa</string>
+    <string name="time_left">Tid kvar :</string>
+    <string name="seconds">sekunder</string>
+    <string name="score">Göra:</string>
+    <string name="points_added_season_points">"  poäng har lagts till dina säsongspoäng"</string>
+    <string name="thanks_for_playing">Tack för att du spelade</string>
+    <string name="your_score_is">Ditt resultat är:</string>
+    <string name="return_to_quiz_list">Återgå till frågesportlistan</string>
+    <string name="points">Poäng:</string>
+    <string name="season">Säsong</string>
+    <string name="your_rank">Din rang:</string>
+    <string name="change_password">ändra lösenord</string>
+    <string name="username_indicator">Användarnamn:</string>
+    <string name="email_indicator">E-post:</string>
+    <string name="old_password">Gammalt lösenord</string>
+    <string name="new_password">Nytt lösenord</string>
+    <string name="confirm_new_password">Bekräfta nytt lösenord</string>
+    <string name="set_password">Välj lösenord</string>
+    <string name="password_successfully_updated">Ditt lösenord har uppdaterats</string>
+    <string-array name="difficulty_list">
+        <item>lätt</item>
+        <item>mellanliggande</item>
+        <item>Svår</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>mat</item>
+        <item>sport</item>
+        <item>djur</item>
+    </string-array>
 </resources>

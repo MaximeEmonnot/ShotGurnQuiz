@@ -28,4 +28,53 @@
     <string name="medium">Ophakathi</string>
     <string name="hard">Kunzima</string>
     <string name="account_successfully_created">I-akhawunti yakho idalwe ngempumelelo</string>
+    <string name="questions" >Imibuzo:</string>
+    <string name="title" >Isihloko</string>
+    <string name="my_quiz" >Umbuzo wami</string>
+    <string name="difficulty" >Ubunzima:</string>
+    <string name="theme" >Itimu:</string>
+    <string name="new_quiz" >Imibuzo Emisha</string>
+    <string name="question" >Umbuzo</string>
+    <string name="answer_a_title" >Impendulo ivela ku- A:</string>
+    <string name="answer_b_title" >Impendulo ivela ku- B:</string>
+    <string name="answer_a" >Impendulo A</string>
+    <string name="answer_b" >Impendulo B</string>
+    <string name="this_is_my_question" >Umbuzo wami lo.</string>
+    <string name="save" >Londoloza</string>
+    <string name="number_of_questions" >Inombolo yemibuzo:</string>
+    <string name="play" >Yidlale !</string>
+    <string name="are_you_sure_you_want_to_quit" >Uqinisekile ukuthi ufuna ukuyeka?</string>
+    <string name="progress_will_be_lost" >Intuthuko izolahleka.</string>
+    <string name="closing_Quiz" >Ivala Imibuzo</string>
+    <string name="yes" >Yebo</string>
+    <string name="no" >Cha</string>
+    <string name="create" >Dala</string>
+    <string name="time_left" >Isikhathi esisele :</string>
+    <string name="seconds" >imizuzwana</string>
+    <string name="score" >Umphumela:</string>
+    <string name="points_added_season_points" >  amaphuzu engeziwe kumaphuzu akho esizini</string>
+    <string name="thanks_for_playing" >Siyabonga ngokudlala</string>
+    <string name="your_score_is" >Isikolo sakho sithi: </string>
+    <string name="return_to_quiz_list" >Buyela ohlwini lwemibuzo</string>
+    <string name="points" >Amaphuzu:</string>
+    <string name="season" >Isizini</string>
+    <string name="your_rank" >Izinga lakho:</string>
+    <string name="change_password" >SHINTSHA iphasiwedi</string>
+    <string name="username_indicator" >Igama lomsebenzisi:</string>
+    <string name="email_indicator" >I-imeyili:</string>
+    <string name="old_password" >Iphasiwedi Endala</string>
+    <string name="new_password" >Iphasiwedi Entsha</string>
+    <string name="confirm_new_password" >Qinisekisa iphasiwedi entsha</string>
+    <string name="set_password" >Setha iphasiwedi</string>
+    <string name="password_successfully_updated" >Iphasiwedi yakho ibuyekezwe ngempumelelo</string>
+    <string-array name="difficulty_list" >
+        <item>Kulula</item>
+        <item>Ophakathi</item>
+        <item>Kunzima</item>
+    </string-array>
+    <string-array name="theme_list" >
+        <item>Ukudla</item>
+        <item>Ezemidlalo</item>
+        <item>Izilwane</item>
+    </string-array>
 </resources>

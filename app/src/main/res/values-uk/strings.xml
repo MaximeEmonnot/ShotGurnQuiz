@@ -28,4 +28,53 @@
     <string name="medium">Проміжний</string>
     <string name="hard">важко</string>
     <string name="account_successfully_created">Ваш обліковий запис успішно створено</string>
+    <string name="questions" >Питання:</string>
+    <string name="title" >Назва</string>
+    <string name="my_quiz" >Моя вікторина</string>
+    <string name="difficulty" >Складність:</string>
+    <string name="theme" >Тема:</string>
+    <string name="new_quiz" >Нова вікторина</string>
+    <string name="question" >Питання</string>
+    <string name="answer_a_title" >Відповідь А:</string>
+    <string name="answer_b_title" >Відповідь B:</string>
+    <string name="answer_a" >Відповідь А</string>
+    <string name="answer_b" >Відповідь Б</string>
+    <string name="this_is_my_question" >Це моє запитання.</string>
+    <string name="save" >зберегти</string>
+    <string name="number_of_questions" >Кількість питань:</string>
+    <string name="play" >Грайте в це!</string>
+    <string name="are_you_sure_you_want_to_quit" >Ти впевнений що хочеш піти ?</string>
+    <string name="progress_will_be_lost" >Прогрес буде втрачено.</string>
+    <string name="closing_Quiz" >Заключна вікторина</string>
+    <string name="yes" >Так</string>
+    <string name="no" >Немає</string>
+    <string name="create" >Створити</string>
+    <string name="time_left" >Залишився час:</string>
+    <string name="seconds" >секунд</string>
+    <string name="score" >Оцінка:</string>
+    <string name="points_added_season_points" >  балів було додано до ваших сезонних балів</string>
+    <string name="thanks_for_playing" >Дякуємо за гру</string>
+    <string name="your_score_is" >Ваша оцінка: </string>
+    <string name="return_to_quiz_list" >Повернутися до списку тестів</string>
+    <string name="points" >бали:</string>
+    <string name="season" >Сезон</string>
+    <string name="your_rank" >Ваш ранг:</string>
+    <string name="change_password" >Змінити пароль</string>
+    <string name="username_indicator" >Ім\'я користувача:</string>
+    <string name="email_indicator" >Електронна пошта:</string>
+    <string name="old_password" >Старий пароль</string>
+    <string name="new_password" >Новий пароль</string>
+    <string name="confirm_new_password" >Підтвердити новий пароль</string>
+    <string name="set_password" >Встановити пароль</string>
+    <string name="password_successfully_updated" >Ваш пароль успішно оновлено</string>
+    <string-array name="difficulty_list" >
+        <item>легко</item>
+        <item>Проміжний</item>
+        <item>важко</item>
+    </string-array>
+    <string-array name="theme_list" >
+        <item>харчування</item>
+        <item>спорт</item>
+        <item>Тварини</item>
+    </string-array>
 </resources>

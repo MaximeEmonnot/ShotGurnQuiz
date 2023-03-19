@@ -28,4 +28,53 @@
     <string name="medium">Intermedio</string>
     <string name="hard">Difficile</string>
     <string name="account_successfully_created">Il tuo account è stato creato con successo</string>
+    <string name="questions">Domande:</string>
+    <string name="title">Titolo</string>
+    <string name="my_quiz">Il mio quiz</string>
+    <string name="difficulty">Difficoltà:</string>
+    <string name="theme">Tema:</string>
+    <string name="new_quiz">Nuovo Quiz</string>
+    <string name="question">Domanda</string>
+    <string name="answer_a_title">Risposta A:</string>
+    <string name="answer_b_title">Risposta B:</string>
+    <string name="answer_a">Risposta A</string>
+    <string name="answer_b">Risposta B</string>
+    <string name="this_is_my_question">Questa è la mia domanda.</string>
+    <string name="save">Salva</string>
+    <string name="number_of_questions">Numero di domande:</string>
+    <string name="play">Gioca!</string>
+    <string name="are_you_sure_you_want_to_quit">Sei sicuro di voler uscire?</string>
+    <string name="progress_will_be_lost">Il progresso andrà perso.</string>
+    <string name="closing_Quiz">Quiz di chiusura</string>
+    <string name="yes">SÌ</string>
+    <string name="no">NO</string>
+    <string name="create">Creare</string>
+    <string name="time_left">Tempo rimasto :</string>
+    <string name="seconds">secondi</string>
+    <string name="score">Punto:</string>
+    <string name="points_added_season_points">"  i punti sono stati aggiunti ai tuoi punti stagione"</string>
+    <string name="thanks_for_playing">Grazie per aver giocato</string>
+    <string name="your_score_is">Il tuo punteggio è:</string>
+    <string name="return_to_quiz_list">Torna all\'elenco dei quiz</string>
+    <string name="points">Punti:</string>
+    <string name="season">Stagione</string>
+    <string name="your_rank">Il tuo grado:</string>
+    <string name="change_password">Cambiare la password</string>
+    <string name="username_indicator">Nome utente:</string>
+    <string name="email_indicator">E-mail:</string>
+    <string name="old_password">Vecchia password</string>
+    <string name="new_password">Nuova password</string>
+    <string name="confirm_new_password">Conferma la nuova password</string>
+    <string name="set_password">Impostare la password</string>
+    <string name="password_successfully_updated">La tua password è stata aggiornata con successo</string>
+    <string-array name="difficulty_list">
+        <item>facile</item>
+        <item>intermedio</item>
+        <item>Difficile</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>cibo</item>
+        <item>sport</item>
+        <item>animali</item>
+    </string-array>
 </resources>

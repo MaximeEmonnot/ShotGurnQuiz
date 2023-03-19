@@ -28,4 +28,53 @@
     <string name="medium">Di nav</string>
     <string name="hard">Asteng</string>
     <string name="account_successfully_created">Hesabê we bi serkeftî hate afirandin</string>
+    <string name="questions">Pirs:</string>
+    <string name="title">Nav</string>
+    <string name="my_quiz">Pirsa min</string>
+    <string name="difficulty">Astengî:</string>
+    <string name="theme">Mijad:</string>
+    <string name="new_quiz">Nû Quiz</string>
+    <string name="question">Pirs</string>
+    <string name="answer_a_title">Bersiv A:</string>
+    <string name="answer_b_title">Bersiv B:</string>
+    <string name="answer_a">Bersiv A</string>
+    <string name="answer_b">Bersiv B</string>
+    <string name="this_is_my_question">Ev pirsa min e.</string>
+    <string name="save">Rizgarkirin</string>
+    <string name="number_of_questions">Hejmara pirsan:</string>
+    <string name="play">Play it!</string>
+    <string name="are_you_sure_you_want_to_quit">Ma hûn guman dikin ku hûn dixwazin dev jê berdin?</string>
+    <string name="progress_will_be_lost">Pêşketin wê winda bibe.</string>
+    <string name="closing_Quiz">Girtina Quiz</string>
+    <string name="yes">Erê</string>
+    <string name="no">Na</string>
+    <string name="create">Xûliqandin</string>
+    <string name="time_left">Dema maye:</string>
+    <string name="seconds">seconds</string>
+    <string name="score">Rewşa nixtan:</string>
+    <string name="points_added_season_points">"  xal li xalên we yên demsala hatine zêdekirin"</string>
+    <string name="thanks_for_playing">Spas ji bo lîstin</string>
+    <string name="your_score_is">Encama we ev e:</string>
+    <string name="return_to_quiz_list">Vegere lîsteya quiz</string>
+    <string name="points">Xal:</string>
+    <string name="season">Demsal</string>
+    <string name="your_rank">Rêza we:</string>
+    <string name="change_password">Şîfre biguherînin</string>
+    <string name="username_indicator">Navê bikarhêner:</string>
+    <string name="email_indicator">Email:</string>
+    <string name="old_password">Şîfreya kevn</string>
+    <string name="new_password">Şîfreya nû</string>
+    <string name="confirm_new_password">Şîfreya nû piştrast bikin</string>
+    <string name="set_password">Şîfreyê saz bike</string>
+    <string name="password_successfully_updated">Şîfreya te bi serkeftî hate nûve kirin</string>
+    <string-array name="difficulty_list">
+        <item>sivik</item>
+        <item>di nav</item>
+        <item>Asteng</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>xûrek</item>
+        <item>sîpor</item>
+        <item>heywanan</item>
+    </string-array>
 </resources>

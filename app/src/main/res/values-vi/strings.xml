@@ -28,4 +28,53 @@
     <string name="medium">Trung cấp</string>
     <string name="hard">Khó</string>
     <string name="account_successfully_created">Tai khoản của bạn đa được tạo thanh công</string>
+    <string name="questions" >câu hỏi:</string>
+    <string name="title" >Tiêu đề</string>
+    <string name="my_quiz" >bài kiểm tra của tôi</string>
+    <string name="difficulty" >Khó khăn:</string>
+    <string name="theme" >chủ đề:</string>
+    <string name="new_quiz" >Câu đố mới</string>
+    <string name="question" >Câu hỏi</string>
+    <string name="answer_a_title" >Đáp án A:</string>
+    <string name="answer_b_title" >Đáp án B:</string>
+    <string name="answer_a" >Đáp án A</string>
+    <string name="answer_b" >đáp án B</string>
+    <string name="this_is_my_question" >Đây là câu hỏi của tôi.</string>
+    <string name="save" >Cứu</string>
+    <string name="number_of_questions" >Số lượng các câu hỏi:</string>
+    <string name="play" >Chơi nó !</string>
+    <string name="are_you_sure_you_want_to_quit" >Bạn có chắc bạn muốn thoát khỏi ?</string>
+    <string name="progress_will_be_lost" >Tiến trình sẽ bị mất.</string>
+    <string name="closing_Quiz" >Trắc nghiệm kết thúc</string>
+    <string name="yes" >Đúng</string>
+    <string name="no" >KHÔNG</string>
+    <string name="create" >Tạo nên</string>
+    <string name="time_left" >Thời gian còn lại :</string>
+    <string name="seconds" >giây</string>
+    <string name="score" >Điểm:</string>
+    <string name="points_added_season_points" >  điểm đã được thêm vào điểm mùa giải của bạn</string>
+    <string name="thanks_for_playing" >Cảm ơn vi đa chơi</string>
+    <string name="your_score_is" >Số điểm của bạn là: </string>
+    <string name="return_to_quiz_list" >Quay lại danh sách bài kiểm tra</string>
+    <string name="points" >điểm:</string>
+    <string name="season" >Mùa</string>
+    <string name="your_rank" >Thứ hạng của bạn:</string>
+    <string name="change_password" >Đổi mật khẩu</string>
+    <string name="username_indicator" >Tên tài khoản:</string>
+    <string name="email_indicator" >E-mail:</string>
+    <string name="old_password" >Mật khẩu cũ</string>
+    <string name="new_password" >Mật khẩu mới</string>
+    <string name="confirm_new_password" >Xác nhận mật khẩu mới</string>
+    <string name="set_password" >Đặt mật khẩu</string>
+    <string name="password_successfully_updated" >Mật khẩu của bạn đã được cập nhật thành công</string>
+    <string-array name="difficulty_list" >
+        <item>Dễ</item>
+        <item>Trung cấp</item>
+        <item>Khó</item>
+    </string-array>
+    <string-array name="theme_list" >
+        <item>Đồ ăn</item>
+        <item>Thể thao</item>
+        <item>Động vật</item>
+    </string-array>
 </resources>

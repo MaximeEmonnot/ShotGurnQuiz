@@ -28,4 +28,53 @@
     <string name="medium">Keskitason</string>
     <string name="hard">Vaikea</string>
     <string name="account_successfully_created">tilisi on luotu onnistuneesti</string>
+    <string name="questions">Kysymyksiä:</string>
+    <string name="title">Otsikko</string>
+    <string name="my_quiz">Minun tietokilpailuni</string>
+    <string name="difficulty">Vaikeusaste:</string>
+    <string name="theme">Teema:</string>
+    <string name="new_quiz">Uusi tietokilpailu</string>
+    <string name="question">Kysymys</string>
+    <string name="answer_a_title">Vastaus A:</string>
+    <string name="answer_b_title">Vastaus B:</string>
+    <string name="answer_a">Vastaus A</string>
+    <string name="answer_b">Vastaus B</string>
+    <string name="this_is_my_question">Tämä on kysymykseni.</string>
+    <string name="save">Tallentaa</string>
+    <string name="number_of_questions">Kysymysten määrä:</string>
+    <string name="play">Soita se!</string>
+    <string name="are_you_sure_you_want_to_quit">Oletko varma, että haluat lopettaa?</string>
+    <string name="progress_will_be_lost">Edistys menetetään.</string>
+    <string name="closing_Quiz">Tietokilpailun päätös</string>
+    <string name="yes">Joo</string>
+    <string name="no">Ei</string>
+    <string name="create">Luoda</string>
+    <string name="time_left">Aikaa jäljellä :</string>
+    <string name="seconds">sekuntia</string>
+    <string name="score">Pisteet:</string>
+    <string name="points_added_season_points">"  pisteitä on lisätty kausipisteisiisi"</string>
+    <string name="thanks_for_playing">Kiitos pelaamisesta</string>
+    <string name="your_score_is">Sinun pisteesi on:</string>
+    <string name="return_to_quiz_list">Palaa tietokilpailuluetteloon</string>
+    <string name="points">Pisteet:</string>
+    <string name="season">Kausi</string>
+    <string name="your_rank">Sijoituksesi:</string>
+    <string name="change_password">Vaihda salasana</string>
+    <string name="username_indicator">Käyttäjätunnus:</string>
+    <string name="email_indicator">Sähköposti:</string>
+    <string name="old_password">Vanha salasana</string>
+    <string name="new_password">Uusi salasana</string>
+    <string name="confirm_new_password">Vahvista uusi salasana</string>
+    <string name="set_password">Aseta salasana</string>
+    <string name="password_successfully_updated">Salasanasi on päivitetty onnistuneesti</string>
+    <string-array name="difficulty_list">
+        <item>helppo</item>
+        <item>keskitason</item>
+        <item>Vaikea</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>ruokaa</item>
+        <item>Urheilu</item>
+        <item>eläimet</item>
+    </string-array>
 </resources>

@@ -28,4 +28,53 @@
     <string name="medium">Միջանկյալ</string>
     <string name="hard">Դժվար</string>
     <string name="account_successfully_created">Ձեր հաշիվը հաջողությամբ ստեղծվել է</string>
+    <string name="questions">Հարցեր.</string>
+    <string name="title">Կոչում</string>
+    <string name="my_quiz">Իմ վիկտորինան</string>
+    <string name="difficulty">Դժվարություն:</string>
+    <string name="theme">Թեմա:</string>
+    <string name="new_quiz">Նոր Վիկտորինա</string>
+    <string name="question">Հարց</string>
+    <string name="answer_a_title">Պատասխան Ա.</string>
+    <string name="answer_b_title">Պատասխան Բ.</string>
+    <string name="answer_a">Պատասխան Ա</string>
+    <string name="answer_b">Պատասխան Բ</string>
+    <string name="this_is_my_question">Սա իմ հարցն է։</string>
+    <string name="save">Պահպանել</string>
+    <string name="number_of_questions">Հարցերի քանակը:</string>
+    <string name="play">Խաղա՜</string>
+    <string name="are_you_sure_you_want_to_quit">Դուք վստահ եք, որ ցանկանում եք դուրս գալ?</string>
+    <string name="progress_will_be_lost">Առաջընթացը կկորչի.</string>
+    <string name="closing_Quiz">Փակման վիկտորինան</string>
+    <string name="yes">Այո՛</string>
+    <string name="no">Ոչ</string>
+    <string name="create">Ստեղծել</string>
+    <string name="time_left">Մնացած ժամանակ :</string>
+    <string name="seconds">վայրկյան</string>
+    <string name="score">Գնահատականը:</string>
+    <string name="points_added_season_points">"  միավորներ են ավելացվել ձեր սեզոնի միավորներին"</string>
+    <string name="thanks_for_playing">Շնորհակալություն խաղալու համար</string>
+    <string name="your_score_is">Ձեր միավորն է.</string>
+    <string name="return_to_quiz_list">Վերադառնալ վիկտորինայի ցուցակին</string>
+    <string name="points">Միավորներ:</string>
+    <string name="season">Սեզոն</string>
+    <string name="your_rank">Ձեր կոչումը.</string>
+    <string name="change_password">Փոխել գաղտնաբառը</string>
+    <string name="username_indicator">Օգտագործողի անունը:</string>
+    <string name="email_indicator">Էլ.</string>
+    <string name="old_password">Հին Գաղտնաբառ</string>
+    <string name="new_password">Նոր ծածկագիր</string>
+    <string name="confirm_new_password">Հաստատեք նոր գաղտնաբառը</string>
+    <string name="set_password">Սահմանել գաղտնաբառը</string>
+    <string name="password_successfully_updated">Ձեր գաղտնաբառը հաջողությամբ թարմացվել է</string>
+    <string-array name="difficulty_list">
+        <item>հեշտ</item>
+        <item>միջանկյալ</item>
+        <item>Դժվար</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>սնունդ</item>
+        <item>սպորտ</item>
+        <item>կենդանիներ</item>
+    </string-array>
 </resources>

@@ -28,4 +28,53 @@
     <string name="medium">Mediator</string>
     <string name="hard">Trudny</string>
     <string name="account_successfully_created">Twoje konto zostało pomyślnie utworzone</string>
+    <string name="questions">Pytania:</string>
+    <string name="title">Tytuł</string>
+    <string name="my_quiz">Mój quiz</string>
+    <string name="difficulty">Trudność:</string>
+    <string name="theme">Temat:</string>
+    <string name="new_quiz">Nowy quiz</string>
+    <string name="question">Pytanie</string>
+    <string name="answer_a_title">Odpowiedź A:</string>
+    <string name="answer_b_title">odpowiedź B:</string>
+    <string name="answer_a">odpowiedź A</string>
+    <string name="answer_b">odpowiedź B</string>
+    <string name="this_is_my_question">to jest moje pytanie.</string>
+    <string name="save">Ratować</string>
+    <string name="number_of_questions">Liczba pytań:</string>
+    <string name="play">Graj!</string>
+    <string name="are_you_sure_you_want_to_quit">Czy na pewno chcesz zrezygnować?</string>
+    <string name="progress_will_be_lost">Postęp zostanie utracony.</string>
+    <string name="closing_Quiz">Zamknięcie quizu</string>
+    <string name="yes">Tak</string>
+    <string name="no">NIE</string>
+    <string name="create">Tworzyć</string>
+    <string name="time_left">Pozostały czas :</string>
+    <string name="seconds">sekundy</string>
+    <string name="score">Wynik:</string>
+    <string name="points_added_season_points">"  punkty zostały dodane do punktów sezonowych"</string>
+    <string name="thanks_for_playing">Dzięki za grę</string>
+    <string name="your_score_is">Twój wynik to:</string>
+    <string name="return_to_quiz_list">Wróć do listy quizów</string>
+    <string name="points">Zwrotnica:</string>
+    <string name="season">Pora roku</string>
+    <string name="your_rank">Twoja ranga:</string>
+    <string name="change_password">Zmień hasło</string>
+    <string name="username_indicator">Nazwa użytkownika:</string>
+    <string name="email_indicator">E-mail:</string>
+    <string name="old_password">Stare hasło</string>
+    <string name="new_password">Nowe hasło</string>
+    <string name="confirm_new_password">Potwierdź nowe hasło</string>
+    <string name="set_password">Ustaw hasło</string>
+    <string name="password_successfully_updated">Twoje hasło zostało pomyślnie zaktualizowane</string>
+    <string-array name="difficulty_list">
+        <item>łatwy</item>
+        <item>mediator</item>
+        <item>Trudny</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>żywność</item>
+        <item>sport</item>
+        <item>Zwierząt</item>
+    </string-array>
 </resources>

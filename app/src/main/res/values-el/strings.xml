@@ -28,4 +28,53 @@
     <string name="medium">Ενδιάμεσος</string>
     <string name="hard">Δύσκολος</string>
     <string name="account_successfully_created">Ο λογαριασμός σας δημιουργήθηκε επιτυχώς</string>
+    <string name="questions">Ερωτήσεις:</string>
+    <string name="title">Τίτλος</string>
+    <string name="my_quiz">Το κουίζ μου</string>
+    <string name="difficulty">Δυσκολία:</string>
+    <string name="theme">Θέμα:</string>
+    <string name="new_quiz">Νέο Κουίζ</string>
+    <string name="question">Ερώτηση</string>
+    <string name="answer_a_title">Απάντηση Α:</string>
+    <string name="answer_b_title">Απάντηση Β:</string>
+    <string name="answer_a">Απάντηση Α</string>
+    <string name="answer_b">Απάντηση Β</string>
+    <string name="this_is_my_question">Αυτή είναι η ερώτησή μου.</string>
+    <string name="save">Αποθηκεύσετε</string>
+    <string name="number_of_questions">Αριθμός ερωτήσεων:</string>
+    <string name="play">Παίξ\'το!</string>
+    <string name="are_you_sure_you_want_to_quit">Είσαι σίγουρος ότι θέλεις να παραιτηθείς?</string>
+    <string name="progress_will_be_lost">Η πρόοδος θα χαθεί.</string>
+    <string name="closing_Quiz">Κλείσιμο Κουίζ</string>
+    <string name="yes">Ναί</string>
+    <string name="no">Οχι</string>
+    <string name="create">Δημιουργώ</string>
+    <string name="time_left">Υπολειπόμενος χρόνος :</string>
+    <string name="seconds">δευτερόλεπτα</string>
+    <string name="score">Σκορ:</string>
+    <string name="points_added_season_points">"  πόντοι έχουν προστεθεί στους πόντους σεζόν σας"</string>
+    <string name="thanks_for_playing">Ευχαριστώ που έπαιξες</string>
+    <string name="your_score_is">Το σκορ σου είναι:</string>
+    <string name="return_to_quiz_list">Επιστροφή στη λίστα κουίζ</string>
+    <string name="points">Πόντοι:</string>
+    <string name="season">Εποχή</string>
+    <string name="your_rank">Η κατάταξή σας:</string>
+    <string name="change_password">Αλλαξε κωδικό</string>
+    <string name="username_indicator">Όνομα χρήστη:</string>
+    <string name="email_indicator">ΗΛΕΚΤΡΟΝΙΚΗ ΔΙΕΥΘΥΝΣΗ:</string>
+    <string name="old_password">ΠΑΛΙΟΣ ΚΩΔΙΚΟΣ</string>
+    <string name="new_password">Νέος Κωδικός</string>
+    <string name="confirm_new_password">Επιβεβαιώστε τον καινούριο σας κωδικό</string>
+    <string name="set_password">Ορίστε κωδικό</string>
+    <string name="password_successfully_updated">Ο κωδικός πρόσβασής σας ενημερώθηκε με επιτυχία</string>
+    <string-array name="difficulty_list">
+        <item>Ανετα</item>
+        <item>ενδιάμεσος</item>
+        <item>Δύσκολος</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>τροφή</item>
+        <item>άθλημα</item>
+        <item>των ζώων</item>
+    </string-array>
 </resources>

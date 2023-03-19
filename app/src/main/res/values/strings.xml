@@ -27,55 +27,54 @@
     <string name="medium">Intermediate</string>
     <string name="hard">Difficult</string>
     <string name="account_successfully_created">Your account has been successfully created</string>
-    <string name="questions" translatable="false">Questions:</string>
-    <string name="title" translatable="false">Title:</string>
-    <string name="my_quiz" translatable="false">My quiz</string>
-    <string name="difficulty" translatable="false">Difficulty:</string>
-    <string name="theme" translatable="false">Theme:</string>
-    <string name="new_quiz" translatable="false">New Quiz</string>
-    <string name="question" translatable="false">Question</string>
-    <string name="answer_a_title" translatable="false">Answer A:</string>
-    <string name="answer_b_title" translatable="false">Answer B:</string>
-    <string name="answer_a" translatable="false">Answer A</string>
-    <string name="answer_b" translatable="false">Answer B</string>
-    <string name="this_is_my_question" translatable="false">This is my question.</string>
-    <string name="save" translatable="false">Save</string>
-    <string name="number_of_questions" translatable="false">Number of questions:</string>
-    <string name="play" translatable="false">Play it !</string>
-    <string name="are_you_sure_you_want_to_quit" translatable="false">Are you sure you want to quit ?</string>
-    <string name="progress_will_be_lost" translatable="false">Progress will be lost.</string>
-    <string name="closing_Quiz" translatable="false">Closing Quiz</string>
-    <string name="yes" translatable="false">Yes</string>
-    <string name="no" translatable="false">No</string>
-    <string name="create" translatable="false">Create</string>
-    <string name="time_left" translatable="false">Time left : </string>
-    <string name="seconds" translatable="false">seconds</string>
-    <string name="score" translatable="false">Score: </string>
-    <string name="points_added_season_points" translatable="false"> points have been added to your season points</string>
-    <string name="thanks_for_playing" translatable="false">Thanks for playing</string>
-    <string name="your_score_is" translatable="false">Your score is: </string>
-    <string name="return_to_quiz_list" translatable="false">Return to quiz list</string>
-    <string name="points" translatable="false">Points:</string>
-    <string name="season" translatable="false">Season</string>
-    <string name="your_rank" translatable="false">Your rank:</string>
-    <string name="change_password" translatable="false">Change password</string>
-    <string name="username_indicator" translatable="false">Username:</string>
-    <string name="email_indicator" translatable="false">Email:</string>
-    <string name="old_password" translatable="false">Old password</string>
-    <string name="new_password" translatable="false">New password</string>
-    <string name="confirm_new_password" translatable="false">Confirm new password</string>
-    <string name="set_password" translatable="false">Set password</string>
-    <string name="password_successfully_updated" translatable="false">Your password has been successfully updated</string>
-    <string-array name="difficulty_list" translatable="false">
+
+    <string name="questions">Questions:</string>
+    <string name="title">Title:</string>
+    <string name="my_quiz">My quiz</string>
+    <string name="difficulty">Difficulty:</string>
+    <string name="theme">Theme:</string>
+    <string name="new_quiz">New Quiz</string>
+    <string name="question">Question</string>
+    <string name="answer_a_title">Answer A:</string>
+    <string name="answer_b_title">Answer B:</string>
+    <string name="answer_a">Answer A</string>
+    <string name="answer_b">Answer B</string>
+    <string name="this_is_my_question">This is my question.</string>
+    <string name="save">Save</string>
+    <string name="number_of_questions">Number of questions:</string>
+    <string name="play">Play it !</string>
+    <string name="are_you_sure_you_want_to_quit">Are you sure you want to quit ?</string>
+    <string name="progress_will_be_lost">Progress will be lost.</string>
+    <string name="closing_Quiz">Closing Quiz</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="create">Create</string>
+    <string name="time_left">Time left : </string>
+    <string name="seconds">seconds</string>
+    <string name="score">Score: </string>
+    <string name="points_added_season_points"> points have been added to your season points</string>
+    <string name="thanks_for_playing">Thanks for playing</string>
+    <string name="your_score_is">Your score is: </string>
+    <string name="return_to_quiz_list">Return to quiz list</string>
+    <string name="points">Points:</string>
+    <string name="season">Season</string>
+    <string name="your_rank">Your rank:</string>
+    <string name="change_password">Change password</string>
+    <string name="username_indicator">Username:</string>
+    <string name="email_indicator">Email:</string>
+    <string name="old_password">Old password</string>
+    <string name="new_password">New password</string>
+    <string name="confirm_new_password">Confirm new password</string>
+    <string name="set_password">Set password</string>
+    <string name="password_successfully_updated">Your password has been successfully updated</string>
+    <string-array name="difficulty_list">
         <item>Easy</item>
         <item>Intermediate</item>
         <item>Difficult</item>
     </string-array>
-    <string-array name="theme_list" translatable="false">
+    <string-array name="theme_list">
         <item>Food</item>
         <item>Sport</item>
         <item>Animals</item>
     </string-array>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
