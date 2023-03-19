@@ -36,7 +36,7 @@
             <Button
                 android:id="@+id/btn_welcome_sign_in"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="wrap_content"
                 android:text= "@string/sign_in"
                 android:theme="@style/DarkButton"
                 android:background="@color/colorButtonBackgroundDark"
@@ -48,7 +48,7 @@
             <Button
                 android:id="@+id/btn_play_offline"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="wrap_content"
                 android:text= "@string/play_offline"
                 android:theme="@style/DarkButton"
                 android:background="@color/colorButtonBackgroundDark"

@@ -64,7 +64,7 @@
     <string name="old_password">Ancien mot de passe</string>
     <string name="new_password">Nouveau mot de passe</string>
     <string name="confirm_new_password">Confirmer le nouveau mot de passe</string>
-    <string name="set_password">Définir mot de passe</string>
+    <string name="set_password">Valider</string>
     <string name="password_successfully_updated">Votre mot de passe a été mis à jour avec succès</string>
     <string-array name="difficulty_list">
         <item>Facile</item>

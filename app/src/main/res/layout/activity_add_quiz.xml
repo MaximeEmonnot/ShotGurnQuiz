@@ -68,8 +68,8 @@ android:background="@color/colorBackground">
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center_vertical"
-                                    android:minWidth="100dp"
-                                    android:dropDownWidth="100dp"
+                                    android:minWidth="130dp"
+                                    android:dropDownWidth="130dp"
                                     android:background="@drawable/spinner_background"
                                     android:spinnerMode="dropdown"/>
 
@@ -91,8 +91,8 @@ android:background="@color/colorBackground">
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center_vertical"
-                                    android:minWidth="100dp"
-                                    android:dropDownWidth="100dp"
+                                    android:minWidth="130dp"
+                                    android:dropDownWidth="130dp"
                                     android:background="@drawable/spinner_background"
                                     android:spinnerMode="dropdown"/>
                         </LinearLayout>

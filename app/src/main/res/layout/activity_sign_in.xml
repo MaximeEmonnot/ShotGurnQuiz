@@ -64,30 +64,29 @@
 
         <Button
             android:id="@+id/btn_sign_in"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text= "@string/sign_in"
             android:theme="@style/DarkButton"
             android:background="@color/colorButtonBackgroundDark"
             android:layout_marginTop="15dp"
-            android:layout_marginRight="65dp"
-            android:layout_marginLeft="65dp"
+            android:layout_gravity="center_horizontal"
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:gravity="center"
             android:text="@string/no_account"
             android:layout_marginTop="30dp"
             android:theme="@style/MediumTextOnLight" />
 
         <Button
             android:id="@+id/btn_sign_up"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_marginRight="65dp"
-            android:layout_marginLeft="65dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="50dp"
             android:text="@string/sign_up"
             android:theme="@style/DarkButton"

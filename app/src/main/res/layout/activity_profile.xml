@@ -42,7 +42,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/username_indicator"
-                android:theme="@style/LargeTextOnLight"
+                android:theme="@style/MediumTextOnLight"
                 />
 
             <TextView
@@ -50,7 +50,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:theme="@style/LargeTextOnLight"
+                android:theme="@style/MediumTextOnLight"
                 />
 
         </LinearLayout>
@@ -69,7 +69,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/email_indicator"
-                android:theme="@style/LargeTextOnLight"
+                android:theme="@style/MediumTextOnLight"
                 />
 
             <TextView
@@ -77,7 +77,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:theme="@style/LargeTextOnLight"
+                android:theme="@style/MediumTextOnLight"
                 />
 
         </LinearLayout>
