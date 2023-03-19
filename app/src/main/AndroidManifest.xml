@@ -13,10 +13,12 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".Activities.QuizSummaryActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".Activities.AddQuizActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity android:name=".Activities.LeaderboardActivity"
             android:exported="false"
             android:screenOrientation="portrait" />

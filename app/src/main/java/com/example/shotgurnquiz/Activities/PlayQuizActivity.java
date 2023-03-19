@@ -173,7 +173,6 @@ public class PlayQuizActivity extends AppCompatActivity {
     private TextView textViewAnswerATxt;
     private TextView textViewAnswerBTxt;
     private TextView textViewTimeCount;
-
     private CountDownTimer gameThread;
     public boolean answer = false;
     private int score;
