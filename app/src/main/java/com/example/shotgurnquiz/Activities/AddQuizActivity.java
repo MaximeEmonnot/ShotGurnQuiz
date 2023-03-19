@@ -12,11 +12,14 @@ import android.widget.EditText;
 import android.widget.Spinner;
 
 import com.example.shotgurnquiz.Database.DatabaseHelper;
+import com.example.shotgurnquiz.Database.Tables.Question;
 import com.example.shotgurnquiz.Fragments.AddQuestionDialogFragment;
 import com.example.shotgurnquiz.R;
 import com.example.shotgurnquiz.RecyclerViewConfigs.QuestionCard_RecyclerViewAdapter;
 import com.example.shotgurnquiz.RecyclerViewConfigs.RecyclerView_ItemClickListener;
 import com.example.shotgurnquiz.RecyclerViewConfigs.RecyclerView_SpacesItemDecoration;
+
+import java.util.ArrayList;
 
 public class AddQuizActivity extends AppCompatActivity {
 
@@ -64,13 +67,18 @@ public class AddQuizActivity extends AppCompatActivity {
             buttonCreate.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    String title = editTextTitle.getText().toString();
-                    int difficultyIndex = spinnerDifficulty.getSelectedItemPosition();
-                    int themeIndex = spinnerTheme.getSelectedItemPosition();
+                    ArrayList<Question> questions = questionAdapter.getAllItems();
 
-                    db.CreateNewQuiz(title, themeIndex, difficultyIndex, questionAdapter.getAllItems());
+                    if(!questions.isEmpty()){
+                        String title = editTextTitle.getText().toString();
+                        int difficultyIndex = spinnerDifficulty.getSelectedItemPosition();
+                        int themeIndex = spinnerTheme.getSelectedItemPosition();
 
-                    finish();
+
+                        db.CreateNewQuiz(title, themeIndex, difficultyIndex, questions);
+
+                        finish();
+                    }
                 }
             });
         }
